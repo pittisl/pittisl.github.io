@@ -1,13 +1,12 @@
 ---
-title: 'An example conference paper'
+title: 'Eavesdropping user credentials via GPU side channels on smartphones'
 authors:
-  - admin
-  - Robert Ford
-date: '2013-07-01T00:00:00Z'
+  - boyuan
+date: '2023-07-22T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2023-07-22T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -17,7 +16,7 @@ publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
 publication: In *Source Themes Conference*
-publication_short: In *STC*
+publication_short: In *ASPLOS'22*
 
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
