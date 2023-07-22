@@ -39,4 +39,10 @@ type: landing
   Ruirong Chen, Wei Gao  
   MobiSys '22
 
+## Year 2020
+
+* [SpiroSonic: monitoring human lung function via acoustic sensing on commodity smartphones](https://doi.org/10.1145/3372224.3419209)  
+  Xingzhe Song\*, Boyuan Yang\*, Ge Yang, Ruirong Chen, Erick Forno, Wei Chen, Wei Gao  
+  MobiCom '20
+
 -----------
