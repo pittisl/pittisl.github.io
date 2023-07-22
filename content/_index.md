@@ -20,19 +20,21 @@ sections:
       title: On-device AI
       subtitle: 'Accelerating neural network training and inference'
       text: |
-        ### ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection
+        {{< columns >}}
+        ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/elastictrainer)
         Mobisys'23  
         ![ElasticTrainer](elastictrainer.jpg)
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
-        ### Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI
+        <--->
+        ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](publication/agilenn)
         MobiCom'22  
         ![AgileNN](agilenn.png)
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
+        {{< /columns >}}
     design:
       columns: '2'
       spacing:
         padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
   - block: markdown
     content:
@@ -85,8 +87,8 @@ sections:
   
 #  - block: collection
 #    content:
-#      title: Latest News
-#      subtitle:
+#      title: On-device AI
+#      subtitle: 'Accelerating neural network training and inference'
 #      text:
 #      count: 5
 #      filters:
@@ -94,13 +96,13 @@ sections:
 #        category: ''
 #        exclude_featured: false
 #        publication_type: ''
-#        tag: ''
+#        tag: 'on-device-ai'
 #      offset: 0
 #      order: desc
-#      page_type: post
+#      page_type: publication
 #    design:
 #      view: card
-#      columns: '1'
+#      columns: '5'
 
   
 #  - block: markdown
