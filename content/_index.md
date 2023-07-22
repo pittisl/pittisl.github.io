@@ -58,24 +58,24 @@ sections:
       subtitle: ''
       text: |
         {{< columns >}}
-        ElasticTrainer
+        ##### ElasticTrainer
         {{< youtube id="q86LnqEew_U" >}}
         <--->
-        AgileNN
+        ##### AgileNN
         {{< youtube id="OwNRcuTRgwE" >}}
         <--->
-        PTEase
+        ##### PTEase
         {{< youtube id="Netn1AOdsz8" >}}
         {{< /columns >}}
         <br />
         {{< columns >}}
-        GPU Eavesdropping
+        ##### GPU Eavesdropping
         {{< youtube id="f40TvdDaxqw" >}}
         <--->
-        SpiroSonic
+        ##### SpiroSonic
         {{< youtube id="SDiboSXJr28" >}}
         <--->
-        TransFi
+        ##### TransFi
         {{< youtube id="-BngtciwxfA" >}}
         {{< /columns >}}
     design:
