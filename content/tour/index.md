@@ -13,31 +13,11 @@ sections:
         align: center
         background:
           image:
-            filename: coders.jpg
+            filename: contact_pittisl.png
             filters:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
-        align: left
-        background:
-          image:
-            filename: contact_pittisl.png
-            filters:
-              brightness: 0.7
-          position: center
-          color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
-        align: right
-        background:
-          image:
-            filename: ssoe.jpg
-            filters:
-              brightness: 0.5
-          position: center
-          color: '#333'
         link:
           icon: graduation-cap
           icon_pack: fas
