@@ -18,7 +18,7 @@ sections:
   - block: markdown
     content:
       title: On-device AI
-      subtitle: 'Accelerating neural network training and inference'
+      subtitle: 'Accelerating neural network training, inference, and more'
       text: |
         {{< columns >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=on-device-ai}
