@@ -59,9 +59,22 @@ image:
 slides:
 ---
 
+## About this work
+
+### Information Leakage from On-screen Keyboard
+
+The GPU rendering of on-screen keyboard animation causes information leakage
+on user input.
+
+![GPU Overdraw and Keyboard](2022-mobile-gpu-eavesdropping/keyboard-gpu-overdraw.png)
+
+### System Overview
+
+![Eavesdropping System Overview](2022-mobile-gpu-eavesdropping/system-overview.png)
+
 ## Videos
 
-### Demo
+### Attack Demo
 
 {{< youtube id="f40TvdDaxqw" >}}
 
