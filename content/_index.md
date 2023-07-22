@@ -7,16 +7,13 @@ type: landing
 sections:
   - block: hero
     content:
-      title: |
-        Welcome to the
-        Research Group
+      title:
       image:
         filename: ssoe.jpg
       text: |
-        <br>
-        
-        The **Intelligent System Lab** at University of Pittsburgh conducts research on XXX, YYY
-        since 20XX.
+        The **Intelligent System Lab** at University of Pittsburgh conducts research on
+        On-device AI, Mobile and embedded systems, Mobile and connected health,
+        Cyber-physical systems and Internet of Things.
   
   - block: collection
     content:
@@ -57,12 +54,12 @@ sections:
         padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
   
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
-      columns: '1'
+#  - block: markdown
+#    content:
+#      title:
+#      subtitle:
+#      text: |
+#        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+#    design:
+#      columns: '1'
 ---
