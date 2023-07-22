@@ -32,12 +32,7 @@ links:
     url: https://doi.org/10.5281/zenodo.7812218
 url_pdf: https://doi.org/10.1145/3581791.3596852
 url_code: 'https://github.com/pittisl/ElasticTrainer'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+url_video: 'https://youtu.be/q86LnqEew_U'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
