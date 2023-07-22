@@ -3,7 +3,7 @@ title: 'Eavesdropping user credentials via GPU side channels on smartphones'
 authors:
   - admin
 date: '2022-03-22T00:00:00Z'
-doi: ''
+doi: '10.1145/3503222.3507757'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2023-07-22T00:00:00Z'

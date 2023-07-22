@@ -3,7 +3,7 @@ title: 'PTEase: Objective Airway Examination for Pulmonary Telemedicine using Co
 authors:
   - admin
 date: '2023-07-22T00:00:00Z'
-doi: ''
+doi: '10.1145/3581791.3596854'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2023-07-22T00:00:00Z'
