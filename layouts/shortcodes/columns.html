@@ -1,4 +1,4 @@
-<div class="md-columns">
+<div class="md-columns flex flex-wrap">
 {{ range split .Inner "<--->" }}
   <div class="flex-even markdown-inner">
     {{ . | $.Page.RenderString }}
