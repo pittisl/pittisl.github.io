@@ -19,6 +19,17 @@ main:
   - name: Publications
     url: publication
     weight: 50
+  - name: Projects
+    weight: 52
+  - name: On-device AI
+    url: /#on-device-ai
+    parent: Projects
+  - name: Mobile and Connected Health
+    url: /#mobile-and-connected-health
+    parent: Projects
+  - name: Mobile and Embedded Systems
+    url: /#mobile-embed-systems
+    parent: Projects
   - name: GitHub
     url: https://github.com/pittisl
     weight: 55

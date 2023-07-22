@@ -21,7 +21,7 @@ sections:
       subtitle: 'Accelerating neural network training and inference'
       text: |
         {{< columns >}}
-        ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/)
+        ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=on-device-ai}
         Mobisys'23  
         ![ElasticTrainer](elastictrainer.jpg)
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
@@ -41,7 +41,7 @@ sections:
       title: Mobile and connected health
       subtitle: ''
       text: |
-        ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/)
+        ### [PTEase Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/) {id=mobile-and-connected-health}
         Mobisys'23  
         ![PTEase](ptease.jpg)
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
@@ -55,7 +55,7 @@ sections:
       title: Mobile and embedded systems
       subtitle: ''
       text: |
-        ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/)
+        ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-embed-systems}
         ASPLOS'22  
         ![MobileGPUEavesdropping](mobile-gpu-eavesdropping.png)
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user's sensitive credentials such as app username and password.
