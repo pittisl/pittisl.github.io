@@ -80,7 +80,7 @@ sections:
       columns: '1'
       spacing:
         padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+#      css_class: fullscreen
 
   
 #  - block: collection
