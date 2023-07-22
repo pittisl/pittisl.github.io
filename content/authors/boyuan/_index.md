@@ -18,7 +18,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: -
+bio: PhD student in Electrical and Computer Engineering
 
 interests:
   - Artificial Intelligence
