@@ -20,11 +20,12 @@ sections:
       title: On-device AI
       subtitle: 'Accelerating neural network training and inference'
       text: |
-        ## ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection
+        ### ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection
         Mobisys'23  
         ![ElasticTrainer](elastictrainer.jpg)
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
-        ## Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI
+        {{< youtube id="q86LnqEew_U" >}}
+        ### Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI
         MobiCom'22  
         ![AgileNN](agilenn.png)
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
@@ -39,10 +40,11 @@ sections:
       title: Mobile and connected health
       subtitle: ''
       text: |
-        ## PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones
+        ### PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones
         Mobisys'23  
         ![PTEase](ptease.jpg)
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
+        {{< youtube id="Netn1AOdsz8" >}}
     design:
       columns: '2'
       spacing:
