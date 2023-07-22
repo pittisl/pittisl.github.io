@@ -24,7 +24,6 @@ sections:
         Mobisys'23  
         ![ElasticTrainer](elastictrainer.jpg)
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
-        {{< youtube id="q86LnqEew_U" >}}
         ### Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI
         MobiCom'22  
         ![AgileNN](agilenn.png)
@@ -44,9 +43,41 @@ sections:
         Mobisys'23  
         ![PTEase](ptease.jpg)
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
-        {{< youtube id="Netn1AOdsz8" >}}
     design:
       columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+      css_class: fullscreen
+
+
+  - block: markdown
+    content:
+      title: 'Videos'
+      subtitle: ''
+      text: |
+        {{< columns >}}
+        ElasticTrainer
+        {{< youtube id="q86LnqEew_U" >}}
+        <--->
+        AgileNN
+        {{< youtube id="OwNRcuTRgwE" >}}
+        <--->
+        PTEase
+        {{< youtube id="Netn1AOdsz8" >}}
+        {{< /columns >}}
+        <br />
+        {{< columns >}}
+        GPU Eavesdropping
+        {{< youtube id="f40TvdDaxqw" >}}
+        <--->
+        SpiroSonic
+        {{< youtube id="SDiboSXJr28" >}}
+        <--->
+        TransFi
+        {{< youtube id="-BngtciwxfA" >}}
+        {{< /columns >}}
+    design:
+      columns: '1'
       spacing:
         padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
