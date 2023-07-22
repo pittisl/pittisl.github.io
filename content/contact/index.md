@@ -46,7 +46,7 @@ sections:
     design:
       columns: '1'
 
-#  - block: markdown
+  - block: markdown
     content:
       title:
       subtitle: ''
