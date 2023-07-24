@@ -1,0 +1,27 @@
+// http://oostens.me/posts/hugo-column-shortcode/
+.md-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  >div {
+    flex: 1 1;
+    margin: 1rem 0;
+    min-width: 100px;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .markdown-inner {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.7rem;
+// custom to reduce font size
+  }
+}
+
+// Do not display footer Wow...
+.powered-by {
+  display: none;
+}
