@@ -1,7 +1,8 @@
 ---
 title: 'SpiroSonic: monitoring human lung function via acoustic sensing on commodity smartphones'
 authors:
-  - admin
+  - boyuan
+  - wei
 date: '2020-07-22T00:00:00Z'
 doi: '10.1145/3372224.3419209'
 
@@ -27,7 +28,7 @@ tags:
   - 'smart-health'
 featured: true
 
-url_pdf: 10.1145/3372224.3419209
+url_pdf: 'https://doi.org/10.1145/3372224.3419209'
 url_video: 'https://www.youtube.com/watch?v=SDiboSXJr28'
 
 # Featured image
