@@ -1,7 +1,9 @@
 ---
 title: 'PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones'
 authors:
-  - admin
+  - xiangyu
+  - kai
+  - wei
 date: '2023-07-22T00:00:00Z'
 doi: '10.1145/3581791.3596854'
 
