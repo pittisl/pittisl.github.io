@@ -27,9 +27,12 @@ interests:
 
 education:
   courses:
+    - course: BE in Electronic Information Engineering
+      institution: University of Science and Technology of China (USTC)
+      year: 2015-2019
     - course: PhD in Electrical and Computer Engineering
       institution: University of Pittsburgh
-      year: 2019
+      year: 2019-2024
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
