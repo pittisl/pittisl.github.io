@@ -29,7 +29,7 @@ type: landing
 * [Eavesdropping user credentials via GPU side channels on smartphones](https://doi.org/10.1145/3503222.3507757)  
   Boyuan Yang, Ruirong Chen, Kai Huang, Jun Yang, Wei Gao  
   ASPLOS'22
-* AgileNN: [Real-time neural network inference on extremely weak devices: agile offloading with explainable AI](https://doi.org/10.1145/3495243.3560551)  
+* [Real-time neural network inference on extremely weak devices: agile offloading with explainable AI](https://doi.org/10.1145/3495243.3560551)  
   Kai Huang, Wei Gao  
   MobiCom '22
 * [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](https://doi.org/10.1145/3560905.3568537)  
