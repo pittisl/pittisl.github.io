@@ -1,7 +1,8 @@
 ---
 title: 'RAScatter: Achieving Energy-Efficient Backscatter Readers via AI-Assisted Power Adaptation'
 authors:
-  - admin
+  - kai
+  - wei
 date: '2023-07-22T00:00:00Z'
 doi: '10.1109/IoTDI54339.2022.00016'
 
@@ -16,7 +17,7 @@ publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
 publication: In *the 7th ACM/IEEE Conference on Internet of Things Design and Implementation (IoTDI'22)*
-publication_short: In *IoTDI'2*
+publication_short: In *IoTDI'22*
 
 abstract: Backscatter communication reduces the batteryless device's power consumption at the cost of extra RF energy transmitted from backscatter readers. Such extra cost results in extremely low energy efficiency at readers, but is ignored by existing systems that always use the highest transmit RF power for maximum goodput. Instead, we envision that the maximum goodput is unnecessary in many practical scenarios, allowing adaptation of transmit RF power to the required goodput. In this paper, we present RAScatter, a new backscatter system of precise, adaptive and lightweight power adaptation towards energy-efficient backscatter readers. RAScatter learns the entangled correlation between backscatter channel conditions, transmit RF power and goodput by designing a modular neural network, which decomposes the complex learning task into multiple related but simplified subtasks. This decomposition avoids redundancy in neural networks and eliminates any confusion in training due to insufficient training data in low-speed backscatter systems. Experiment results over commodity batteryless tags show that RAScatter improves the energy efficiency at backscatter readers by 3.5× and reduces the readers' power consumption in backscatter communication by up to 80%.
 

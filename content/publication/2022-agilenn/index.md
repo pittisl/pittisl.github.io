@@ -31,6 +31,7 @@ featured: true
 url_pdf: https://doi.org/10.1145/3495243.3560551
 url_code: 'https://github.com/pittisl/AgileNN'
 url_video: 'https://www.youtube.com/watch?v=OwNRcuTRgwE'
+url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/AgileNN-slides.pptx'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

@@ -35,6 +35,7 @@ links:
 url_pdf: https://doi.org/10.1145/3581791.3596852
 url_code: 'https://github.com/pittisl/ElasticTrainer'
 url_video: 'https://youtu.be/q86LnqEew_U'
+url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/ElasticTrainer-slides.pptx'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
