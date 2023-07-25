@@ -31,7 +31,7 @@ type: landing
   ASPLOS'22
 * AgileNN: [Real-time neural network inference on extremely weak devices: agile offloading with explainable AI](https://doi.org/10.1145/3495243.3560551)  
   Kai Huang, Wei Gao  
-  Mobicom '22
+  MobiCom '22
 * [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](https://doi.org/10.1145/3560905.3568537)  
   Ruirong Chen, Kai Huang, Wei Gao  
   SenSys '22
