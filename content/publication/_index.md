@@ -28,7 +28,7 @@ type: landing
   IoTDI '22
 * [Eavesdropping user credentials via GPU side channels on smartphones](https://doi.org/10.1145/3503222.3507757)  
   Boyuan Yang, Ruirong Chen, Kai Huang, Jun Yang, Wei Gao  
-  ASPLOS'22
+  ASPLOS '22
 * [Real-time neural network inference on extremely weak devices: agile offloading with explainable AI](https://doi.org/10.1145/3495243.3560551)  
   Kai Huang, Wei Gao  
   MobiCom '22
