@@ -22,7 +22,7 @@ sections:
       text: |
         {{< columns >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=on-device-ai}
-        Mobisys'23  
+        MobiSys'23  
         ![ElasticTrainer](elastictrainer.jpg)
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
         <--->
@@ -42,7 +42,7 @@ sections:
       subtitle: ''
       text: |
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/) {id=mobile-and-connected-health}
-        Mobisys'23  
+        MobiSys'23  
         ![PTEase](ptease.jpg)
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
         ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](publication/2020-spirosonic)  
