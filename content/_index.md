@@ -18,7 +18,7 @@ sections:
   - block: markdown
     content:
       title: On-device AI
-      subtitle: 'Our research strives to enable AI capabilities (inference and training) on resource-constrained embedded devices in the IoT and tailor AI models to effectively support various system applications.'
+      subtitle: 'Our research strives to enable AI capabilities (inference & training) on resource-constrained embedded devices in the IoT and tailor AI models to effectively support various system applications. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks and incorporates domain knowledge of specific system applications into the neural network module design.'
       text: |
         {{< columns >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=on-device-ai}
@@ -39,7 +39,7 @@ sections:
   - block: markdown
     content:
       title: Mobile and connected health
-      subtitle: ''
+      subtitle: 'The COVID-19 pandemic poses a significant public health challenge, with the potential to overwhelm the healthcare system due to the high number of hospital visits. To address this issue, we are developing mobile sensing and AI techniques that allow individuals to self-evaluate possible COVID-19 infections at home using their smartphones. Our goal is to enable low-cost self-assessment and avoid unnecessary hospital visits by identifying other diseases that share similar symptoms with COVID-19, such as fever and shortness of breath. This research is urgently needed to alleviate the strain on the healthcare system and preserve medical resources for hospitalized patients, especially considering the rapid spread of the virus across the United States.'
       text: |
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/) {id=mobile-and-connected-health}
         MobiSys'23  
