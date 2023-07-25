@@ -18,7 +18,7 @@ sections:
   - block: markdown
     content:
       title: On-device AI
-      subtitle: 'Accelerating neural network training, inference, and more'
+      subtitle: 'Our research strives to enable AI capabilities (inference and training) on resource-constrained embedded devices in the IoT and tailor AI models to effectively support various system applications.'
       text: |
         {{< columns >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=on-device-ai}

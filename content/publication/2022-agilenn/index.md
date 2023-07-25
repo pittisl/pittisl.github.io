@@ -1,7 +1,8 @@
 ---
 title: 'Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI'
 authors:
-  - admin
+  - kai
+  - wei
 date: '2023-07-22T00:00:00Z'
 doi: '10.1145/3495243.3560551'
 

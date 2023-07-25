@@ -1,7 +1,9 @@
 ---
 title: 'ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection'
 authors:
-  - admin
+  - kai
+  - boyuan
+  - wei
 date: '2023-07-22T00:00:00Z'
 doi: '10.1145/3581791.3596852'
 
