@@ -102,6 +102,24 @@ sections:
 
   - block: markdown
     content:
+      title: Intelligent Edge Computing
+      subtitle: ''
+      text: |
+        ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=intelligent-edge-computing}
+        IPSN'19  
+        ![DeltaVR](deltavr.png)
+        This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
+        {{< hr >}}
+        [View more...](/tag/intelligent-edge-computing/)
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+
+
+  - block: markdown
+    content:
       title: 'Videos'
       subtitle: ''
       text: |
