@@ -38,6 +38,8 @@ sections:
         ![AgileNN](agilenn.png)
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< /columns >}}
+        {{< hr >}}
+        [View more...](/tag/on-device-ai/)
     design:
       columns: '2'
       spacing:
