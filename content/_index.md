@@ -105,10 +105,17 @@ sections:
       title: Intelligent Edge Computing
       subtitle: ''
       text: |
+        {{< columns >}}
         ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=intelligent-edge-computing}
         IPSN'19  
         ![DeltaVR](deltavr.png)
         This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
+        <--->
+        ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](publication/2018-muvr/)  
+        2018 IEEE SEC  
+        ![MUVR](muvr.png)
+        MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden by more than 90%, and reduce more than 95% of the transmitted VR frame data.
+        {{< /columns >}}
         {{< hr >}}
         [View more...](/tag/intelligent-edge-computing/)
     design:
