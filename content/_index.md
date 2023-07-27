@@ -82,10 +82,17 @@ sections:
       title: Intelligent Wireless Systems
       subtitle: ''
       text: |
+        {{< columns >}}
         ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](publication/2022-aifi/) {id=intelligent-wireless-systems}
         SenSys'22  
         ![AiFi](aifi.jpg)
         AiFi applies on-device AI techniques to interference cancellation in WiFi networks and enables generalizable interference cancellation on commodity WiFi devices without any extra RF hardware. By using neural network models to mimic WiFi network's PHY-layer operation, AiFi can be generally applied to different types of interference signals ranging from concurrent WiFi transmissions, ZigBee/Bluetooth to wireless baby monitors or even microwave oven, and improves the MAC-layer frame reception rate by 18x.
+        <--->
+        ### [TransFi: emulating custom wireless physical layer from commodity wifi](publication/2022-transfi/)
+        MobiSys'22  
+        ![TransFi](transfi.png)
+        TransFi realizes fine-grained signal emulation and allows commodity WiFi devices to emulate custom wireless physical layer, including but not limited to, custom PHY-layer preambles and new ways of agile spectrum usage. It could also improve the performance of cross-technology communication and many other wireless applications by up to 50x, enabling high-speed data communication on par with commodity WiFi.
+        {{< /columns >}}
         {{< hr >}}
         [View more...](/tag/intelligent-wireless-systems/)
     design:
