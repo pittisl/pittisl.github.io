@@ -64,7 +64,7 @@ sections:
   - block: markdown
     content:
       title: Mobile and embedded systems
-      subtitle: ''
+      subtitle: 'With the continuous evolvement of mobile computing on embedded system platforms, our research focuses on the application of recent advances in mobile computataional needs. We investigate into improving the safety and performance of mobile computing tasks and the utilization of heterogeneous hardware resources on mobile platform.'
       text: |
         ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-embed-systems}
         ASPLOS'22  
