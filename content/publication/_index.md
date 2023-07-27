@@ -57,4 +57,8 @@ type: landing
   Yong Li, Wei Gao  
   2018 IEEE SEC
 
+* [Continuous Wireless Link Rates for Internet of Things](https://doi.org/10.1109/IPSN.2018.00012)  
+  Haoyang Lu, Wei Gao  
+  IPSN '18
+
 -----------
