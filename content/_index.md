@@ -13,7 +13,7 @@ sections:
       text: |
         The **Intelligent System Lab** at University of Pittsburgh conducts research on
         On-device AI, Mobile and embedded systems, Mobile and connected health,
-        Cyber-physical systems and Internet of Things.
+        Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
           * [On-device AI](/#on-device-ai)
@@ -72,6 +72,22 @@ sections:
         ASPLOS'22  
         ![MobileGPUEavesdropping](mobile-gpu-eavesdropping.png)
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user's sensitive credentials such as app username and password.
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
+    content:
+      title: Intelligent Wireless Systems
+      subtitle: ''
+      text: |
+        ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](publication/2022-aifi/) {id=intelligent-wireless-systems}
+        SenSys'22  
+        ![AiFi](aifi.jpg)
+        AiFi applies on-device AI techniques to interference cancellation in WiFi networks and enables generalizable interference cancellation on commodity WiFi devices without any extra RF hardware. By using neural network models to mimic WiFi network's PHY-layer operation, AiFi can be generally applied to different types of interference signals ranging from concurrent WiFi transmissions, ZigBee/Bluetooth to wireless baby monitors or even microwave oven, and improves the MAC-layer frame reception rate by 18x.
+        {{< hr >}}
+        [View more...](/tag/intelligent-wireless-systems/)
     design:
       columns: '2'
       spacing:

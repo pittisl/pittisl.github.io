@@ -26,8 +26,7 @@ abstract: Interference could result in significant performance degradation in Wi
 summary: This work applies on-device AI techniques to interference cancellation in WiFi networks and enables generalizable interference cancellation on commodity WiFi devices without any extra RF hardware. By using neural network models to mimic WiFi network's PHY-layer operation, AiFi can be generally applied to different types of interference signals ranging from concurrent WiFi transmissions, ZigBee/Bluetooth to wireless baby monitors or even microwave oven, and improves the MAC-layer frame reception rate by 18x.
 
 tags:
-  - 'sensing'
-  - 'wireless-systems'
+  - 'intelligent-wireless-systems'
   - 'on-device-ai'
 featured: true
 
