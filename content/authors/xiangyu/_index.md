@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Yin, Xiangyu
+title: Xiangyu Yin
 
 # Full Name (for SEO)
 first_name: Xiangyu

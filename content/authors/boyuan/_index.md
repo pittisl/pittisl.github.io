@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Yang, Boyuan
+title: Boyuan Yang
 
 # Full Name (for SEO)
 first_name: Boyuan

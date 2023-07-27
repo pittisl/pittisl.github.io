@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Chen, Ruirong
+title: Ruirong Chen
 
 # Full Name (for SEO)
 first_name: Ruirong

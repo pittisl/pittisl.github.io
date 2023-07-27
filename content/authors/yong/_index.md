@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Li, Yong
+title: Yong Li
 
 # Full Name (for SEO)
 first_name: Yong

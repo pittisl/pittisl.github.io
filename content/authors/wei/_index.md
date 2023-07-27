@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Gao, Wei
+title: Wei Gao
 
 # Full Name (for SEO)
 first_name: Wei
