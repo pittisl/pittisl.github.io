@@ -45,4 +45,10 @@ type: landing
   Xingzhe Song\*, Boyuan Yang\*, Ge Yang, Ruirong Chen, Erick Forno, Wei Chen, Wei Gao  
   MobiCom '20
 
+## Year 2019
+
+* [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](https://doi.org/10.1145/3302506.3310385)  
+  Yong Li, Wei Gao  
+  IPSN '19
+
 -----------
