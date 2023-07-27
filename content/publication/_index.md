@@ -51,4 +51,10 @@ type: landing
   Yong Li, Wei Gao  
   IPSN '19
 
+## Year 2018
+
+* [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](https://doi.org/10.1109/SEC.2018.00008)  
+  Yong Li, Wei Gao  
+  2018 IEEE SEC
+
 -----------
