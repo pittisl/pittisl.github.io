@@ -14,6 +14,13 @@ sections:
         The **Intelligent System Lab** at University of Pittsburgh conducts research on
         On-device AI, Mobile and embedded systems, Mobile and connected health,
         Cyber-physical systems and Internet of Things.
+        
+        Our projects:
+          * [On-device AI](/#on-device-ai)
+          * [Mobile and Connected Health](/#mobile-and-connected-health)
+          * [Mobile and Embedded Systems](/#mobile-embed-systems)
+          * [Intelligent Wireless Systems](/#intelligent-wireless-systems)
+          * [Intelligent Edge Computing](/#intelligent-edge-computing)
 
   - block: markdown
     content:
