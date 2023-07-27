@@ -2,6 +2,7 @@
 title: 'Eavesdropping user credentials via GPU side channels on smartphones'
 authors:
   - boyuan
+  - wei
 date: '2022-03-22T00:00:00Z'
 doi: '10.1145/3503222.3507757'
 
