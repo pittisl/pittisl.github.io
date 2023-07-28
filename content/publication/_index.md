@@ -76,6 +76,10 @@ type: landing
   Ruirong Chen, Wei Gao  
   INFOCOM '19
 
+* [Minimizing Wireless Delay with a High-Throughput Side Channel](https://doi.org/10.1109/TMC.2019.2914048)  
+  Ruirong Chen, Haoyang Lu, Wei Gao  
+  IEEE TMC Volume 19 Issue 7
+
 ## Year 2018
 
 * [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](https://doi.org/10.1109/SEC.2018.00008)  
