@@ -60,4 +60,10 @@ image:
 slides:
 ---
 
+## System Overview
+
+![ElasticTrainer System Overview](2023-elastictrainer/elastictrainer-system-overview.png)
+
+## Teaser Video
+
 {{< youtube id="q86LnqEew_U" >}}
