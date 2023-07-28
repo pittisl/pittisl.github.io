@@ -84,7 +84,7 @@ sections:
     id: intelligent-wireless-systems
     content:
       title: Intelligent Wireless Systems
-      subtitle: ''
+      subtitle: 'Wireless communications, such as Wi-Fi, Bluetooth and Zigbee, play an important role in IoT and mobile application. However, the noisy wireless channel conditions and interference makes such communication less effective. Our research focuses on physical layer designs, and apply AI-assisted techniques for intereference cancellation and efficiency improvement.'
       text: |
         {{< columns >}}
         ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](publication/2022-aifi/) {id=aifi}
