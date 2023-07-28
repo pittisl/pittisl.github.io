@@ -73,6 +73,14 @@ on user input.
 
 ![Eavesdropping System Overview](2022-mobile-gpu-eavesdropping/system-overview.png)
 
+### Follow-up Security Fixes
+
+The vulnerabilities found in this paper is designated with CVE number
+[CVE-2022-22075](https://nvd.nist.gov/vuln/detail/CVE-2022-22075), acknowledged
+by [Qualcomm Security Bulletin](https://docs.qualcomm.com/product/publicresources/securitybulletin/march-2023-bulletin.html),
+and fixed in
+[February 2023 Android Security patches](https://source.android.com/docs/security/overview/acknowledgements#feb-2023).
+
 ## Videos
 
 ### Attack Demo
