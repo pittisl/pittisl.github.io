@@ -3,7 +3,7 @@ title: 'TransFi: emulating custom wireless physical layer from commodity wifi'
 authors:
   - ruirong
   - wei
-date: '2023-07-26T01:00:00Z'
+date: '2022-06-26T01:00:00Z'
 doi: '10.1145/3498361.3538946'
 
 # Schedule page publish date (NOT publication's date).

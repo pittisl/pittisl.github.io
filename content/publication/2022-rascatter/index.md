@@ -3,7 +3,7 @@ title: 'RAScatter: Achieving Energy-Efficient Backscatter Readers via AI-Assiste
 authors:
   - kai
   - wei
-date: '2023-07-22T00:00:00Z'
+date: '2022-06-23T00:00:00Z'
 doi: '10.1109/IoTDI54339.2022.00016'
 
 # Schedule page publish date (NOT publication's date).

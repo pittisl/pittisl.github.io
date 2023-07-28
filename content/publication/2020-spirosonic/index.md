@@ -3,7 +3,7 @@ title: 'SpiroSonic: monitoring human lung function via acoustic sensing on commo
 authors:
   - boyuan
   - wei
-date: '2020-07-22T00:00:00Z'
+date: '2020-04-22T00:00:00Z'
 doi: '10.1145/3372224.3419209'
 
 # Schedule page publish date (NOT publication's date).

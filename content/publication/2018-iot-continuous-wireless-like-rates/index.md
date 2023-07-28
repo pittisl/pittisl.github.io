@@ -3,7 +3,7 @@ title: 'Continuous Wireless Link Rates for Internet of Things'
 authors:
   - haoyang
   - wei
-date: '2018-07-22T00:00:00Z'
+date: '2018-04-22T00:00:00Z'
 doi: '10.1109/IPSN.2018.00012'
 
 # Schedule page publish date (NOT publication's date).

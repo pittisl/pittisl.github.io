@@ -3,7 +3,7 @@ title: 'DeltaVR: achieving high-performance mobile VR dynamics through pixel reu
 authors:
   - yong
   - wei
-date: '2020-07-22T00:00:00Z'
+date: '2019-04-22T00:00:00Z'
 doi: '10.1145/3302506.3310385'
 
 # Schedule page publish date (NOT publication's date).
