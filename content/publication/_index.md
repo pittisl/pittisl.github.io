@@ -59,6 +59,10 @@ type: landing
   Haoyang Lu, Ruirong Chen, Wei Gao  
   CoNEXT '19
 
+* [Enabling Cross-Technology Coexistence for Extremely Weak Wireless Devices](https://doi.org/10.1109/INFOCOM.2019.8737379)  
+  Ruirong Chen, Wei Gao  
+  INFOCOM '19
+
 ## Year 2018
 
 * [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](https://doi.org/10.1109/SEC.2018.00008)  
