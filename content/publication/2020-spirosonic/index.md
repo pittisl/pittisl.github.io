@@ -55,4 +55,14 @@ image:
 slides:
 ---
 
+## Basic Idea
+
+![SpiroSonic measurement](2020-spirosonic/spirosonic-measurement.png)
+
+## System Overview
+
+![SpiroSonic Overview](2020-spirosonic/spirosonic-overview.png)
+
+## Presentation Video
+
 {{< youtube id="SDiboSXJr28" >}}
