@@ -26,6 +26,7 @@ summary: The first work that allows commodity smartphones to be used as a portab
 
 tags:
   - 'mobile-and-connected-health'
+  - 'mobile-sensing'
 featured: true
 
 url_pdf: 'https://doi.org/10.1145/3372224.3419209'
