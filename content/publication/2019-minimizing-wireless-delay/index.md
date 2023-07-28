@@ -17,7 +17,7 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE Transactions on Mobile Computing (Volume: 19, Issue: 7, 01 July 2020)*
+publication: In *IEEE Transactions on Mobile Computing Volume 19 Issue 7*
 publication_short: In *IEEE TMC Volume 19 Issue 7*
 
 abstract: Performance of modern cognitive and interactive mobile applications highly depends on the transmission delay in the wireless link that is vital to supporting real-time wireless traffic. To eliminate wireless network congestion caused by large amounts of concurrent network traffic and minimize such transmission delay, traditional schemes adopt various flow control and QoS-aware traffic scheduling techniques, but fail when the amount of network traffic further increases. In this paper, we present a novel design of high-throughput wireless side channel, which operates concurrently with the existing wireless network channel over the same spectrum but dedicates to real-time traffic. Our key idea of realizing such a side channel is to exploit the excessive SNR margin in the wireless network to encode data as patterned interference. We design such patterned interference in the form of energy erasure over specific subcarriers in an OFDM-based wireless network, and achieve a data rate of 1.25 Mbps in the side channel without affecting the existing wireless network links. Experimental results over both software-defined radios and custom wireless hardware demonstrate the effectiveness of our side channel design in reducing the latency of real-time wireless traffic, while providing a sufficient data throughput for such traffic.
