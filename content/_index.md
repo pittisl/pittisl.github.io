@@ -73,7 +73,7 @@ sections:
       text: |
         ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
         ASPLOS'22  
-        ![MobileGPUEavesdropping](mobile-gpu-eavesdropping.png)
+        ![MobileGPUEavesdropping](mobilegpueavesdropping_animation_comp.gif)
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user's sensitive credentials such as app username and password.
     design:
       columns: '2'
