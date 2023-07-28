@@ -45,11 +45,19 @@ type: landing
   Xingzhe Song\*, Boyuan Yang\*, Ge Yang, Ruirong Chen, Erick Forno, Wei Chen, Wei Gao  
   MobiCom '20
 
+* [StarLego: Enabling Custom Physical-Layer Wireless over Commodity Devices](https://doi.org/10.1145/3376897.3377852)  
+  Ruirong Chen, Wei Gao  
+  HotMobile '20
+
 ## Year 2019
 
 * [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](https://doi.org/10.1145/3302506.3310385)  
   Yong Li, Wei Gao  
   IPSN '19
+
+* [EasyPass: combating IoT delay with multiple access wireless side channels](https://doi.org/10.1145/3359989.3365421)  
+  Haoyang Lu, Ruirong Chen, Wei Gao  
+  CoNEXT '19
 
 ## Year 2018
 
