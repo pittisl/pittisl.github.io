@@ -38,6 +38,9 @@ type: landing
 * [TransFi: emulating custom wireless physical layer from commodity wifi](https://doi.org/10.1145/3498361.3538946)  
   Ruirong Chen, Wei Gao  
   MobiSys '22
+* [FaceListener: Recognizing Human Facial Expressions via Acoustic Sensing on Commodity Headphones](https://doi.org/10.1109/IPSN54338.2022.00019)  
+  Xingzhe Song, Kai Huang, Wei Gao  
+  IPSN '22
 
 ## Year 2021
 
