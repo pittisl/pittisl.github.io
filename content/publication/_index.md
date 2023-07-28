@@ -39,6 +39,12 @@ type: landing
   Ruirong Chen, Wei Gao  
   MobiSys '22
 
+## Year 2021
+
+* [MyoMonitor: Evaluating muscle fatigue with commodity smartphones](https://doi.org/10.1016/j.smhl.2020.100175)  
+  Xingzhe Song, Hongshuai Li, Wei Gao  
+  Smart Health Volume 19
+
 ## Year 2020
 
 * [SpiroSonic: monitoring human lung function via acoustic sensing on commodity smartphones](https://doi.org/10.1145/3372224.3419209)  
@@ -48,6 +54,10 @@ type: landing
 * [StarLego: Enabling Custom Physical-Layer Wireless over Commodity Devices](https://doi.org/10.1145/3376897.3377852)  
   Ruirong Chen, Wei Gao  
   HotMobile '20
+
+* [MagHacker: eavesdropping on stylus pen writing via magnetic sensing from commodity mobile devices](https://doi.org/10.1145/3386901.3389030)  
+  Yihao Liu, Kai Huang, Xingzhe Song, Boyuan Yang, Wei Gao  
+  MobiSys '20
 
 ## Year 2019
 

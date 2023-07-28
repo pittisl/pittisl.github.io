@@ -3,7 +3,7 @@ title: 'MyoMonitor: Evaluating Muscle Fatigue with Commodity Smartphones'
 authors:
   - xingzhe
   - wei
-date: '2023-03-22T00:00:00Z'
+date: '2021-03-22T00:00:00Z'
 doi: '10.1016/j.smhl.2020.100175'
 
 # Schedule page publish date (NOT publication's date).
