@@ -69,7 +69,7 @@ sections:
         padding: ['20px', '0', '20px', '0']
 
   - block: markdown
-    id: mobile-embed-systems
+    id: mobile-and-embedded-systems
     content:
       title: Mobile and embedded systems
       subtitle: 'With the continuous evolvement of mobile computing on embedded system platforms, our research focuses on the application of recent advances in mobile computataional needs. We investigate into improving the safety and performance of mobile computing tasks and the utilization of heterogeneous hardware resources on mobile platform.'

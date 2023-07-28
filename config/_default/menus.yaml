@@ -30,7 +30,7 @@ main:
     parent: Projects
     weight: 200
   - name: Mobile and Embedded Systems
-    url: /#mobile-embed-systems
+    url: /#mobile-and-embedded-systems
     parent: Projects
     weight: 300
   - name: Intelligent Wireless Systems

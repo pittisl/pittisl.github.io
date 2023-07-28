@@ -27,9 +27,8 @@ abstract: Graphics Processing Unit (GPU) on smartphones is an effective target f
 summary: This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user’s sensitive credentials such as app username and password. 
 
 tags:
-  - 'mobile-gpu'
-  - 'mobile-systems'
-  - 'embedded-systems'
+  - 'mobile-security'
+  - 'mobile-and-embedded-systems'
 featured: true
 
 links:
