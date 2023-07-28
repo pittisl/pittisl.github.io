@@ -60,6 +60,9 @@ sections:
         MobiCom'20  
         ![SpiroSonic](spirosonic.png)
         The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
+        {{< hr >}}
+        [View more...](/tag/mobile-and-connected-health)
+
     design:
       columns: '2'
       spacing:
