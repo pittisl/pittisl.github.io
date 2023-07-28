@@ -25,7 +25,7 @@ abstract: Respiratory diseases have been a significant public health challenge. 
 summary: The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children’s Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
 
 tags:
-  - 'smart-health'
+  - 'mobile-and-connected-health'
 featured: true
 
 url_pdf: 'https://doi.org/10.1145/3372224.3419209'
