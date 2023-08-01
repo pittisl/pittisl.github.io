@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Huang, Kai
+title: Kai Huang
 
 # Full Name (for SEO)
 first_name: Kai

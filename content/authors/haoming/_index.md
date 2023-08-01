@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Wang, Haoming
+title: Haoming Wang
 
 # Full Name (for SEO)
 first_name: Haoming

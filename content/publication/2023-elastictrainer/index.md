@@ -4,7 +4,7 @@ authors:
   - kai
   - boyuan
   - wei
-date: '2023-07-22T00:00:00Z'
+date: '2023-06-22T00:00:00Z'
 doi: '10.1145/3581791.3596852'
 
 # Schedule page publish date (NOT publication's date).
@@ -59,5 +59,11 @@ image:
 #   Otherwise, set `slides: ""`.
 slides:
 ---
+
+## System Overview
+
+![ElasticTrainer System Overview](2023-elastictrainer/elastictrainer-system-overview.png)
+
+## Teaser Video
 
 {{< youtube id="q86LnqEew_U" >}}

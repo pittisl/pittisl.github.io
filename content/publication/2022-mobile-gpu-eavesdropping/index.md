@@ -2,6 +2,9 @@
 title: 'Eavesdropping user credentials via GPU side channels on smartphones'
 authors:
   - boyuan
+  - ruirong
+  - kai
+  - wei
 date: '2022-03-22T00:00:00Z'
 doi: '10.1145/3503222.3507757'
 
@@ -24,9 +27,8 @@ abstract: Graphics Processing Unit (GPU) on smartphones is an effective target f
 summary: This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user’s sensitive credentials such as app username and password. 
 
 tags:
-  - 'mobile-gpu'
-  - 'mobile-systems'
-  - 'embedded-systems'
+  - 'mobile-security'
+  - 'mobile-and-embedded-systems'
 featured: true
 
 links:
@@ -71,6 +73,14 @@ on user input.
 ### System Overview
 
 ![Eavesdropping System Overview](2022-mobile-gpu-eavesdropping/system-overview.png)
+
+### Follow-up Security Fixes
+
+The vulnerabilities found in this paper is designated with CVE number
+[CVE-2022-22075](https://nvd.nist.gov/vuln/detail/CVE-2022-22075), acknowledged
+by [Qualcomm Security Bulletin](https://docs.qualcomm.com/product/publicresources/securitybulletin/march-2023-bulletin.html),
+and fixed in
+[February 2023 Android Security patches](https://source.android.com/docs/security/overview/acknowledgements#feb-2023).
 
 ## Videos
 

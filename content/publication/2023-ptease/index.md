@@ -4,7 +4,7 @@ authors:
   - xiangyu
   - kai
   - wei
-date: '2023-07-22T00:00:00Z'
+date: '2023-06-22T00:00:00Z'
 doi: '10.1145/3581791.3596854'
 
 # Schedule page publish date (NOT publication's date).
@@ -26,7 +26,7 @@ abstract: Remote monitoring and evaluation of pulmonary diseases via tele-medici
 summary: The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
 
 tags:
-  - 'smart-health'
+  - 'mobile-and-connected-health'
 featured: true
 
 url_pdf: https://doi.org/10.1145/3581791.3596854

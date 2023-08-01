@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Gao, Wei
+title: Wei Gao
 
 # Full Name (for SEO)
 first_name: Wei
@@ -37,6 +37,9 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=jPKDQwgAAAAJ
+  - icon: earth-americas
+    icon-pack: fas
+    link: 'https://sites.pitt.edu/~weigao/'
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

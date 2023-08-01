@@ -30,9 +30,17 @@ main:
     parent: Projects
     weight: 200
   - name: Mobile and Embedded Systems
-    url: /#mobile-embed-systems
+    url: /#mobile-and-embedded-systems
     parent: Projects
     weight: 300
+  - name: Intelligent Wireless Systems
+    url: /#intelligent-wireless-systems
+    parent: Projects
+    weight: 400
+  - name: Intelligent Edge Computing
+    url: /#intelligent-edge-computing
+    parent: Projects
+    weight: 500
   - name: GitHub
     url: https://github.com/pittisl
     weight: 55

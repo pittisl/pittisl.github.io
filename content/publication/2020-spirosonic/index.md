@@ -3,7 +3,7 @@ title: 'SpiroSonic: monitoring human lung function via acoustic sensing on commo
 authors:
   - boyuan
   - wei
-date: '2020-07-22T00:00:00Z'
+date: '2020-04-22T00:00:00Z'
 doi: '10.1145/3372224.3419209'
 
 # Schedule page publish date (NOT publication's date).
@@ -25,7 +25,8 @@ abstract: Respiratory diseases have been a significant public health challenge. 
 summary: The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children’s Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
 
 tags:
-  - 'smart-health'
+  - 'mobile-and-connected-health'
+  - 'mobile-sensing'
 featured: true
 
 url_pdf: 'https://doi.org/10.1145/3372224.3419209'
@@ -53,5 +54,15 @@ image:
 #   Otherwise, set `slides: ""`.
 slides:
 ---
+
+## Basic Idea
+
+![SpiroSonic measurement](2020-spirosonic/spirosonic-measurement.png)
+
+## System Overview
+
+![SpiroSonic Overview](2020-spirosonic/spirosonic-overview.png)
+
+## Presentation Video
 
 {{< youtube id="SDiboSXJr28" >}}
