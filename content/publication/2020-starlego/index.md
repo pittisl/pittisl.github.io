@@ -28,7 +28,7 @@ tags:
   - 'intelligent-wireless-systems'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3376897.3377852
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/hotmobile20.pdf'
 url_video: 'https://youtu.be/r8KCDaBMqYs'
 
 # Featured image

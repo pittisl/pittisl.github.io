@@ -28,7 +28,7 @@ tags:
   - 'on-device-ai'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3495243.3560551
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobicom22.pdf'
 url_code: 'https://github.com/pittisl/AgileNN'
 url_video: 'https://www.youtube.com/watch?v=OwNRcuTRgwE'
 url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/AgileNN-slides.pptx'

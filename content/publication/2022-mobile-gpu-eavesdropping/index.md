@@ -33,8 +33,8 @@ featured: true
 
 links:
   - name: Artifact
-    url: https://doi.org/10.5281/zenodo.5733423
-url_pdf: https://doi.org/10.1145/3503222.3507757
+    url: 'https://doi.org/10.5281/zenodo.5733423'
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/asplos22.pdf'
 url_code: 'https://github.com/pittisl/perfinfer-code'
 url_video: 'https://www.youtube.com/watch?v=LE9Eyn43zSs'
 

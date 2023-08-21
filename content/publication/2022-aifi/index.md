@@ -30,7 +30,7 @@ tags:
   - 'on-device-ai'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3560905.3568537
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/sensys22.pdf'
 url_code: 'https://github.com/pittisl/AiFi_PHY_Reconstruct'
 
 # Featured image

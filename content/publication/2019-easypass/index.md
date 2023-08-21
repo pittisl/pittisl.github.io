@@ -29,7 +29,7 @@ tags:
   - 'intelligent-wireless-systems'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3359989.3365421
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/conext19.pdf'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

@@ -28,7 +28,7 @@ tags:
   - 'intelligent-wireless-systems'
 featured: true
 
-url_pdf: 'https://doi.org/10.1145/3498361.3538946'
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobisys22.pdf'
 url_video: 'https://youtu.be/-BngtciwxfA'
 
 # Featured image

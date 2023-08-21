@@ -28,7 +28,7 @@ tags:
   - 'intelligent-edge-computing'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3302506.3310385
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/ipsn19.pdf'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

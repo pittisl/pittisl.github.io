@@ -32,7 +32,7 @@ tags:
   - 'mobile-security'
 featured: true
 
-url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3386901.3389030'
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobisys20.pdf'
 url_video: 'https://youtu.be/RBdKpQoRHH0'
 
 # Featured image

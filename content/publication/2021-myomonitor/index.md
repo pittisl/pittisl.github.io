@@ -29,7 +29,7 @@ tags:
   - 'mobile-sensing'
 featured: true
 
-url_pdf: https://www.sciencedirect.com/science/article/am/pii/S2352648320300672
+url_pdf: 'https://par.nsf.gov/servlets/purl/10268387'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

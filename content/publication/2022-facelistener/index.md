@@ -29,7 +29,7 @@ tags:
   - 'mobile-sensing'
 featured: true
 
-url_pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9825944
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/ipsn22.pdf'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

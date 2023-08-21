@@ -29,7 +29,7 @@ tags:
   - 'mobile-and-connected-health'
 featured: true
 
-url_pdf: https://doi.org/10.1145/3581791.3596854
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobisys23-ptease.pdf'
 url_code: 'https://github.com/pittisl/PTEase'
 url_video: 'https://www.youtube.com/watch?v=Netn1AOdsz8'
 

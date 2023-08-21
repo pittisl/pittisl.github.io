@@ -32,7 +32,7 @@ featured: true
 links:
   - name: Artifact
     url: https://doi.org/10.5281/zenodo.7812218
-url_pdf: https://doi.org/10.1145/3581791.3596852
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobisys23-elastictrainer.pdf'
 url_code: 'https://github.com/pittisl/ElasticTrainer'
 url_video: 'https://youtu.be/q86LnqEew_U'
 url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/ElasticTrainer-slides.pptx'

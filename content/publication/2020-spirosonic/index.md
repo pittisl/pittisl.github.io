@@ -29,7 +29,7 @@ tags:
   - 'mobile-sensing'
 featured: true
 
-url_pdf: 'https://doi.org/10.1145/3372224.3419209'
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobicom20.pdf'
 url_video: 'https://www.youtube.com/watch?v=SDiboSXJr28'
 
 # Featured image

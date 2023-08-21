@@ -28,7 +28,7 @@ tags:
   - 'on-device-ai'
 featured: true
 
-url_pdf: https://doi.org/10.1109/IoTDI54339.2022.00016
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/iotdi22.pdf'
 url_code: 'https://github.com/pittisl/RAScatter'
 url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/RAScatter-slides.pptx'
 
