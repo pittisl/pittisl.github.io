@@ -22,6 +22,26 @@ sections:
           * [Intelligent Wireless Systems](/#intelligent-wireless-systems)
           * [Intelligent Edge Computing](/#intelligent-edge-computing)
 
+  - block: collection
+    content:
+      title: Latest News
+      subtitle:
+      text:
+      count: 3
+      filters:
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: post
+    design:
+#      view: card
+      view: compact
+      columns: '2'
+
   - block: markdown
     id: on-device-ai
     content:
