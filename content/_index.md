@@ -40,6 +40,9 @@ sections:
     design:
 #      view: card
       view: compact
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
       columns: '2'
 
   - block: markdown
@@ -167,26 +170,26 @@ sections:
         padding: ['20px', '0', '20px', '0']
 
 
-  - block: markdown
-    id: moreinfo
-    content:
-      title: 'More from Us...'
-      subtitle: ''
-      text: |
-        {{< columns >}}
-        ##### [News](news/)
-        <--->
-        ##### [Publications](publication/)
-        <--->
-        ##### [GitHub](https://github.com/pittisl)
-        <--->
-        ##### [Contact](contact/)
-        {{< /columns >}}
-    design:
-      columns: '1'
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-#      css_class: fullscreen
+#  - block: markdown
+#    id: moreinfo
+#    content:
+#      title: 'More from Us...'
+#      subtitle: ''
+#      text: |
+#        {{< columns >}}
+#        ##### [News](news/)
+#        <--->
+#        ##### [Publications](publication/)
+#        <--->
+#        ##### [GitHub](https://github.com/pittisl)
+#        <--->
+#        ##### [Contact](contact/)
+#        {{< /columns >}}
+#    design:
+#      columns: '1'
+#      spacing:
+#        padding: ['20px', '0', '20px', '0']
+##      css_class: fullscreen
 
   
 #  - block: collection
