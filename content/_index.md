@@ -52,11 +52,13 @@ sections:
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=elastictrainer}
         MobiSys'23  
         ![ElasticTrainer](elastictrainer.jpg)
+        {{< youtube id="q86LnqEew_U" >}}
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
         <--->
         ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](publication/2022-agilenn/) {id=agilenn}
         MobiCom'22  
         ![AgileNN](agilenn.png)
+        {{< youtube id="OwNRcuTRgwE" >}}
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< /columns >}}
         {{< hr >}}
@@ -74,11 +76,19 @@ sections:
       text: |
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/) {id=ptease}
         MobiSys'23  
+        {{< columns >}}
         ![PTEase](ptease.jpg)
+        <--->
+        {{< youtube id="Netn1AOdsz8" >}}
+        {{< /columns >}}
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
         ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](publication/2020-spirosonic) {id=spirosonic}
         MobiCom'20  
+        {{< columns >}}
         ![SpiroSonic](spirosonic.png)
+        <--->
+        {{< youtube id="SDiboSXJr28" >}}
+        {{< /columns >}}
         The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
         {{< hr >}}
         [View more...](/tag/mobile-and-connected-health)
@@ -96,7 +106,11 @@ sections:
       text: |
         ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
         ASPLOS'22  
+        {{< columns >}}
         ![MobileGPUEavesdropping](mobilegpueavesdropping_animation_comp.gif)
+        <--->
+        {{< youtube id="f40TvdDaxqw" >}}
+        {{< /columns >}}
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user's sensitive credentials such as app username and password.
     design:
       columns: '2'
@@ -118,6 +132,7 @@ sections:
         ### [TransFi: emulating custom wireless physical layer from commodity wifi](publication/2022-transfi/) {id=transfi}
         MobiSys'22  
         ![TransFi](transfi.png)
+        {{< youtube id="-BngtciwxfA" >}}
         TransFi realizes fine-grained signal emulation and allows commodity WiFi devices to emulate custom wireless physical layer, including but not limited to, custom PHY-layer preambles and new ways of agile spectrum usage. It could also improve the performance of cross-technology communication and many other wireless applications by up to 50x, enabling high-speed data communication on par with commodity WiFi.
         {{< /columns >}}
         {{< hr >}}
@@ -153,31 +168,19 @@ sections:
 
 
   - block: markdown
-    id: videos
+    id: moreinfo
     content:
-      title: 'Videos'
+      title: 'More from Us...'
       subtitle: ''
       text: |
         {{< columns >}}
-        ##### ElasticTrainer
-        {{< youtube id="q86LnqEew_U" >}}
+        ##### [News](news/)
         <--->
-        ##### AgileNN
-        {{< youtube id="OwNRcuTRgwE" >}}
+        ##### [Publications](publication/)
         <--->
-        ##### PTEase
-        {{< youtube id="Netn1AOdsz8" >}}
-        {{< /columns >}}
-        <br />
-        {{< columns >}}
-        ##### GPU Eavesdropping
-        {{< youtube id="f40TvdDaxqw" >}}
+        ##### [GitHub](https://github.com/pittisl)
         <--->
-        ##### SpiroSonic
-        {{< youtube id="SDiboSXJr28" >}}
-        <--->
-        ##### TransFi
-        {{< youtube id="-BngtciwxfA" >}}
+        ##### [Contact](contact/)
         {{< /columns >}}
     design:
       columns: '1'
