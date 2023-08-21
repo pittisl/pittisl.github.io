@@ -64,3 +64,8 @@ h6 {
 body {
     font-size: 0.7rem;
 }
+
+// To solve image overflow problem in publications
+.article-banner {
+    object-fit: contain;
+}
