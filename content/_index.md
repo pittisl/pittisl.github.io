@@ -39,7 +39,7 @@ sections:
       page_type: post
     design:
 #      view: card
-      view: compact
+      view: compact-orig
       spacing:
         padding: ['20px', '0', '20px', '0']
 
