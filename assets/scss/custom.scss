@@ -26,6 +26,12 @@
   display: none;
 }
 
+// Fix publication view img with compact-pittisl-academy class
+.view-compact-pittisl-academy .ml-3 img {
+  max-width: 375px;
+}
+
+
 // Reduce first-paragraph font
 // (The ISL at ... conducts ...)
 .hero-lead {
