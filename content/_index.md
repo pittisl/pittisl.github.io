@@ -83,7 +83,7 @@ sections:
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
         MobiSys'23  
         {{< columns >}}
-        ![PTEase](ptease.jpg)
+        ![PTEase](ptease.png)
         <--->
         {{< youtube id="Netn1AOdsz8" >}}
         {{< /columns >}}
