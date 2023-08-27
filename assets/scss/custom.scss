@@ -114,3 +114,16 @@ body {
 .article-container {
     max-width: 1140px;
 }
+
+///////////////////////////////////////////////////////////////////////
+
+// Enlarge /projects/<tags>/ width
+@media (min-width: 1400px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1500px; }
+}
+
+@media (min-width: 1600px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1690px; }
+}

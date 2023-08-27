@@ -68,7 +68,7 @@ sections:
         {{< /columns >}}
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< hr >}}
-        [View more...](/tag/on-device-ai/)
+        [View more...](/projects/on-device-ai/)
     design:
       columns: '2'
       spacing:
@@ -97,7 +97,7 @@ sections:
         {{< /columns >}}
         The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
         {{< hr >}}
-        [View more...](/tag/mobile-and-connected-health)
+        [View more...](/projects/mobile-and-connected-health/)
 
     design:
       columns: '2'
