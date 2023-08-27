@@ -145,7 +145,7 @@ sections:
         {{< youtube id="-BngtciwxfA" >}}
         {{< /columns >}}
         {{< hr >}}
-        [View more...](/tag/intelligent-wireless-systems/)
+        [View more...](/projects/intelligent-wireless-systems/)
     design:
       columns: '2'
       spacing:
@@ -172,7 +172,7 @@ sections:
         MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
         {{< /columns >}}
         {{< hr >}}
-        [View more...](/tag/intelligent-edge-computing/)
+        [View more...](/projects/intelligent-edge-computing/)
     design:
       columns: '2'
       spacing:

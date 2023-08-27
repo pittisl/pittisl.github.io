@@ -3,7 +3,7 @@ title: On-device AI
 type: landing
 
 sections:
-  - block: collection
+  - block: portfolio
     id: project-on-device-ai-papers
     content:
       text: |

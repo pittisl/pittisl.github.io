@@ -3,7 +3,7 @@ title: Mobile and Connected Health
 type: landing
 
 sections:
-  - block: collection
+  - block: portfolio
     id: project-mobile-and-connected-health
     content:
       text: |
@@ -15,10 +15,7 @@ sections:
       filters:
         folders:
           - publication
-        tags: ['mobile-and-connected-health'] 
-        exclude_tags: ['on-device-ai']
-        kinds:
-          - page
+        tags: ['mobile-and-connected-health']
     design:
       view: compact
 
