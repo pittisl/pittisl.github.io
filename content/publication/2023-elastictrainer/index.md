@@ -40,7 +40,7 @@ url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/f
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: ''
+  caption: 'Existing work vs. ElasticTrainer'
   focal_point: ''
   preview_only: false
 
@@ -59,6 +59,25 @@ image:
 #   Otherwise, set `slides: ""`.
 slides:
 ---
+
+## Opportunities for on-device NN Training Speedup
+
+Since the pre-trained NN model has learned generic capabilities of
+extracting low-level features (e.g., color and texture information in
+images), on-device training only needs to be applied to some
+NN substructures and hence requires fewer training epochs and
+weight updates.
+As a result, we can potentially gain significant speedup by selecting
+a small trainable NN portion without losing much accuracy.
+When retraining a ResNet50 NN model with CUB-200 dataset using
+traditional transfer learning methods, selecting a NN portion with
+only 10 bottom layers in first 3 epochs measures similar validation
+accuracy than full retraining, but with a 2x training speedup.
+However, traditional learning methods, such as offline exhaustively searching,
+have their optimality quickly deterioates with training proceeds. This motivates
+us to transform to online and fully elastic selection of trainable NN portion.
+
+![Opportunities of training speedup](2023-elastictrainer/elastictrainer-fig2.png)
 
 ## System Overview
 
