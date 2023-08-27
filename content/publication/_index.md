@@ -5,7 +5,7 @@ type: landing
 
 # Listing view: card, compact, ...
 # See https://wowchemy.com/docs/getting-started/page-builder/ for view options
-view: compact-pittisl-academy
+view: compact
 
 # Optional banner image (relative to `assets/media/` folder).
 #banner:
