@@ -51,7 +51,7 @@ sections:
       title: On-device AI
       subtitle: 'Our research strives to enable AI capabilities (inference & training) on resource-constrained embedded devices in the IoT and tailor AI models to effectively support various system applications. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks and incorporates domain knowledge of specific system applications into the neural network module design.'
       text: |
-        ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](publication/2023-elastictrainer/) {id=elastictrainer}
+        ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) {id=elastictrainer}
         MobiSys'23  
         {{< columns >}}
         ![ElasticTrainer](elastictrainer.jpg)
@@ -59,7 +59,7 @@ sections:
         {{< youtube id="q86LnqEew_U" >}}
         {{< /columns >}}
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
-        ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](publication/2022-agilenn/) {id=agilenn}
+        ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/) {id=agilenn}
         MobiCom'22  
         {{< columns >}}
         ![AgileNN](agilenn.png)
@@ -80,7 +80,7 @@ sections:
       title: Mobile and connected health
       subtitle: 'The COVID-19 pandemic poses a significant public health challenge, with the potential to overwhelm the healthcare system due to the high number of hospital visits. To address this issue, we are developing mobile sensing and AI techniques that allow individuals to self-evaluate possible COVID-19 infections at home using their smartphones. Our goal is to enable low-cost self-assessment and avoid unnecessary hospital visits by identifying other diseases that share similar symptoms with COVID-19, such as fever and shortness of breath. This research is urgently needed to alleviate the strain on the healthcare system and preserve medical resources for hospitalized patients, especially considering the rapid spread of the virus across the United States.'
       text: |
-        ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](publication/2023-ptease/) {id=ptease}
+        ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
         MobiSys'23  
         {{< columns >}}
         ![PTEase](ptease.jpg)
@@ -88,7 +88,7 @@ sections:
         {{< youtube id="Netn1AOdsz8" >}}
         {{< /columns >}}
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
-        ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](publication/2020-spirosonic) {id=spirosonic}
+        ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](/publication/2020-spirosonic) {id=spirosonic}
         MobiCom'20  
         {{< columns >}}
         ![SpiroSonic](spirosonic.png)
@@ -129,14 +129,14 @@ sections:
       title: Intelligent Wireless Systems
       subtitle: 'Wireless communications, such as Wi-Fi, Bluetooth and Zigbee, play an important role in IoT and mobile application. However, the noisy wireless channel conditions and interference makes such communication less effective. Our research focuses on physical layer designs, and apply AI-assisted techniques for intereference cancellation and efficiency improvement.'
       text: |
-        ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](publication/2022-aifi/) {id=aifi}
+        ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) {id=aifi}
         SenSys'22  
         {{< columns >}}
         ![AiFi](aifi.jpg)
         <--->
         AiFi applies on-device AI techniques to interference cancellation in WiFi networks and enables generalizable interference cancellation on commodity WiFi devices without any extra RF hardware. By using neural network models to mimic WiFi network's PHY-layer operation, AiFi can be generally applied to different types of interference signals ranging from concurrent WiFi transmissions, ZigBee/Bluetooth to wireless baby monitors or even microwave oven, and improves the MAC-layer frame reception rate by 18x.
         {{< /columns >}}
-        ### [TransFi: emulating custom wireless physical layer from commodity wifi](publication/2022-transfi/) {id=transfi}
+        ### [TransFi: emulating custom wireless physical layer from commodity wifi](/publication/2022-transfi/) {id=transfi}
         MobiSys'22  
         {{< columns >}}
         TransFi realizes fine-grained signal emulation and allows commodity WiFi devices to emulate custom wireless physical layer, including but not limited to, custom PHY-layer preambles and new ways of agile spectrum usage. It could also improve the performance of cross-technology communication and many other wireless applications by up to 50x, enabling high-speed data communication on par with commodity WiFi.
