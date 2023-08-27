@@ -71,22 +71,46 @@ body {
     font-size: 0.7rem;
 }
 
+////////////////////////////////////////////////////////////////////////
+
 // To solve image overflow problem in publications
 .article-banner {
     object-fit: contain;
 }
 
+////////////////////////////////////////////////////////////////////////
+
 // wowchemy.css:7436 restricts publications page to max width: 1000px.
 // we want to get rid of it. set to max width: 1500px.
-@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
     .universal-wrapper {
         width: auto;
     }
 }
 
-@media only screen and (min-width: 1601px) {
+@media only screen and (min-width: 1501px) {
     .universal-wrapper {
-        width: 1600px;
+        width: 1500px;
     }
 }
 
+
+///////////////////////////////////////////////////////////////////////
+
+// Make compact (stream) list view with smaller font size
+// wowchemy.css: 8733
+
+.card-simple .article-title,
+.media.stream-item .article-title {
+  font-size: 1.0rem;
+}
+
+.card-simple .article-style,
+.media.stream-item .article-style {
+  font-size: 0.75rem;
+}
+
+// Make article width same as reference lab site
+.article-container {
+    max-width: 1140px;
+}
