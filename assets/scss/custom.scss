@@ -75,3 +75,18 @@ body {
 .article-banner {
     object-fit: contain;
 }
+
+// wowchemy.css:7436 restricts publications page to max width: 1000px.
+// we want to get rid of it. set to max width: 1500px.
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+    .universal-wrapper {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1601px) {
+    .universal-wrapper {
+        width: 1600px;
+    }
+}
+
