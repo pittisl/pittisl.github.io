@@ -79,7 +79,27 @@ us to transform to online and fully elastic selection of trainable NN portion.
 
 ![Opportunities of training speedup](2023-elastictrainer/elastictrainer-fig2.png)
 
+## Granuliarity of Selection
+
+The optimality of selecting the trainable NN portion is affected by the granularity
+of selection, which can be at the level of weights, tensors and layers on most NNs.
+ElasticTrainer adopts tensor-level selection, which ensures accuracy and can also
+be efficiently executed in existing NN frameworks without extra overhead.
+
+![Granularities of Selection](2023-elastictrainer/elastictrainer-fig4.png)
+
 ## System Overview
+
+ElasticTrainer’s design aims to select the optimal
+trainable NN portion at runtime, to achieve the desired training
+speedup with the maximum training loss reduction.
+In the offline stage, ElasticTrainer uses a *Tensor Timing Profiler* to
+profile the training times of selected tensors, to provide inputs for
+calculating {{< math >}}$ T_{sel}(M) ${{< /math >}}.
+In the online stage, the system builds on an accurate yet computationally efficient metric
+that evaluates the aggregate importance of selected tensors and the
+corresponding reduction of training loss, and such evaluation is
+done by *Tensor Importance Evaluator* in ElasticTrainer design.
 
 ![ElasticTrainer System Overview](2023-elastictrainer/elastictrainer-system-overview.png)
 
