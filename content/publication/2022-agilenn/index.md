@@ -64,6 +64,8 @@ about different input data’s heterogeneity in training, so that the
 required computations to enforce feature sparsity are migrated from
 online inference to offline training.
 
+![AgileNN Basic Idea](2022-agilenn/agilenn-illustration.PNG)
+
 ![AgileNN vs. Existing Work](2022-agilenn/agilenn-comparison-table.PNG)
 
 ## System Overview
