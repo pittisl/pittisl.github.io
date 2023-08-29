@@ -79,7 +79,7 @@ us to transform to online and fully elastic selection of trainable NN portion.
 
 ![Opportunities of training speedup](2023-elastictrainer/elastictrainer-fig2.png)
 
-## Granuliarity of Selection
+## Granularity of Selection
 
 The optimality of selecting the trainable NN portion is affected by the granularity
 of selection, which can be at the level of weights, tensors and layers on most NNs.
@@ -99,9 +99,30 @@ calculating {{< math >}}$ T_{sel}(M) ${{< /math >}}.
 In the online stage, the system builds on an accurate yet computationally efficient metric
 that evaluates the aggregate importance of selected tensors and the
 corresponding reduction of training loss, and such evaluation is
-done by *Tensor Importance Evaluator* in ElasticTrainer design.
+done by *Tensor Importance Evaluator* in ElasticTrainer design. The
+outputs of these two modules are used by *Tensor Selector* to solve
+the selection problem via dynamic programming.
 
 ![ElasticTrainer System Overview](2023-elastictrainer/elastictrainer-system-overview.png)
+
+## Experimental Results
+We implement ElasticTrainer on Nvidia Jetson TX2 and Raspberry Pi 4B embedded devices. We conduct extensive experiments with popular NN models (e.g., ResNet and Vision Transformer) and on difficult fine-grained image classification datasets.
+
+**ElasticTrainer trains NN faster and converges to better accuracy!**
+
+![ElasticTrainer Training Speedup vs. Accuracy](2023-elastictrainer/elastictrainer-speedup-vs-accuracy.PNG)
+
+**ElasticTrainer can achieve up to 3.5x training speedup without noticeable accuracy loss!**
+
+![ElasticTrainer with Different Speedup Objectives](2023-elastictrainer/elastictrainer-objective.PNG)
+
+**ElasticTrainer can be applied to different NN model structures**
+
+![ElasticTrainer with NN Models](2023-elastictrainer/elastictrainer-models.PNG)
+
+**ElasticTrainer is indeed elastic at runtime! Its selected tensor shows elastic patterns**
+
+![ElasticTrainer's Selection Behavior](2023-elastictrainer/elastictrainer-behavior.PNG)
 
 ## Teaser Video
 
