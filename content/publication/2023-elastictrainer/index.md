@@ -106,7 +106,7 @@ the selection problem via dynamic programming.
 ![ElasticTrainer System Overview](2023-elastictrainer/elastictrainer-system-overview.png)
 
 ## Experimental Results
-We implement ElasticTrainer on Nvidia Jetson TX2 and Raspberry Pi 4B embedded devices. We conduct extensive experiments with popular NN models (e.g., ResNet and Vision Transformer) and on difficult fine-grained image classification datasets.
+We implement ElasticTrainer on Nvidia Jetson TX2 and Raspberry Pi 4B embedded devices. We conduct extensive experiments with popular NN models (e.g., ResNet and Vision Transformer) and on difficult fine-grained image classification datasets (e.g., CUB-200 and Oxford-IIIT Pet).
 
 **ElasticTrainer trains NN faster and converges to better accuracy!**
 
@@ -116,11 +116,11 @@ We implement ElasticTrainer on Nvidia Jetson TX2 and Raspberry Pi 4B embedded de
 
 ![ElasticTrainer with Different Speedup Objectives](2023-elastictrainer/elastictrainer-objective.PNG)
 
-**ElasticTrainer can be applied to different NN model structures**
+**ElasticTrainer can be applied to different NN model structures!**
 
 ![ElasticTrainer with NN Models](2023-elastictrainer/elastictrainer-models.PNG)
 
-**ElasticTrainer is indeed elastic at runtime! Its selected tensor shows elastic patterns**
+**ElasticTrainer is indeed elastic at runtime! Its selected tensor shows elastic patterns!**
 
 ![ElasticTrainer's Selection Behavior](2023-elastictrainer/elastictrainer-behavior.PNG)
 
