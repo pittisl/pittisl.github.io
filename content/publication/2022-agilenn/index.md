@@ -56,4 +56,51 @@ image:
 slides:
 ---
 
+## AgileNN vs. Existing Work
+AgileNN is a new technique that shifts the
+rationale of NN partitioning and offloading from fixed to agile
+and data-centric. Our basic idea is to incorporate the knowledge
+about different input data’s heterogeneity in training, so that the
+required computations to enforce feature sparsity are migrated from
+online inference to offline training.
+
+![AgileNN vs. Existing Work](2022-agilenn/agilenn-comparison-table.PNG)
+
+## System Overview
+AgileNN partitions the neural network into a
+Local NN and a Remote NN. In online inference, AgileNN runtime
+uses a lightweight feature extractor at the local embedded device
+to provide feature inputs: the top-k features with high importance
+are retained by the Local NN to make a local prediction, which is
+then combined with the Remote NN’s prediction from other less
+important features for the final inference output. In this way, the
+complexity of Local NN could be minimized without impairing
+the inference accuracy, and high sparsity can be enforced when
+compressing and transmitting less important features to the server.
+
+![AgileNN System Overview](2022-agilenn/agilenn-system-overview.PNG)
+
+## Experimental Results
+We implemented our offline training procedure using tensorflow and deployed the trained local NN and remote NN on a weak microcontroller board and a Dell workstation, respectively. The microcontroller board is equipped with an ESP WiFi module for wireless data transmission. We focus on image recognition tasks and use CIFAR, SVHN and a subset of ImageNet as the datasets in evaluation.
+
+**AgileNN reduces end-to-end latency by 2x-2.5x! compared to existing schemes!**
+
+![AgileNN Accuracy vs. Latency](2022-agilenn/agilenn-accuracy-latency.PNG)
+
+**AgileNN maintains better accuracy under extreme compression rates!**
+
+![AgileNN Compression Rates](2022-agilenn/agilenn-compression-rate.PNG)
+
+**AgileNN consumes less local memory and storage!**
+
+![AgileNN Memory & Storage](2022-agilenn/agilenn-memory-storage.PNG)
+
+**AgileNN consumes less local energy!**
+
+![AgileNN Energy Consumption](2022-agilenn/agilenn-energy-consumption.PNG)
+
+**AgileNN can maintain the best performance under different wireless bandwidths!**
+
+![AgileNN Bandwidth](2022-agilenn/agilenn-bandwidth.PNG)
+
 {{< youtube id="OwNRcuTRgwE" >}}
