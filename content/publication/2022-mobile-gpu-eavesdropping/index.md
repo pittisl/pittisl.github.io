@@ -70,9 +70,33 @@ on user input.
 
 ![GPU Overdraw and Keyboard](2022-mobile-gpu-eavesdropping/keyboard-gpu-overdraw.png)
 
+### One-on-one mapping between key press event and GPU performance counter changes
+
+Screen rendering activity is reflected by GPU performance counter values as provided
+by Qualcomm GPU driver via OpenGL APIs. The key pop-up activity has one-on-one mapping
+with certain GPU performance counter value changes.
+
+![Mapping Key Press with Perfcounter](2022-mobile-gpu-eavesdropping/mobilegpu-xy-plot-match.png)
+
 ### System Overview
 
 ![Eavesdropping System Overview](2022-mobile-gpu-eavesdropping/system-overview.png)
+
+### Handling Noises and System Factors
+
+To reduce impact from noises and system factors, we use a distance-based
+algorithm to match the GPU performance counter readings with the nearest
+possible key press events.
+
+![Distance-based Algorithm](2022-mobile-gpu-eavesdropping/mobilegpu-algorithm.png)
+
+### Key Press Inference Accuracy
+
+With specially designed eavesdropping Android App, we can achieve an
+average accuracy of individual key press inference of up to 98.3%.
+For random text string inputs, the average inference accuracy is 81.3%.
+
+![Accuracy for Individual Key Presses](2022-mobile-gpu-eavesdropping/mobilegpu-overall-accuracy.png)
 
 ### Follow-up Security Fixes
 
