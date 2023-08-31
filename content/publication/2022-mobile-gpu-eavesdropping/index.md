@@ -80,7 +80,27 @@ with certain GPU performance counter value changes.
 
 ### System Overview
 
+Our work designs the whole attack with an offline training phase and online attacking phase.
+In the offline phase, the attacker emulates all key
+presses over different device models and configurations to collect
+a sufficient amount of GPU PC (Performance Counter) data.
+In the online phase, the attacking application will spawn a moni-
+toring process, which runs as an Android service in background.
+If a target application is launched, the monitoring process will start
+reading the selected GPU PCs. These readings
+will be first used to recognize the current device model and configuration,
+and then applied to the corresponding classification model
+for eavesdropping.
+
 ![Eavesdropping System Overview](2022-mobile-gpu-eavesdropping/system-overview.png)
+
+### Reading GPU PC information from OS
+
+We make use of customized `ioctl()` system call on GPU device file in the Android
+OS in order to circumvent privilege limitation in system OpenGL library and directly
+query system GPU performance counter values.
+
+![Utilizing GPU device file in Android OS](2022-mobile-gpu-eavesdropping/mobilegpu-ioctl-call-map.png)
 
 ### Handling Noises and System Factors
 
@@ -97,6 +117,13 @@ average accuracy of individual key press inference of up to 98.3%.
 For random text string inputs, the average inference accuracy is 81.3%.
 
 ![Accuracy for Individual Key Presses](2022-mobile-gpu-eavesdropping/mobilegpu-overall-accuracy.png)
+
+The inference accuracy is shown to be not significantly affected by
+the choice of targeted App or the on-screen keyboard software.
+
+![Accuracy with different targeted App](2022-mobile-gpu-eavesdropping/mobilegpu-targeted-app.png)
+
+![Accuracy with different on-screen keyboard](2022-mobile-gpu-eavesdropping/mobilegpu-result-keyboard.png)
 
 ### Follow-up Security Fixes
 
