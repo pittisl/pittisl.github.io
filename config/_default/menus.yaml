@@ -37,7 +37,7 @@ main:
     url: /#intelligent-wireless-systems
     parent: Projects
     weight: 400
-  - name: 'Video & Demo'
+  - name: 'Video & Demos'
     url: video-and-demos
     weight: 53
   - name: GitHub
