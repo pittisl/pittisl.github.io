@@ -22,11 +22,12 @@ sections:
           * [Intelligent Wireless Systems](/#intelligent-wireless-systems)
 
   - block: collection
+    id: news
     content:
       title: Latest News
       subtitle:
       text:
-      count: 3
+      count: 4
       filters:
         author: ''
         category: ''
@@ -42,7 +43,7 @@ sections:
       spacing:
         padding: ['20px', '0', '20px', '0']
 
-      columns: '2'
+      columns: '1'
 
   - block: markdown
     id: on-device-ai

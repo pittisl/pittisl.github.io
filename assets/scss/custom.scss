@@ -122,3 +122,20 @@ body {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1300px; }
 }
+
+
+///////////////////////////////////////////////////////////////////////
+
+// Reduce spaces between NEWS item
+
+.media.stream-item.view-compact:not(:last-child) {
+    margin-bottom: 0.1rem;
+}
+
+.media.stream-item .stream-meta {
+    margin-top: 5px;
+}
+
+.stream-meta.article-metadata {
+    margin-bottom: 12px;
+}
