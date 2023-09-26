@@ -18,9 +18,8 @@ sections:
         Our projects:
           * [On-device AI](/#on-device-ai)
           * [Mobile and Connected Health](/#mobile-and-connected-health)
-          * [Mobile and Embedded Systems](/#mobile-embed-systems)
+          * [Mobile and Edge Computing Systems](/#mobile-and-edge-computing-systems)
           * [Intelligent Wireless Systems](/#intelligent-wireless-systems)
-          * [Intelligent Edge Computing](/#intelligent-edge-computing)
 
   - block: collection
     content:
