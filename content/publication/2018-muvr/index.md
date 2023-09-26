@@ -25,7 +25,7 @@ abstract: Virtual Reality (VR) fundamentally improves the user's experience when
 summary: MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
 
 tags:
-  - 'intelligent-edge-computing'
+  - 'projects-mobile-and-edge-computing-systems'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/sec18.pdf'

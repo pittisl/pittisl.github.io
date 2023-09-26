@@ -27,6 +27,7 @@ summary: FaceListener transforms the commodity headphone into an acoustic sensin
 
 tags:
   - 'mobile-sensing'
+  - 'projects-mobile-and-edge-computing-systems'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/ipsn22.pdf'

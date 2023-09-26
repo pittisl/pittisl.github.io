@@ -1,13 +1,13 @@
 ---
-title: Intelligent Edge Computing
+title: Mobile and Edge Computing Systems
 type: landing
 
 sections:
   - block: portfolio
-    id: projects-intelligent-edge-computing
+    id: projects-mobile-and-edge-computing-systems
     content:
       text: |
-        # Intelligent Edge Computing
+        # Mobile and Edge Computing Systems
         Edge computing remains a viable solution in task offloading to balance between network latency and computational power. Our research focuses on the co-design between mobile and edge systems to achieve better efficiency on mobile applications with heavy workload, such as mobile VR rendering.
 
         {{< hr >}}
@@ -15,7 +15,7 @@ sections:
       filters:
         folders:
           - publication
-        tags: ['projects-intelligent-edge-computing']
+        tags: ['projects-mobile-and-edge-computing-systems']
     design:
       view: compact
 

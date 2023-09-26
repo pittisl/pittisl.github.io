@@ -30,6 +30,7 @@ summary: We present MagHacker, a new sensing system that realizes such eavesdrop
 tags:
   - 'mobile-sensing'
   - 'mobile-security'
+  - 'projects-mobile-and-edge-computing-systems'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobisys20.pdf'

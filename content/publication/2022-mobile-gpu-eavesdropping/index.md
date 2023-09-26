@@ -28,7 +28,7 @@ summary: This is one of the few works that demonstrate critical security vulnera
 
 tags:
   - 'mobile-security'
-  - 'mobile-and-embedded-systems'
+  - 'projects-mobile-and-edge-computing-systems'
 featured: true
 
 links:

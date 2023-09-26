@@ -25,7 +25,7 @@ abstract: Virtual Reality (VR) improves the user's experience when interacting w
 summary: This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
 
 tags:
-  - 'intelligent-edge-computing'
+  - 'projects-mobile-and-edge-computing-systems'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/ipsn19.pdf'

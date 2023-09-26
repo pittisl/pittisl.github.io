@@ -49,7 +49,7 @@ sections:
     id: on-device-ai
     content:
       title: On-device AI
-      subtitle: 'Our research strives to enable AI capabilities (inference & training) on resource-constrained embedded devices in the IoT and tailor AI models to effectively support various system applications. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks and incorporates domain knowledge of specific system applications into the neural network module design.'
+      subtitle: 'Our research aims to enable high-performance AI inference and training on resource-constrained mobile and embedded devices, to enable emerging applications such as AIoT, smart health and embodied AI. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks that incorporate domain knowledge of specific system applications into the neural network module design. Our recent research focuses on enabling computational efficient inference and training of modern Large Language Models (LLMs) on weak devices, to efficiently incorporate these devices’ rich varieties of data modalities into the LLMs’ representation power and hence allow more flexible domain adaptation and model personalization.'
       text: |
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) {id=elastictrainer}
         MobiSys'23  
@@ -78,7 +78,7 @@ sections:
     id: mobile-and-connected-health
     content:
       title: Mobile and connected health
-      subtitle: 'The COVID-19 pandemic poses a significant public health challenge, with the potential to overwhelm the healthcare system due to the high number of hospital visits. To address this issue, we are developing mobile sensing and AI techniques that allow individuals to self-evaluate possible COVID-19 infections at home using their smartphones. Our goal is to enable low-cost self-assessment and avoid unnecessary hospital visits by identifying other diseases that share similar symptoms with COVID-19, such as fever and shortness of breath. This research is urgently needed to alleviate the strain on the healthcare system and preserve medical resources for hospitalized patients, especially considering the rapid spread of the virus across the United States.'
+      subtitle: 'Recent technical advances of sensing, computation and communication on mobile and embedded devices, such as smartphones and wearables, highlights the possibility of pervasive monitoring and unobtrusive diagnostics of various acute or chronic diseases, as convenient yet low-cost alternatives of medical-grade methods without any involvement of clinicians. Our research aims to fully unleash such potential of today’s mobile and embedded devices towards accurate, efficient yet cost-effective solutions to mobile and connected health, by employing modern AI tools and developing new AI algorithms to properly extract biomarkers from the mobile sensory data and provide sufficient interpretability to the extracted biomarkers. Currently, our integrated sensing and AI systems have been widely applied to various clinical applications including pulmonary telemedicine, post-discharge heart failure risk evaluation and mitigation, and orthopedic disease evaluation.'
       text: |
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
         MobiSys'23  
@@ -105,11 +105,18 @@ sections:
         padding: ['20px', '0', '20px', '0']
 
   - block: markdown
-    id: mobile-and-embedded-systems
+    id: mobile-and-edge-computing-systems
     content:
-      title: Mobile and embedded systems
-      subtitle: 'With the continuous evolvement of mobile computing on embedded system platforms, our research focuses on the application of recent advances in mobile computataional needs. We investigate into improving the safety and performance of mobile computing tasks and the utilization of heterogeneous hardware resources on mobile platform.'
+      title: Mobile and Edge Computing Systems
+      subtitle: 'Edge computing remains a viable solution in task offloading to balance between network latency and computational power. Our research focuses on the co-design between mobile and edge systems to achieve better efficiency on mobile applications with heavy workload, such as mobile VR rendering.'
       text: |
+        ### [FaceListener: Recognizing Human Facial Expressions via Acoustic Sensing on Commodity Headphones](publication/2022-facelistener/) {id=facelistener}
+        IPSN'22
+        {{< columns >}}
+        ![FaceListener](facelistener.png)
+        <--->
+        FaceListener transforms the commodity headphone into an acoustic sensing device, which captures the face skin deformations caused by fa-cial muscle movements with different facial expressions. To ensure the recognition accuracy, FaceListener leverages the knowledge distillation technique to learn the subtle correlation between face skin deformation and the acoustic signal changes.
+        {{< /columns >}}
         ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
         ASPLOS'22  
         {{< columns >}}
@@ -117,7 +124,31 @@ sections:
         <--->
         {{< youtube id="f40TvdDaxqw" >}}
         {{< /columns >}}
-        This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user's sensitive credentials such as app username and password.
+        This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user’s sensitive credentials such as app username and password.
+        ### [MagHacker: eavesdropping on stylus pen writing via magnetic sensing from commodity mobile devices](publication/2020-maghacker/) {id=maghacker}
+        MobiSys'20
+        {{< columns >}}
+        ![MagHacker](maghacker.png)
+        <--->
+        We present MagHacker, a new sensing system that realizes such eavesdropping attack over commodity mobile devices, which monitor and analyze the magnetic field being produced by the stylus pen’s internal magnet. It divides the continuous magnetometer readings into small segments that represent individual letters, and then translates these readings into writing trajectories for letter recognition.
+        {{< /columns >}}
+        ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=deltavr}
+        IPSN'19  
+        {{< columns >}}
+        ![DeltaVR](deltavr.png)
+        <--->
+        This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
+        {{< /columns >}}
+        ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](publication/2018-muvr/) {id=muvr}
+        2018 IEEE SEC  
+        {{< columns >}}
+        ![MUVR](muvr.png)
+        <--->
+        MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
+        {{< /columns >}}
+        {{< hr >}}
+        [View more...](/projects/mobile-and-edge-computing-systems/)
+
     design:
       columns: '2'
       spacing:
@@ -150,34 +181,6 @@ sections:
       columns: '2'
       spacing:
         padding: ['20px', '0', '20px', '0']
-
-  - block: markdown
-    id: intelligent-edge-computing
-    content:
-      title: Intelligent Edge Computing
-      subtitle: 'Edge computing remains a viable solution in task offloading to balance between network latency and computational power. Our research focuses on the co-design between mobile and edge systems to achieve better efficiency on mobile applications with heavy workload, such as mobile VR rendering.'
-      text: |
-        ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=deltavr}
-        IPSN'19  
-        {{< columns >}}
-        ![DeltaVR](deltavr.png)
-        <--->
-        This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
-        {{< /columns >}}
-        ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](publication/2018-muvr/) {id=muvr}
-        2018 IEEE SEC  
-        {{< columns >}}
-        ![MUVR](muvr.png)
-        <--->
-        MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
-        {{< /columns >}}
-        {{< hr >}}
-        [View more...](/projects/intelligent-edge-computing/)
-    design:
-      columns: '2'
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-
 
 #  - block: markdown
 #    id: moreinfo

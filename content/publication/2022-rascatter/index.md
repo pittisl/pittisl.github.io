@@ -25,7 +25,7 @@ abstract: Backscatter communication reduces the batteryless device's power consu
 summary: A new backscatter system of precise, adaptive and lightweight power adaptation towards energy-efficient backscatter readers. It learns the entangled correlation between backscatter channel conditions, transmit RF power and goodput by designing a modular neural network to avoid redundancy and any confusion in training. Experiment results show improvement in energy efficiency at readers by 3.5× and reduces power consumption by up to 80%.
 
 tags:
-  - 'on-device-ai'
+  - 'intelligent-wireless-systems'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/iotdi22.pdf'
