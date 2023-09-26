@@ -56,3 +56,39 @@ image:
 slides:
 ---
 
+## The Need for Adaptive Backpropagation
+Fine-tuning with fixed selections of NN components in inefficient. It either significantly impairs the trained model’s accuracy or brings limited FLOPs saving. The deficiency of these existing methods motivates us to enforce more flexible and adaptive selection of LLM substructures in backpropagation. 
+
+In GreenTrainer, we develop a tensor importance metric that incorporates parameter dependencies to evaluate how fine-tuning each tensor contributes to the
+trained model’s accuracy at runtime. Knowledge about such tensor importance, then, allows us to achieve the desired FLOPS reduction while maximizing the model accuracy.
+
+![The Need for Adaptive Backpropagation](2023-greentrainer/need_for_adaptive_bp.PNG)
+
+## FLOPs Model of Backpropagation
+The design of GreenTrainer relies on proper calculation of the selected model substructures’ backpropagation FLOPs, which can be decomposed into two parts using the chain rule.  For example, when training a 4-layer dense NN without bias, each layer computes i) $dy_i$ as the loss L’s gradient w.r.t the activation $y_i$, and ii) $dw_i$ as the loss gradient w.r.t weight $W_i$. Based on this rationale, we can construct FLOPs models for LLM substructures, including MHA and
+FFN.
+
+![FLOPs Model of Backpropagation](2023-greentrainer/bp_flops_model.PNG)
+
+
+## Tensor FLOPs Profiling
+GreenTrainer constructs the LLMs FLOPs model by profiling tensor FLOPs. First, we convert the layer-based NN structure of LLMs into a tensor-level computing graph, which retains the execution order of all tensors’ involvements in training. Then, we extract the related backpropagation operators of each tensor, and derive each tensor $i$’s FLOPs in backpropagation ($t_{dy_i}$ and $t_{dw_i}$) by matching and
+aggregating the FLOPs of these NN operators.
+
+![Tensor FLOPs Profiling](2023-greentrainer/tensor_flops_profiler.PNG)
+
+
+## Experimental Results
+We evaluated the training performance of GreenTrainer with three open-sourced LLMs, namely OPT, BLOOMZ and FLAN-T5, on text generation datasets including SciTLDR and DialogSum. We compare GreenTrainer's performance with existing efficient fine-tuning techniques such as Prefix Tuning and LoRA.
+
+Our experiment results show that GreenTrainer can save up to 64% training FLOPs compared to full LLM fine-tuning, without any noticeable accuracy loss. Compared to existing fine-tuning techniques such as Prefix Tuning and LoRA, GreenTrainer can improve the model accuracy by 4%, with the same amount of FLOPs reduction!
+
+![Training Cost & Accuracy](2023-greentrainer/basic_results.PNG)
+
+GreenTrainer provides users with the flexibility to balance between the training accuracy and cost depending on the specific needs of green AI!
+
+![Different FLOPs Objectives](2023-greentrainer/different_objective.PNG)
+
+GreenTrainer maintains good performance on fine-tuning different LLM sizes!
+
+![Different LLM Sizes](2023-greentrainer/llm_size.PNG)
