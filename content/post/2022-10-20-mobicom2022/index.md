@@ -8,7 +8,7 @@ authors:
   - ''
 ---
 
-Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is now also available.
+Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
 
 <!--more-->
 
