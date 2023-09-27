@@ -85,7 +85,7 @@ sections:
         {{< /columns >}}
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< hr >}}
-        [View more...](/projects/on-device-ai/)
+        [**View more...**](/projects/on-device-ai/)
     design:
       columns: '2'
       spacing:
@@ -115,7 +115,7 @@ sections:
         {{< /columns >}}
         The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
         {{< hr >}}
-        [View more...](/projects/mobile-and-connected-health/)
+        [**View more...**](/projects/mobile-and-connected-health/)
 
     design:
       columns: '2'
@@ -169,7 +169,7 @@ sections:
         MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
         {{< /columns >}}
         {{< hr >}}
-        [View more...](/projects/mobile-and-edge-computing-systems/)
+        [**View more...**](/projects/mobile-and-edge-computing-systems/)
 
     design:
       columns: '2'
@@ -199,7 +199,7 @@ sections:
         {{< youtube id="-BngtciwxfA" >}}
         {{< /columns >}}
         {{< hr >}}
-        [View more...](/projects/intelligent-wireless-systems/)
+        [**View more...**](/projects/intelligent-wireless-systems/)
     design:
       columns: '2'
       spacing:
