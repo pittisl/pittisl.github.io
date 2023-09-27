@@ -16,10 +16,10 @@ sections:
         Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
-          * [On-device AI](/#on-device-ai)
-          * [Mobile and Connected Health](/#mobile-and-connected-health)
-          * [Mobile and Edge Computing Systems](/#mobile-and-edge-computing-systems)
-          * [Intelligent Wireless Systems](/#intelligent-wireless-systems)
+          * [On-device AI](/projects/on-device-ai/)
+          * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
+          * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
+          * [Intelligent Wireless Systems](/projects/intelligent-wireless-systems/)
 
   - block: collection
     id: news
@@ -31,7 +31,7 @@ sections:
         * **Jun 2023:** Two papers from our lab, [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) and [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/), are accepted and presented at MobiSys 2023.
         * **Nov 2022:** [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) is accepted and presented at SenSys 2022.
         * **Oct 2022:** Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
-      count: 1
+      count: 0
       filters:
         author: ''
         category: ''

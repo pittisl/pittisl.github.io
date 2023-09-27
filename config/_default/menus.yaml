@@ -22,19 +22,19 @@ main:
   - name: Projects
     weight: 52
   - name: On-device AI
-    url: /#on-device-ai
+    url: /projects/on-device-ai/
     parent: Projects
     weight: 100
   - name: Mobile and Connected Health
-    url: /#mobile-and-connected-health
+    url: /projects/mobile-and-connected-health/
     parent: Projects
     weight: 200
   - name: Mobile and Edge Computing Systems
-    url: /#mobile-and-edge-computing-systems
+    url: /projects/mobile-and-edge-computing-systems/
     parent: Projects
     weight: 300
   - name: Intelligent Wireless Systems
-    url: /#intelligent-wireless-systems
+    url: /projects/intelligent-wireless-systems/
     parent: Projects
     weight: 400
   - name: 'Video & Demos'
