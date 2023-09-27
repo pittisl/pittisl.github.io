@@ -137,5 +137,24 @@ body {
 }
 
 .stream-meta.article-metadata {
-    margin-bottom: 12px;
+    margin-bottom: 0px;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Quote: each (paper) item should be separated with others
+// by a horizontal bar line.
+
+// view-compact items, including publications, projects, etc.
+
+.view-compact.view-compact-pittisl-academy {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+// Make sure that images are not close to border
+.view-compact.view-compact-pittisl-academy div a img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
 }
