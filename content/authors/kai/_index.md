@@ -21,9 +21,9 @@ organizations:
 bio: PhD student in Electrical and Computer Engineering
 
 interests:
+  - Efficient AI
   - On-Device AI
   - AI for Systems
-  - Mobile/Edge Computing
 
 education:
   courses:

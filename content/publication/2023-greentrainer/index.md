@@ -89,6 +89,6 @@ GreenTrainer provides users with the flexibility to balance between the training
 
 ![Different FLOPs Objectives](2023-greentrainer/different_objective.png)
 
-GreenTrainer maintains good performance on fine-tuning different LLM sizes!
+GreenTrainer maintains good performance on fine-tuning LLMs with different sizes!
 
 ![Different LLM Sizes](2023-greentrainer/llm_size.png)
