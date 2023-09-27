@@ -26,12 +26,16 @@ sections:
     content:
       title: Latest News
       subtitle:
-      text:
-      count: 4
+      text: |
+        * **Sep 2023:** Two of our recent works, [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) (“GreenTrainer”) and [Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities](/publication/2023-intertwined-heterogeneity/), are now available online on arXiv.
+        * **Jun 2023:** Two papers from our lab, [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) and [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/), are accepted and presented at MobiSys 2023.
+        * **Nov 2022:** [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) is accepted and presented at SenSys 2022.
+        * **Oct 2022:** Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
+      count: 1
       filters:
         author: ''
         category: ''
-        exclude_featured: false
+        exclude_featured: true
         publication_type: ''
         tag: ''
       offset: 0
@@ -42,8 +46,7 @@ sections:
       view: compact-orig
       spacing:
         padding: ['20px', '0', '20px', '0']
-
-      columns: '1'
+      columns: '2'
 
   - block: markdown
     id: on-device-ai
