@@ -34,7 +34,7 @@ url_code: 'https://github.com/pittisl/FL-with-intertwined-heterogeneity'
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Training accuracy comparison with MNIST dataset and LeNet model'
+# caption: 'Training accuracy comparison with MNIST dataset and LeNet model'
   focal_point: ''
   preview_only: false
 
@@ -84,3 +84,15 @@ With staleness set to 40 epochs, the figures below shows (1) the model accuracy 
 Results also shows that our GI-based Estimation method could speed up the training process by achieving the same model accuracy with less training time consumption. This applies to different staleness conditions, different datasets and different amounts of data heterogeneity (as indicated by parameter $\alpha$ in the table below).
 
 ![Table Results in Fixed Data Scenario](2023-intertwined-heterogeneity/table3_4.png)
+
+### FL Performance in the Variant Data Scenario
+
+To verify performance with continuously varied data distributions of clients’ local datasets, we use MNIST and SVHN datasets, which are for the same learning task (i.e., handwriting digit recognition) but with different feature representations. Each client’s local dataset is initialized as the MNIST dataset in the same way as in the fixed data scenario. Afterwards, during training, each client continuously replaces random data samples in its local dataset with new data samples in the SVHN dataset.
+
+Results in the figure below show that in such variant data scenario, the model accuracy improvements by the existing FL training strategies exhibit significant fluctuations over time and stay low (<40%). in comparison, our proposed gradient inversion based estimation achieves much higher model accuracy, which is comparable to FL without staleness and 20% higher than those in existing FL schemes.
+
+![Results with variant data distributions](2023-intertwined-heterogeneity/figure14.png)
+
+More results below with different amounts of staleness and rates of data variation (streaming rate) also demonstrate that our proposed method outperformed the existing FL strategies in different scenarios with different dynamics of local data patterns.
+
+![Table results with variant data distributions](2023-intertwined-heterogeneity/table5_6.png)
