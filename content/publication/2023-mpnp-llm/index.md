@@ -95,7 +95,7 @@ connection with a trainable weighting module.
 ![mPnP-LLM design for modality adaptation](2023-mpnp-llm/mpnp-llm-fig2-2.png)
 
 In our design, mPnP-LLM adapts new input modalities and connects the corre-
-sponding unimodal encoders to LLM blocks via the (1) Key & Value Aligners module
+sponding unimodal encoders to LLM blocks via the (1) Key & Value Aligners module,
 and (2) Trainable Latent Connection module. An example for the multimodal QA task between two
 input modalities, namely RGB camera view and LiDAR point cloud, is shown in the figure below.
 
