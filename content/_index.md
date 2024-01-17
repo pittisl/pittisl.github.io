@@ -223,7 +223,7 @@ sections:
 #        {{< columns >}}
 #        ##### [News](news/)
 #        <--->
-#        ##### [Publications](publication/)
+#        ##### [Publication](publication/)
 #        <--->
 #        ##### [GitHub](https://github.com/pittisl)
 #        <--->

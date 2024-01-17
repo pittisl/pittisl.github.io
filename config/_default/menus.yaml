@@ -11,16 +11,19 @@ main:
 #    url: post
 #    weight: 20
   - name: People
-    url: people
+    url: /people/
     weight: 30
 #  - name: Events
 #    url: event
 #    weight: 40
-  - name: Publications
-    url: publication
+  - name: Publication
+    url: /publication/
     weight: 50
+  - name: Dataset
+    url: /dataset/
+    weight: 53
   - name: Projects
-    weight: 52
+    weight: 53
   - name: On-device AI
     url: /projects/on-device-ai/
     parent: Projects
@@ -38,11 +41,11 @@ main:
     parent: Projects
     weight: 400
   - name: 'Video & Demos'
-    url: video-and-demos
-    weight: 53
+    url: /video-and-demos/
+    weight: 54
   - name: GitHub
     url: https://github.com/pittisl
     weight: 55
   - name: Contact
-    url: contact
+    url: /contact/
     weight: 60

@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Publication
 date: 2023-07-22
 type: landing
 
