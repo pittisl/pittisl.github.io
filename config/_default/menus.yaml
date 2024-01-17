@@ -21,7 +21,7 @@ main:
     weight: 50
   - name: Dataset
     url: /dataset/
-    weight: 53
+    weight: 52
   - name: Projects
     weight: 53
   - name: On-device AI

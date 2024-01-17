@@ -27,11 +27,13 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/aware/). You may browse all our published datasets [here](/dataset/).
+        * **Jan 2024:** Our paper, [Towards Green AI in Fine-Tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/), has been accepted for publication at the 2024 International Conference on Learning Representations (ICLR).
         * **Dec 2023:** The preprint of our recent work on runtime modality adaptation for embodied AI, [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/), has been made publicly available [on arXiv](https://arxiv.org/abs/2312.07886).
         * **Sep 2023:** Two of our recent works, [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) (“GreenTrainer”) and [Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities](/publication/2023-intertwined-heterogeneity/), are now available online on arXiv.
         * **Jun 2023:** Two papers from our lab, [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) and [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/), are accepted and presented at MobiSys 2023.
-        * **Nov 2022:** [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) is accepted and presented at SenSys 2022.
-        * **Oct 2022:** Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
+#        * **Nov 2022:** [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) is accepted and presented at SenSys 2022.
+#        * **Oct 2022:** Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
       count: 0
       filters:
         author: ''
