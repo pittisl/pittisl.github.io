@@ -27,7 +27,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
-        * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/aware/). You may browse all our published datasets [here](/dataset/).
+        * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware).
         * **Jan 2024:** Our paper, [Towards Green AI in Fine-Tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/), has been accepted for publication at the 2024 International Conference on Learning Representations (ICLR).
         * **Dec 2023:** The preprint of our recent work on runtime modality adaptation for embodied AI, [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/), has been made publicly available [on arXiv](https://arxiv.org/abs/2312.07886).
         * **Sep 2023:** Two of our recent works, [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) (“GreenTrainer”) and [Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities](/publication/2023-intertwined-heterogeneity/), are now available online on arXiv.
@@ -66,7 +66,7 @@ sections:
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) {id=greentrainer}
-        ArXiv preprint
+        2024 ICLR
         {{< columns >}}
         ![GreenTrainer](greentrainer.png)
         <--->
@@ -116,6 +116,8 @@ sections:
         {{< youtube id="Netn1AOdsz8" >}}
         {{< /columns >}}
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
+        #### [Acoustic Waveform Respiratory Evaluation (AWARE) Dataset](/dataset/#aware)  
+        Our AWARE dataset consists of a group of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine. The PTEase paper makes use of the AWARE dataset.
         {{< hr-pittisl >}}
         ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](/publication/2020-spirosonic) {id=spirosonic}
         MobiCom'20  
