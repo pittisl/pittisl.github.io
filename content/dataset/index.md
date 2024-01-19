@@ -14,9 +14,9 @@ sections:
       spacing:
         padding: ['1.8rem', '0', '0', '0']
   - block: markdown
+    id: aware
     content:
       title: Acoustic Waveform Respiratory Evaluation (AWARE)
-      id: aware
       subtitle: January 2024
       text: |
         {{< columns >}}
@@ -34,6 +34,25 @@ sections:
         To our best knowledge, this is the first public dataset of human airway measurements with pulmonary diseases, and we welcome any feedback from the smart health research community.
       # Automatically link email and phone or display as text?
       autolink: true
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+  - block: markdown
+    id: nuscenes-qa-mini
+    content:
+      title: NuScenes-QA-mini Dataset
+      subtitle: 'January 2024'
+      text: |
+        This dataset is used for multimodal question-answering tasks in autonomous driving scenarios. We created this dataset based on [nuScenes-QA dataset](https://github.com/qiantianwen/NuScenes-QA) for evaluation in our paper [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/). The samples are divided into day and night scenes.
+
+        ![NuScenes-QA-mini Data Sample](2024-nuscenes-qa-mini/nuqa_example.png)
+
+        This dataset is built on the [nuScenes](https://www.nuscenes.org/) mini-split, where we obtain the QA pairs from the [original nuScenes-QA dataset](https://github.com/qiantianwen/NuScenes-QA). Each data sample contains **6-view RGB camera captures, a 5D LiDAR point cloud, and a corresponding text QA pair**. The data in the nuScenes-QA dataset is collected from driving scenes in cities of Boston and Singapore with diverse locations, time, and weather conditions.
+        {{< hr-pittisl >}}
+        * You may find more details on our [dataset homepage](https://huggingface.co/datasets/KevinNotSmile/nuscenes-qa-mini).
+        * The source code of generating the dataset can be found [in our GitHub repository](https://github.com/pittisl/mPnP-LLM/tree/main/nuqamini).
+        * Our [Modality Plug-and-Play](/publication/2023-mpnp-llm/) paper utilizes this dataset.
     design:
       columns: '2'
       spacing:

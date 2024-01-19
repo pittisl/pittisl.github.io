@@ -105,7 +105,8 @@ input modalities, namely RGB camera view and LiDAR point cloud, is shown in the 
 
 We use the nuScenes-QA dataset for multimodal visual QA in autonomous driving,
 with results from workstation-level desktop platforms with RTX A6000 and mobile platform
-of Nvidia Jetson AGX Orin.
+of Nvidia Jetson AGX Orin. Our processed dataset is published as the
+[NuScenes-QA-mini dataset](/dataset/#nuscenes-qa-mini).
 
 Compared with existing approaches, mPnP-LLM achieves better accuracy under similar costs.
 
