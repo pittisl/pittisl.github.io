@@ -16,7 +16,7 @@ sections:
   - block: markdown
     id: aware
     content:
-      title: Acoustic Waveform Respiratory Evaluation (AWARE)
+      title: "[Acoustic Waveform Respiratory Evaluation (AWARE)](#aware)"
       subtitle: January 2024
       text: |
         {{< columns >}}
@@ -41,7 +41,7 @@ sections:
   - block: markdown
     id: nuscenes-qa-mini
     content:
-      title: NuScenes-QA-mini Dataset
+      title: "[NuScenes-QA-mini Dataset](#nuscenes-qa-mini)"
       subtitle: 'January 2024'
       text: |
         This dataset is used for multimodal question-answering tasks in autonomous driving scenarios. We created this dataset based on [nuScenes-QA dataset](https://github.com/qiantianwen/NuScenes-QA) for evaluation in our paper [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/). The samples are divided into day and night scenes.
