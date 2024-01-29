@@ -118,7 +118,8 @@ sections:
             * `timestamp_keys.csv`: Keyboard key presses occurred during the experiment.
                 * Column 1: UNIX timestamp of each key press, with granularity of 1 microseconds.
                 * Column 2: The specific key press occurred.
-        For the discussion of detailed meanings of different GPU PCs, please refer to [our paper](https://doi.org/10.1145/3503222.3507757).
+    
+        For the discussion of detailed meanings of different GPU PCs, please refer to Section 4 of [our paper](https://doi.org/10.1145/3503222.3507757).
         {{< hr-pittisl >}}
         ## External Resources
         * You may find more details on our [dataset homepage](https://huggingface.co/datasets/hosiet/android-perfcounter-to-key-press).
