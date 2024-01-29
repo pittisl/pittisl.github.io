@@ -97,11 +97,14 @@ sections:
       subtitle: 'December 2023'
       text: |
         This dataset comes from our mobile GPU-based eavesdropping work, [Eavesdropping user credentials via GPU side channels on smartphones](/publication/2022-mobile-gpu-eavesdropping/), presented at the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2022). It contains 3,466 traces of mapping between the on-screen keyboard key presses and corresponding Snapdragon Adreno GPU performance counter changes collected on device in the meantime.
+        ![GPU PC value changes with key presses](2022-mobile-gpu-eavesdropping/mobilegpu-key-press-pc-change.png)
+        As shown above, the raw mobile GPU Performance Counter ("PC") value changes when screen display changes, including key board pop-up events, key disappearance events, and all other miscellaneous graphics changes. All GPU PC changes are recorded in the raw traces.
+
         ## Dataset Structure
         The dataset is arranged in the following format:
         * Folder name (e.g., `1622457056`): This UNIX timestamp when the experiment took place.
             * `timestamp_data.csv`: Raw recording of GPU performance counter changes during the experiment.
-                * Column 1: UNIX timestamp of each performance counter ("PC") value change event, with granularity of 1 microseconds.
+                * Column 1: UNIX timestamp of each performance counter value change event, with granularity of 1 microseconds.
                 * Column 2-13: GPU PC value changes of different types:
                     * `PERF_LRZ_VISIBLE_PRIM_AFTER_LRZ`
                     * `PERF_LRZ_FULL_8X8_TILES`
