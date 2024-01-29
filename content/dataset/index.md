@@ -89,6 +89,44 @@ sections:
       columns: '2'
       spacing:
         padding: ['20px', '0', '20px', '0']
+# ###################################################
+  - block: markdown
+    id: android-perfcounter-to-key-press
+    content:
+      title: "[Android GPU Performance Counter to Key Press Dataset](#android-perfcounter-to-key-press)"
+      subtitle: 'December 2023'
+      text: |
+        This dataset comes from our mobile GPU-based eavesdropping work, [Eavesdropping user credentials via GPU side channels on smartphones](/publication/2022-mobile-gpu-eavesdropping/), presented at the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2022). It contains 3,466 traces of mapping between the on-screen keyboard key presses and corresponding Snapdragon Adreno GPU performance counter changes collected on device in the meantime.
+        ## Dataset Structure
+        The dataset is arranged in the following format:
+        * Folder name (e.g., `1622457056`): This UNIX timestamp when the experiment took place.
+            * `timestamp_data.csv`: Raw recording of GPU performance counter changes during the experiment.
+                * Column 1: UNIX timestamp of each performance counter ("PC") value change event, with granularity of 1 microseconds.
+                * Column 2-13: GPU PC value changes of different types:
+                    * `PERF_LRZ_VISIBLE_PRIM_AFTER_LRZ`
+                    * `PERF_LRZ_FULL_8X8_TILES`
+                    * `PERF_LRZ_PARTIAL_8X8_TILES`
+                    * `PERF_LRZ_VISIBLE_PIXEL_AFTER_LRZ`
+                    * `PERF_RAS_SUPERTILE_ACTIVE_CYCLES`
+                    * `PERF_RAS_SUPER_TILES`
+                    * `PERF_RAS_8X4_TILES`
+                    * `PERF_RAS_FULLY_COVERED_8X4_TILES`
+                    * `PERF_VPC_PC_PRIMITIVES`
+                    * `PERF_VPC_SP_COMPONENTS`
+                    * `PERF_VPC_LRZ_ASSIGN_PRIMITIVES`
+                    * `PERF_VPC_SP_LM_COMPONENTS`
+            * `timestamp_keys.csv`: Keyboard key presses occurred during the experiment.
+                * Column 1: UNIX timestamp of each key press, with granularity of 1 microseconds.
+                * Column 2: The specific key press occurred.
+        For the discussion of detailed meanings of different GPU PCs, please refer to [our paper](https://doi.org/10.1145/3503222.3507757).
+        {{< hr-pittisl >}}
+        ## External Resources
+        * You may find more details on our [dataset homepage](https://huggingface.co/datasets/hosiet/android-perfcounter-to-key-press).
+        * Our [Mobile GPU Eavesdropping](/publication/2022-mobile-gpu-eavesdropping/) paper provides more information on the background and information leakage based on GPU PCs.
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
 #   - block: markdown
 #     content:
 #       title:
