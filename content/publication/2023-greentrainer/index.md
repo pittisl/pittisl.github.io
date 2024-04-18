@@ -32,6 +32,7 @@ featured: true
 
 url_pdf: 'https://arxiv.org/pdf/2309.13192.pdf'
 url_code: 'https://github.com/pittisl/GreenTrainer'
+url_video: 'https://recorder-v3.slideslive.com/#/share?share=91206&s=8f42f7fb-f0ed-4714-b281-fa9f52f38379'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -92,3 +93,11 @@ GreenTrainer provides users with the flexibility to balance between the training
 GreenTrainer maintains good performance on fine-tuning LLMs with different sizes!
 
 ![Different LLM Sizes](2023-greentrainer/llm_size.png)
+
+------------
+
+## Presentation Video
+
+{{< video src="2023-greentrainer/ICLR2024_GreenAI_embedded_1920x1080.mp4" controls="yes" >}}
+
+Alternatively, you may also find the [presentation video recording here](https://recorder-v3.slideslive.com/#/share?share=91206&s=8f42f7fb-f0ed-4714-b281-fa9f52f38379) (please use Google Chrome browser to visit if error occurs).
