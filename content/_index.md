@@ -20,6 +20,9 @@ sections:
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
           * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
           * [Intelligent Wireless Systems](/projects/intelligent-wireless-systems/)
+        
+        Our tutorials:
+          * [Generative AI Roadmap](https://github.com/pittisl/Generative-AI-Tutorial)
 
   - block: collection
     id: news
