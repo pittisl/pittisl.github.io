@@ -60,6 +60,18 @@ image:
 slides:
 ---
 
+## Overview
+
+Our design of FreezeAsGuard builds on bilevel optimization, which embeds one optimization
+problem within another. As shown in the figure below, the lower-level optimization problem
+is a *simulated user loop* that the user fine-tunes the diffusion model towards convergence
+by minimizing the loss over both illegal and innocent domains. The upper-level problem is a
+mask learning loop that the model publisher learns m to mitigate the diffusion model’s
+representation power when being fine-tuned in illegal domains, without affecting fine-tuning
+in innocent domains.
+
+![FreezeAsGuard Overview](2024-freezeasguard/freezeasguard-overview.png)
+
 ## Qualitative Examples of Generated Images
 
 The following figures show qualitative examples of generated images in illegal domains
