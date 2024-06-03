@@ -30,7 +30,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
-        * **Jun 2024:** The preprint of our recent work on preventing illigal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), is now available [on arXiv](https://arxiv.org/abs/2405.17472).
+        * **Jun 2024:** The preprint of our recent work on preventing illegal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), is now available [on arXiv](https://arxiv.org/abs/2405.17472).
         * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware).
         * **Jan 2024:** Our paper, [Towards Green AI in Fine-Tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/), has been accepted for publication at the 2024 International Conference on Learning Representations (ICLR).
         * **Dec 2023:** The preprint of our recent work on runtime modality adaptation for embodied AI, [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/), has been made publicly available [on arXiv](https://arxiv.org/abs/2312.07886).
