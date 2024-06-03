@@ -10,7 +10,7 @@ last_name: Huang
 superuser: false
 
 # Role/position
-role: PhD Student
+role: Graduated PhD
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in Electrical and Computer Engineering
+bio: Ph.D. in Electrical and Computer Engineering
 
 interests:
   - Efficient AI
@@ -69,7 +69,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Grad Students
+  - Past Students 
 ---
 
 <!--
