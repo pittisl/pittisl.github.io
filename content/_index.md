@@ -31,7 +31,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
-        * **Jun 2024:** The preprint of our recent work on preventing illegal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), is now available [on arXiv](https://arxiv.org/abs/2405.17472).
+        * **Jun 2024:** The preprint of our recent work on preventing illegal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), and research on the spasitification of Small Language Models (SLMs), [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/), are now available on arXiv.
         * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware).
         * **Jan 2024:** Our paper, [Towards Green AI in Fine-Tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/), has been accepted for publication at the 2024 International Conference on Learning Representations (ICLR).
         * **Dec 2023:** The preprint of our recent work on runtime modality adaptation for embodied AI, [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/), has been made publicly available [on arXiv](https://arxiv.org/abs/2312.07886).
@@ -65,7 +65,7 @@ sections:
         ### [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/) {id=sparse-activation-slm}
         ArXiv preprint
         {{< columns >}}
-        ![Sparse Activation on SLM](sparse-activation-slm.jpg}
+        ![Sparse Activation on SLM](sparse-activation-slm.jpg)
         <--->
         Being different from model compression that requires expensive retraining, sparse activation can effectively reduce neural network models' inference cost at runtime without any prior retraining or adaptation efforts. Although sparse activation has been proved to be effective on Large Language Models (LLMs) that are usually redundant (e.g., OPT and BLOOMZ models), its applicability on recent Small Language Models (SLMs) with higher parameter efficiency remains questionable. Our recent work verified such possibility by using gradient-based attribution scores to evaluate neurons' importance in inference, in both analytical and experimental perspectives. Our results show that we can achieve up to 80% sparsity in major SLM models, including Phi-1.5/2 and MobiLlama-0.5B/1B, with less than 5% model accuracy loss on QA tasks.
         {{< /columns >}}
