@@ -67,18 +67,20 @@ slides:
 
 As shown in the Figure, OPT-6.7B is highly over-parameterized such that we only need to activate <40% of neurons to achieve the maximum accuracy. In contrast, MobiLlama-0.5B and Phi-2 are much less over-parameterized, and both require almost all neurons to be activated to avoid accuracy loss. Even when a small percentage of neurons with the smallest magnitudes are deactivated, the model accuracy significantly drops. These results show that for SLMs, neurons’ output magnitudes cannot precisely measure the neurons’ importance in inference, and hence cannot be used as the metric for sparse activation.
 
-![Sparse Activation comparision between LLM and SLM](sparse-activation-slm-fig2.png)
+![Sparse Activation comparision between LLM and SLM](2024-sparse-activation-slm/sparse-activation-slm-fig2.png)
 
 ## Using Attribution Scores as Neuron Importance
 
 A better approach is to measure neurons’ importance in inference with their attribution scores, and further use such attribution scores for sparse activation. In general, attribution methods quantify the correlation between input data, intermediate features and model output, and most recent methods calculate neurons’ attribution scores from their gradients and outputs. We investigated the effectiveness of representative gradient-based attribution metrics, as listed below, when evaluating a neuron’s importance for sparse activation.
 
-* **Gradient × Output (GxO)**: It calculates the first-order approximation of the change of model output when the neuron is deactivated, as $\partial F(x) / \partial x \cdot x$, whiere $x$ is the neurons’ output scalar and $F$ is a function that maps neoron’s output to the model output.
+* **Gradient × Output (GxO)**: It calculates the first-order approximation of the change of model output when the neuron is deactivated, as $\partial F(x) / \partial x \cdot x$, where $x$ is the neurons’ output scalar and $F$ is a function that maps neoron’s output to the model output.
 * **SNIP**: It considers only the sensitivity of neuron’s output change on the model output as $| \partial F(x) / \partial x \cdot x|$.
 * **Fisher information**: It calculates the square value of SNIP, and hence ranks the importances of different neurons in the same ways as SNIP does.
 * **Integrated Gradients (IG)**: It calculates the neuron’s contribution to the change of model output by interpolating between x and a baseline (usually zero output) and averaging the gradients at these interpolations.
 
 As shown in the Figure below, IG and GxO achieve the highest and very similar levels of model accuracy. Due to IG being computationally expensive, GxO’s first-order approximation to attribution is a better choice.
+
+![Accuracy-spasity tradeoff comparison](2024-sparse-activation-slm/sparse-activation-slm-fig3.png)
 
 ## Attribution Errors due to Interdependency
 
@@ -87,3 +89,13 @@ As shown in the Figure below on the left, whenever some neurons are deactivated,
 Results in Figure below on the right show that such impact significantly grows with higher activation ratios. The basic reason is that when the activation ratio is high, only few neurons are deactivated. We also found that attribution errors produce much higher impacts on MLP neurons, because the number of MLP neurons is usually much larger than the number of attention heads, and the rank of MLP neurons’ attention scores is hence easier to be changed.
 
 ![Interdependency and Attribution Score changes](2024-sparse-activation-slm/sparse-activation-slm-fig45.png)
+
+## Proposed Attribution Error Correction
+
+Our approach is to first analyze and quantify the attribution error caused by inter-layer dependency, and then mitigate such error by adding a corrective term onto each neuron’s attribution calculated with the GxO metric, so that we can ensure proper sparse activation by calculating all neurons’ attributions in one shot. More specifically, we formally proved the lower and upper bounds of the attribution error, and further provided practical methods of calculating and applying such corrective terms based on these bounds.
+
+## Main Results
+
+We evaluate the model accuracy with different activation ratios (ARs), using the Phi-2 model on the TruthfulQA dataset. Results in the Table below show that, when applying our proposed corrective term onto the GxO metric, our approach generally achieves much higher model accuracy than all baselines.
+
+![Main Results](2024-sparse-activation-slm/sparse-activation-slm-table2.png)
