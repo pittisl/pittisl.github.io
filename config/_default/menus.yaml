@@ -28,6 +28,10 @@ main:
     url: /projects/on-device-ai/
     parent: Projects
     weight: 100
+  - name: Trustworthy AI
+    url: /projects/trustworthy-ai/
+    parent: Projects
+    weight: 150
   - name: Mobile and Connected Health
     url: /projects/mobile-and-connected-health/
     parent: Projects

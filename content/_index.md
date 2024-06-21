@@ -107,6 +107,28 @@ sections:
         padding: ['20px', '0', '20px', '0']
 
   - block: markdown
+    id: trustworthy-ai
+    content:
+      title: Trustworthy AI
+      subtitle: 'The versatility of recent emerging AI techniques also brings challenges in ensuring the AI systems to be safe, fair, explainable, and to cause no harm. Our research aims at discovering potential malicious adaptations to AI models, and propose protections and mitigations against unwanted model usages.'
+      text: |
+        ### [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/) {id=freezeasguard}
+        ArXiv preprint
+        {{< columns >}}
+        ![FreezeAsGuard](freezeasguard.png)
+        <--->
+        Illegal use of image diffusion models via domain adaptation, such as forging public figures' portraits using fine-tuned diffusion models, has been considered as an important threat to trustworthy AI. Our recent work focuses on mitigating such illegal domain adaptation. Being different from the existing work of model unlearning that cannot prevent the illegal domain knowledge from being relearned from custom or public data, our approach, namely FreezeGuard, suggests that the model publisher selectively freezes tensors in pre-trained models that are critical to the convergence of fine-tuning in illegal domains. FreezeAsGuard can effectively reduce the quality of images generated in illegal domains and ensure that these images are unrecognizable as target objects. Meanwhile, it has the minimum impact on legal domain adaptations, and can save up to 48% GPU memory and 21% wall-clock time in model fine-tuning.
+        {{< /columns >}}
+        {{< hr >}}
+        [**View more...**](/projects/trustworthy-ai/)
+
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+
+  - block: markdown
     id: mobile-and-connected-health
     content:
       title: Mobile and connected health
