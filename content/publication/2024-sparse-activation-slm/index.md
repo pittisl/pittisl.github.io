@@ -63,3 +63,16 @@ image:
 slides:
 ---
 
+## Sparse Activation Difference between LLMs and SLMs
+
+As shown in the Figure, OPT-6.7B is highly over-parameterized such that we only need to activate <40% of neurons to achieve the maximum accuracy. In contrast, MobiLlama-0.5B and Phi-2 are much less over-parameterized, and both require almost all neurons to be activated to avoid accuracy loss. Even when a small percentage of neurons with the smallest magnitudes are deactivated, the model accuracy significantly drops. These results show that for SLMs, neurons’ output magnitudes cannot precisely measure the neurons’ importance in inference, and hence cannot be used as the metric for sparse activation.
+
+![Sparse Activation comparision between LLM and SLM](sparse-activation-slm-fig2.png)
+
+## Using Attribution Scores as Neuron Importance
+
+A better approach is to measure neurons’ importance in inference with their attribution scores, and further use such attribution scores for sparse activation. In general, attribution methods quantify the correlation between input data, intermediate features and model output, and most recent methods calculate neurons’ attribution scores from their gradients and outputs. We investigated the effectiveness of representative gradient-based attribution metrics, as listed below, when evaluating a neuron’s importance for sparse activation.
+
+* **Gradient × Output (GxO)**: It calculates the first-order approximation of the change of model output when the neuron is deactivated.
+* **SNIP**: It considers only the sensitivity of neuron’s output change on the model output as $$| \partial F(x) / \partial x|$$.
+* **Fisher information**: It calculates the square value of SNIP, and hence ranks the importances of different neurons in the same ways as SNIP does.
