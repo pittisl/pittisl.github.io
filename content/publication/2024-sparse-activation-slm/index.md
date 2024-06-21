@@ -73,6 +73,9 @@ As shown in the Figure, OPT-6.7B is highly over-parameterized such that we only 
 
 A better approach is to measure neurons’ importance in inference with their attribution scores, and further use such attribution scores for sparse activation. In general, attribution methods quantify the correlation between input data, intermediate features and model output, and most recent methods calculate neurons’ attribution scores from their gradients and outputs. We investigated the effectiveness of representative gradient-based attribution metrics, as listed below, when evaluating a neuron’s importance for sparse activation.
 
-* **Gradient × Output (GxO)**: It calculates the first-order approximation of the change of model output when the neuron is deactivated.
-* **SNIP**: It considers only the sensitivity of neuron’s output change on the model output as $$| \partial F(x) / \partial x|$$.
+* **Gradient × Output (GxO)**: It calculates the first-order approximation of the change of model output when the neuron is deactivated, as $\partial F(x) / \partial x \cdot x$, whiere $x$ is the neurons’ output scalar and $F$ is a function that maps neoron’s output to the model output.
+* **SNIP**: It considers only the sensitivity of neuron’s output change on the model output as $| \partial F(x) / \partial x \cdot x|$.
 * **Fisher information**: It calculates the square value of SNIP, and hence ranks the importances of different neurons in the same ways as SNIP does.
+* **Integrated Gradients (IG)**: It calculates the neuron’s contribution to the change of model output by interpolating between x and a baseline (usually zero output) and averaging the gradients at these interpolations.
+
+As shown in the Figure below, IG and GxO achieve the highest and very similar levels of model accuracy. Due to IG being computationally expensive, GxO’s first-order approximation to attribution is a better choice.
