@@ -79,3 +79,11 @@ A better approach is to measure neurons’ importance in inference with their at
 * **Integrated Gradients (IG)**: It calculates the neuron’s contribution to the change of model output by interpolating between x and a baseline (usually zero output) and averaging the gradients at these interpolations.
 
 As shown in the Figure below, IG and GxO achieve the highest and very similar levels of model accuracy. Due to IG being computationally expensive, GxO’s first-order approximation to attribution is a better choice.
+
+## Attribution Errors due to Interdependency
+
+As shown in the Figure below on the left, whenever some neurons are deactivated, such deactivation changes the attribution scores of other activated neurons, both in the same layer and in other subsequent layers. These changes, in many cases, could also change the rankings of neurons’ attribution scores and hence result in suboptimal selection of neurons being deactivated, given a required activation ratio.
+
+Results in Figure below on the right show that such impact significantly grows with higher activation ratios. The basic reason is that when the activation ratio is high, only few neurons are deactivated. We also found that attribution errors produce much higher impacts on MLP neurons, because the number of MLP neurons is usually much larger than the number of attention heads, and the rank of MLP neurons’ attention scores is hence easier to be changed.
+
+![Interdependency and Attribution Score changes](2024-sparse-activation-slm/sparse-activation-slm-fig45.png)
