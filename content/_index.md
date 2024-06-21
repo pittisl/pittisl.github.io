@@ -17,6 +17,7 @@ sections:
         
         Our projects:
           * [On-device AI](/projects/on-device-ai/)
+          * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
           * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
           * [Intelligent Wireless Systems](/projects/intelligent-wireless-systems/)
@@ -61,6 +62,14 @@ sections:
       title: On-device AI
       subtitle: 'Our research aims to enable high-performance AI inference and training on resource-constrained mobile and embedded devices, to enable emerging applications such as AIoT, smart health and embodied AI. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks that incorporate domain knowledge of specific system applications into the neural network module design. Our recent research focuses on enabling computational efficient inference and training of modern Large Language Models (LLMs) on weak devices, to efficiently incorporate these devices’ rich varieties of data modalities into the LLMs’ representation power and hence allow more flexible domain adaptation and model personalization.'
       text: |
+        ### [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/) {id=sparse-activation-slm}
+        ArXiv preprint
+        {{< columns >}}
+        ![Sparse Activation on SLM](sparse-activation-slm.jpg}
+        <--->
+        Being different from model compression that requires expensive retraining, sparse activation can effectively reduce neural network models' inference cost at runtime without any prior retraining or adaptation efforts. Although sparse activation has been proved to be effective on Large Language Models (LLMs) that are usually redundant (e.g., OPT and BLOOMZ models), its applicability on recent Small Language Models (SLMs) with higher parameter efficiency remains questionable. Our recent work verified such possibility by using gradient-based attribution scores to evaluate neurons' importance in inference, in both analytical and experimental perspectives. Our results show that we can achieve up to 80% sparsity in major SLM models, including Phi-1.5/2 and MobiLlama-0.5B/1B, with less than 5% model accuracy loss on QA tasks.
+        {{< /columns >}}
+        {{< hr-pittisl >}}
         ### [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/) {id=mpnp-llm}
         ArXiv preprint
         {{< columns >}}

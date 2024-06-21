@@ -14,7 +14,7 @@ sections:
       filters:
         folders:
           - publication
-        tags: ['trustworthy-ai'] 
+        tags: ['trustworthy-ai']
         kinds:
           - page
     design:
