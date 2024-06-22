@@ -13,6 +13,36 @@ sections:
       columns: '1'
       spacing:
         padding: ['1.8rem', '0', '0', '0']
+
+  - block: markdown
+    id: ff25
+    content:
+      title: "[Famous-Figures-25 (FF25)](#ff25)"
+      subtitle: June 2024
+      text: |
+        {{< columns >}}
+        Our FF25 dataset contains 8,703 portrait images of 25 public figures and the corresponding text descriptions. All the images were crawled from publicly available sources on the Web. These 25 subjects include politicians, movie stars, writers, athletes and businessmen, with diverse genders, races, and career domains. As shown in Figure 11, the dataset contains 400-1,300 images of each subject.
+        
+        Each raw image is then center-cropped to a resolution of 512×512. For each image, we use a pre-trained BLIP2 image captioning model to generate the corresponding text description, and prompt BLIP2 with the input of `“a photo of <person_name> which shows”` to avoid hallucination.
+
+        The file structure is as follows:
+        * `test/<person_name>/img_<img_number>.png`
+        * `test/metadata.csv`
+        * `train/<person_name>/img_<img_number>.png`
+        * `train/metadata.csv`
+        <--->
+        ![FF25 dataset](ff25-dataset.png)
+        {{< /columns >}}
+        {{< hr-pittisl >}}
+        * The source code related to using the dataset can be found [from our GitHub repository](https://github.com/pittisl/FreezeAsGuard).
+        * Our [FreezeAsGuard](/publication/2024-freezeasguard/) paper makes use of the FF25 dataset.
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
   - block: markdown
     id: aware
     content:
