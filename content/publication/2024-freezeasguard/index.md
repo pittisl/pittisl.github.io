@@ -75,13 +75,8 @@ in innocent domains.
 ## Qualitative Examples of Generated Images
 
 The following figures show qualitative examples of generated images in illegal domains
-of 10 subjects in FF25 dataset, after applying FreezeAsGuard-30% to fine-tuning SD v1.5.
-Each prompt adopts the same seed for generation.
+of 10 subjects in [our FF25 dataset](/dataset/#ff25), after applying FreezeAsGuard-30%
+to fine-tuning SD v1.5. Each prompt adopts the same seed for generation.
 
 ![Qualitative Examples 1](2024-freezeasguard/freezeasguard-main.png)
 ![Qualitative Examples 2](2024-freezeasguard/freezeasguard-other.png)
-
-## Related Dataset
-
-This paper utilizes our [Famous-Figures-25 (FF25)](dataset/#ff25) dataset. You may
-find the details of our FF25 dataset [on HuggingFace](https://huggingface.co/datasets/hosiet/famous-figures-25).
