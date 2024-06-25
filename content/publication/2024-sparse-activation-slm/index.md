@@ -90,9 +90,19 @@ Results in Figure below on the right show that such impact significantly grows w
 
 ![Interdependency and Attribution Score changes](2024-sparse-activation-slm/sparse-activation-slm-fig45.png)
 
-## Proposed Attribution Error Correction
+We are then motivated to develop techniques that can effectively mitigate these attribution errors and optimize the accuracy-sparsity tradeoffs in SLMs with proper sparse activation. In particular, the intra-layer dependency only reflects changes in the current layer’s gradients because the outputs of neurons in the same layer are independent from each other. In contrast, the inter-layer dependency reflects changes in both the neuron outputs and gradients of the subsequent layer, as they all depend on the outputs of the previous layer. Hence, we mainly focus on mitigating the errors caused by inter-layer dependency.
+
+## Attribution Error Correction
 
 Our approach is to first analyze and quantify the attribution error caused by inter-layer dependency, and then mitigate such error by adding a corrective term onto each neuron’s attribution calculated with the GxO metric, so that we can ensure proper sparse activation by calculating all neurons’ attributions in one shot. More specifically, we formally proved the lower and upper bounds of the attribution error, and further provided practical methods of calculating and applying such corrective terms based on these bounds.
+
+### Our Proposed Corrective Term
+
+Without loss of generality, we use a case of two layers in a SLM, namely $L_1$ and $L_2$, to quantify the attribution error caused by inter-layer dependency. $L_2$ is a deeper layer than $L_1$. $L_1$’s neuron output $\textbf{X} = (x_{1}, x_{2}, \ldots{}, x_{N_1})$. We use $F( \cdot )$ to represent the function that maps the output of $L_1$ to the model output.
+
+We calculate the corrective term as $$ C(i) = \frac{1}{2} \cdot | x_i | \cdot \sqrt{ \sum_{k=1}^{N_1} { ( \frac{\partial F}{\partial x_k } ) }^{2}  } $$
+
+This corrective term is only related to the output magnitudes and gradients of neurons, and hence such corrective terms of all neurons can be computed in one shot with vectorized computations enabled in the existing deep learning APIs.
 
 ## Main Results
 
