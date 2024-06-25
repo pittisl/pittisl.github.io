@@ -100,11 +100,13 @@ Our approach is to first analyze and quantify the attribution error caused by in
 
 Without loss of generality, we use a case of two layers in a SLM, namely $L_1$ and $L_2$, to quantify the attribution error caused by inter-layer dependency. $L_2$ is a deeper layer than $L_1$. $L_1$’s neuron output $\textbf{X} = (x_{1}, x_{2}, \ldots{}, x_{N_1})$. We use $F( \cdot )$ to represent the function that maps the output of $L_1$ to the model output.
 
-With a reasonable assumption that intra-layer dependency has minimal impact on attribution error, we can assume that applying masking does not change the neuron gradients in the same $L_1$ layer. We could prove the Theorem that the error of inter-layer dependency caused by deactivating neuron $i$ in $L_1$ has a lower bound of $0$, and an upper bound of $| x_i | \cdot \sqrt{ \sum_{k=1}^{N_1} { ( \frac{\partial F}{\partial x_k } ) }^{2} } $, where $x_k$ is the output of another neuron $k$ in $L_1$. The proof can be found in Section 3.2 of our paper.
+With a reasonable assumption that intra-layer dependency has minimal impact on attribution error, we can assume that applying masking does not change the neuron gradients in the same $L_1$ layer. In this scenario, we could prove the Theorem that the error of inter-layer dependency caused by deactivating neuron $i$ in $L_1$ has a lower bound of $0$, and an upper bound of $| x_i | \cdot \sqrt{ \sum_{k=1}^{N_1} { ( \frac{\partial F}{\partial x_k } ) }^{2} } $, where $x_k$ is the output of another neuron $k$ in $L_1$. The proof can be found in Section 3.2 of our paper.
 
 On top of the Theorem above, we experimentally show that the distribution of attribution errors follows a truncated normal distribution with a high confidence interval. As a result, we calculate the corrective term as $$ C(i) = \frac{1}{2} \cdot | x_i | \cdot \sqrt{ \sum_{k=1}^{N_1} { ( \frac{\partial F}{\partial x_k } ) }^{2}  } $$
 
 This corrective term is only related to the output magnitudes and gradients of neurons, and hence such corrective terms of all neurons can be computed in one shot with vectorized computations enabled in the existing deep learning APIs.
+
+In the actual computation, the corrective term is added onto the attribution score of neuron $i$ in $L_1$ calculated without deactivation, which is denoted as $S(F, x_{i})$ in the paper. In our experiments, we use GxO’s first-order approximation to compute $S( \cdot )$.
 
 ## Main Results
 
