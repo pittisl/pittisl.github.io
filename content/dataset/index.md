@@ -33,6 +33,7 @@ sections:
         * `train/metadata.csv`
 
         For details, please refer to our related source code repository and paper.
+        * You may download the dataset from our [dataset homepage](https://huggingface.co/datasets/hosiet/famous-figures-25).
         * The source code related to using the dataset can be found [from our GitHub repository](https://github.com/pittisl/FreezeAsGuard).
         * Our [FreezeAsGuard](/publication/2024-freezeasguard/) paper makes use of the FF25 dataset.
       # Automatically link email and phone or display as text?

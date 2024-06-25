@@ -80,3 +80,8 @@ Each prompt adopts the same seed for generation.
 
 ![Qualitative Examples 1](2024-freezeasguard/freezeasguard-main.png)
 ![Qualitative Examples 2](2024-freezeasguard/freezeasguard-other.png)
+
+## Related Dataset
+
+This paper utilizes our [Famous-Figures-25 (FF25)](dataset/#ff25) dataset. You may
+find the details of our FF25 dataset [on HuggingFace](https://huggingface.co/datasets/hosiet/famous-figures-25).
