@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Jifeng Song
+title: Qiyao Xue
 
 # Full Name (for SEO)
-first_name: Jifeng
-last_name: Song
+first_name: Qiyao
+last_name: Xue
 
 # Is this the primary user of the site?
 superuser: false
@@ -21,39 +21,36 @@ organizations:
 bio: PhD student in Electrical and Computer Engineering
 
 #interests:
-#  - On-Device AI
-#  - AI for Systems
-#  - Mobile/Edge Computing
-#
+#  - Artificial Intelligence
+#  - Embedded System
+#  - Heterogeneous Computing
+
 #education:
 #  courses:
-#    - course: BE in Electronic Information Engineering
-#      institution: University of Science and Technology of China (USTC)
-#      year: 2015-2019
 #    - course: PhD in Electrical and Computer Engineering
 #      institution: University of Pittsburgh
-#      year: 2019-2024
+#      year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:jis219@pitt.edu'
+#social:
+#  - icon: envelope
+#    icon_pack: fas
+#    link: 'mailto:XXX@pitt.edu'
 #  - icon: google-scholar
 #    icon_pack: ai
-#    link: https://scholar.google.com/citations?user=-54APEkAAAAJ&hl=en
+#    link: https://scholar.google.com/citations?user=
 #  - icon: github
 #    icon_pack: fab
-#    link: https://github.com/hellokevin07
+#    link: https://github.com/
 #  - icon: linkedin
 #    icon_pack: fab
-#    link: https://www.linkedin.com/in/kai-huang-71a5b2262
+#    link: https://www.linkedin.com/in/
 #  - icon: earth-americas
 #    icon_pack: fas
-#    link: https://hellokevin07.github.io
+#    link: https://
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -68,8 +65,8 @@ highlight_name: false
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-#user_groups:
-#  - Grad Students
+user_groups:
+  - Grad Students
 ---
 
 <!--
