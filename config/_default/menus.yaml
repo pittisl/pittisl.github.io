@@ -47,7 +47,7 @@ main:
   - name: 'Video & Demos'
     url: /video-and-demos/
     weight: 54
-  - name: GitHub
+  - name: Code
     url: https://github.com/pittisl
     weight: 55
   - name: Contact
