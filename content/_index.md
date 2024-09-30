@@ -65,11 +65,8 @@ sections:
       text: |
         ### [Perceptual-Centric Image Super-Resolution using Heterogeneous Processors on Mobile Devices](/publication/2024-fye-sr/) {id=fye-sr}
         MobiCom'24
-        {{< columns >}}
         ![Our SR method compared to Image-based Split Methods](fye-sr.jpg)
-        <--->
         Image super-resolution (SR) is widely used on mobile devices to enhance user experience. However, neural networks used for SR are computationally expensive, posing challenges for mobile devices with limited computing power. A viable solution is to use heterogeneous processors on mobile devices, especially the specialized hardware AI accelerators, but the reduced arithmetic precision on AI accelerators can lead to degraded perceptual quality in upscaled images. To address this limitation, we present a novel image SR technique that enhances the perceptual quality of upscaled images when using heterogeneous processors for SR computations. It strategically splits the SR model and dispatches different layers to heterogeneous processors, to meet the time constraint while minimizing the impact of AI accelerators on image quality. Experiment results show that our method outperforms the best baselines, improving perceptual image quality by up to 2×, or reducing SR computing latency by up to 5.6× with on-par image quality.
-        {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/) {id=sparse-activation-slm}
         ArXiv preprint
