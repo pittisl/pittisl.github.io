@@ -30,6 +30,9 @@ tags:
 featured: true
 
 url_pdf: 'https://par.nsf.gov/servlets/purl/10268387'
+links:
+  - name: Code
+    url: 'https://github.com/pittisl/MyoMonitor'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
