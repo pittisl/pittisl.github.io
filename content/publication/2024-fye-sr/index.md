@@ -5,7 +5,7 @@ authors:
   - xiangyu
   - wei
 date: '2024-09-30T00:00:00Z'
-#doi: '10.48550/arXiv.2405.17472'
+doi: '10.1145/3636534.3690698'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2024-09-29T00:00:00Z'
