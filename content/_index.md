@@ -76,6 +76,18 @@ sections:
 #       spacing:
 #         padding: ['20px', '0', '20px', '0']
 
+ - block: markdown
+    id: infer-time-generative-ai
+    content:
+      title: Inference-time Computation in Generative AI
+      subtitle: 'Generative AI could revolutionize'
+      text: |
+        ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
   - block: markdown
     id: on-device-ai
     content:
