@@ -56,9 +56,21 @@ slides:
 
 ## Background
 
-In practical Federated Learning (FL) scenarios, it is not uncommon to witness excessive or even unlimited staleness in clients’ model updates, especially when the client devices have very limited computing power, local energy budget, or communication capabilities. Traditional asynchronous Federated Learning (AFL) solution, such as weighted aggregation, results in improper bias towards fast clients and misses important knowledge in slow clients’ model updates, when data and device heterogeneities are intertwined.
+An intuitive solution to device heterogeneity in Federated Learning is asynchronous FL,
+which does not wait for slow clients but updates the global model whenever having
+received a client update. If a slow client’s excessive latency is longer than a training epoch,
+it will use an outdated global model to compute its model update, which will be stale when aggregated
+at the server and affect model accuracy. Traditional asynchronous Federated Learning (AFL) solution
+to staleness, such as weighted aggregation, results in improper bias towards fast clients and misses
+important knowledge in slow clients’ model updates, when data and device heterogeneities are intertwined.
 
-To demonstrate its impact, we conducted experiments by using the MNIST dataset on 100 clients to train a 3-layer CNN model. We set data heterogeneity as that each client only contain samples in one data class, and set device heterogeneity as a staleness of 40 epochs on clients with data samples in class 5. Results in the bottom-left figure show that, staleness will lead to large degradation of model accuracy, and using weighted aggregation will further enlarge the degradation. The bottom-right figure also shows that other techniques such as DC-ASGD become ineffective rapidly with the increase of staleness epoch value.
+we conducted experiments using a real-world disaster image dataset, which contains 6k images of 5 disaster classes
+(e.g., fires and floods) with different levels of damage severity. In FL of 100 clients, we set data
+heterogeneity as that each client only contain samples in one data class, and set device heterogeneity as
+a staleness of 100 epochs on 15 clients with images of severe damage. When using this dataset to fine-
+tune a pre-trained ResNet18 model, results in the figure below show that staleness leads to large degradation
+of model accuracy, and weighted aggregation results in even lower accuracy than direct aggregation,
+because contributions from images of severe damage on stale clients are reduced by the weights.
 
 ![The impact of staleness in asynchronous Federated Learning](2023-intertwined-heterogeneity/intertwined-fig1.png)
 
@@ -72,17 +84,33 @@ As shown in the figure above, our proposed technique consists of three key compo
 
 ## Experiment Results
 
-We evaluated our proposed technique in two FL scenarios. In the first scenario, all clients’ local datasets are fixed. In the second scenario, we consider a more practical FL setting, where clients’ local data is continuously updated and data distributions are variant over time. In all experiments, we consider a FL scenario with 100 clients. We assess our approach’s performance improvement by measuring the increase of model accuracy in the selected data class being affected by staleness.
+We evaluated our proposed technique in two FL scenarios. In the first scenario, all clients’ local datasets are fixed. In the second scenario, we consider a more practical FL setting, where clients’ local data is continuously updated and data distributions are variant over time.
+In all experiments, we consider a FL scenario with 100 clients.
+We assess our approach’s performance improvement by measuring the increase of model accuracy in the selected data class being affected by staleness.
 
 ### FL Performance in the Fixed Data Scenario
 
-With staleness set to 40 epochs, the figures below shows (1) the model accuracy in data class 5, using MNIST dataset to train a LeNet model, and (2) in data class 2 with CIFAR-10 dataset and ResNet-8 model.
+In the fixed data scenario, 3 standard datasets and 1 domain-specific dataset are used in evaluations,
+including MNIST, FMNIST, CIFAR-10 and a disaster image dataset MDI:
 
-![Result in Fixed Data Scenario](2023-intertwined-heterogeneity/figure11_12.png)
+* Using MNIST and FMNIST datasets to train a LeNet model, and data class 5 is affected by staleness.
+* Using CIFAR-10 dataset to train a ResNet-18 model, data class 2 is affected by staleness.
+* Using a disaster image dataset MDI to fine-tune the ResNet-18 model pre-trained with ImageNet.
 
-Results also shows that our GI-based Estimation method could speed up the training process by achieving the same model accuracy with less training time consumption. This applies to different staleness conditions, different datasets and different amounts of data heterogeneity (as indicated by parameter $\alpha$ in the table below).
+The trained model’s accuracies using different FL schemes, with the amount of staleness as 40 epochs,
+are listed in the table below.
 
-![Table Results in Fixed Data Scenario](2023-intertwined-heterogeneity/table3_4.png)
+![Accuracy result in Fixed Data Scenario](2023-intertwined-heterogeneity/intertwined-table9.png)
+
+Results show that our gradient inversion based compensation can improve the trained
+model’s accuracy by at least 4%, compared to the best baseline. Such advantage in model accuracy can
+be as large as 25% when compared with Weighted aggregation.
+
+The figure below showing the training procedure comparisondemonstrated that our method can
+also improve the progress and stability of training while also achieve higher model accuracy
+during different stages of FL training.
+
+![Training procedure in Fixed Data Scenario](2023-intertwined-heterogeneity/intertwined-fig11.png)
 
 ### FL Performance in the Variant Data Scenario
 
@@ -90,8 +118,8 @@ To verify performance with continuously varied data distributions of clients’ 
 
 Results in the figure below show that in such variant data scenario, the model accuracy improvements by the existing FL training strategies exhibit significant fluctuations over time and stay low (<40%). in comparison, our proposed gradient inversion based estimation achieves much higher model accuracy, which is comparable to FL without staleness and 20% higher than those in existing FL schemes.
 
-![Results with variant data distributions](2023-intertwined-heterogeneity/figure14.png)
+![Results with variant data distributions](2023-intertwined-heterogeneity/intertwined-fig13.png)
 
 More results below with different amounts of staleness and rates of data variation (streaming rate) also demonstrate that our proposed method outperformed the existing FL strategies in different scenarios with different dynamics of local data patterns.
 
-![Table results with variant data distributions](2023-intertwined-heterogeneity/table5_6.png)
+![Table results with variant data distributions](2023-intertwined-heterogeneity/intertwined-table1213.png)

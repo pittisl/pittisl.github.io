@@ -136,7 +136,7 @@ sections:
         {{< hr-pittisl >}}
         ### [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/) {id=intertwined-heterogeneity}
         AAAI 2025
-        ![Intertwined Heterogeneity](2023-intertwined-heterogeneity/intertwined-heterogeneity-overview.png)
+        ![Intertwined Heterogeneity](2023-intertwined-heterogeneity/intertwined-fig2\.png)
         Federated Learning (FL) can be affected by data and device heterogeneities. Traditional schemes consider these heterogeneities as two separate and independent aspects, but this assumption is unrealistic in practical FL scenarios where these heterogeneities are intertwined. In these cases, traditional FL schemes are ineffective. We introduce a novel FL framework with the idea of estimating the distributions of clients' local training data from their uploaded stale model updates, and use these estimations to compute unstale client model updates. Experiments on comparison with existing FL strategies on mainstream datasets and models showed that our approach can improve the trained model accuracy by up to 25% and reduce the number of required training epochs by up to 35%.
         {{< hr-pittisl >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) {id=elastictrainer}
