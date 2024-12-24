@@ -16,6 +16,7 @@ sections:
         Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
+          * [Inference-time Computation in Generative AI](/projects/infer-time-generative-ai/)
           * [On-device AI](/projects/on-device-ai/)
           * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
@@ -96,7 +97,7 @@ sections:
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities](/publication/2023-intertwined-heterogeneity/) {id=intertwined-heterogeneity}
-        ArXiv preprint
+        AAAI 2025
         ![Intertwined Heterogeneity](2023-intertwined-heterogeneity/intertwined-heterogeneity-overview.png)
         Federated Learning (FL) efficiency is influenced by intertwined data and device heterogeneities. Traditionally, these factors are treated separately, which becomes ineffective in addressing staleness issue due to asynchronous FL. We introduce a novel FL framework employing the gradient inversion technique to get estimations of clients' local training data from their uploaded stale model updates, and use these estimations to compute non-stale client model updates, which addresses both data quality and privacy concerns. Experiments on mainstream datasets reveal our approach enhances model accuracy by up to 20% and accelerates FL training by up to 35% over existing methods.
         {{< hr-pittisl >}}

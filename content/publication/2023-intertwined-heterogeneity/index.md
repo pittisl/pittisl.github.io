@@ -1,5 +1,5 @@
 ---
-title: 'Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities'
+title: 'Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness'
 authors:
   - haoming
   - wei
@@ -13,13 +13,13 @@ publishDate: '2023-09-25T00:00:11Z'
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *arXiv preprint*
-publication_short: In *arXiv*
+publication: In *Proceedings of the 39th Annual Conference on Artificial Intelligence*
+publication_short: In *AAAI 2025*
 
-abstract: The efficiency of Federated Learning (FL) is often affected by both data and device heterogeneities. Data heterogeneity is defined as the heterogeneity of data distributions on different clients. Device heterogeneity is defined as the clients' variant latencies in uploading their local model updates due to heterogeneous conditions of local hardware resources, and causes the problem of staleness when being addressed by asynchronous FL. Traditional schemes of tackling the impact of staleness consider data and device heterogeneities as two separate and independent aspects in FL, but this assumption is unrealistic in many practical FL scenarios where data and device heterogeneities are intertwined. In these cases, traditional schemes of weighted aggregation in FL have been proved to be ineffective, and a better approach is to convert a stale model update into a non-stale one. In this paper, we present a new FL framework that leverages the gradient inversion technique for such conversion, hence efficiently tackling unlimited staleness in clients' model updates. Our basic idea is to use gradient inversion to get estimations of clients' local training data from their uploaded stale model updates, and use these estimations to compute non-stale client model updates. In this way, we address the problem of possible data quality drop when using gradient inversion, while still preserving the clients' local data privacy. We compared our approach with the existing FL strategies on mainstream datasets and models, and experiment results demonstrate that when tackling unlimited staleness, our approach can significantly improve the trained model accuracy by up to 20% and speed up the FL training progress by up to 35%.
+abstract: Federated Learning (FL) can be affected by data and device heterogeneities, caused by clients' different local data distributions and latencies in uploading model updates (i.e., staleness). Traditional schemes consider these heterogeneities as two separate and independent aspects, but this assumption is unrealistic in practical FL scenarios where these heterogeneities are intertwined. In these cases, traditional FL schemes are ineffective, and a better approach is to convert a stale model update into a unstale one. In this paper, we present a new FL framework that ensures the accuracy and computational efficiency of this conversion, hence effectively tackling the intertwined heterogeneities that may cause unlimited staleness in model updates. Our basic idea is to estimate the distributions of clients' local training data from their uploaded stale model updates, and use these estimations to compute unstale client model updates. In this way, our approach does not require any auxiliary dataset nor the clients' local models to be fully trained, and does not incur any additional computation or communication overhead at client devices. We compared our approach with the existing FL strategies on mainstream datasets and models, and showed that our approach can improve the trained model accuracy by up to 25% and reduce the number of required training epochs by up to 35%. Source codes can be found at [this https URL](https://github.com/pittisl/FL-with-intertwined-heterogeneity).
 
 # Summary. An optional shortened abstract.
 summary: Federated Learning (FL) efficiency is influenced by intertwined data and device heterogeneities. Traditionally, these factors are treated separately, which becomes ineffective in addressing staleness issue due to asynchronous FL. We introduce a novel FL framework employing the gradient inversion technique to get estimations of clients' local training data from their uploaded stale model updates, and use these estimations to compute non-stale client model updates, which addresses both data quality and privacy concerns. Experiments on mainstream datasets reveal our approach enhances model accuracy by up to 20% and accelerates FL training by up to 35% over existing methods.
@@ -28,7 +28,7 @@ tags:
   - 'on-device-ai'
 featured: true
 
-url_pdf: 'https://arxiv.org/pdf/2309.13536.pdf'
+url_pdf: 'https://arxiv.org/pdf/2309.13536'
 url_code: 'https://github.com/pittisl/FL-with-intertwined-heterogeneity'
 
 # Featured image
