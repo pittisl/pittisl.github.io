@@ -38,12 +38,6 @@ sections:
         * **Sep 2024:** Our paper, [Perceptual-Centric Image Super-Resolution using Heterogeneous Processors on Mobile Devices](/publication/2024-fye-sr/), has been accepted for publication at the 2024 ACM International Conference on Mobile Computing and Networking (MobiCom'24).
         * **Jun 2024:** The preprint of our recent work on preventing illegal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), and research on the spasitification of Small Language Models (SLMs), [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/), are now available on arXiv.
         * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware).
-#        * **Jan 2024:** Our paper, [Towards Green AI in Fine-Tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/), has been accepted for publication at the 2024 International Conference on Learning Representations (ICLR).
-#        * **Dec 2023:** The preprint of our recent work on runtime modality adaptation for embodied AI, [Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI](/publication/2023-mpnp-llm/), has been made publicly available [on arXiv](https://arxiv.org/abs/2312.07886).
-#        * **Sep 2023:** Two of our recent works, [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) (“GreenTrainer”) and [Tackling the Unlimited Staleness in Federated Learning with Intertwined Data and Device Heterogeneities](/publication/2023-intertwined-heterogeneity/), are now available online on arXiv.
-#        * **Jun 2023:** Two papers from our lab, [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) and [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/), are accepted and presented at MobiSys 2023.
-#        * **Nov 2022:** [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) is accepted and presented at SenSys 2022.
-#        * **Oct 2022:** Our AgileNN work is accepted and presented at MobiCom 2022. The published paper, [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/), is also available online.
       count: 0
       filters:
         author: ''
@@ -61,26 +55,26 @@ sections:
         padding: ['20px', '0', '20px', '0']
       columns: '2'
 
-  - block: markdown
-    id: infer-time-generative-ai
-    content:
-      title: Inference-time Computation in Generative AI
-      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of generative models today are mostly data dependent, and may fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Our research explores inference-time methods to refine generative AI computation and unleash potentials of the current models.'
-      text: -
-      text: |
-        ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
-        ArXiv preprint
-        {{< columns >}}
-        ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)
-        <--->
-        Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts. Check our preprint [here](https://arxiv.org/abs/2412.00596). We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
-        {{< /columns >}}
-        {{< hr >}}
-        [**View more...**](/projects/infer-time-generative-ai/)
-    design:
-      columns: '2'
-      spacing:
-        padding: ['20px', '0', '20px', '0']
+#   - block: markdown
+#     id: infer-time-generative-ai
+#     content:
+#       title: Inference-time Computation in Generative AI
+# #      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of generative models today are mostly data dependent, and may fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Our research explores inference-time methods to refine generative AI computation and unleash potentials of the current models.'
+#       text: -
+#       text: |
+#         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
+#         ArXiv preprint
+#         {{< columns >}}
+#         ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)
+#         <--->
+#         Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts. Check our preprint [here](https://arxiv.org/abs/2412.00596). We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
+#         {{< /columns >}}
+#         {{< hr >}}
+#         [**View more...**](/projects/infer-time-generative-ai/)
+#     design:
+#       columns: '2'
+#       spacing:
+#         padding: ['20px', '0', '20px', '0']
 
   - block: markdown
     id: on-device-ai
