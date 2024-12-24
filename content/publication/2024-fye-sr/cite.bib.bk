@@ -1,6 +1,0 @@
-@article{huang2024freezeasguard,
-  title={FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing},
-  author={Huang, Kai and Gao, Wei},
-  journal={arXiv preprint arXiv:2405.17472},
-  year={2024}
-}

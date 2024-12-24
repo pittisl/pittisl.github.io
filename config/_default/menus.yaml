@@ -24,6 +24,10 @@ main:
     weight: 52
   - name: Projects
     weight: 53
+  - name: Inference-time Computation in Generative AI
+    url: /projects/infer-time-generative-ai/
+    parent: Projects
+    weight: 75
   - name: On-device AI
     url: /projects/on-device-ai/
     parent: Projects

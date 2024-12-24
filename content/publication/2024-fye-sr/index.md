@@ -61,3 +61,87 @@ image:
 slides:
 ---
 
+## Background
+
+Recent SOTA Image Super-Resolution (SR) techniques are mainly based on Neural
+networks (NNs) that can better capture such non-linearity and
+hence improve the image quality. However, NN-based SR models are
+computationally expensive for mobile devices with limited computing power.
+A better alternative is to involve specialized hardware AI
+accelerators that have been readily available in mobile SoCs,
+such as Neural Processing Units (NPUs), in addition to traditional
+processors (e.g., CPU and GPU) for faster inference.
+However, their use of fixed-point
+arithmetic could result in low quality in upscaled images
+when being applied to regression-based SR task.
+
+To mitigate such image quality drop, existing schemes
+split input images into small patches and dispatch these
+patches to traditional processors and AI accelerators.
+However, when upscaled patches
+are re-stitched to form a complete image, such image-based
+split of SR computations often leads to color mismatch and
+visual inconsistency across image patches, as shown in the
+figure below. This inconsistency may not impact the structural
+image quality with a small portion of mismatching patches
+, but can largely affect the human perception of images.
+
+![Quality drop and visual inconsistency](2024-fye-sr/fye-sr-fig1.png)
+
+## Overview
+
+### Our Idea
+
+Our work addresses the visual inconsistency
+in upscaled images by introducing a new procedure-based
+approach to splitting SR computations among heterogeneous
+processors, as opposed to the traditional image-based split-
+ting. As shown below, We split the SR model and adaptively
+dispatch different NN layers of the SR model to heterogeneous\
+processors, according to the computing complexity
+of these NN layers and how SR computations in these layers
+are affected by the reduced arithmetic precision. Our goal
+is to maximize the utilization of AI accelerators within the
+given time constraints on SR computations, while minimizing
+their impact on perceptual image quality.
+
+![FYE-SR basic idea](2024-fye-sr/fye-sr-fig2.png)
+
+### System Design
+
+![FYE-SR system overview](2024-fye-sr/fye-sr-fig8.png)
+
+As shown in the figure above,
+our design of FYE-SR consists
+of three main modules. During the
+offline phase, we first use a SR Timing Profiler to measure the
+computing latencies of SR model’s different NN layers on
+traditional processors (e.g., GPU) and AI accelerators (e.g.,
+NPU), respectively. Then, knowledge about such latencies
+will be used to train a Model Split Learner to solve Eq. (2) for
+the optimal split of SR model.
+
+During the online phase, FYE-SR enforces such model
+split, and uses a Data Format Converter to convert the intermediate
+feature maps into the right data formats (e.g.,
+INT8 and FP32) for properly switching SR computations be-
+tween heterogeneous processors.
+
+## Results
+
+As shown in the figures below,
+compared to other SOTA image SR approaches,
+our method could reach the overall optimal result
+considering both the structual image quality and
+perceptual quality, while meeting the preset deadline
+requirement.
+
+![FYE-SR comparison results](2024-fye-sr/fye-sr-fig15.png)
+
+Looking into the output images, FYE-SR can effectively
+suppress the distortions and visual inconsistency at
+detailed objects (windows on buildings).
+
+![FYE-SR comparison: GPU-only, NPU-only](2024-fye-sr/fye-sr-fig16ab.png)
+
+![FYE-SR comparison: MobiSR, FYE-SR](2024-fye-sr/fye-sr-fig16cd.png)
