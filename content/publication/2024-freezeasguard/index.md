@@ -95,6 +95,10 @@ to fine-tuning SD v1.5. Each prompt adopts the same seed for generation.
 
 ### Duplicating copyrighted Artworks
 
+We use a self-collected dataset, namely Artwork, which contains
+1134 publicly available artwork images and text captions on the Web, from five famous digital
+artists with unique art styles.
+
 We evaluate the capability of FreezeAsGuard in mitigating the duplication of copyrighted artworks,
 using the Artwork dataset and SD v2.1 model.
 One artist is randomly selected as the illegal class and the legal class, respectively.
@@ -103,9 +107,9 @@ One artist is randomly selected as the illegal class and the legal class, respec
 
 ### Generating Explicit Content
 
-To evaluate FreezeAsGuard’s mitigation of explicit contents,
-we designate the NSFW-caption dataset as illegal class,
-and the Modern-Logo-v4 dataset as legal class.
+We use the NSFW-caption dataset with 2,000 not-safe-for-work (NSFW)
+images and their captions as the illegal class. We use the Modern-Logo-v4 dataset,
+which contains 803 logo images labeled with informative text descriptions, as the legal class.
 
 ![Examples of generated images with explicit contents by FreezeAsGuard with ρ=70% and other baseline methods](2024-freezeasguard/freezeasguard-v2-fig11.png)
 
