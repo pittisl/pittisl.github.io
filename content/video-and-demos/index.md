@@ -11,10 +11,15 @@ sections:
       text: |-
         # Teasers
         {{< columns >}}
+        ## [FreezeAsGuard](/publication/2024-freezeasguard/)
+        FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing
+        {{< youtube id="9D3ue-xhQkA" >}}
+        <--->
         ## [ElasticTrainer](/publication/2023-elastictrainer/)
         ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection
         {{< youtube id="q86LnqEew_U" >}}
-        <--->
+        {{< /columns >}}
+        {{< columns >}}
         ## [PTEase](/publication/2023-ptease/)
         PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones
         {{< youtube id="Netn1AOdsz8" >}}

@@ -80,3 +80,6 @@ to fine-tuning SD v1.5. Each prompt adopts the same seed for generation.
 
 ![Qualitative Examples 1](2024-freezeasguard/freezeasguard-main.png)
 ![Qualitative Examples 2](2024-freezeasguard/freezeasguard-other.png)
+
+## Teaser Video
+{{< youtube id="9D3ue-xhQkA" >}}

@@ -135,6 +135,8 @@ sections:
         {{< columns >}}
         ![FreezeAsGuard](freezeasguard.png)
         <--->
+        {{< youtube id="9D3ue-xhQkA" >}}
+        {{< /columns >}}
         Illegally using fine-tuned diffusion models to forge human portraits has been a major threat to trustworthy AI. While most existing work focuses on detection of the AI-forged contents, our recent work instead aims to mitigate such illegal domain adaptation by applying safeguards on diffusion models. Being different from model unlearning techniques that cannot prevent the illegal domain knowledge from being relearned with custom or public data, our approach, namely FreezeGuard, suggests that the model publisher selectively freezes tensors in pre-trained models that are critical to the convergence of fine-tuning in illegal domains. FreezeAsGuard can effectively reduce the quality of images generated in illegal domains and ensure that these images are unrecognizable as target objects. Meanwhile, it has the minimum impact on legal domain adaptations, and can save up to 48% GPU memory and 21% wall-clock time in model fine-tuning.
         {{< /columns >}}
         {{< hr >}}
