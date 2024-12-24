@@ -19,10 +19,10 @@ publication_types: ['3']
 publication: In *arXiv preprint*
 publication_short: In *arXiv*
 
-abstract: Text-to-image diffusion models can be fine-tuned in custom domains to adapt to specific user preferences, but such unconstrained adaptability has also been utilized for illegal purposes, such as forging public figures' portraits and duplicating copyrighted artworks. Most existing work focuses on detecting the illegally generated contents, but cannot prevent or mitigate illegal adaptations of diffusion models. Other schemes of model unlearning and reinitialization, similarly, cannot prevent users from relearning the knowledge of illegal model adaptation with custom data. In this paper, we present FreezeAsGuard, a new technique that addresses these limitations and enables irreversible mitigation of illegal adaptations of diffusion models. The basic approach is that the model publisher selectively freezes tensors in pre-trained diffusion models that are critical to illegal model adaptations, to mitigate the fine-tuned model's representation power in illegal domains but minimize the impact on legal model adaptations in other domains. Such tensor freezing can be enforced via APIs provided by the model publisher for fine-tuning, can motivate users' adoption due to its computational savings. Experiment results with datasets in multiple domains show that FreezeAsGuard provides stronger power in mitigating illegal model adaptations of generating fake public figures' portraits, while having the minimum impact on model adaptation in other legal domains.
+abstract: Text-to-image diffusion models can be fine-tuned in custom domains to adapt to specific user preferences, but such adaptability has also been utilized for illegal purposes, such as forging public figures' portraits, duplicating copyrighted artworks and generating explicit contents. Existing work focused on detecting the illegally generated contents, but cannot prevent or mitigate illegal adaptations of diffusion models. Other schemes of model unlearning and reinitialization, similarly, cannot prevent users from relearning the knowledge of illegal model adaptation with custom data. In this paper, we present FreezeAsGuard, a new technique that addresses these limitations and enables irreversible mitigation of illegal adaptations of diffusion models. Our approach is that the model publisher selectively freezes tensors in pre-trained diffusion models that are critical to illegal model adaptations, to mitigate the fine-tuned model's representation power in illegal adaptations, but minimize the impact on other legal adaptations. Experiment results in multiple text-to-image application domains show that FreezeAsGuard provides 37% stronger power in mitigating illegal model adaptations compared to competitive baselines, while incurring less than 5% impact on legal model adaptations.
 
 # Summary. An optional shortened abstract.
-summary: Illegally using fine-tuned diffusion models to forge human portraits has been a major threat to trustworthy AI. While most existing work focuses on detection of the AI-forged contents, our recent work instead aims to mitigate such illegal domain adaptation by applying safeguards on diffusion models. Being different from model unlearning techniques that cannot prevent the illegal domain knowledge from being relearned with custom or public data, our approach, namely FreezeGuard, suggests that the model publisher selectively freezes tensors in pre-trained models that are critical to the convergence of fine-tuning in illegal domains. FreezeAsGuard can effectively reduce the quality of images generated in illegal domains and ensure that these images are unrecognizable as target objects. Meanwhile, it has the minimum impact on legal domain adaptations, and can save up to 48% GPU memory and 21% wall-clock time in model fine-tuning.
+summary: Illegally using fine-tuned diffusion models to forge human portraits has been a major threat to trustworthy AI. While most existing work focuses on detection of the AI-forged contents, our recent work instead aims to mitigate such illegal domain adaptation by applying safeguards on diffusion models. Being different from model unlearning techniques that cannot prevent the illegal domain knowledge from being relearned with custom or public data, our approach, namely FreezeGuard, suggests that the model publisher selectively freezes tensors in pre-trained models that are critical to illigal model adaptations while minimizing the impact on other legal adapations. Experiments in multiple text-to-image applications domains show that our method providing 37% stronger mitigation power while incurring less than 5% impact on legal model adapations.
 
 tags:
   - 'trustworthy-ai'
@@ -74,12 +74,44 @@ in innocent domains.
 
 ## Qualitative Examples of Generated Images
 
+In our experiments, we use three open-source diffusion models, SD v1.4, v1.5 and v2.1, to evaluate three domains of illegal model adaptations:
+
+1. Forging public figures’ portraits.
+2. Duplicating copyrighted artworks.
+3. Generating explicit content.
+
+### Forging Public Figures' Portraits
+
+We use a self-collected dataset, namely [Famous-Figures-25 (FF25)](/dataset/#ff25),
+with 8,703 publicly available portraits of 25 public figures on the Web.
+Each image has a prompt “a photo of <person_name> showing <content>” as description.
+
 The following figures show qualitative examples of generated images in illegal domains
-of 10 subjects in [our FF25 dataset](/dataset/#ff25), after applying FreezeAsGuard-30%
+of 10 subjects in our FF25 dataset, after applying FreezeAsGuard-30%
 to fine-tuning SD v1.5. Each prompt adopts the same seed for generation.
 
 ![Qualitative Examples 1](2024-freezeasguard/freezeasguard-main.png)
 ![Qualitative Examples 2](2024-freezeasguard/freezeasguard-other.png)
+
+### Duplicating copyrighted Artworks
+
+We evaluate the capability of FreezeAsGuard in mitigating the duplication of copyrighted artworks,
+using the Artwork dataset and SD v2.1 model.
+One artist is randomly selected as the illegal class and the legal class, respectively.
+
+![Examples of artwork images generated by FreezeAsGuard with different freezing ratios](2024-freezeasguard/freezeasguard-v2-fig9.png)
+
+### Generating Explicit Content
+
+To evaluate FreezeAsGuard’s mitigation of explicit contents,
+we designate the NSFW-caption dataset as illegal class,
+and the Modern-Logo-v4 dataset as legal class.
+
+![Examples of generated images with explicit contents by FreezeAsGuard with ρ=70% and other baseline methods](2024-freezeasguard/freezeasguard-v2-fig11.png)
+
+The result with ρ=70% configuration shows that FreezeAsGuard significantly reduces the model’s capability of
+generating explicit contents by up to 38% compared to unlearning schemes,
+while maintaining the model’s adaptability in legal class.
 
 ## Teaser Video
 {{< youtube id="9D3ue-xhQkA" >}}
