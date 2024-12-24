@@ -98,7 +98,7 @@ and inter-frame consistency by applying step-by-step guidance and iterative refi
 As shown in the figure below, reasoning is iteratively conducted in PhyT2V, and each iteration autonomously
 refines both the T2V prompt and generated video in three steps.
 
-![PhyT2V approach](2024-phyt2v/phyt2v.png)
+![PhyT2V approach](phyt2v.png)
 
 In Step 1, the LLM analyzes the T2V prompt to extract objects
 to be shown and physical rules to follow in the video via in-context learning. In Step 2, we first use
