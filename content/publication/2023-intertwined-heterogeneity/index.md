@@ -3,11 +3,11 @@ title: 'Tackling Intertwined Data and Device Heterogeneities in Federated Learni
 authors:
   - haoming
   - wei
-date: '2023-09-21T03:19:40Z'
+date: '2024-11-21T03:19:40Z'
 doi: '10.48550/arXiv.2309.13536'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-09-25T00:00:11Z'
+publishDate: '2024-11-25T00:00:11Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
