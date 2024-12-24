@@ -60,14 +60,13 @@ In practical Federated Learning (FL) scenarios, it is not uncommon to witness ex
 
 To demonstrate its impact, we conducted experiments by using the MNIST dataset on 100 clients to train a 3-layer CNN model. We set data heterogeneity as that each client only contain samples in one data class, and set device heterogeneity as a staleness of 40 epochs on clients with data samples in class 5. Results in the bottom-left figure show that, staleness will lead to large degradation of model accuracy, and using weighted aggregation will further enlarge the degradation. The bottom-right figure also shows that other techniques such as DC-ASGD become ineffective rapidly with the increase of staleness epoch value.
 
-![The impact of staleness in asynchronous Federated Learning](2023-intertwined-heterogeneity/figure1_2.png)
-
+![The impact of staleness in asynchronous Federated Learning](2023-intertwined-heterogeneity/intertwined-fig1.png)
 
 ## Methodology
 
 We propose addressing the above limitations based on existing techniques of gradient inversion. Gradient inversion (GI) aims to recover the original training data from gradients of a model under the white box setting where the all information about the model is known. The basic idea is to minimize the difference between the trained model’s gradient and the gradient computed from the recovered data.
 
-![Overall Picture](2023-intertwined-heterogeneity/intertwined-heterogeneity-overview.png)
+![Overall Picture](2023-intertwined-heterogeneity/intertwined-fig2.png)
 
 As shown in the figure above, our proposed technique consists of three key components: 1) recovering an intermediate dataset from the received stale model update via gradient inversion to represent the distribution of the client’s training data; 2) estimating the unstale model update using the recovered dataset; and 3) deciding when to switch back to vanilla FL in the late stage of FL training, to avoid the excessive estimation error from gradient inversion.
 
