@@ -55,27 +55,6 @@ sections:
         padding: ['20px', '0', '20px', '0']
       columns: '2'
 
-#   - block: markdown
-#     id: infer-time-generative-ai
-#     content:
-#       title: Inference-time Computation in Generative AI
-# #      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of generative models today are mostly data dependent, and may fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Our research explores inference-time methods to refine generative AI computation and unleash potentials of the current models.'
-#       text: -
-#       text: |
-#         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
-#         ArXiv preprint
-#         {{< columns >}}
-#         ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)
-#         <--->
-#         Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts. Check our preprint [here](https://arxiv.org/abs/2412.00596). We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
-#         {{< /columns >}}
-#         {{< hr >}}
-#         [**View more...**](/projects/infer-time-generative-ai/)
-#     design:
-#       columns: '2'
-#       spacing:
-#         padding: ['20px', '0', '20px', '0']
-
   - block: markdown
     id: infer-time-generative-ai
     content:
@@ -85,9 +64,11 @@ sections:
         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
         ArXiv preprint
         {{< columns >}}
-        ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)
+        ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)  
+        * Check our preprint [here](https://arxiv.org/abs/2412.00596).
+        * We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
         <--->
-        Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts. Check our preprint [here](https://arxiv.org/abs/2412.00596). We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
+        Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts.
         {{< /columns >}}
         {{< hr >}}
         [**View more...**](/projects/infer-time-generative-ai/)

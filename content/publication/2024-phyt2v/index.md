@@ -122,3 +122,10 @@ and our method PhyT2V, when applied to the same model, better reflects
 the real-world physical knowledge.
 
 ![PhyT2V improvements compared to SOTA T2V models](2024-phyt2v/phyt2v-fig1.png)
+
+### Online Demo
+
+We have released a Discord Bot which allows you to try our work on-the-fly
+with SOTA T2V models.
+Please visit [this link](https://discord.com/channels/1312937020141732011/1314317637047812207)
+to get started.
