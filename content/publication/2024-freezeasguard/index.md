@@ -76,9 +76,9 @@ in innocent domains.
 
 In our experiments, we use three open-source diffusion models, SD v1.4, v1.5 and v2.1, to evaluate three domains of illegal model adaptations:
 
-1. Forging public figures’ portraits.
-2. Duplicating copyrighted artworks.
-3. Generating explicit content.
+1. [Forging public figures’ portraits](#forging-public-figures-portraits).
+2. [Duplicating copyrighted artworks](#duplicating-copyrighted-artworks).
+3. [Generating explicit content](#generating-explicit-content).
 
 ### Forging Public Figures' Portraits
 
