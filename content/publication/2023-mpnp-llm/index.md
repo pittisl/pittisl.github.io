@@ -1,8 +1,9 @@
 ---
-title: 'Modality Plug-and-Play: Elastic Modality Adaptation in Multimodal LLMs for Embodied AI'
+title: 'Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous Mobile Systems'
 authors:
   - kai
-  - boyuan
+  - xiangyu
+  - 'Heng Huang'
   - wei
 date: '2024-12-14T00:00:00Z'
 doi: '10.48550/arXiv.2312.07886'
