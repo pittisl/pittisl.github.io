@@ -32,12 +32,11 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
         * **Dec 2024:** Our paper, [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/), has been accepted for publication at the 39th Annual Conference on Artificial Intelligence (AAAI 2025).
         * **Dec 2024:** Two of our papers, [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications]() and [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous mobile Systems](/publication/2023-mpnp-llm/), have been accepted for publication at the 2025 ACM International Conference on Mobile Computing and Networking (MobiCom'25).
-        * **Nov 2024:** The preprint of our recent work on inference-time text-to-video (T2V) generation refinement, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), is now available on ArXiv.
         * **Sep 2024:** Our paper, [Perceptual-Centric Image Super-Resolution using Heterogeneous Processors on Mobile Devices](/publication/2024-fye-sr/), has been accepted for publication at the 2024 ACM International Conference on Mobile Computing and Networking (MobiCom'24).
         * **Jun 2024:** The preprint of our recent work on preventing illegal model adaptation, [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/), and research on the spasitification of Small Language Models (SLMs), [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/), are now available on arXiv.
-        * **Jan 2024:** We are happy to publish the dataset of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine, namely [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware).
       count: 0
       filters:
         author: ''
@@ -62,7 +61,7 @@ sections:
       subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of generative models today are mostly data dependent, and may fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Our research explores inference-time methods to refine generative AI computation and unleash potentials of the current models.'
       text: |
         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
-        ArXiv preprint
+        CVPR 2025
         {{< columns >}}
         ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)  
         * Check our preprint [here](https://arxiv.org/abs/2412.00596).
