@@ -34,7 +34,7 @@ featured: true
 #  - name: Artifact
 #    url: https://doi.org/10.5281/zenodo.7812218
 url_code: 'https://github.com/pittisl/mPnP-LLM'
-url_pdf: 'https://arxiv.org/pdf/2312.07886.pdf'
+url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobicom25_mpnp.pdf'
 #url_video: 'https://youtu.be/q86LnqEew_U'
 #url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/ElasticTrainer-slides.pptx'
 
