@@ -90,11 +90,13 @@ sections:
         Multimodal reasoning by LLMs is critical to autonomous mobile systems, but the growing diversity of input data modalities prevents incorporating all modalities into LLMs. Instead, only the useful modalities should be adaptively involved at runtime, based on the current environmental contexts and task requirements. Existing work on runtime modality adaptation uses fixed connections between data encoder and LLM’s input layer, but results in high training costs and ineffective cross-modal interaction. In this paper, we present MPnP, a new modality adaptation technique that connects data encoders to a flexible set of last LLM blocks and makes such latent connections fully trainable at runtime. Evaluation results show that MPnP has high compute and data efficiency, with 3.7× FLOPs reduction and 30% memory usage reduction compared to best baselines. It requires only few hundreds of training samples at runtime, and completes modality adaptation within few minutes on weak devices.
         {{< /columns >}}
         {{< hr-pittisl >}}
-        ### [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications(/publication/2025-aiot/) {id=aiot}
+        ### [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications](/publication/2025-aiot/) {id=aiot}
         MobiCom 2025
+        {{< columns >}}
         ![AIoT](2025-aiot/aiot.png)
         <--->
         Federated Artificial Intelligence of Things (AIoT) uses distributed data on IoT devices to train AI models. However, in practical AIoT systems, heterogeneous devices cause data heterogeneity and varying amounts of device staleness, which can reduce model performance or increase federated training time. Existing FL frameworks improperly consider device delays as independent from data heterogeneity. Our work explore a scenario where device delays and data heterogeneity are closely correlated, and propose FedDC, a new technique to mitigate the impact of device delays in such cases. Our basic idea is to use gradient inversion to learn knowledge about device’s local data distribution and use such knowledge to compensate the impact of device delays on devices’ model updates. Experiment shows that FedDC can improve the FL performance by 34% with high amounts of device delays, without impairing the devices’ local data privacy.
+        {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/) {id=intertwined-heterogeneity}
         AAAI 2025
