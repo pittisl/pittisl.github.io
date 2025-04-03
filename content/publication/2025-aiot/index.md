@@ -16,7 +16,7 @@ publishDate: '2025-03-30T00:00:11Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)'
+publication: In *Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)*
 publication_short: In *MobiCom 2025*
 
 abstract: Federated AIoT uses distributed data on IoT devices to train AI models. However, in practical AIoT systems, heterogeneous devices cause data heterogeneity and varying amounts of device staleness, which can reduce model performance or increase federated training time. When addressing the impact of device delays, existing FL frameworks improperly consider it as independent from data heterogeneity. In this paper, we explore a scenario where device delays and data heterogeneity are closely correlated, and propose FedDC, a new technique to mitigate the impact of device delays in such cases. Our basic idea is to use gradient inversion to learn knowledge about device’s local data distribution and use such knowledge to compensate the impact of device delays on devices’ model updates. Experiment results on heterogeneous IoT devices show that FedDC can improve the FL performance by 34% with high amounts of device delays, without impairing the devices’ local data privacy.
