@@ -26,6 +26,7 @@ summary: Federated Learning (FL) can be affected by data and device heterogeneit
 
 tags:
   - 'on-device-ai'
+  - 'federated-learning'
 featured: true
 
 url_pdf: 'https://arxiv.org/pdf/2309.13536'
