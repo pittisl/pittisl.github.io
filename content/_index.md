@@ -32,6 +32,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](https://arxiv.org/pdf/2504.13938)， has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
         * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
         * **Dec 2024:** Our paper, [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/), has been accepted for publication at the 39th Annual Conference on Artificial Intelligence (AAAI 2025).
         * **Dec 2024:** Two of our papers, [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications](/publication/2025-aiot/) and [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous mobile Systems](/publication/2023-mpnp-llm/), have been accepted for publication at the 2025 ACM International Conference on Mobile Computing and Networking (MobiCom'25).
