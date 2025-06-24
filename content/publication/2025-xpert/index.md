@@ -36,7 +36,7 @@ featured: true
 url_code: 'https://github.com/pittisl/ExplainablePersonalization'
 url_pdf: 'https://arxiv.org/pdf/2504.13938'
 #url_video: 'https://youtu.be/q86LnqEew_U'
-url_slides: 'https://github.com/pittisl/ExplainablePersonalization/raw/main/slides/mobisys2025-xpert-slides.pdf'
+url_slides: 'https://github.com/pittisl/ExplainablePersonalization/raw/main/slides/XPerT_mobisys_0623.pptx'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
