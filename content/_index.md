@@ -32,7 +32,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
-        * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](https://arxiv.org/pdf/2504.13938)， has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
+        * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](https://arxiv.org/abs/2504.13938), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
         * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
         * **Dec 2024:** Our paper, [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/), has been accepted for publication at the 39th Annual Conference on Artificial Intelligence (AAAI 2025).
         * **Dec 2024:** Two of our papers, [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications](/publication/2025-aiot/) and [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous mobile Systems](/publication/2023-mpnp-llm/), have been accepted for publication at the 2025 ACM International Conference on Mobile Computing and Networking (MobiCom'25).
@@ -83,6 +83,14 @@ sections:
       title: On-device AI
       subtitle: 'Our research aims to enable high-performance AI inference and training on resource-constrained mobile and embedded devices, to enable emerging applications such as AIoT, smart health and embodied AI. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks that incorporate domain knowledge of specific system applications into the neural network module design. Our recent research focuses on enabling computational efficient inference and training of modern Large Language Models (LLMs) on weak devices, to efficiently incorporate these devices’ rich varieties of data modalities into the LLMs’ representation power and hence allow more flexible domain adaptation and model personalization.'
       text: |
+        ### [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](https://arxiv.org/abs/2504.13938) {id=xpert}
+        MobiSys 2025
+        {{< columns >}}
+        ![XPerT.png](xpert.png)
+        <--->
+        Personalization of Large Language Models (LLMs) is important in practical applications to accommodate the individual needs of different mobile users. Due to data privacy concerns, LLM personalization often needs to be locally done at the user's mobile device, but such on-device personalization is constrained by both the limitation of on-device compute power and insufficiency of user's personal data. In this paper, we address these constraints by fine-tuning an already personalized LLM with user's personal data, and present XPerT, a new technique that ensure proper selection of such already personalized LLMs based on explainability about how they were being fine-tuned. We implemented and evaluated XPerT on various smartphone models with mainstream LLMs, and experiment results show that XPerT reduces the computation costs of on-device LLM personalization by 83%, and improves its data efficiency by 51%. 
+        {{< /columns >}}
+        {{< hr-pittisl >}}
         ### [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous Mobile Systems](/publication/2023-mpnp-llm/) {id=mpnp-llm}
         MobiCom 2025
         {{< columns >}}
