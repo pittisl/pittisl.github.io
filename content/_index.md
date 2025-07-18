@@ -33,7 +33,7 @@ sections:
       subtitle:
       text: |
         * **Jul 2025:** Our paper, [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/), has been accepted for publication at 2025 International Conference on Computer Vision (ICCV 2025).
-        * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award**!
+        * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award!**
         * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
         * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
         * **Dec 2024:** Our paper, [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/), has been accepted for publication at the 39th Annual Conference on Artificial Intelligence (AAAI 2025).
@@ -59,7 +59,7 @@ sections:
     id: multimodal-generative-ai
     content:
       title: Multimodal Generative AI
-      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. In applications under real-world scenarios, rich data modalities besides texts, such as images, audios and videos, are being integrated into generative AI research to solve emerging challenges. Our research explores multimodal generative AI computation and unleash potentials of the current models.'
+      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. In applications under real-world scenarios, rich data modalities other than text are being integrated into generative AI research to solve emerging challenges. Our research explores multimodal generative AI computation and unleash potentials of the current models.'
       text: |
         ### [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/) {id=xpert}
         MobiSys 2025
