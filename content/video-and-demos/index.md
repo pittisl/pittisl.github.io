@@ -8,6 +8,7 @@ sections:
   - block: markdown
     content:
       title: 'Video & Demos'
+      id: videos
       text: |-
         # Teasers
         {{< columns >}}
@@ -52,6 +53,21 @@ sections:
         {{< youtube id="f40TvdDaxqw" >}}
         <--->
         {{< /columns >}}
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '1'
+#      spacing:
+#        padding: ['20px', '0', '20px', '0']
+  - block: markdown
+    content:
+      title: 'Posters'
+      id: posters
+      text: |-
+        ## [GreenTrainer](/publication/2023-greentrainer/)
+        Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation
+        [![GreenTrainer poster](2023-greentrainer/greentrainer_iclr24_poster.png)](uploads/greentrainer_iclr24_poster.pdf)
+        {{< youtube id="9D3ue-xhQkA" >}}
       # Automatically link email and phone or display as text?
       autolink: true
     design:
