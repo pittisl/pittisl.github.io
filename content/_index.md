@@ -197,11 +197,11 @@ sections:
         ### [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/) {id=progait}
         ICCV 2025  
         {{< columns >}}
-        ![ProGait](2025-progait/progait-figure5.png)
-        <--->
-        Vision-based machine learning (ML) methods offer a scalable and non-invasive solution to gait analysis, but face challenges in correctly detecting and analyzing prosthesis, due to their unique appearances and new movement patterns. In this paper, we aim to bridge this gap by introducing a multi-purpose dataset, namely ProGait, to support multiple vision tasks including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis (GA). ProGait provides 412 video clips from four above-knee amputees when testing multiple newly-fitted prosthetic legs through walking trials, and depicts the presence, contours, poses, and gait patterns of human subjects with transfemoral prosthetic legs. Alongside the dataset itself, we also present benchmark tasks and fine-tuned baseline models to illustrate the practical application and performance of the ProGait dataset.
+        ![ProGait](2025-progait/progait-figure5.png)  
         #### [ProGait Dataset](/dataset/#progait)
         Our ProGait dataset aims to support multiple vision tasks on prosthesis users, including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis. Check our [dataset page](/dataset/#progait) for more information.
+        <--->
+        Vision-based machine learning (ML) methods offer a scalable and non-invasive solution to gait analysis, but face challenges in correctly detecting and analyzing prosthesis, due to their unique appearances and new movement patterns. In this paper, we aim to bridge this gap by introducing a multi-purpose dataset, namely ProGait, to support multiple vision tasks including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis (GA). ProGait provides 412 video clips from four above-knee amputees when testing multiple newly-fitted prosthetic legs through walking trials, and depicts the presence, contours, poses, and gait patterns of human subjects with transfemoral prosthetic legs. Alongside the dataset itself, we also present benchmark tasks and fine-tuned baseline models to illustrate the practical application and performance of the ProGait dataset.
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
