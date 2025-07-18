@@ -11,12 +11,12 @@ sections:
       image:
         filename: ssoe.jpg
       text: |
-        The **Intelligent System Lab** at University of Pittsburgh conducts research on
-        On-device AI, Mobile and embedded systems, Mobile and connected health,
-        Cyber-physical systems, Internet of Things, and more!
+        The **Intelligent System Lab** at University of Pittsburgh conducts pioneering research at the intersection between
+        AI and computer systems. Our current research focuses on Multimodal Generative AI, On-device AI, Mobile and embedded
+        systems, Mobile and connected health, Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
-          * [Inference-time Computation in Generative AI](/projects/infer-time-generative-ai/)
+          * [Multimodal Generative AI](/projects/multimodal-generative-ai/)
           * [On-device AI](/projects/on-device-ai/)
           * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
@@ -56,10 +56,10 @@ sections:
       columns: '2'
 
   - block: markdown
-    id: infer-time-generative-ai
+    id: multimodal-generative-ai
     content:
-      title: Inference-time Computation in Generative AI
-      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of generative models today are mostly data dependent, and may fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Our research explores inference-time methods to refine generative AI computation and unleash potentials of the current models.'
+      title: Multimodal Generative AI
+      subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. In applications under real-world scenarios, rich data modalities besides texts, such as images, audios and videos, are being integrated into generative AI research to solve emerging challenges. Our research explores multimodal generative AI computation and unleash potentials of the current models.'
       text: |
         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
         CVPR 2025
@@ -71,7 +71,7 @@ sections:
         Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts.
         {{< /columns >}}
         {{< hr >}}
-        [**View more...**](/projects/infer-time-generative-ai/)
+        [**View more...**](/projects/multimodal-generative-ai/)
     design:
       columns: '2'
       spacing:
