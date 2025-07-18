@@ -39,15 +39,15 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:wel220@pitt.edu'
-#  - icon: google-scholar
-#    icon_pack: ai
-#    link: https://scholar.google.com/citations?user=
-#  - icon: github
-#    icon_pack: fab
-#    link: https://github.com/
-#  - icon: linkedin
-#    icon_pack: fab
-#    link: https://www.linkedin.com/in/
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=56mqGSMAAAAJ
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/svical
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/weichenliu418/
 #  - icon: earth-americas
 #    icon_pack: fas
 #    link: https://
