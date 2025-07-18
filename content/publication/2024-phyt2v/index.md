@@ -31,9 +31,9 @@ tags:
   - 'multimodal-generative-ai'
 featured: true
 
-#links:
-#  - name: Artifact
-#    url: https://doi.org/10.5281/zenodo.7812218
+links:
+  - name: Poster
+    url: https://pittisl.github.io/uploads/PhyT2V_cvpr2025_poster.pdf
 url_code: 'https://github.com/pittisl/PhyT2V'
 url_pdf: 'https://arxiv.org/pdf/2412.00596'
 #url_video: 'https://youtu.be/q86LnqEew_U'

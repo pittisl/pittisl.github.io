@@ -30,6 +30,9 @@ tags:
   - 'on-device-ai'
 featured: true
 
+links:
+  - name: Poster
+    url: https://pittisl.github.io/uploads/greentrainer_iclr24_poster.pdf
 url_pdf: 'https://arxiv.org/pdf/2309.13192.pdf'
 url_code: 'https://github.com/pittisl/GreenTrainer'
 url_video: 'https://recorder-v3.slideslive.com/#/share?share=91206&s=8f42f7fb-f0ed-4714-b281-fa9f52f38379'
