@@ -22,6 +22,11 @@ sections:
       text: |
         ProGait is a multi-purpose video dataset aimed to support multiple vision tasks on prosthesis users, including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis. ProGait provides 412 video clips from four above-knee amputees when testing multiple newly-fitted prosthetic legs through walking trials, and depicts the presence, contours, poses, and gait patterns of human subjects with transfemoral prosthetic legs.
 
+        Example data sample and annotations:  
+        ![ProGait dataset example](2025-progait/progait-dataset-example.jpg)
+        
+        {{< hr-pittisl >}}
+
         * Visit [ProGait dataset on HuggingFace](https://huggingface.co/datasets/ericyxy98/ProGait) for detailed description and dataset downloading.
         * Visit [ProGait repository on GitHub](https://github.com/pittisl/ProGait) for related source code.
         * Our [ProGait](/publication/2025-progait/) paper makes use of this dataset.
