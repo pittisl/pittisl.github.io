@@ -76,7 +76,7 @@ We collected 412 video clips from four above-knee amputees, when testing multipl
 
 Each walking trial includes both frontal and sagittal views, providing comprehensive perspectives for analysis. To ensure diversity and generalizability, the trials on each subject involve various types and configurations of prosthetic legs, different background contexts and lighting conditions, and heterogeneous presence of other human individuals. The dataset covers a diverse range of normal and abnormal gait patterns, each of which is accompanied by detailed textual descriptions from researchers in rehabilitation sciences and human engineering. As shown below, these descriptions outline the correlations between abnormal gait deviations and the necessary corrective adjustments in order to regain normal gaits, as well as detailed reasons about why such adjustments are needed.
 
-![Examples of video frames and annotations](2025-progait/progait-dataset-examples.png)
+![Examples of video frames and annotations](2025-progait/progait-dataset-examples.jpg)
 
 ## Benchmarks
 
@@ -97,4 +97,4 @@ To facilitate the effective use of the ProGait dataset, we establish several ben
 ## Dataset access
 
 We publish the ProGait dataset together with the paper. Please refer to
-our [ dataset page](/dataset/#progait) for more information.
+our [dataset page](/dataset/#progait) for more information.
