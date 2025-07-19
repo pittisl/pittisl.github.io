@@ -64,3 +64,8 @@ image:
 #   Otherwise, set `slides: ""`.
 slides:
 ---
+
+## Related dataset
+
+We publish the ProGait dataset together with the paper. Please refer to
+our [ dataset page](/dataset/#progait) for more information.
