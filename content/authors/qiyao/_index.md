@@ -35,19 +35,19 @@ bio: PhD student in Electrical and Computer Engineering
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-#social:
-#  - icon: envelope
-#    icon_pack: fas
-#    link: 'mailto:XXX@pitt.edu'
-#  - icon: google-scholar
-#    icon_pack: ai
-#    link: https://scholar.google.com/citations?user=
-#  - icon: github
-#    icon_pack: fab
-#    link: https://github.com/
-#  - icon: linkedin
-#    icon_pack: fab
-#    link: https://www.linkedin.com/in/
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:Qiyao_Xue@pitt.edu'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=yNPzzOAAAAAJ
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/xue-qi-yao
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/qiyao-xue-063694218
 #  - icon: earth-americas
 #    icon_pack: fas
 #    link: https://

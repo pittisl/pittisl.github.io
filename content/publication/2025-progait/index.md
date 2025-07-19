@@ -65,7 +65,36 @@ image:
 slides:
 ---
 
-## Related dataset
+## Video and annotations in the dataset
+
+We collected 412 video clips from four above-knee amputees, when testing multiple newly-fitted prosthetic legs through walking trials. The videos encompasses the following to primary scenarios:
+
+1. **Walking inside the parallel bars without external assistance**: Subjects navigate the parallel bars independently, focusing on balance and stability.
+2. **Walking in hallways outside the parallel bars with assistance**: Subjects ambulate in open indoor spaces with support from others, simulating real-world walking conditions.
+
+![The two scenarios](2025-progait/progait-figure3.png)
+
+Each walking trial includes both frontal and sagittal views, providing comprehensive perspectives for analysis. To ensure diversity and generalizability, the trials on each subject involve various types and configurations of prosthetic legs, different background contexts and lighting conditions, and heterogeneous presence of other human individuals. The dataset covers a diverse range of normal and abnormal gait patterns, each of which is accompanied by detailed textual descriptions from researchers in rehabilitation sciences and human engineering. As shown below, these descriptions outline the correlations between abnormal gait deviations and the necessary corrective adjustments in order to regain normal gaits, as well as detailed reasons about why such adjustments are needed.
+
+![Examples of video frames and annotations](2025-progait/progait-dataset-examples.png)
+
+## Benchmarks
+
+To facilitate the effective use of the ProGait dataset, we establish several benchmark tasks and provide fine-tuned baseline models as reference implementations.
+
+### Benchmark tasks and metrics
+
+* **Video Object Segmentation**. For the segmentation task, we primarily use the mean Intersection over Union (mIoU) as the evaluation metric. The mIoU measures the overlap between the predicted mask and the ground-truth mask across video frames through a pixel-wise calculation.
+* **2D Human Pose Estimation**. We evaluate the accuracy of pose estimation following the COCO-WholeBody standard, and use the Average Precision (AP) across different Object Keypoint Similarity (OKS) thresholds ranging from 0.5 to 0.95, namely the AP@[.5,.95] as the primary metric.
+* **Gait Classfication**. This task categorizes video clips into predefined gait classes, by capturing the variations in movement patterns induced by different prosthetic configurations, walking conditions, or rehabilitation progress. We provide an end-to-end pipeline for training and evaluating different classification models.
+
+### Baseline models
+
+* For the Video Object Segmentation task, we use **YOLO11**.
+* For the 2D Human Pose Estimation task, we use **RTM-Pose** from the MMPose framework.
+* For the Gait Classification task, we use a **custom LSTM classifier**, which processes the sequence of poses over time and classifies the gait pattern for each video sample.
+
+## Dataset access
 
 We publish the ProGait dataset together with the paper. Please refer to
 our [ dataset page](/dataset/#progait) for more information.
