@@ -25,8 +25,6 @@ sections:
         Example data sample and annotations:  
         ![ProGait dataset example](2025-progait/progait-dataset-examples.jpg)
 
-        {{< hr-pittisl >}}
-
         * Visit [ProGait dataset on HuggingFace](https://huggingface.co/datasets/ericyxy98/ProGait) for detailed description and dataset downloading.
         * Visit [ProGait repository on GitHub](https://github.com/pittisl/ProGait) for related source code.
         * Our [ProGait](/publication/2025-progait/) paper makes use of this dataset.

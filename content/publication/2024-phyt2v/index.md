@@ -35,7 +35,7 @@ links:
   - name: Poster
     url: https://pittisl.github.io/uploads/PhyT2V_cvpr2025_poster.pdf
 url_code: 'https://github.com/pittisl/PhyT2V'
-url_pdf: 'https://arxiv.org/pdf/2412.00596'
+url_pdf: 'https://openaccess.thecvf.com/content/CVPR2025/papers/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.pdf'
 #url_video: 'https://youtu.be/q86LnqEew_U'
 #url_slides: 'https://github.com/HelloKevin07/HelloKevin07.github.io/raw/master/files/ElasticTrainer-slides.pptx'
 
