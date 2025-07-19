@@ -29,7 +29,7 @@ education:
   courses:
     - course: PhD in Electrical and Computer Engineering
       institution: University of Pittsburgh
-      year: 2018
+      year: '2018 -'
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons

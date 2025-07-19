@@ -51,7 +51,7 @@ sections:
         * `train/metadata.csv`
 
         For details, please refer to our related source code repository and paper.
-        * You may download the dataset from our [dataset homepage](https://huggingface.co/datasets/hosiet/famous-figures-25).
+        * You may download the dataset from our [dataset homepage](https://huggingface.co/datasets/pittisl/famous-figures-25).
         * The source code related to using the dataset can be found [from our GitHub repository](https://github.com/pittisl/FreezeAsGuard).
         * Our [FreezeAsGuard](/publication/2024-freezeasguard/) paper makes use of the FF25 dataset.
       # Automatically link email and phone or display as text?
@@ -174,7 +174,7 @@ sections:
         For the discussion of detailed meanings of different GPU PCs, please refer to Section 4 of [our paper](https://doi.org/10.1145/3503222.3507757).
         {{< hr-pittisl >}}
         ## External Resources
-        * You may find more details on our [dataset homepage](https://huggingface.co/datasets/hosiet/android-perfcounter-to-key-press).
+        * You may find more details on our [dataset homepage](https://huggingface.co/datasets/pittisl/android-perfcounter-to-key-press).
         * Our [Mobile GPU Eavesdropping](/publication/2022-mobile-gpu-eavesdropping/) paper provides more information on the background and information leakage based on GPU PCs.
     design:
       columns: '2'
