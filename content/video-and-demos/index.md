@@ -40,7 +40,7 @@ sections:
       id: videos
       text: |-
         # Teasers
-        {{% columns %}}
+        {{< columns >}}
         ## [FreezeAsGuard](/publication/2024-freezeasguard/)
         FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing
         {{< youtube id="9D3ue-xhQkA" >}}
@@ -48,8 +48,8 @@ sections:
         ## [ElasticTrainer](/publication/2023-elastictrainer/)
         ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection
         {{< youtube id="q86LnqEew_U" >}}
-        {{% /columns %}}
-        {{% columns %}}
+        {{< /columns >}}
+        {{< columns >}}
         ## [PTEase](/publication/2023-ptease/)
         PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones
         {{< youtube id="Netn1AOdsz8" >}}
@@ -57,11 +57,11 @@ sections:
         ## [TransFi](/publication/2022-transfi/)
         TransFi: emulating custom wireless physical layer from commodity wifi
         {{< youtube id="-BngtciwxfA" >}}
-        {{% /columns %}}
+        {{< /columns >}}
 
         {{< hr >}}
         # Paper Presentations
-        {{% columns %}}
+        {{< columns >}}
         ## [SpiroSonic](/publication/2020-spirosonic/)
         SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones
         {{< youtube id="SDiboSXJr28" >}}
@@ -73,15 +73,15 @@ sections:
         ## [Smartphone GPU Side Channel](/publication/2022-mobile-gpu-eavesdropping/)
         Eavesdropping User Credentials via GPU Side Channels on Smartphones
         {{< youtube id="LE9Eyn43zSs" >}}
-        {{% /columns %}}
+        {{< /columns >}}
 
         {{< hr >}}
         # Live Demo
-        {{% columns %}}
+        {{< columns >}}
         ## [Eavesdropping User Credentials via GPU Side Channels on Smartphones](/publication/2022-mobile-gpu-eavesdropping/)
         {{< youtube id="f40TvdDaxqw" >}}
         <--->
-        {{% /columns %}}
+        {{< /columns >}}
       # Automatically link email and phone or display as text?
       autolink: true
     design:
