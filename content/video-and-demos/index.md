@@ -7,6 +7,18 @@ type: landing
 sections:
   - block: markdown
     content:
+      title: 'Video, Demos and Posters'
+      id: videos
+      text: |-
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '1'
+#      spacing:
+#        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
+    content:
       title: 'Posters'
       id: posters
       text: |-
@@ -76,7 +88,7 @@ sections:
       columns: '1'
 #      spacing:
 #        padding: ['20px', '0', '20px', '0']
-#
+
 #   - block: markdown
 #     content:
 #       title:
