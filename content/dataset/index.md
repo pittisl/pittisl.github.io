@@ -70,13 +70,13 @@ sections:
       title: "[Acoustic Waveform Respiratory Evaluation (AWARE)](#aware)"
       subtitle: January 2024
       text: |
-        {{< columns >}}
+        {{% columns %}}
         The Acoustic Waveform Respiratory Evaluation (AWARE) dataset consists of a group of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine.
         
         This dataset contains airway measurements of 382 human subjects, including patients with various pulmonary diseases and healthy control subjects, recruited from the Children's Hospital of Pittsburgh during the past 3 years. The contents of the dataset include raw WAV files from acoustic sensing, segmented and aligned acoustic signal pulses, and processed measurements of airway cross-sectional areas.
         <--->
         ![AWARE Setup](aware-dataset.jpg)
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         * Visit [AWARE dataset homepage](https://huggingface.co/datasets/ericyxy98/AWARE) for more information.
         * The source code related to using the dataset can be found [from our GitHub repository](https://github.com/pittisl/PTEase).

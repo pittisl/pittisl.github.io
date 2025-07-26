@@ -68,13 +68,13 @@ sections:
         {{< hr-pittisl >}}
         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
         CVPR 2025
-        {{< columns >}}
+        {{% columns %}}
         ![Our iteration of video and prompt self-refinement in PhyT2V](phyt2v.png)  
         * Check our paper [here](https://openaccess.thecvf.com/content/CVPR2025/papers/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.pdf).
         * We have also released a [Discord Bot](https://discord.com/channels/1312937020141732011/1314317637047812207) which allows you to try our work with SOTA T2V models.
         <--->
         Text-to-video (T2V) generative AI could revolutionize many current and emerging application and industry domains. However, the capabilities of today's T2V generative models are mostly data dependent. While they perform well in domains covered by the training data, they usually fail to obey the real-world common knowledge and physical rules with out-of-distribution prompts. Expanding the model's capabilities, on the other hand, relies on large amounts of real-world data and is hence not scalable. Our recent work aims to address this limitation of data dependency, by fully unleashing the current T2V models' potential in scene generation given proper and detailed prompts. Our approach, namely PhyT2V, is a training-free technique that leverages the LLM's capabilities of chain-of-thought and step-back reasoning in the language domain, to logically identify the deficiency of generated videos and iteratively refine the current T2V models' video generation by correcting such deficiency with more precise and well articulated prompts.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr >}}
         [**View more...**](/projects/multimodal-generative-ai/)
     design:
@@ -90,27 +90,27 @@ sections:
       text: |
         ### [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/) {id=xpert}
         MobiSys 2025
-        {{< columns >}}
+        {{% columns %}}
         ![XPerT.png](xpert.png)
         <--->
         Personalization of Large Language Models (LLMs) is important in practical applications to accommodate the individual needs of different mobile users. Due to data privacy concerns, LLM personalization often needs to be locally done at the user's mobile device, but such on-device personalization is constrained by both the limitation of on-device compute power and insufficiency of user's personal data. In this paper, we address these constraints by fine-tuning an already personalized LLM with user's personal data, and present XPerT, a new technique that ensure proper selection of such already personalized LLMs based on explainability about how they were being fine-tuned. We implemented and evaluated XPerT on various smartphone models with mainstream LLMs, and experiment results show that XPerT reduces the computation costs of on-device LLM personalization by 83%, and improves its data efficiency by 51%. 
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous Mobile Systems](/publication/2023-mpnp-llm/) {id=mpnp-llm}
         MobiCom 2025
-        {{< columns >}}
+        {{% columns %}}
         ![MPnP-LLM](mpnp-llm.png)
         <--->
         Multimodal reasoning by LLMs is critical to autonomous mobile systems, but the growing diversity of input data modalities prevents incorporating all modalities into LLMs. Instead, only the useful modalities should be adaptively involved at runtime, based on the current environmental contexts and task requirements. Existing work on runtime modality adaptation uses fixed connections between data encoder and LLM’s input layer, but results in high training costs and ineffective cross-modal interaction. In this paper, we present MPnP, a new modality adaptation technique that connects data encoders to a flexible set of last LLM blocks and makes such latent connections fully trainable at runtime. Evaluation results show that MPnP has high compute and data efficiency, with 3.7× FLOPs reduction and 30% memory usage reduction compared to best baselines. It requires only few hundreds of training samples at runtime, and completes modality adaptation within few minutes on weak devices.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications](/publication/2025-aiot/) {id=aiot}
         MobiCom 2025
-        {{< columns >}}
+        {{% columns %}}
         ![AIoT](2025-aiot/aiot-homepage.png)
         <--->
         Federated Artificial Intelligence of Things (AIoT) uses distributed data on IoT devices to train AI models. However, in practical AIoT systems, heterogeneous devices cause data heterogeneity and varying amounts of device staleness, which can reduce model performance or increase federated training time. Existing FL frameworks improperly consider device delays as independent from data heterogeneity. Our work explore a scenario where device delays and data heterogeneity are closely correlated, and propose FedDC, a new technique to mitigate the impact of such device delays. Our basic idea is to use gradient inversion to learn knowledge about device’s local data distribution and use such knowledge to compensate the impact of device delays on devices’ model updates. Experiment shows that FedDC can improve the FL performance by 34% with high amounts of device delays, without impairing the devices’ local data privacy.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/) {id=intertwined-heterogeneity}
         AAAI 2025
@@ -119,44 +119,44 @@ sections:
         {{< hr-pittisl >}}
         ### [Perceptual-Centric Image Super-Resolution using Heterogeneous Processors on Mobile Devices](/publication/2024-fye-sr/) {id=fye-sr}
         MobiCom'24
-        {{< columns >}}
+        {{% columns %}}
         ![Our SR method compared to Image-based Split Methods](fye-sr-vertical.jpg)
         <--->
         Image super-resolution (SR) is widely used on mobile devices to enhance user experience. However, neural networks used for SR are computationally expensive, posing challenges for mobile devices with limited computing power. A viable solution is to use heterogeneous processors on mobile devices, especially the specialized hardware AI accelerators, but the reduced arithmetic precision on AI accelerators can lead to degraded perceptual quality in upscaled images. To address this limitation, we present a novel image SR technique that enhances the perceptual quality of upscaled images when using heterogeneous processors for SR computations. It strategically splits the SR model and dispatches different layers to heterogeneous processors, to meet the time constraint while minimizing the impact of AI accelerators on image quality. Experiment results show that our method outperforms the best baselines, improving perceptual image quality by up to 2×, or reducing SR computing latency by up to 5.6× with on-par image quality.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/) {id=sparse-activation-slm}
         ArXiv preprint
-        {{< columns >}}
+        {{% columns %}}
         ![Sparse Activation on SLM](sparse-activation-slm.jpg)
         <--->
         Being different from model compression that requires expensive retraining, sparse activation can effectively reduce neural network models' inference cost at runtime without any prior retraining or adaptation efforts. Although sparse activation has been proved to be effective on Large Language Models (LLMs) that are usually redundant (e.g., OPT and BLOOMZ models), its applicability on recent Small Language Models (SLMs) with higher parameter efficiency remains questionable. Our recent work verified such possibility by using gradient-based attribution scores to evaluate neurons' importance in inference, in both analytical and experimental perspectives. Our results show that we can achieve up to 80% sparsity in major SLM models, including Phi-1.5/2 and MobiLlama-0.5B/1B, with less than 5% model accuracy loss on QA tasks.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) {id=greentrainer}
         2024 ICLR
-        {{< columns >}}
+        {{% columns %}}
         ![GreenTrainer](greentrainer.png)
         <--->
         The growing need of fine-tuning large language models (LLMs) can lead to significant energy consumption and environmental impact. To address this issue, we introduce GreenTrainer, a novel LLM fine-tuning technique. GreenTrainer assesses the backpropagation costs and contributions of different tensors to model accuracy, allowing for the selection of the most efficient set of tensors. This selection is guided by a user-defined objective, which can adapt to energy supply considerations and Green AI goals. Experimental results demonstrate that GreenTrainer can reduce FLOPs by up to 64% without compromising model accuracy, and outperforms existing techniques like LoRA while maintaining comparable FLOPs reduction.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) {id=elastictrainer}
         MobiSys'23  
-        {{< columns >}}
+        {{% columns %}}
         ![ElasticTrainer](elastictrainer.jpg)
         <--->
         {{< youtube id="q86LnqEew_U" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
         {{< hr-pittisl >}}
         ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/) {id=agilenn}
         MobiCom'22  
-        {{< columns >}}
+        {{% columns %}}
         ![AgileNN](agilenn.png)
         <--->
         {{< youtube id="OwNRcuTRgwE" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< hr >}}
         [**View more...**](/projects/on-device-ai/)
@@ -173,11 +173,11 @@ sections:
       text: |
         ### [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/) {id=freezeasguard}
         ArXiv preprint
-        {{< columns >}}
+        {{% columns %}}
         ![FreezeAsGuard](freezeasguard.png)
         <--->
         {{< youtube id="9D3ue-xhQkA" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         Text-to-image diffusion models can be fine-tuned in custom domains to adapt to specific user preferences, but such adaptability has also been utilized for illegal purposes, such as forging public figures’ portraits, duplicating copyrighted artworks and generating explicit contents. Existing work focused on detecting the illegally generated contents, but cannot prevent or mitigate illegal adaptations of diffusion models. Other schemes of model unlearning and reinitialization, similarly, cannot prevent users from relearning the knowledge of illegal model adaptation with custom data. In this paper, we present FreezeAsGuard, a new technique that addresses these limitations and enables irreversible mitigation of illegal adaptations of diffusion models. Our approach is that the model publisher selectively freezes tensors in pre-trained diffusion models that are critical to illegal model adaptations, to mitigate the fine-tuned model’s representation power in illegal adaptations, but minimize the impact on other legal adaptations. Experiment results in multiple text-to-image application domains show that FreezeAsGuard provides 37% stronger power in mitigating illegal model adaptations compared to competitive baselines, while incurring less than 5% impact on legal model adaptations.
         {{< hr >}}
         [**View more...**](/projects/trustworthy-ai/)
@@ -196,32 +196,32 @@ sections:
       text: |
         ### [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/) {id=progait}
         ICCV 2025  
-        {{< columns >}}
+        {{% columns %}}
         ![ProGait](2025-progait/progait-figure5.png)  
         #### [ProGait Dataset](/dataset/#progait)
         Our ProGait dataset aims to support multiple vision tasks on prosthesis users, including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis. Check our [dataset page](/dataset/#progait) for more information.
         <--->
         Vision-based machine learning (ML) methods offer a scalable and non-invasive solution to gait analysis, but face challenges in correctly detecting and analyzing prosthesis, due to their unique appearances and new movement patterns. In this paper, we aim to bridge this gap by introducing a multi-purpose dataset, namely ProGait, to support multiple vision tasks including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis (GA). ProGait provides 412 video clips from four above-knee amputees when testing multiple newly-fitted prosthetic legs through walking trials, and depicts the presence, contours, poses, and gait patterns of human subjects with transfemoral prosthetic legs. Alongside the dataset itself, we also present benchmark tasks and fine-tuned baseline models to illustrate the practical application and performance of the ProGait dataset.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
         MobiSys'23  
-        {{< columns >}}
+        {{% columns %}}
         ![PTEase](ptease.png)
         <--->
         {{< youtube id="Netn1AOdsz8" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         The first mobile health system that turns a commodity smartphone into a fully functional pulmonary examination device to measure the internal physiological conditions of human airways, such as airway caliber, obstruction and possible inflammation. Information about these airway conditions could provide vital clues for precise and objective pulmonary disease evaluation.
         #### [Acoustic Waveform Respiratory Evaluation (AWARE) Dataset](/dataset/#aware)  
         Our AWARE dataset consists of a group of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine. The PTEase paper makes use of the AWARE dataset.
         {{< hr-pittisl >}}
         ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](/publication/2020-spirosonic) {id=spirosonic}
         MobiCom'20  
-        {{< columns >}}
+        {{% columns %}}
         ![SpiroSonic](spirosonic.png)
         <--->
         {{< youtube id="SDiboSXJr28" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
         {{< hr >}}
         [**View more...**](/projects/mobile-and-connected-health/)
@@ -239,44 +239,44 @@ sections:
       text: |
         ### [FaceListener: Recognizing Human Facial Expressions via Acoustic Sensing on Commodity Headphones](publication/2022-facelistener/) {id=facelistener}
         IPSN'22
-        {{< columns >}}
+        {{% columns %}}
         ![FaceListener](facelistener.png)
         <--->
         FaceListener transforms the commodity headphone into an acoustic sensing device, which captures the face skin deformations caused by fa-cial muscle movements with different facial expressions. To ensure the recognition accuracy, FaceListener leverages the knowledge distillation technique to learn the subtle correlation between face skin deformation and the acoustic signal changes.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
         ASPLOS'22  
-        {{< columns >}}
+        {{% columns %}}
         ![MobileGPUEavesdropping](mobilegpueavesdropping_animation_comp.gif)
         <--->
         {{< youtube id="f40TvdDaxqw" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user’s sensitive credentials such as app username and password.
         {{< hr-pittisl >}}
         ### [MagHacker: eavesdropping on stylus pen writing via magnetic sensing from commodity mobile devices](publication/2020-maghacker/) {id=maghacker}
         MobiSys'20
-        {{< columns >}}
+        {{% columns %}}
         ![MagHacker](maghacker.png)
         <--->
         We present MagHacker, a new sensing system that realizes such eavesdropping attack over commodity mobile devices, which monitor and analyze the magnetic field being produced by the stylus pen’s internal magnet. It divides the continuous magnetometer readings into small segments that represent individual letters, and then translates these readings into writing trajectories for letter recognition.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=deltavr}
         IPSN'19  
-        {{< columns >}}
+        {{% columns %}}
         ![DeltaVR](deltavr.png)
         <--->
         This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](publication/2018-muvr/) {id=muvr}
         2018 IEEE SEC  
-        {{< columns >}}
+        {{% columns %}}
         ![MUVR](muvr.png)
         <--->
         MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr >}}
         [**View more...**](/projects/mobile-and-edge-computing-systems/)
 
@@ -293,20 +293,20 @@ sections:
       text: |
         ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) {id=aifi}
         SenSys'22  
-        {{< columns >}}
+        {{% columns %}}
         ![AiFi](aifi.jpg)
         <--->
         AiFi applies on-device AI techniques to interference cancellation in WiFi networks and enables generalizable interference cancellation on commodity WiFi devices without any extra RF hardware. By using neural network models to mimic WiFi network's PHY-layer operation, AiFi can be generally applied to different types of interference signals ranging from concurrent WiFi transmissions, ZigBee/Bluetooth to wireless baby monitors or even microwave oven, and improves the MAC-layer frame reception rate by 18x.
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr-pittisl >}}
         ### [TransFi: emulating custom wireless physical layer from commodity wifi](/publication/2022-transfi/) {id=transfi}
         MobiSys'22  
-        {{< columns >}}
+        {{% columns %}}
         TransFi realizes fine-grained signal emulation and allows commodity WiFi devices to emulate custom wireless physical layer, including but not limited to, custom PHY-layer preambles and new ways of agile spectrum usage. It could also improve the performance of cross-technology communication and many other wireless applications by up to 50x, enabling high-speed data communication on par with commodity WiFi.
         <--->
         ![TransFi](transfi.png)
         {{< youtube id="-BngtciwxfA" >}}
-        {{< /columns >}}
+        {{% /columns %}}
         {{< hr >}}
         [**View more...**](/projects/intelligent-wireless-systems/)
     design:
@@ -320,7 +320,7 @@ sections:
 #      title: 'More from Us...'
 #      subtitle: ''
 #      text: |
-#        {{< columns >}}
+#        {{% columns %}}
 #        ##### [News](news/)
 #        <--->
 #        ##### [Publication](publication/)
@@ -328,7 +328,7 @@ sections:
 #        ##### [GitHub](https://github.com/pittisl)
 #        <--->
 #        ##### [Contact](contact/)
-#        {{< /columns >}}
+#        {{% /columns %}}
 #    design:
 #      columns: '1'
 #      spacing:
