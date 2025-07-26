@@ -13,7 +13,7 @@ sections:
         ## Related Datasets
         ### [ProGait](/dataset/#progait)  
         July 2025  
-        {{% columns %}}
+        {{% columns ratio="2:1" %}}
         ProGait is a multi-purpose video dataset aimed to support multiple vision tasks on prosthesis users, including Video Object Segmentation, 2D Human Pose Estimation, and Gait Analysis.
         
         ProGait provides 412 video clips from four above-knee amputees when testing multiple newly-fitted prosthetic legs through walking trials, and depicts the presence, contours, poses, and gait patterns of human subjects with transfemoral prosthetic legs.
@@ -24,7 +24,7 @@ sections:
         [**View details...**](/dataset/#progait)
         ### [Acoustic Waveform Respiratory Evaluation (AWARE)](/dataset/#aware)
         January 2024  
-        {{% columns %}}
+        {{% columns ratio="2:1" %}}
         The Acoustic Waveform Respiratory Evaluation (AWARE) dataset consists of a group of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine.
 
         This dataset contains airway measurements of 382 human subjects, including patients with various pulmonary diseases and healthy control subjects, recruited from the Children’s Hospital of Pittsburgh during the past 3 years.
