@@ -7,6 +7,23 @@ type: landing
 sections:
   - block: markdown
     content:
+      title: 'Posters'
+      id: posters
+      text: |-
+        ## [GreenTrainer](/publication/2023-greentrainer/)
+        Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation
+        [![GreenTrainer poster](2023-greentrainer/greentrainer_iclr24_poster.png)](/uploads/greentrainer_iclr24_poster.pdf)
+        ## [PhyT2V](/publication/2024-phyt2v/)
+        PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation
+        [![PhyT2V poster](2024-phyt2v/PhyT2V_cvpr2025_poster.png)](/uploads/PhyT2V_cvpr2025_poster.pdf)
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '1'
+#      spacing:
+#        padding: ['20px', '0', '20px', '0']
+  - block: markdown
+    content:
       title: 'Video & Demos'
       id: videos
       text: |-
@@ -59,24 +76,7 @@ sections:
       columns: '1'
 #      spacing:
 #        padding: ['20px', '0', '20px', '0']
-  - block: markdown
-    content:
-      title: 'Posters'
-      id: posters
-      text: |-
-        ## [GreenTrainer](/publication/2023-greentrainer/)
-        Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation
-        [![GreenTrainer poster](2023-greentrainer/greentrainer_iclr24_poster.png)](/uploads/greentrainer_iclr24_poster.pdf)
-        ## [PhyT2V](/publication/2024-phyt2v/)
-        PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation
-        [![PhyT2V poster](2024-phyt2v/PhyT2V_cvpr2025_poster.png)](/uploads/PhyT2V_cvpr2025_poster.pdf)
-      # Automatically link email and phone or display as text?
-      autolink: true
-    design:
-      columns: '1'
-#      spacing:
-#        padding: ['20px', '0', '20px', '0']
-
+#
 #   - block: markdown
 #     content:
 #       title:
