@@ -34,7 +34,7 @@ featured: true
 #  - name: Artifact
 #    url: https://doi.org/10.5281/zenodo.7812218
 url_code: 'https://github.com/pittisl/ExplainablePersonalization'
-url_pdf: 'https://arxiv.org/pdf/2504.13938'
+url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3711875.3729132'
 #url_video: 'https://youtu.be/q86LnqEew_U'
 url_slides: 'https://github.com/pittisl/ExplainablePersonalization/raw/main/slides/XPerT_mobisys_0623.pptx'
 
