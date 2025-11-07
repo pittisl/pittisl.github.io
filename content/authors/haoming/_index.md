@@ -21,6 +21,9 @@ organizations:
 bio: PhD student in Electrical and Computer Engineering
 
 interests:
+  - Efficient Geneartive AI
+  - Spatial Reasoning
+  - Explainable AI
   - Federated Learning
 
 education:
