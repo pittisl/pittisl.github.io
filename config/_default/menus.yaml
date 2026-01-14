@@ -24,6 +24,10 @@ main:
     weight: 52
   - name: Projects
     weight: 53
+  - name: Spatial Intelligence
+    url: /projects/spatial-intelligence/
+    parent: Projects
+    weight: 70
   - name: Multimodal Generative AI
     url: /projects/multimodal-generative-ai/
     parent: Projects

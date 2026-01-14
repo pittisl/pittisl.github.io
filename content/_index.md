@@ -16,6 +16,7 @@ sections:
         systems, Mobile and connected health, Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
+          * [Spatial Intelligence](/projects/spatial-intelligence/)
           * [Multimodal Generative AI](/projects/multimodal-generative-ai/)
           * [On-device AI](/projects/on-device-ai/)
           * [Trustworthy AI](/projects/trustworthy-ai/)
@@ -54,6 +55,36 @@ sections:
       spacing:
         padding: ['20px', '0', '20px', '0']
       columns: '2'
+
+  - block: markdown
+    id: spatial-intelligence
+    content:
+      title: Spatial Intelligence
+      subtitle: 'Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses exploring the perception and reasoning of 3D world scenes by Multimodal large language models (MLLMs), and improve the model’s task performance under different application scenario.'
+      text: |
+        ### [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/) {id=infinibench}
+        ArXiv preprint
+        ![infinibench.png](2025-infinibench/infinibench.png)
+        We present InfiniBench, a fully automated, customizable and user-friendly benchmark generator that can synthesize a theoretically infinite variety of 3D scenes with parameterized control on scene complexity. InfiniBench uniquely translates scene descriptions in natural language into photo-realistic videos with complex and physically plausible 3D layouts. Experiments demonstrate that InfiniBench outperforms state-of-the-art procedural and LLM-based 3D generation methods in prompt fidelity and physical plausibility, especially in high-complexity scenarios. We further showcased the usefulness of InfiniBench, by generating benchmarks for representative spatial reasoning tasks including measurement, perspective-taking and spatiotemporal tracking.
+        {{< hr-pittisl >}}
+        ### [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/) {id=remindview-bench}
+        ArXiv preprint
+        {{< columns >}}
+        ![Benchmarking and Reasoning analysis in Multi-view spatial reasoning](2025-remindview-bench/remindview-bench-figure1.png)  
+        <--->
+        We present ReMindView-Bench, a cognitively grounded benchmark for evaluating how VLMs construct, align and maintain spatial mental models across complementary viewpoints. ReMindView-Bench systematically varies viewpoint spatial pattern and query type to probe key factors of spatial cognition. Explicit phase-wise analysis using LLM-as-a-judge and self-consistency prompting shows that VLMs perform well on in-frame perception but degrade sharply when integrating information across views. Implicit analysis, including linear probing and entropy dynamics, further show progressive loss of task-relevant information and uncertainty separation between correct and incorrect trajectories. These results provide a cognitively grounded diagnosis of VLM spatial reasoning and reveal how multi-view spatial mental models are formed, degraded and destabilized across reasoning phases.
+        {{< /columns >}}
+        {{< hr-pittisl >}}
+        ### [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/) {id=spatial-reasoning-survey}
+        ArXiv preprint
+        ![Spatial tasks for different application domains](2025-spatial-reasoning-survey/spatial-reasoning-survey-figure1.png)
+        Our survey on spatial reasoning introduces a taxonomy that organizes spatial intelligence from cognitive aspect and divides tasks in terms of reasoning complexity, linking them to several cognitive functions. We map existing benchmarks across text only, vision language, and embodied settings onto this taxonomy, and review evaluation metrics and methodologies for assessing spatial reasoning ability. This cognitive perspective enables more principled cross-task comparisons and reveals critical gaps between current model capabilities and human-like reasoning. In addition, we analyze methods for improving spatial ability, spanning both training-based and reasoning-based approaches. This dual perspective analysis clarifies their respective strengths, uncovers complementary mechanisms. By surveying tasks, benchmarks, and recent advances, we aim to provide new researchers with a comprehensive understanding of the field and actionable directions for future research.
+        {{< hr >}}
+        [**View more...**](/projects/spatial-intelligence/)
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
 
   - block: markdown
     id: multimodal-generative-ai
