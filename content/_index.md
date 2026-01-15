@@ -12,7 +12,7 @@ sections:
         filename: ssoe.jpg
       text: |
         The **Intelligent System Lab** at University of Pittsburgh conducts pioneering research at the intersection between
-        AI and computer systems. Our current research focuses on Multimodal Generative AI, On-device AI, Mobile and embedded
+        AI and computer systems. Our current research focuses on Spatial Intelligence, Multimodal Generative AI, On-device AI, Mobile and embedded
         systems, Mobile and connected health, Cyber-physical systems, Internet of Things, and more!
         
         Our projects:
