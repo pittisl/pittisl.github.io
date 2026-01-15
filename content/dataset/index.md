@@ -15,6 +15,49 @@ sections:
         padding: ['1.8rem', '0', '0', '0']
 
   - block: markdown
+    id: infinibench
+    content:
+      title: "[InfiniBench](#infinibench)"
+      subtitle: December 2025
+      text: |
+        **InfiniBench** is a dataset generator for procedurally generated 3D indoor environments designed for multimodal AI, embodied agents, and spatial reasoning tasks.
+
+        These scenes were created using an enhanced version of Infinigen that utilizes **Agentic Constraint Generation** (LLM-driven scene descriptions and code refinement) and **Cluster-Based Layout Optimization** to create logical, rigid-body furniture arrangements.
+
+        Each entry in this dataset represents a unique scene containing the raw 3D assets (`.blend`), optimized camera navigation trajectories (frontier-based exploration), rendered video feeds, and rich metadata for Visual Question Answering (VQA).
+
+        ### Data Structure
+        The dataset is organized by Scene ID. Each folder contains the assets, intermediate navigation results, renders, and metadata for a single generated environment.
+
+        ### Folder Layout
+        ```
+        dataset_root/
+        ├── scene_ID/
+        │   ├── scene.blend                     # Full 3D environment (Blender)
+        │   ├── trajectory/
+        │   │   ├── trajectory_data.csv           # Position & Rotation (Euler) for every frame
+        │   │   └── segmentation_maps/          # 2D Segmentation masks corresponding to the path
+        │   ├── render/
+        │   │   ├── frames/                     # Individual rendered frames
+        │   │   └── trajectory_video.mp4        # Compiled video of the optimized path
+        │   └── metadata/
+        │       ├── object_bbox_dimensions.csv  # 3D Bounding box sizes for all objects
+        │       ├── object_appearance.csv       # Order of appearance in the video
+        ```
+
+        {{< hr-pittisl >}}
+
+        * Visit [InfiniBench dataset on HuggingFace](https://huggingface.co/datasets/Haoming645/infinibench) for detailed description and dataset downloading.
+        * Visit [InfiniBench repository on GitHub](https://github.com/pittisl/infinibench) for related source code.
+        * Check out [our paper](/publication/2025-infinibench/) about this dataset.
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
     id: remindview-bench
     content:
       title: "[ReMindView-Bench](#remindview-bench)"
@@ -33,7 +76,7 @@ sections:
         * `ground_truth`: `B.toy animal`
         * `cross_frame`: `True`
         * `perspective_changing`: `False`
-        * `object_num: 18`
+        * `object_num`: `18`
 
         ### Sample scene
         Below you can find a data sample render showing indoor layouts and object detail captured in the benchmark.
