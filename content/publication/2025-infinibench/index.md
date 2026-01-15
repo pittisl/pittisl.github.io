@@ -59,3 +59,8 @@ image:
 #   Otherwise, set `slides: ""`.
 #slides:
 ---
+
+
+### Associated Dataset
+
+We also published [the associated dataset](/dataset/#infinibench) together with this paper.

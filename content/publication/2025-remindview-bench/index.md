@@ -89,3 +89,9 @@ Implicit analysis complements the explicit analysis, by probing the latent repre
 ### Conclusion
 
 Our work presents ReMindView-Bench, a cognitively grounded benchmark for evaluating spatial reasoning in multi-view settings. By combining explicit reasoning path analysis with implicit representation probing, we uncover fine-grained mechanisms explaining where and how current VLMs diverge from human-like spatial cognition. Comprehensive analysis shows that VLM limitations primarily stem from insufficient cross-view geometric alignment, unstable inference progression, and weak confidence calibration across reasoning phases. These findings highlight the need for VLM to maintain coherent spatial representations cross views, calibrate uncertainty dynamically, and integrate explicit and implicit signals to achieve cognitively grounded spatial reasoning.
+
+* * *
+
+### Associated Dataset
+
+We also published [the associated dataset](/dataset/#remindview-bench) together with this paper.
