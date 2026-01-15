@@ -59,3 +59,10 @@ image:
 #   Otherwise, set `slides: ""`.
 #slides:
 ---
+
+## Survey Taxonomy
+
+We introduce a cognitive taxonomy of spatial reasoning tasks, organizing them by function and reasoning complexity. We also map existing benchmarks, review evaluation metrics, and analyze training- and reasoning-based methods to improve spatial ability. The study highlights key gaps and future directions toward developing models with more human-like spatial intelligence.
+
+![Taxonomy of our survey](2025-spatial-reasoning-survey/spatial-reasoning-survey-figure3.png)
+
