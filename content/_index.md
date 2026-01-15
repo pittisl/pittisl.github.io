@@ -33,6 +33,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **Dec 2025:** Three of our recent papers, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/), and [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/), are now available on arXiv.
         * **Jul 2025:** Our paper, [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/), has been accepted for publication at 2025 International Conference on Computer Vision (ICCV 2025).
         * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award!**
         * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
@@ -60,20 +61,17 @@ sections:
     id: spatial-intelligence
     content:
       title: Spatial Intelligence
-      subtitle: 'Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses exploring the perception and reasoning of 3D world scenes by Multimodal large language models (MLLMs), and improve the model’s task performance under different application scenario.'
+      subtitle: 'Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses on exploring the perception and reasoning of 3D world scenes by vision-language models (VLMs), and improving the model’s task performance under different application scenarios.'
       text: |
         ### [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/) {id=infinibench}
-        ArXiv preprint
+        ArXiv preprint  
         ![infinibench.png](2025-infinibench/infinibench.png)
         We present InfiniBench, a fully automated, customizable and user-friendly benchmark generator that can synthesize a theoretically infinite variety of 3D scenes with parameterized control on scene complexity. InfiniBench uniquely translates scene descriptions in natural language into photo-realistic videos with complex and physically plausible 3D layouts. Experiments demonstrate that InfiniBench outperforms state-of-the-art procedural and LLM-based 3D generation methods in prompt fidelity and physical plausibility, especially in high-complexity scenarios. We further showcased the usefulness of InfiniBench, by generating benchmarks for representative spatial reasoning tasks including measurement, perspective-taking and spatiotemporal tracking.
         {{< hr-pittisl >}}
         ### [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/) {id=remindview-bench}
-        ArXiv preprint
-        {{< columns >}}
+        ArXiv preprint  
         ![Benchmarking and Reasoning analysis in Multi-view spatial reasoning](2025-remindview-bench/remindview-bench-figure1.png)  
-        <--->
         We present ReMindView-Bench, a cognitively grounded benchmark for evaluating how VLMs construct, align and maintain spatial mental models across complementary viewpoints. ReMindView-Bench systematically varies viewpoint spatial pattern and query type to probe key factors of spatial cognition. Explicit phase-wise analysis using LLM-as-a-judge and self-consistency prompting shows that VLMs perform well on in-frame perception but degrade sharply when integrating information across views. Implicit analysis, including linear probing and entropy dynamics, further show progressive loss of task-relevant information and uncertainty separation between correct and incorrect trajectories. These results provide a cognitively grounded diagnosis of VLM spatial reasoning and reveal how multi-view spatial mental models are formed, degraded and destabilized across reasoning phases.
-        {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/) {id=spatial-reasoning-survey}
         ArXiv preprint

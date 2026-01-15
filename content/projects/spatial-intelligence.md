@@ -8,11 +8,7 @@ sections:
     content:
       text: |
         # Spatial Intelligence
-        Spatial Intelligence is often defined as a computational capacity that provides the ability or skill
-        to solve spatial problems of navigation, object visualization from different angles and space, object
-        or scene recognition, etc. Our research focuses exploring the perception and reasoning of
-        3D world scenes by Multimodal large language models (MLLMs), and improve the model's
-        task performance under different application scenario.
+        Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses on exploring the perception and reasoning of 3D world scenes by vision-language models (VLMs), and improving the model’s task performance under different application scenarios.
         {{< hr >}}
         ## Related Papers
       filters:
