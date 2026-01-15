@@ -60,6 +60,23 @@ image:
 #slides:
 ---
 
+## Agentic Generation of Scene Constraints
+
+InfiniBench iteratively refines the generated scene constraints via a critical feedback loop. In each iteration, we use the scene layout optimizer described to attempt realizing the generated constraints into a 3D scene. If the optimizer fails, the returned error report, which includes a bird's eye view (BEV) map showing object collisions and a textual summary describing the unmet constraints, is fed back to the LLM agent to refine the constraint generation. Such refinement enforces a Chain-of-Thought (CoT) reasoning process that prompts the LLM agent to first analyze the failure, propose a solution accordingly, and then implement the changes on scene constraints.
+
+![constraint_generation](2025-infinibench/constraint_generation.png)
+
+## Layout Optimization for Complex Scenes
+
+To ensure robust layout optimization with high scene complexity, we restructured the layout engine with a flexible cluster-based optimization strategy. This strategy, builds on a new concept of movable cluster, defined as a dynamic group of related objects (e.g., a table and chairs surrounding it) that are treated as a single entity in optimization. 
+
+![optimizer](2025-infinibench/optimizer.png)
+
+## Camera Trajectory Optimization
+
+Our method is inspired by frontier-based exploration, a classical robotic navigation technique. Unlike traditional approaches that explore frontiers using occupancy grids, we define ``frontiers'' as the set of unvisited target objects. We then develop a viewpoint sampling method to find optimal views for these targets while avoiding occlusion.
+
+![path_gen](2025-infinibench/path_gen.png)
 
 ### Associated Dataset
 
