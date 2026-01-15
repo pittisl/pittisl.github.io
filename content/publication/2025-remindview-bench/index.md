@@ -62,3 +62,30 @@ image:
 #   Otherwise, set `slides: ""`.
 #slides:
 ---
+
+### Benchmark
+
+**ReMindView-Bench** consists of more than 50,000 multi-choice VQA pairs derived from 100 procedurally generated indoor scenes, and is constructed through a fully automated and physically grounded pipeline. It provides a fine-grained collection of VQA tasks from various cognitive science perspectives, as shown in the Figure below.
+
+![REMindView-Bench construction pipeline](2025-remindview-bench/remindview-bench-figure3.png)
+
+The pipeline first generates diverse indoor scenes with various room types and object densities by adjusting scene constraint parameters in [Infinigen](https://www.usenix.org/conference/osdi24/presentation/lee). Next, multiple views are rendered in Blender with controlled camera–object distances and spatial patterns. VQA data is produced using predefined query templates, combined with metadata extracted from the scene and views.
+
+### VLM Performance Evaluation
+
+We evaluated current VLMs’ performance on multi-view spatial reasoning, using ReMindView-Bench benchmark. Our evaluations reveal a pronounced gap between human spatial reasoning and current VLMs’ capabilities:
+
+* **Object-centric reasoning remains easier than view-centric reasoning.**
+* **Viewpoint transformations amplify the reasoning instability.**
+* **Cross-frame reasoning is more challenging than within-frame reasoning.**
+* **Number of objects and object-viewpoint distance jointly constrain spatial reasoning.**
+
+### VLM Reasoning Analysis
+
+Explicit analysis examines the correctness of a VLM’s reasoning phases and the consistency between reasoning and decision, pinpointing where spatial reasoning succeeds or breaks across reasoning phases. This includes **LLMs-as-a-judge** and **Self-Consistency Prompting**.
+
+Implicit analysis complements the explicit analysis, by probing the latent representation of VLMs, such as entropy distribution and representation pattern. While explicit analysis measures what the VLM claims to reason, implicit analysis reveals how its internal representations evolve and where it deteriorates across reasoning phases. This includes **Linear Probing Analysis** and **Entropy Dynamics Analysis**.
+
+### Conclusion
+
+Our work presents ReMindView-Bench, a cognitively grounded benchmark for evaluating spatial reasoning in multi-view settings. By combining explicit reasoning path analysis with implicit representation probing, we uncover fine-grained mechanisms explaining where and how current VLMs diverge from human-like spatial cognition. Comprehensive analysis shows that VLM limitations primarily stem from insufficient cross-view geometric alignment, unstable inference progression, and weak confidence calibration across reasoning phases. These findings highlight the need for VLM to maintain coherent spatial representations cross views, calibrate uncertainty dynamically, and integrate explicit and implicit signals to achieve cognitively grounded spatial reasoning.
