@@ -46,7 +46,7 @@ sections:
         ```
 
         {{< hr-pittisl >}}
-
+        ### External Resources
         * Visit [InfiniBench dataset on HuggingFace](https://huggingface.co/datasets/Haoming645/infinibench) for detailed description and dataset downloading.
         * Visit [InfiniBench repository on GitHub](https://github.com/pittisl/infinibench) for related source code.
         * Check out [our paper](/publication/2025-infinibench/) about this dataset.
@@ -65,7 +65,7 @@ sections:
       text: |
         ReMindView-Bench is a cognitively grounded benchmark for evaluating how Vision-Language Models (VLMs) construct, align, and maintain spatial mental models across complementary viewpoints. It addresses the struggle of current VLMs to maintain geometric coherence and cross-view consistency for spatial reasoning in multi-view settings by providing a fine-grained benchmark that isolates multi-view reasoning.
 
-        ### Dataset content
+        ### Dataset Content
         The dataset mainly consists of VQA samples. The metadata are stored in CSV files with the following columns: `folder_path` (scene/view folder), `query_type` (query relationship type), `query`, `ground_truth`, `choices`, `cross_frame` (whether cross frame reasoning is necessary), `perspective_changing` (whether requiring perspective changing), and `object_num` (object number in all frames).
 
         An example row looks like this:
@@ -78,7 +78,7 @@ sections:
         * `perspective_changing`: `False`
         * `object_num`: `18`
 
-        ### Sample scene
+        ### Sample Scene
         Below you can find a data sample render showing indoor layouts and object detail captured in the benchmark.
         ![ReMindView-Bench dataset sample](2025-remindview-bench/remindview-bench-dataset-sample.png)
         * Query: If you are positioned where the white sofa is, facing the same direction of the white sofa, what is the spatial relationship of the white TV stand to shelf trinket?
@@ -86,7 +86,7 @@ sections:
         * Answer: B. left
 
         {{< hr-pittisl >}}
-
+        ### External Resources
         * Visit [ReMindView-Bench dataset on HuggingFace](https://huggingface.co/datasets/Xue0823/ReMindView-Bench) for detailed description and dataset downloading.
         * Visit [ReMindView-Bench repository on GitHub](https://github.com/pittisl/ReMindView-Bench) for related source code.
         * Check out [our paper](/publication/2025-remindview-bench/) about this dataset.
