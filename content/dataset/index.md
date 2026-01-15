@@ -37,14 +37,16 @@ sections:
 
         ### Sample scene
         Below you can find a data sample render showing indoor layouts and object detail captured in the benchmark.
-        ![ReMindView-Bench dataset sample](2025-remindview-bench/remindview-bench-dataset-example.png)
+        ![ReMindView-Bench dataset sample](2025-remindview-bench/remindview-bench-dataset-sample.png)
         * Query: If you are positioned where the white sofa is, facing the same direction of the white sofa, what is the spatial relationship of the white TV stand to shelf trinket?
         * Choice: A. front-right, B. left, C. back, D. back-right
         * Answer: B. left
+
         {{< hr-pittisl >}}
+
         * Visit [ReMindView-Bench dataset on HuggingFace](https://huggingface.co/datasets/Xue0823/ReMindView-Bench) for detailed description and dataset downloading.
         * Visit [ReMindView-Bench repository on GitHub](https://github.com/pittisl/ReMindView-Bench) for related source code.
-        * Check out [our paper](/publication/2025-remindview-bench/) that makes use of this dataset.
+        * Check out [our paper](/publication/2025-remindview-bench/) about this dataset.
       # Automatically link email and phone or display as text?
       autolink: true
     design:
