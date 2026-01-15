@@ -15,6 +15,44 @@ sections:
         padding: ['1.8rem', '0', '0', '0']
 
   - block: markdown
+    id: remindview-bench
+    content:
+      title: "[ReMindView-Bench](#remindview-bench)"
+      subtitle: December 2025
+      text: |
+        ReMindView-Bench is a cognitively grounded benchmark for evaluating how Vision-Language Models (VLMs) construct, align, and maintain spatial mental models across complementary viewpoints. It addresses the struggle of current VLMs to maintain geometric coherence and cross-view consistency for spatial reasoning in multi-view settings by providing a fine-grained benchmark that isolates multi-view reasoning.
+
+        ### Dataset content
+        The dataset mainly consists of VQA samples. The metadata are stored in CSV files with the following columns: `folder_path` (scene/view folder), `query_type` (query relationship type), `query`, `ground_truth`, `choices`, `cross_frame` (whether cross frame reasoning is necessary), `perspective_changing` (whether requiring perspective changing), and `object_num` (object number in all frames).
+
+        An example row looks like this:
+        * `folder_path`: `dense_view_centric_view_frame_outputs_processed/Bedroom/Bedroom_1/MattressFactory(7143095).spawn_asset(3158442)/level_20`
+        * `query_type`: `object-object|relative_distance|non_perspective_changing|0`
+        * `query`: `“Which object is the closest to the shell?”`
+        * `choices`: `A.pillow, B.toy animal, C.shell`
+        * `ground_truth`: `B.toy animal`
+        * `cross_frame`: `True`
+        * `perspective_changing`: `False`
+        * `object_num: 18`
+
+        ### Sample scene
+        Below you can find a data sample render showing indoor layouts and object detail captured in the benchmark.
+        ![ReMindView-Bench dataset sample](2025-remindview-bench/remindview-bench-dataset-example.png)
+        * Query: If you are positioned where the white sofa is, facing the same direction of the white sofa, what is the spatial relationship of the white TV stand to shelf trinket?
+        * Choice: A. front-right, B. left, C. back, D. back-right
+        * Answer: B. left
+        {{< hr-pittisl >}}
+        * Visit [ReMindView-Bench dataset on HuggingFace](https://huggingface.co/datasets/Xue0823/ReMindView-Bench) for detailed description and dataset downloading.
+        * Visit [ReMindView-Bench repository on GitHub](https://github.com/pittisl/ReMindView-Bench) for related source code.
+        * Check out [our paper](/publication/2025-remindview-bench/) that makes use of this dataset.
+      # Automatically link email and phone or display as text?
+      autolink: true
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
     id: aware
     content:
       title: "[ProGait](#progait)"
