@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Jifeng Song
+title: Shiqi (Sarah) Wang
 
 # Full Name (for SEO)
-first_name: Jifeng
-last_name: Song
-order_id: 99
+first_name: Shiqi
+last_name: Wang
+order_id: 7
 
 # Is this the primary user of the site?
 superuser: false
@@ -19,21 +19,19 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in Electrical and Computer Engineering
+#bio: PhD student in Electrical and Computer Engineering
 
-#interests:
-#  - On-Device AI
-#  - AI for Systems
-#  - Mobile/Edge Computing
-#
-#education:
-#  courses:
-#    - course: BE in Electronic Information Engineering
-#      institution: University of Science and Technology of China (USTC)
-#      year: 2015-2019
-#    - course: PhD in Electrical and Computer Engineering
-#      institution: University of Pittsburgh
-#      year: 2019-2024
+# interests:
+#   - AI in Healthcare
+#   - Human-Robot Interaction
+#   - Assistive Robotics
+#   - Medical Devices
+
+# education:
+#   courses:
+#     - course: PhD in Electrical and Computer Engineering
+#       institution: University of Pittsburgh
+#       year: '2025 -'
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,19 +40,19 @@ bio: PhD student in Electrical and Computer Engineering
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jis219@pitt.edu'
+    link: 'mailto:shw322@pitt.edu'
 #  - icon: google-scholar
 #    icon_pack: ai
-#    link: https://scholar.google.com/citations?user=-54APEkAAAAJ&hl=en
-#  - icon: github
-#    icon_pack: fab
-#    link: https://github.com/hellokevin07
-#  - icon: linkedin
-#    icon_pack: fab
-#    link: https://www.linkedin.com/in/kai-huang-71a5b2262
-#  - icon: earth-americas
-#    icon_pack: fas
-#    link: https://hellokevin07.github.io
+#    link: https://scholar.google.com/citations?user=Uqn07nkAAAAJ
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/sarahSW-shiqi
+# - icon: linkedin
+#   icon_pack: fab
+#   link: https://www.linkedin.com/in/keshavshankar/
+# - icon: earth-americas
+#   icon_pack: fas
+#   link: https://sites.pitt.edu/~kes298/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -69,8 +67,8 @@ highlight_name: false
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-#user_groups:
-#  - Grad Students
+user_groups:
+  - Grad Students
 ---
 
 <!--

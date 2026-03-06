@@ -5,6 +5,7 @@ title: Admin
 # Full Name (for SEO)
 first_name: Admin
 last_name:
+order_id: 999
 
 # Is this the primary user of the site?
 superuser: true
