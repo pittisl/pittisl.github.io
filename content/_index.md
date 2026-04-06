@@ -15,12 +15,15 @@ sections:
         AI and computer systems. Our current research focuses on Spatial Intelligence, Multimodal Generative AI, On-device AI, Mobile and embedded
         systems, Mobile and connected health, Cyber-physical systems, Internet of Things, and more!
         
-        Our projects:
+        Current projects:
           * [Spatial Intelligence](/projects/spatial-intelligence/)
           * [Multimodal Generative AI](/projects/multimodal-generative-ai/)
           * [On-device AI](/projects/on-device-ai/)
           * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
+          * [Human-Robot Interaction](/projects/human-robot-interaction/)
+          
+        Past projects:
           * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
           * [Intelligent Wireless Systems](/projects/intelligent-wireless-systems/)
         
@@ -255,6 +258,23 @@ sections:
         {{< hr >}}
         [**View more...**](/projects/mobile-and-connected-health/)
 
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
+    id: human-robot-interaction
+    content:
+      title: Human-Robot Interaction
+      subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to improve the interaction between assistive robots and users with profound motor impairments, such as ALS, for everyday tasks.'
+      text: |
+        ### [Low-Burden LLM-Based Preference Learning: Personalizing Assistive Robots from Natural Language Feedback for Users with Paralysis](/publication/2026-lblpl/) {id=lblpl}
+        ArXiv preprint  
+        ![lblpl.png](2026-lblpl/figure_2.png)
+        We developed an LLM-based framework that personalizes assistive robots using natural language feedback, significantly reducing the physical and cognitive fatigue associated with traditional methods. Grounded in clinical reasoning, the system translates unstructured user input into safe, deterministic control policies for individuals with profound motor impairments.
+        {{< hr >}}
+        [**View more...**](/projects/human-robot-interaction/)
     design:
       columns: '2'
       spacing:
