@@ -22,10 +22,9 @@ organizations:
 #bio: PhD student in Electrical and Computer Engineering
 
 interests:
-  - AI in Healthcare
+  - AI for Healthcare
   - Human-Robot Interaction
   - Assistive Robotics
-  - Medical Devices
 
 education:
   courses:
@@ -41,9 +40,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:keshavshankar@pitt.edu'
-#  - icon: google-scholar
-#    icon_pack: ai
-#    link: https://scholar.google.com/citations?user=Uqn07nkAAAAJ
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=D1RKFnUAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/keshavshankar08
