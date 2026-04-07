@@ -16,12 +16,16 @@ main:
 #  - name: Events
 #    url: event
 #    weight: 40
+  - name: 'Publication & Dataset'
+    weight: 48
   - name: Publication
     url: /publication/
     weight: 50
+    parent: 'Publication & Dataset'
   - name: Dataset
     url: /dataset/
     weight: 52
+    parent: 'Publication & Dataset'
   - name: Projects
     weight: 53
   - name: Spatial Intelligence
@@ -48,15 +52,16 @@ main:
     url: /projects/human-robot-interaction/
     parent: Projects
     weight: 250
-  - name: Past Projects
-    weight: 270
+  - name: '══ Past Projects:'
+    weight: 290
+    parent: Projects
   - name: Mobile and Edge Computing Systems
     url: /projects/mobile-and-edge-computing-systems/
-    parent: Past Projects
+    parent: 'Projects'
     weight: 300
   - name: Intelligent Wireless Systems
     url: /projects/intelligent-wireless-systems/
-    parent: Past Projects
+    parent: 'Projects'
     weight: 400
   - name: 'Video & Demos'
     url: /video-and-demos/
