@@ -36,6 +36,7 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **Mar 2026:** Our paper, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), has been accepted to **CVPR 2026** as an **oral presentation**.
         * **Dec 2025:** Three of our recent papers, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/), and [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/), are now available on arXiv.
         * **Jul 2025:** Our paper, [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/), has been accepted for publication at 2025 International Conference on Computer Vision (ICCV 2025).
         * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award!**
@@ -66,8 +67,18 @@ sections:
       title: Spatial Intelligence
       subtitle: 'Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses on exploring the perception and reasoning of 3D world scenes by vision-language models (VLMs), and improving the model’s task performance under different application scenarios.'
       text: |
-        ### [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/) {id=infinibench}
+        ### [MosaicThinker: On-Device Visual Spatial Reasoning for Embodied AI via Iterative Construction of Space Representation](/publication/2026-mosaicthinker/) {id=mosaicthinker}
         ArXiv preprint  
+        ![mosaicthinker.png](2026-mosaicthinker/mosaicthinker.png)
+        MosaicThinker is an inference-time computing technique that boosts on-device small VLMs on cross-frame visual spatial reasoning for embodied AI. Instead of relying on dense 3D representations that are hard for small on-device VLMs to perceive, MosaicThinker integrates fragmented spatial information from multiple video frames into a unified global semantic map, and guides the VLM's reasoning over the map via a carefully crafted visual prompt. Experiments show that this technique greatly enhances the accuracy of cross-frame spatial reasoning on resource-constrained embodied AI devices across diverse task types and complexities.
+        {{< hr-pittisl >}}
+        ### [Uncovering and Shaping the Latent Representation of 3D Scene Topology in Vision-Language Models](/publication/2026-vlm-latent-shaping/) {id=vlm-latent-shaping}
+        ArXiv preprint  
+        ![vlm-latent-shaping.png](2026-vlm-latent-shaping/vlm-latent-shaping.png)
+        We show that current VLMs do possess a latent topological map of 3D scenes, but it is heavily overshadowed by non-geometric visual semantics such as color and shape. By isolating this spatial subspace through cross-scene linear feature extraction, we extract a clean spatial subspace that causally controls the model's spatial outputs, and prove its correspondence to the Laplacian eigenmaps of the scene's 3D Gaussian-kernel graph. Motivated by this geometric identification, we introduce a Dirichlet-energy latent regularizer; applied during a minimal 500-step LoRA fine-tuning on simple synthetic data, it yields up to 12.1% improvement on real-world spatial benchmarks such as VSI-Bench and MindCube over standard SFT and competitive baselines.
+        {{< hr-pittisl >}}
+        ### [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/) {id=infinibench}
+        CVPR 2026 (Oral)  
         ![infinibench.png](2025-infinibench/infinibench.png)
         We present InfiniBench, a fully automated, customizable and user-friendly benchmark generator that can synthesize a theoretically infinite variety of 3D scenes with parameterized control on scene complexity. InfiniBench uniquely translates scene descriptions in natural language into photo-realistic videos with complex and physically plausible 3D layouts. Experiments demonstrate that InfiniBench outperforms state-of-the-art procedural and LLM-based 3D generation methods in prompt fidelity and physical plausibility, especially in high-complexity scenarios. We further showcased the usefulness of InfiniBench, by generating benchmarks for representative spatial reasoning tasks including measurement, perspective-taking and spatiotemporal tracking.
         {{< hr-pittisl >}}

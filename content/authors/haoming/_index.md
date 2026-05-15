@@ -22,10 +22,12 @@ organizations:
 bio: PhD student in Electrical and Computer Engineering
 
 interests:
-  - Efficient Geneartive AI
-  - Spatial Reasoning
-  - Explainable AI
-  - Federated Learning
+  - Spatial Intelligence
+  - Multimodal LLMs
+  - LLM Reasoning
+  - Generative AI on Mobile Devices
+  - LLM Explainability
+  - Robotics
 
 education:
   courses:
@@ -47,6 +49,9 @@ social:
   - icon: earth-americas
     icon_pack: fas
     link: https://haomingwang645.github.io/
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/hming-wang-40a6a7239/
 #  - icon: github
 #    icon_pack: fab
 #    link: https://github.com/hosiet
