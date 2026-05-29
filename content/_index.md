@@ -36,14 +36,13 @@ sections:
       title: Latest News
       subtitle:
       text: |
+        * **May 2026:** Our paper, [Attribution-based Sparse Activation in Large Language Models](/publication/2026-2026-sparse-activation-slm/), has been accepted for publication at the Ninth Conference on Machine Learning and Systems (MLSys 2026).
         * **Mar 2026:** Our paper, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), has been accepted to **CVPR 2026** as an **oral presentation**.
         * **Dec 2025:** Three of our recent papers, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/), and [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/), are now available on arXiv.
         * **Jul 2025:** Our paper, [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/), has been accepted for publication at 2025 International Conference on Computer Vision (ICCV 2025).
         * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award!**
         * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
         * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
-        * **Dec 2024:** Our paper, [Tackling Intertwined Data and Device Heterogeneities in Federated Learning with Unlimited Staleness](/publication/2023-intertwined-heterogeneity/), has been accepted for publication at the 39th Annual Conference on Artificial Intelligence (AAAI 2025).
-        * **Dec 2024:** Two of our papers, [When Device Delays Meet Data Heterogeneity in Federated AIoT Applications](/publication/2025-aiot/) and [Modality Plug-and-Play: Runtime Modality Adaptation in LLM-Driven Autonomous mobile Systems](/publication/2023-mpnp-llm/), have been accepted for publication at the 2025 ACM International Conference on Mobile Computing and Networking (MobiCom'25).
       count: 0
       filters:
         author: ''
