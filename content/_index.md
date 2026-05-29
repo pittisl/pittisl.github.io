@@ -131,6 +131,14 @@ sections:
       title: On-device AI
       subtitle: 'Our research aims to enable high-performance AI inference and training on resource-constrained mobile and embedded devices, to enable emerging applications such as AIoT, smart health and embodied AI. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks that incorporate domain knowledge of specific system applications into the neural network module design. Our recent research focuses on enabling computational efficient inference and training of modern Large Language Models (LLMs) on weak devices, to efficiently incorporate these devices’ rich varieties of data modalities into the LLMs’ representation power and hence allow more flexible domain adaptation and model personalization.'
       text: |
+        ### [Attribution-based Sparse Activation in Large Language Models](/publication/2026-sparse-activation-slm/) {id=sparse-activation-slm}
+        MLSys 2026
+        {{< columns >}}
+        ![Sparse Activation on SLM](sparse-activation-slm.jpg)
+        <--->
+        LLM inference is computationally expensive due to the LLM’s large parameter sizes. Existing techniques reduce the computing cost via model retraining, but cannot well adapt to different downstream tasks or variant input data at runtime. To avoid such retraining efforts for runtime adaptability, a better option is sparse activation that selectively deactivates an input-dependent set of neurons in inference, but current methods of lossless sparse activation only deactivate neurons with zero output magnitudes, and are ineffective on recent LLMs with higher parameter efficiency. In this paper, we present a new technique of attribution-based sparse activation, which is a lossy sparse activation technique that deactivates neurons with low attribution scores and aims to achieve the best tradeoff between model accuracy and computing costs. To ensure optimal sparse activation, we quantified the large errors of existing attribution metrics when used for sparse activation, due to the interdependency among attribution scores of different neurons, and further proposed a new attribution metric that can provably correct such errors. Experiments show that our technique can achieve up to 70% model sparsity in difficult generative tasks such as question answering and text summarization with <5% model accuracy loss. Such high model sparsity enables us to reduce the computing latency and memory use of LLM inference by 35% and 40%, respectively.
+        {{< /columns >}}
+        {{< hr-pittisl >}}
         ### [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/) {id=xpert}
         MobiSys 2025
         {{< columns >}}
@@ -166,14 +174,6 @@ sections:
         ![Our SR method compared to Image-based Split Methods](fye-sr-vertical.jpg)
         <--->
         Image super-resolution (SR) is widely used on mobile devices to enhance user experience. However, neural networks used for SR are computationally expensive, posing challenges for mobile devices with limited computing power. A viable solution is to use heterogeneous processors on mobile devices, especially the specialized hardware AI accelerators, but the reduced arithmetic precision on AI accelerators can lead to degraded perceptual quality in upscaled images. To address this limitation, we present a novel image SR technique that enhances the perceptual quality of upscaled images when using heterogeneous processors for SR computations. It strategically splits the SR model and dispatches different layers to heterogeneous processors, to meet the time constraint while minimizing the impact of AI accelerators on image quality. Experiment results show that our method outperforms the best baselines, improving perceptual image quality by up to 2×, or reducing SR computing latency by up to 5.6× with on-par image quality.
-        {{< /columns >}}
-        {{< hr-pittisl >}}
-        ### [Achieving Sparse Activation in Small Language Models](/publication/2024-sparse-activation-slm/) {id=sparse-activation-slm}
-        ArXiv preprint
-        {{< columns >}}
-        ![Sparse Activation on SLM](sparse-activation-slm.jpg)
-        <--->
-        Being different from model compression that requires expensive retraining, sparse activation can effectively reduce neural network models' inference cost at runtime without any prior retraining or adaptation efforts. Although sparse activation has been proved to be effective on Large Language Models (LLMs) that are usually redundant (e.g., OPT and BLOOMZ models), its applicability on recent Small Language Models (SLMs) with higher parameter efficiency remains questionable. Our recent work verified such possibility by using gradient-based attribution scores to evaluate neurons' importance in inference, in both analytical and experimental perspectives. Our results show that we can achieve up to 80% sparsity in major SLM models, including Phi-1.5/2 and MobiLlama-0.5B/1B, with less than 5% model accuracy loss on QA tasks.
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) {id=greentrainer}
