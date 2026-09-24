@@ -96,7 +96,7 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 
 `/aihcs/` is a separate website, for the Center for Artificial Intelligence in Healthcare
 Computing and Systems, published through this repository. Its source is the private repository
-`hosiet/pitt-ece-health-website` (a Python/Jinja generator with its own README); it stays private
+`pittisl/pitt-ece-health-website` (a Python/Jinja generator with its own README); it stays private
 because its data files hold material that is deliberately not rendered. Only the built pages are
 committed here, in `static/aihcs/`, which Hugo copies verbatim.
 

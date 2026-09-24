@@ -4,7 +4,7 @@
 # output into static/aihcs/, which Hugo publishes verbatim at /aihcs/. It builds
 # with --web, so directory links end in "/" rather than "/index.html".
 #
-# The source repository (hosiet/pitt-ece-health-website) stays private because
+# The source repository (pittisl/pitt-ece-health-website) stays private because
 # its data files hold material that is deliberately not rendered, such as
 # unconfirmed advisory board candidates. Only the built pages come here.
 #
