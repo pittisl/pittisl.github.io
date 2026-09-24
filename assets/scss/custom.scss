@@ -26,6 +26,20 @@
   display: none;
 }
 
+// The theme gives the footer a 4rem top margin, balanced by the "Published
+// with Wowchemy" line under the copyright. With that line hidden, the lone
+// copyright sat far below the content. The visitor map from
+// layouts/partials/hooks/body-end/custom.html follows the footer and had no
+// spacing of its own, so it touched the bottom of the page.
+footer.site-footer {
+  margin-top: 2rem;
+}
+
+// body.page-wrapper is a CSS grid, so auto side margins center the map.
+.visitor-map {
+  margin: 0 auto 2rem;
+}
+
 // Fix publication view img with compact-pittisl-academy class
 .view-compact-pittisl-academy .ml-3 img {
   max-width: 375px;
