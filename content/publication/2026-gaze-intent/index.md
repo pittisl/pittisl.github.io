@@ -31,9 +31,9 @@ tags:
   - 'human-robot-interaction'
 featured: true
 
-# TODO(arXiv): fill in the link, e.g. 'https://arxiv.org/pdf/<id>'. An empty
-# value shows no PDF button.
-url_pdf: ''
+# TODO(arXiv): replace the '#' placeholder, which keeps the PDF button
+# visible, with 'https://arxiv.org/pdf/<id>'.
+url_pdf: '#'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

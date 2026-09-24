@@ -34,7 +34,9 @@ tags:
   - 'mobile-and-connected-health'
 featured: true
 
-# TODO(arXiv): url_pdf: 'https://arxiv.org/pdf/<id>'
+# TODO(arXiv): replace the '#' placeholder, which keeps the PDF button
+# visible, with 'https://arxiv.org/pdf/<id>'.
+url_pdf: '#'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
