@@ -29,7 +29,10 @@ module:
 
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+  pagerSize: 10
+# Keep taxonomy term titles (e.g. tag chips) as written, like Hugo < 0.123 did.
+capitalizeListTitles: false
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
