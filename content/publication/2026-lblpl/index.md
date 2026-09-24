@@ -28,6 +28,7 @@ summary: We developed an LLM-based framework that personalizes assistive robots 
 
 tags:
   - 'human-robot-interaction'
+  - 'parkinsons-disease'
 featured: true
 
 url_code: 'https://github.com/keshavshankar08/LBLPL'

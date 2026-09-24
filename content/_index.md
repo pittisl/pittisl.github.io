@@ -22,6 +22,7 @@ sections:
           * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
           * [Human-Robot Interaction](/projects/human-robot-interaction/)
+          * [AI for Parkinson's Disease](/projects/parkinsons-disease/)
           
         Past projects:
           * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
@@ -264,7 +265,7 @@ sections:
         <--->
         {{< youtube id="SDiboSXJr28" >}}
         {{< /columns >}}
-        The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
+        The first work that allows commodity smartphones to be used as a portable spirometer and provide accurate lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children's Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
         {{< hr >}}
         [**View more...**](/projects/mobile-and-connected-health/)
 
@@ -277,7 +278,7 @@ sections:
     id: human-robot-interaction
     content:
       title: Human-Robot Interaction
-      subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to improve the interaction between assistive robots and users with profound motor impairments, such as ALS, for everyday tasks.'
+      subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to make assistive robots usable in everyday tasks by people with profound motor impairments, such as ALS, spinal cord injuries or Parkinson''s disease, while keeping the physical and cognitive burden on the user low.'
       text: |
         ### [Low-Burden LLM-Based Preference Learning: Personalizing Assistive Robots from Natural Language Feedback for Users with Paralysis](/publication/2026-lblpl/) {id=lblpl}
         RO-MAN 2026  

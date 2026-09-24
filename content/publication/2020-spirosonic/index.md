@@ -22,11 +22,12 @@ publication_short: In *MobiCom'20*
 abstract: Respiratory diseases have been a significant public health challenge. Efficient disease evaluation and monitoring call for daily spirometry tests, as an effective way of pulmonary function testing, out of clinic. This requirement, however, is hard to be satisfied due to the large size and high costs of current spirometry equipments. In this paper, we present SpiroSonic, a new system design that uses commodity smartphones to support complete, accurate yet reliable spirometry tests in regular home settings with various environmental and human factors. SpiroSonic measures the humans' chest wall motion via acoustic sensing and interprets such motion into lung function indices, based on the clinically validated correlation between them. We implemented SpiroSonic as a smartphone app, and verified SpiroSonic's monitoring error over healthy humans as <3%. Clinical studies further show that SpiroSonic reaches 5%-10% monitoring error among 83 pediatric patients. Given that the error of in-clinic spirometry is usually around 5%, SpiroSonic can be reliably used for disease tracking and evaluation out of clinic.
 
 # Summary. An optional shortened abstract.
-summary: The first work that allows commodity smartphones to be used as a portable spirometer and provide accuracy lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children’s Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
+summary: The first work that allows commodity smartphones to be used as a portable spirometer and provide accurate lung function test results on par with clinical-grade spirometers. This is a collaborative work with the Children’s Hospital of Pittsburgh, and could also potentially contribute to in-home evaluation of COVID-19 risks by allowing convenient out-of-clinic lung function evaluation.
 
 tags:
   - 'mobile-and-connected-health'
   - 'mobile-sensing'
+  - 'parkinsons-disease'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobicom20.pdf'
