@@ -280,7 +280,7 @@ sections:
       subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to improve the interaction between assistive robots and users with profound motor impairments, such as ALS, for everyday tasks.'
       text: |
         ### [Low-Burden LLM-Based Preference Learning: Personalizing Assistive Robots from Natural Language Feedback for Users with Paralysis](/publication/2026-lblpl/) {id=lblpl}
-        ArXiv preprint  
+        RO-MAN 2026  
         ![lblpl.png](2026-lblpl/figure_2.png)
         We developed an LLM-based framework that personalizes assistive robots using natural language feedback, significantly reducing the physical and cognitive fatigue associated with traditional methods. Grounded in clinical reasoning, the system translates unstructured user input into safe, deterministic control policies for individuals with profound motor impairments.
         {{< hr >}}

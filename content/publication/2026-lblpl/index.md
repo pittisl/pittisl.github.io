@@ -4,7 +4,8 @@ authors:
   - keshav
   - 'Dan Ding'
   - wei
-date: '2026-04-01T00:00:00Z'
+date: '2026-08-24T00:00:00Z'
+# TODO: replace with the IEEE DOI once the RO-MAN 2026 proceedings are on IEEE Xplore.
 doi: '10.48550/arXiv.2604.01463'
 
 # Schedule page publish date (NOT publication's date).
@@ -14,13 +15,13 @@ publishDate: '2026-04-01T00:00:00Z'
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *arXiv preprint*
-publication_short: In *arXiv*
+publication: In *the 35th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2026)*
+publication_short: In *RO-MAN 2026*
 
-abstract: Physically Assistive Robots (PARs) require personalized behaviors to ensure user safety and comfort. However, traditional preference learning methods, like exhaustive pairwise comparisons, cause severe physical and cognitive fatigue for users with profound motor impairments. To solve this, we propose a low-burden, offline framework that translates unstructured natural language feedback directly into deterministic robotic control policies. To safely bridge the gap between ambiguous human speech and robotic code, our pipeline uses Large Language Models (LLMs) grounded in the Occupational Therapy Practice Framework (OTPF). This clinical reasoning decodes subjective user reactions into explicit physical and psychological needs, which are then mapped into transparent decision trees. Before deployment, an automated "LLM-as-a-Judge" verifies the code's structural safety. We validated this system in a simulated meal preparation study with 10 adults with paralysis. Results show our natural language approach significantly reduces user workload compared to traditional baselines. Additionally, independent clinical experts confirmed the generated policies are safe and accurately reflect user preferences.
+abstract: Physically Assistive Robots require personalized behaviors to ensure user safety and comfort. However, traditional preference learning methods, like exhaustive pairwise comparisons, cause substantial physical and cognitive fatigue for users with severe motor impairments. To solve this, we propose a low-burden, offline framework that translates unstructured natural language feedback directly into deterministic robotic control policies. To safely bridge the gap between ambiguous human speech and robotic code, our pipeline uses Large Language Models (LLMs) grounded in the Occupational Therapy Practice Framework. This clinical reasoning decodes subjective user reactions into explicit physical and psychological needs, which are then mapped into transparent decision trees. Before deployment, an automated "LLM-as-a-Judge" verifies the code's structural safety. We validated this system in a simulated meal preparation study with 10 adults with paralysis. Results show our natural language approach significantly reduces user workload compared to traditional baselines. Additionally, occupational therapists confirmed the generated policies are safe and accurately reflect user preferences.
 
 # Summary. An optional shortened abstract.
 summary: We developed an LLM-based framework that personalizes assistive robots using natural language feedback, significantly reducing the physical and cognitive fatigue associated with traditional methods. Grounded in clinical reasoning, the system translates unstructured user input into safe, deterministic control policies for individuals with profound motor impairments.
