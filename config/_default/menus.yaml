@@ -28,6 +28,10 @@ main:
     parent: 'Publication & Dataset'
   - name: Projects
     weight: 53
+  # Children without a url are section headers (see the navbar.html override).
+  - name: Current Projects
+    parent: Projects
+    weight: 60
   - name: Spatial Intelligence
     url: /projects/spatial-intelligence/
     parent: Projects
@@ -52,9 +56,9 @@ main:
     url: /projects/human-robot-interaction/
     parent: Projects
     weight: 250
-  - name: '══ Past Projects:'
-    weight: 290
+  - name: Past Projects
     parent: Projects
+    weight: 290
   - name: Mobile and Edge Computing Systems
     url: /projects/mobile-and-edge-computing-systems/
     parent: 'Projects'

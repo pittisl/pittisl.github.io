@@ -172,3 +172,11 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
 }
+
+// Section headers ("Current Projects", "Past Projects") in navbar dropdowns,
+// see layouts/partials/components/headers/navbar.html. As <h6> they would take
+// the theme's heading size and margins, larger than the menu items on desktop.
+.navbar .dropdown-header {
+  margin: 0;
+  font-size: 0.875em;
+}
