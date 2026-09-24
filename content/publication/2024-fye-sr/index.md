@@ -132,7 +132,7 @@ tween heterogeneous processors.
 As shown in the figures below,
 compared to other SOTA image SR approaches,
 our method could reach the overall optimal result
-considering both the structual image quality and
+considering both the structural image quality and
 perceptual quality, while meeting the preset deadline
 requirement.
 

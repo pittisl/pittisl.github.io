@@ -70,7 +70,7 @@ slides:
 
 As shown in the Figure, OPT-6.7B is highly over-parameterized such that we only need to activate <40% of neurons to achieve the maximum accuracy. In contrast, MobiLlama-0.5B and Phi-2 are much less over-parameterized, and both require almost all neurons to be activated to avoid accuracy loss. Even when a small percentage of neurons with the smallest magnitudes are deactivated, the model accuracy significantly drops. These results show that for SLMs, neurons’ output magnitudes cannot precisely measure the neurons’ importance in inference, and hence cannot be used as the metric for sparse activation.
 
-![Sparse Activation comparision between LLM and SLM](2026-sparse-activation-slm/sparse-activation-slm-fig2.png)
+![Sparse Activation comparison between LLM and SLM](2026-sparse-activation-slm/sparse-activation-slm-fig2.png)
 
 ## Using Attribution Scores as Neuron Importance
 

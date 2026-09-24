@@ -334,7 +334,7 @@ sections:
         {{< columns >}}
         ![MUVR](muvr.png)
         <--->
-        MUVR aims to remove the performance constraint of highly dynamic VR appliations by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
+        MUVR aims to remove the performance constraint of highly dynamic VR applications by adaptively reusing the redundant VR frames being rendered for different VR users. The redundancy in each frame is decided at run-time by the edge cloud, which further reuses its redundant pixels compared with other frames. The design implementation over Android OS and Unity VR demonstrated that the design can reduce edge computation burden and transmitted VR frame data.
         {{< /columns >}}
         {{< hr >}}
         [**View more...**](/projects/mobile-and-edge-computing-systems/)
@@ -348,7 +348,7 @@ sections:
     id: intelligent-wireless-systems
     content:
       title: Intelligent Wireless Systems
-      subtitle: 'Wireless communications, such as Wi-Fi, Bluetooth and Zigbee, play an important role in IoT and mobile application. However, the noisy wireless channel conditions and interference makes such communication less effective. Our research focuses on physical layer designs, and apply AI-assisted techniques for intereference cancellation and efficiency improvement.'
+      subtitle: 'Wireless communications, such as Wi-Fi, Bluetooth and Zigbee, play an important role in IoT and mobile application. However, the noisy wireless channel conditions and interference makes such communication less effective. Our research focuses on physical layer designs, and apply AI-assisted techniques for interference cancellation and efficiency improvement.'
       text: |
         ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) {id=aifi}
         SenSys'22  

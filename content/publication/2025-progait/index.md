@@ -86,7 +86,7 @@ To facilitate the effective use of the ProGait dataset, we establish several ben
 
 * **Video Object Segmentation**. For the segmentation task, we primarily use the mean Intersection over Union (mIoU) as the evaluation metric. The mIoU measures the overlap between the predicted mask and the ground-truth mask across video frames through a pixel-wise calculation.
 * **2D Human Pose Estimation**. We evaluate the accuracy of pose estimation following the COCO-WholeBody standard, and use the Average Precision (AP) across different Object Keypoint Similarity (OKS) thresholds ranging from 0.5 to 0.95, namely the AP@[.5,.95] as the primary metric.
-* **Gait Classfication**. This task categorizes video clips into predefined gait classes, by capturing the variations in movement patterns induced by different prosthetic configurations, walking conditions, or rehabilitation progress. We provide an end-to-end pipeline for training and evaluating different classification models.
+* **Gait Classification**. This task categorizes video clips into predefined gait classes, by capturing the variations in movement patterns induced by different prosthetic configurations, walking conditions, or rehabilitation progress. We provide an end-to-end pipeline for training and evaluating different classification models.
 
 ### Baseline models
 
