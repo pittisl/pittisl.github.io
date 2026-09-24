@@ -89,6 +89,23 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 | `layouts/` | Local theme template overrides and extra shortcodes (see below) |
 | `_vendor/` | Vendored theme, do not edit |
 | `scripts/fetch-vendor-assets.py` | Regenerates `static/vendor/` |
+| `static/aihcs/` | Built website of the Center for AI in Healthcare Computing and Systems, served at `/aihcs/` (generated, do not edit) |
+| `scripts/sync-aihcs.sh` | Rebuilds `static/aihcs/` from the Center site's private source repository |
+
+## The /aihcs/ site
+
+`/aihcs/` is a separate website, for the Center for Artificial Intelligence in Healthcare
+Computing and Systems, published through this repository. Its source is the private repository
+`hosiet/pitt-ece-health-website` (a Python/Jinja generator with its own README); it stays private
+because its data files hold material that is deliberately not rendered. Only the built pages are
+committed here, in `static/aihcs/`, which Hugo copies verbatim.
+
+- Change the Center site in its source repository, commit there, then run
+  `scripts/sync-aihcs.sh <path to that checkout>` and commit `static/aihcs/` here, naming the
+  source commit the script prints. Never edit files under `static/aihcs/` directly.
+- The Center site uses only relative links, so it works under any path; nothing in this Hugo
+  site should link into it or be created under `/aihcs/`.
+- A missing page under `/aihcs/` shows this site's 404 page.
 
 ## Content conventions
 
