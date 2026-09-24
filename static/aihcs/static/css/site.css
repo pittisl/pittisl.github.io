@@ -1,0 +1,932 @@
+/* Additions on top of the Ocelot theme.
+ *
+ * ocelot-main.css, ocelot-carousel.css, bootstrap-grid.min.css and
+ * font-awesome.min.css are the Swanson School's own files and are kept as
+ * close to verbatim as possible, so everything this site needs beyond them
+ * lives here. Five kinds of rule:
+ *
+ *   1. behaviour the theme expects from jQuery plugins we do not ship;
+ *   2. a static stand-in for the owl carousel hero, which has one image
+ *      rather than a rotating set;
+ *   3. styling for markup the theme names but never defines (.post-01__*);
+ *   4. colours the theme picked for its dark blue footer, restated where the
+ *      same markup sits on a light band;
+ *   5. spacing, since the theme is scaled for bands of full-bleed photography
+ *      and this site's are mostly text.
+ *
+ * Each rule says which of those it is and why. Anything without a reason to be
+ * here belongs in the theme files instead.
+ */
+
+/* --- 1. Accessibility ---------------------------------------------------- */
+
+/* The theme has no skip link. The header is `position: fixed`, so the target
+   needs scroll-margin or the heading lands underneath it. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 100000;
+  padding: 12px 20px;
+  background: #002f5b;
+  color: #fff;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+}
+
+#main {
+  scroll-margin-top: 120px;
+}
+
+/* Anchor targets inside a page (About's Background / Vision / Mission) have
+   the same problem. */
+[id] {
+  scroll-margin-top: 120px;
+}
+
+/* --- 2. Navigation ------------------------------------------------------- */
+
+/* Below 992px the theme hides every `.sub-menu` and relies on its dropdownMenu
+   plugin to slide the open one down. site.js toggles `.active` on the parent
+   `li` instead; this is the rule that makes that visible. Above 992px the
+   theme already reveals `li.active > .sub-menu`, so nothing is needed there. */
+@media (max-width: 992px) {
+  .consult-nav .consult-menu li.active > .sub-menu {
+    display: block;
+  }
+
+  /* The panel is a fixed-position drawer; give it room for the close affordance
+     and keep the site logo out of the way of the first item. */
+  .consult-nav .consult-menu .sideMenuLogo {
+    padding: 25px 15px 15px;
+  }
+
+  .consult-nav .consult-menu .sideMenuLogo img {
+    width: 44px;
+  }
+}
+
+@media (min-width: 993px) {
+  /* The theme only ever shows the site logo inside the mobile drawer. */
+  .consult-nav .consult-menu .sideMenuLogo {
+    display: none;
+  }
+}
+
+/* The theme's header is wordmark + navigation, with nowhere to say whose site
+   this is. The name sits beside the wordmark once there is room for it and the
+   seven nav items both; below that it lives in the drawer instead. */
+.header__siteName {
+  display: none;
+}
+
+/* Between the theme's desktop breakpoint and 1200px the container is only
+   960px wide, and the theme's 25px of padding either side of each nav item
+   pushes the last item onto a second row. Eight items at 10px fit with about
+   35px to spare beside the 200px wordmark. */
+@media (min-width: 993px) and (max-width: 1199px) {
+  .header .consult-nav .consult-menu > li > a {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Eight nav items, a wordmark and a site name have to share 1140px of
+     container — Bootstrap's container never grows past that, so this is the
+     budget at every desktop width. The wordmark comes down from the theme's
+     200px, the nav item padding from 25px and its type from 14px to 13px;
+     together the eight items fit with about 30px to spare beside the wordmark
+     and site name. Adding a ninth item means finding room again,
+     most likely by taking the site name out of the header. */
+  .header__logo {
+    max-width: 176px;
+  }
+
+  /* The wordmark is an SVG with no intrinsic width, so the theme's
+     `min-width: 200px` is what sizes it. Narrowing it takes an explicit width,
+     not a max-width, or the image collapses to nothing. */
+  .header__logo img {
+    min-width: 0;
+    width: 176px;
+  }
+
+  .header .consult-nav .consult-menu > li > a {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .header__siteName {
+    float: left;
+    height: 100px;
+    max-width: 240px;
+    margin-left: 18px;
+    padding-left: 18px;
+    border-left: 1px solid rgba(0, 47, 91, .2);
+    display: flex;
+    align-items: center;
+    transition: height .3s ease;
+  }
+
+  .header__siteName a {
+    font-family: "Heebo", "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.35;
+    color: #002f5b;
+    text-decoration: none;
+  }
+
+  .header__siteName a:hover,
+  .header__siteName a:focus {
+    color: #b7a36e;
+  }
+
+  .header.shrink .header__siteName {
+    height: 70px;
+  }
+}
+
+.sideMenuLogo__name {
+  display: block;
+  margin-top: 12px;
+  font-family: "Heebo", "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* --- 3. Hero ------------------------------------------------------------- */
+
+/* The theme's home banner is an owl carousel; with one image there is nothing
+   to rotate, so this is a single static band using the carousel's own caption
+   classes. Adding more images later means putting the owl markup back.
+   The gradient is the fallback the caption is designed against, and shows
+   through if the image is ever missing. */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #002f5b 40%, #1e5799 100%);
+}
+
+.hero-banner .ssoe-carousel-item {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* The demo lays rgba(0,0,0,.5) over its banner, which works because its
+   photographs are dark to begin with. This one is pale almost everywhere the
+   caption sits, so black at that strength would leave white text on light
+   grey. A heavier scrim in the theme's navy keeps the headline legible — about
+   5:1 against white — and tints rather than greys the artwork. Absolutely
+   positioned so it does not become a flex item alongside the caption. */
+.hero-banner .ssoe-carousel-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 47, 91, .66);
+}
+
+.hero-banner .ssoe-carousel-item-caption-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-banner .ssoe-carousel-item-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.hero-banner .ssoe-carousel-item-description {
+  color: #e2e2e2;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: none;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-banner .ssoe-carousel-item-title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-banner .ssoe-carousel-item {
+    min-height: 520px;
+  }
+
+  .hero-banner .ssoe-carousel-item-title {
+    font-size: 60px;
+  }
+}
+
+/* --- 4. Page furniture --------------------------------------------------- */
+
+/* The theme's section rhythm — 150px of padding above and below, and 100px
+   under every section title — is built for bands that are mostly full-bleed
+   photography. This site's bands are text, and at that spacing they read as
+   empty. */
+@media (min-width: 992px) {
+  .md-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .title-01 {
+    margin-bottom: 45px;
+  }
+
+  .iconbox {
+    margin-bottom: 40px;
+  }
+}
+
+/* Interior pages open with a title band, matching the demo's `title-01`
+   treatment but as an h1, since it is the page's heading. The theme sizes its
+   sections for full-bleed photography — 150px of padding plus a 100px margin
+   under every title — which leaves a title band nearly empty. */
+.page-banner {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.page-banner .title-01 {
+  margin-bottom: 0;
+}
+
+.page-banner .title-01__title {
+  margin-bottom: 15px;
+}
+
+.page-lead {
+  font-size: 19px;
+  color: #4a4a4a;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.page-lead p:last-child {
+  margin-bottom: 0;
+}
+
+/* The same over-generous spacing on the interior sections that carry rosters
+   and card grids rather than a photograph. */
+.md-section.profile-container {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.md-section.profile-container .title-01 {
+  margin-bottom: 20px;
+}
+
+/* .genericContent is the theme's prose wrapper. Its own rules cover paragraphs
+   only, so lists and headings inside it are set here. */
+.genericContent ul,
+.genericContent ol {
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.genericContent li {
+  margin-bottom: 8px;
+}
+
+.genericContent h2 {
+  font-size: 28px;
+  margin-top: 45px;
+  margin-bottom: 18px;
+}
+
+.genericContent h3 {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.genericContent > :first-child {
+  margin-top: 0;
+}
+
+/* A reading measure for long-form copy: used inside a section whose heading
+   the theme has centred (the home page) and around any page that is prose
+   rather than cards (About). At the container's full 1140px a paragraph runs
+   to about 170 characters, which is roughly twice a comfortable line. */
+.prose {
+  text-align: left;
+  max-width: 860px;
+  margin: 0 auto 30px;
+}
+
+.prose p {
+  font-size: 16px;
+}
+
+.prose h2 {
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 18px;
+}
+
+.prose h3 {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+/* A grid of areas or partners: the theme's iconbox, with its 120px bottom
+   margin brought back to something a six-item grid can carry. `tile-grid`
+   left-aligns the text because these tiles carry a paragraph; `tile-row`, used
+   on the home page, keeps the theme's centred treatment for tiles that are
+   only an icon and a name. */
+.tile-grid .iconbox,
+.tile-row .iconbox {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.tile-grid .iconbox {
+  text-align: left;
+}
+
+/* The theme draws style-04's icon by hanging a fixed 60px circle behind an
+   inline glyph that is only as wide as the glyph itself. Since FontAwesome
+   characters have different advance widths, the circle lands off-centre under
+   a narrow icon and a wide one spills out of it. Give the icon a box the same
+   size as the circle and centre the glyph inside it. (style-02, used on the
+   home page, already sizes its own circle, which is why that grid is fine.) */
+.iconbox__style-04 .iconbox__icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.iconbox__style-04 .iconbox__icon:after {
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.tile-grid .iconbox__title,
+.tile-row .iconbox__title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  /* Our names are already correctly cased; the theme's `capitalize` turns
+     "Hardware/Software Interfaces and Co-design" into "... And Co-Design". */
+  text-transform: none;
+}
+
+.tile-grid .iconbox__description {
+  font-size: 16px;
+  color: #626262;
+}
+
+.tile-grid .iconbox__description p:last-child,
+.tile-grid .iconbox__description ul:last-child {
+  margin-bottom: 0;
+}
+
+.tile-grid .iconbox__description ul {
+  padding-left: 18px;
+}
+
+/* Icons that come in as inline SVG rather than from the icon font, because
+   FontAwesome 4 has no glyph for them (see static/img/icons/README.md). Sized
+   and coloured from the surrounding text so they behave like a glyph would. */
+.icon-svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
+/* A heading that opens a block within a page's prose, with the theme's gold
+   rule under it. */
+.section-heading {
+  font-size: 28px;
+  margin-top: 55px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #b7a36e;
+}
+
+.genericContent > .section-heading:first-child {
+  margin-top: 0;
+}
+
+/* Used where a paragraph needs to sit under a section heading rather than
+   inside a card. */
+.section-note {
+  font-size: 16px;
+  max-width: 860px;
+}
+
+/* A sub-heading inside a section, between `section-heading` and body copy. */
+.group-heading {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 18px;
+}
+
+/* The Education page's course groups, two to a row: the first row's headings
+   sit directly under the section note rather than a group-heading's margin
+   below it. */
+.course-groups .group-heading {
+  margin-top: 20px;
+}
+
+/* Collaboration: a wall of partner marks. The theme has nothing for this — its
+   own partner strip is a carousel of images with no captions — so the card is
+   defined here. Each mark sits in a box of fixed height so that a tall shield
+   and a wide wordmark occupy the same space and the names below them line up;
+   the marks come at whatever proportions their owners publish them in. */
+.logo-grid {
+  margin-bottom: 10px;
+}
+
+.logo-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 22px 18px 18px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.logo-card__mark {
+  height: 56px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-card__mark img {
+  width: auto;
+  max-width: 100%;
+  max-height: 56px;
+}
+
+.logo-card__name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333;
+  margin: 0;
+}
+
+.logo-card__units {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8f8f8f;
+  margin: 8px 0 0;
+}
+
+/* Institution lists, chevron-marked the way the theme marks widget lists.
+   Columns keep a list of nine universities from running down the page. */
+.org-list,
+.org-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.org-list > li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.org-list > li:before {
+  content: "\F105";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  color: #b7a36e;
+}
+
+.org-list ul {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #8f8f8f;
+}
+
+@media (min-width: 768px) {
+  .org-list {
+    column-count: 2;
+    column-gap: 40px;
+  }
+
+  /* A list that already sits in a grid column stays a single column. */
+  .org-list--single {
+    column-count: 1;
+  }
+
+  .org-list > li {
+    break-inside: avoid;
+  }
+}
+
+/* Flagged copy that is standing in for something the Center still owes. */
+.placeholder-note {
+  border-left: 4px solid #b7a36e;
+  background: #f7f5ef;
+  padding: 20px 25px;
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.placeholder-note > :last-child {
+  margin-bottom: 0;
+}
+
+/* --- 5. People ----------------------------------------------------------- */
+
+/* The theme's profile box floats a 70px circle beside the text, which is sized
+   for a handful of people with one-line titles. This roster runs to thirty,
+   drawn from five schools and three universities, so the titles are long: the
+   avatar and the text become flex siblings instead, and the card stretches to
+   its row so a two-line name does not knock the grid out of alignment. */
+.person-col {
+  display: flex;
+}
+
+/* `display: flex` above outranks the browser's own `[hidden] { display: none }`,
+   so the filter's hiding has to be restated here. */
+.person-col[hidden] {
+  display: none;
+}
+
+.person-col .profileBox {
+  width: 100%;
+  padding: 28px;
+  margin: 30px 0 0;
+}
+
+.profileBox__info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.profileBox__avatar {
+  float: none;
+  flex: 0 0 auto;
+  width: 84px;
+  height: 84px;
+  margin-right: 20px;
+  background-color: #ebebeb;
+}
+
+.profileBox__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileBox__details {
+  min-width: 0;
+}
+
+.profileBox__name {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.profileBox__position {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.profileBox__affiliation {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #8f8f8f;
+}
+
+.profileBox__role {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b7a36e;
+  margin-bottom: 4px;
+}
+
+/* The filter above the roster. The theme's `filter__list` is written for
+   isotope's anchor links in #c2c2c2, which is too faint against white for a
+   control; these are buttons, in the site's text grey, with the current one
+   in gold over a rule. Hidden until site.js has wired it up. */
+.people-filter {
+  margin: 0 0 10px;
+}
+
+.people-filter[hidden] {
+  display: none;
+}
+
+.people-filter > li {
+  padding: 0;
+  margin: 0 12px 10px;
+}
+
+.people-filter button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: 8px 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #626262;
+  cursor: pointer;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.people-filter button:hover,
+.people-filter button:focus {
+  color: #b7a36e;
+  outline: none;
+}
+
+.people-filter button:focus-visible {
+  outline: 2px solid #b7a36e;
+  outline-offset: 2px;
+}
+
+.people-filter > li.current button {
+  color: #b7a36e;
+  border-bottom-color: #b7a36e;
+}
+
+.people-filter__count {
+  font-weight: 400;
+  color: #8f8f8f;
+  margin-left: 2px;
+}
+
+/* --- 6. Home page bands --------------------------------------------------- */
+
+/* The statistics band. The theme sizes the figure through `.box-number__number
+   > h2`; this page uses an h3, because the band already has an h2 heading of
+   its own, so the type scale has to be restated. The label under it is #c2c2c2
+   in the theme, which disappears on a light background. */
+.box-number__number > h3 {
+  font-size: 44px;
+  font-weight: 300;
+  color: #b7a36e;
+  margin-bottom: 5px;
+  line-height: 1.333;
+}
+
+.box-number__description {
+  color: #626262;
+}
+
+@media (min-width: 992px) {
+  .box-number__number > h3 {
+    font-size: 60px;
+  }
+}
+
+/* --- 7. Home page columns ------------------------------------------------ */
+
+/* The theme's widget text is #c2c2c2, which is legible in the dark blue footer
+   it was written for and nearly invisible in a band on the page. Outside the
+   footer, give the title and the copy the site's ordinary text colours. */
+.md-section .widget-text__widget {
+  color: #626262;
+}
+
+.md-section .widget-text__widget .widget-title {
+  color: #002f5b;
+  font-size: 22px;
+}
+
+.md-section .widget-text__widget ul li a {
+  color: #002f5b;
+  text-decoration: underline solid #b7a375;
+}
+
+.md-section .widget-text__widget ul li a:hover,
+.md-section .widget-text__widget ul li a:focus {
+  color: #b7a36e;
+}
+
+/* --- 8. News ------------------------------------------------------------- */
+
+/* The theme names post-01 in its news listing markup but never defines it. */
+.post-01 {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+}
+
+/* Not :last-child — the archive list follows the last item. */
+.post-01:last-of-type {
+  border-bottom: none;
+}
+
+.post-01__title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.post-01__time {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b7a36e;
+  margin-bottom: 15px;
+}
+
+.post-01__note {
+  font-size: 16px;
+}
+
+.post-01__note > :last-child {
+  margin-bottom: 0;
+}
+
+.readMore a,
+a.innaLink {
+  color: #b7a36e;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.readMore a > i,
+a.innaLink > i {
+  margin-left: 8px;
+}
+
+/* The year list that replaces the Drupal archive sidebar. */
+.news-archives {
+  margin-top: 45px;
+  padding-top: 25px;
+  border-top: 1px solid #ebebeb;
+}
+
+.news-archives ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-archives li {
+  display: inline-block;
+  margin: 0 18px 8px 0;
+}
+
+/* --- 9. Footer and back-to-top ------------------------------------------- */
+
+/* `.footer-address` is centred by the theme below 992px only; the unit name
+   above the address is ours. */
+.footer .address .unit-name {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* The theme styles #back-to-top through its jQuery handler only, so the button
+   itself is ours. */
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 998;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(0, 47, 91, .85);
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s ease;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+  background: #b7a36e;
+  color: #fff;
+}
+
+/* --- 10. Contact --------------------------------------------------------- */
+
+/* The page is a single column at the prose measure: the details, then the
+   join form. The address block is a list with an icon in the margin of each
+   line, the way the theme's own footer address is set. */
+.contact-details {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.contact-details li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+
+.contact-details li > .fa {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 18px;
+  text-align: center;
+  color: #b7a36e;
+}
+
+/* The join form sits on its own light panel below the details so the two
+   read as two things. The theme already styles the inputs (46px, hairline
+   border, gold on focus); labels are the one control it never defines. */
+.join-panel {
+  background: #f5f5f5;
+  padding: 30px 32px 20px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.join-panel > .section-heading {
+  margin-top: 0;
+}
+
+.join-form label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #002f5b;
+  margin-bottom: 6px;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  background-color: #fff;
+}
+
+.join-form textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.join-form .btn {
+  margin-top: 8px;
+}
+
+.join-form__note {
+  font-size: 14px;
+  color: #626262;
+  margin: 16px 0 0;
+}
