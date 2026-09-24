@@ -1,16 +1,19 @@
 // http://oostens.me/posts/hugo-column-shortcode/
+// The side margins match the 15px padding of Bootstrap's containers. With -1rem
+// (21px at this site's font size) the columns stuck out 6px past the container
+// and caused a horizontal scroll between about 1200px and 1340px.
 .md-columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -15px;
+  margin-right: -15px;
 
   >div {
     flex: 1 1;
     margin: 1rem 0;
     min-width: 100px;
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0 15px;
   }
 
   .markdown-inner {
