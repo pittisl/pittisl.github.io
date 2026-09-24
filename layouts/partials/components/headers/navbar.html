@@ -1,7 +1,11 @@
 {{- /* Copied from github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5@v5.7.1-0.20230418194707-ca2775cd57a2/layouts/partials/components/headers/navbar.html
-     Local change: a dropdown child without a url is rendered as a section
-     header (Bootstrap's dropdown-header) instead of a link, preceded by a
-     dropdown-divider unless it is the first child. */ -}}
+     Local changes:
+     - A dropdown child without a url is rendered as a section header
+       (Bootstrap's dropdown-header) instead of a link, preceded by a
+       dropdown-divider unless it is the first child.
+     - In the mobile navbar the last two words of the site title are joined by
+       a no-break space, so a title too wide for the bar wraps as
+       "Intelligent Systems Lab / @ PITT" (see custom.scss). */ -}}
 {{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
 {{ if $show_navbar }}
 
@@ -50,7 +54,7 @@
           {{with site.Params.header.image.width}}width="{{.}}"{{end}}
           {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
         {{- else -}}
-          {{- site.Title -}}
+          {{- replaceRE ` (\S+)$` "\u00a0$1" site.Title -}}
         {{- end -}}
         </a>
       </div>

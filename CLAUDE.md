@@ -150,7 +150,9 @@ committed here, in `static/aihcs/`, which Hugo copies verbatim.
   for Hugo 0.145 (described in each file's header).
 - `partials/components/headers/navbar.html`: in navbar dropdowns, a menu child without a `url`
   becomes a section header (with a divider before it unless it comes first). `menus.yaml` uses
-  this for "Current Projects" and "Past Projects" under Projects.
+  this for "Current Projects" and "Past Projects" under Projects. The mobile navbar joins the
+  last two words of the site title with a no-break space so that on narrow phones it wraps as
+  "Intelligent Systems Lab / @ PITT" (width limit in `custom.scss`).
 - `partials/hooks/body-end/custom.html` injects the mapmyvisitors.com visitor map on every page.
 - Shortcodes: `columns` (split with `<--->`, optional `ratio="2:1"`), `hr`, `hr-pittisl`
   (thin separator used on project pages), `rawhtml`.

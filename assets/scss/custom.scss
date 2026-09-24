@@ -261,3 +261,16 @@ body {
     padding-left: 0.25rem !important;
   }
 }
+
+// Mobile navbar: the centered site title overlapped the menu and search icons
+// below about 360px. Let it wrap onto two lines between them instead; the
+// navbar.html override joins "@ PITT" with a no-break space so it wraps as
+// "Intelligent Systems Lab / @ PITT".
+@media (max-width: 991.98px) {
+  .navbar-brand-mobile-wrapper .navbar-brand {
+    max-width: calc(100% - 96px);
+    white-space: normal;
+    text-align: center;
+    line-height: 1.15;
+  }
+}
