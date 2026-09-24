@@ -113,10 +113,13 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
   commented out and it is no longer updated.)
 - **People:** `title` is the display name, `role` the position line, `order_id` the sort key
   (ascending), `user_groups` the section. Only groups listed in `content/people/index.md` are
-  rendered. `Past Students` is not in that list, so graduated students moved into that group
-  disappear from the People page but keep their profile pages (linked from their papers).
+  rendered. Graduated students are moved to `Past Students`, which is intentionally not in that
+  list: they disappear from the People page but keep their profile pages (linked from papers).
 - Directories and files starting with `.` (e.g. `content/publication/.preprint/`) are ignored by
   Hugo and serve as templates.
+- `content/{authors,tags,categories,publication_types,projects}/_index.md` only set a title.
+  `config.yaml` has `capitalizeListTitles: false` so tag chips keep their written case, which
+  would otherwise leave these auto-generated list pages titled in lowercase.
 
 ## Local template overrides (`layouts/`)
 
