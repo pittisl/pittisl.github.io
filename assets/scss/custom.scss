@@ -45,6 +45,40 @@ footer.site-footer {
   max-width: 375px;
 }
 
+// On narrow screens the side-by-side layout of layouts/partials/views/compact.html
+// leaves the text a column of one or two words and pushes the image past the right
+// edge. Stack the item instead: title, image, then summary, metadata and links.
+// .media-body gets display: contents so that its children and the image share one
+// flex container and can be reordered.
+@media (max-width: 767.98px) {
+  .media.view-compact-pittisl-academy {
+    flex-direction: column;
+
+    > .media-body {
+      display: contents;
+    }
+
+    > .media-body > * {
+      order: 3;
+    }
+
+    > .media-body > .article-title {
+      order: 1;
+    }
+
+    > .ml-3 {
+      order: 2;
+      align-self: stretch;
+      margin-left: 0 !important;
+    }
+
+    > .ml-3 img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
 
 // Reduce first-paragraph font
 // (The ISL at ... conducts ...)
