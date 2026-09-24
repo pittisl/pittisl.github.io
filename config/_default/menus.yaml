@@ -56,7 +56,7 @@ main:
     url: /projects/human-robot-interaction/
     parent: Projects
     weight: 250
-  - name: "Parkinson's Disease"
+  - name: "AI for Parkinson's Disease"
     url: /projects/parkinsons-disease/
     parent: Projects
     weight: 260
