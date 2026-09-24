@@ -278,7 +278,7 @@ sections:
     id: human-robot-interaction
     content:
       title: Human-Robot Interaction
-      subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to improve the interaction between assistive robots and users with profound motor impairments, such as ALS, for everyday tasks.'
+      subtitle: 'HRI is defined as the study of how humans and robots communicate and collaborate to perform tasks safely and effectively. Our research leverages AI to make assistive robots usable in everyday tasks by people with profound motor impairments, such as ALS, spinal cord injuries or Parkinson''s disease, while keeping the physical and cognitive burden on the user low.'
       text: |
         ### [Low-Burden LLM-Based Preference Learning: Personalizing Assistive Robots from Natural Language Feedback for Users with Paralysis](/publication/2026-lblpl/) {id=lblpl}
         RO-MAN 2026  
