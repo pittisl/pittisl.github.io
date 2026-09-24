@@ -33,11 +33,15 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.115.1
+      # sha256 of hugo_extended_${HUGO_VERSION}_linux-amd64.deb, as listed in
+      # hugo_${HUGO_VERSION}_checksums.txt of the GitHub release. Update together.
+      HUGO_DEB_SHA256: 2b7ddcb50bd3ba10dd9d880fb81639a1991baa3d2a6642c9dd7f9055f00f9932
     steps:
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          echo "${HUGO_DEB_SHA256}  ${{ runner.temp }}/hugo.deb" | sha256sum --check --strict
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
         with:
