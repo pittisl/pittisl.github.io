@@ -98,7 +98,7 @@ sections:
         padding: ['20px', '0', '20px', '0']
 
   - block: markdown
-    id: aware
+    id: progait
     content:
       title: "[ProGait](#progait)"
       subtitle: July 2025
