@@ -24,6 +24,21 @@
   }
 }
 
+// On narrow screens a two-column block squeezed its image into a small side
+// column. Stack the columns instead, and move a column that holds only an image
+// to the top, so a block reads heading, image, text as in the compact list view.
+@media (max-width: 767.98px) {
+  .md-columns > div {
+    flex-basis: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .md-columns > div:has(> figure:only-child),
+  .md-columns > div:has(> p:only-child > figure:only-child) {
+    order: -1;
+  }
+}
+
 // Do not display footer Wow...
 [class="powered-by"] {
   display: none;
