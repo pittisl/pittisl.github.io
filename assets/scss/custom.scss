@@ -214,3 +214,32 @@ body {
   margin: 0;
   font-size: 0.875em;
 }
+
+// From Bootstrap's lg breakpoint (992px), where the navbar turns horizontal, up to
+// about 1060px, the site title, the six menu items and the search icon do not fit
+// with the default spacing: menu labels wrap onto two lines and, below 1024px, the
+// search icon is pushed past the right edge. Keep each label on one line, tighten
+// the link padding up to 1199px, and just above 992px, where that is not enough
+// (a classic 15px scrollbar narrows the page further), also tighten the spacing
+// around the title and the search icon and shrink the title slightly.
+.navbar-expand-lg .navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1039.98px) {
+  #navbar-main .navbar-brand {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+
+  #navbar-main .nav-icons {
+    padding-left: 0.25rem !important;
+  }
+}
