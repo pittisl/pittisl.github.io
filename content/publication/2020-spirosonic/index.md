@@ -27,6 +27,7 @@ summary: The first work that allows commodity smartphones to be used as a portab
 tags:
   - 'mobile-and-connected-health'
   - 'mobile-sensing'
+  - 'parkinsons-disease'
 featured: true
 
 url_pdf: 'https://sites.pitt.edu/~weigao/publications/mobicom20.pdf'

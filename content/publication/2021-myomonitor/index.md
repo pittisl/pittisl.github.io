@@ -27,6 +27,7 @@ summary: We present a new technique to mimic an active sonar system with the sma
 tags:
   - 'mobile-and-connected-health'
   - 'mobile-sensing'
+  - 'parkinsons-disease'
 featured: true
 
 url_pdf: 'https://par.nsf.gov/servlets/purl/10268387'

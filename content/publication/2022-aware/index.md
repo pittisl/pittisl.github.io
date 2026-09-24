@@ -27,6 +27,7 @@ summary: This work prsents AWARE, a new sensing and AI system that supports accu
 
 tags:
   - 'mobile-and-connected-health'
+  - 'parkinsons-disease'
 featured: true
 
 url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3560905.3568437'

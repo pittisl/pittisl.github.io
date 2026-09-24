@@ -22,6 +22,7 @@ sections:
           * [Trustworthy AI](/projects/trustworthy-ai/)
           * [Mobile and Connected Health](/projects/mobile-and-connected-health/)
           * [Human-Robot Interaction](/projects/human-robot-interaction/)
+          * [Parkinson's Disease](/projects/parkinsons-disease/)
           
         Past projects:
           * [Mobile and Edge Computing Systems](/projects/mobile-and-edge-computing-systems/)
