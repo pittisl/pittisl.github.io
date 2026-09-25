@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" font-family="Liberation Sans, Arial, Helvetica, sans-serif">
+  <defs>
+    <style>
+      .card { fill: #f5f9fe; stroke: #c9dcf3; stroke-width: 3; }
+      .sym { font-size: 23px; font-style: italic; fill: #1565c0; }
+      .title { font-size: 42px; font-weight: bold; fill: #0d3d7a; }
+      .sub { font-size: 28px; fill: #34495e; }
+      .conn { stroke: #1565c0; stroke-width: 4; fill: none; }
+      .limb-out { stroke: #1565c0; stroke-width: 36; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .limb-in { stroke: #e3f0fb; stroke-width: 24; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .body { fill: #e3f0fb; stroke: #1565c0; stroke-width: 6; }
+      .cane { stroke: #0d3d7a; stroke-width: 12; stroke-linecap: round; fill: none; }
+      .icon { stroke: #1565c0; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-thin { stroke: #1565c0; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .pill { fill: #ffffff; stroke: #1565c0; stroke-width: 3; }
+      .pill-text { font-size: 28px; fill: #1565c0; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ===== person with a cane ===== -->
+  <g id="person">
+    <!-- cane, drawn first so the right hand grips its handle -->
+    <line class="cane" x1="908" y1="588" x2="952" y2="588"/>
+    <line class="cane" x1="942" y1="592" x2="975" y2="966"/>
+    <circle cx="975" cy="966" r="9" fill="#0d3d7a"/>
+    <!-- legs (slight walking pose) -->
+    <polyline class="limb-out" points="768,600 740,780 712,950"/>
+    <polyline class="limb-out" points="832,600 866,780 892,950"/>
+    <polyline class="limb-in"  points="768,600 740,780 712,950"/>
+    <polyline class="limb-in"  points="832,600 866,780 892,950"/>
+    <path class="body" d="M672,950 h70 a18,18 0 0 1 18,18 v6 h-110 v-6 a18,18 0 0 1 22,-18 z"/>
+    <path class="body" d="M866,950 h70 a18,18 0 0 1 18,18 v6 h-110 v-6 a18,18 0 0 1 22,-18 z"/>
+    <!-- arms: left hangs, right holds the cane -->
+    <polyline class="limb-out" points="742,345 690,480 706,600"/>
+    <polyline class="limb-out" points="858,345 905,470 930,585"/>
+    <polyline class="limb-in"  points="742,345 690,480 706,600"/>
+    <polyline class="limb-in"  points="858,345 905,470 930,585"/>
+    <rect class="body" x="733" y="318" width="134" height="290" rx="44"/>
+    <rect class="body" x="784" y="278" width="32" height="46" rx="10"/>
+    <circle class="body" cx="800" cy="228" r="58"/>
+    <!-- eye-tracking glasses -->
+    <circle class="icon" cx="778" cy="226" r="15"/>
+    <circle class="icon" cx="822" cy="226" r="15"/>
+    <line class="icon-thin" x1="793" y1="226" x2="807" y2="226"/>
+    <line class="icon-thin" x1="837" y1="222" x2="856" y2="216"/>
+    <line class="icon-thin" x1="763" y1="222" x2="744" y2="216"/>
+  </g>
+
+  <!-- ===== body markers ===== -->
+  <g id="markers">
+    <circle cx="800" cy="300" r="24" fill="#1565c0" opacity="0.15"/>
+    <circle cx="800" cy="300" r="9" fill="#1565c0"/>
+    <circle cx="894" cy="440" r="24" fill="#1565c0" opacity="0.15"/>
+    <circle cx="894" cy="440" r="9" fill="#1565c0"/>
+    <circle cx="740" cy="780" r="24" fill="#1565c0" opacity="0.15"/>
+    <circle cx="740" cy="780" r="9" fill="#1565c0"/>
+  </g>
+
+  <!-- ===== connectors ===== -->
+  <g id="connectors">
+    <!-- airway card -> throat -->
+    <line class="conn" x1="600" y1="300" x2="800" y2="300"/>
+    <!-- gaze: dashed gaze ray from glasses to the gaze card -->
+    <line x1="840" y1="224" x2="1000" y2="200" stroke="#1565c0" stroke-width="4" stroke-dasharray="10 9"/>
+    <!-- gait card -> knee -->
+    <line class="conn" x1="600" y1="850" x2="740" y2="780"/>
+    <!-- muscle card (top edge) -> upper arm, routed around the cane -->
+    <polyline class="conn" points="1080,720 1080,440 894,440"/>
+  </g>
+
+  <!-- ===== cards ===== -->
+  <!-- top-left: airway & lung function -->
+  <g id="card-airway">
+    <rect class="card" x="20" y="110" width="580" height="260" rx="24"/>
+    <rect class="icon" x="60" y="180" width="66" height="124" rx="12"/>
+    <line class="icon-thin" x1="78" y1="195" x2="108" y2="195"/>
+    <path class="icon-thin" d="M146,212 a45,45 0 0 1 0,60"/>
+    <path class="icon-thin" d="M161,197 a70,70 0 0 1 0,90"/>
+    <path class="icon-thin" d="M176,182 a95,95 0 0 1 0,120"/>
+    <text class="sym" x="210" y="157">Symptom: respiratory dysfunction</text>
+    <text class="title" x="210" y="207">Airway &amp; lung</text>
+    <text class="title" x="210" y="253">function exams</text>
+    <text class="sub" x="210" y="302">At-home airway and lung</text>
+    <text class="sub" x="210" y="338">exams with a smartphone.</text>
+  </g>
+
+  <!-- top-right: gaze-guided assistive robots -->
+  <g id="card-gaze">
+    <rect class="card" x="1000" y="110" width="580" height="260" rx="24"/>
+    <!-- icon: robot arm holding a cup -->
+    <rect class="icon" x="1045" y="285" width="80" height="22" rx="6"/>
+    <polyline class="icon" points="1085,285 1085,240 1122,210 1145,220"/>
+    <circle class="icon" cx="1085" cy="240" r="9"/>
+    <circle class="icon" cx="1122" cy="210" r="9"/>
+    <path class="icon" d="M1140,207 l18,-12 M1140,231 l18,8"/>
+    <rect class="icon" x="1152" y="203" width="20" height="30" rx="4"/>
+    <text class="sym" x="1190" y="157">Symptom: severe motor impairment</text>
+    <text class="title" x="1190" y="207">Gaze-guided</text>
+    <text class="title" x="1190" y="253">assistive robots</text>
+    <text class="sub" x="1190" y="302">Robots steered by eye gaze,</text>
+    <text class="sub" x="1190" y="338">tuned by natural language.</text>
+  </g>
+
+  <!-- bottom-left: interpretable gait analysis -->
+  <g id="card-gait">
+    <rect class="card" x="20" y="720" width="580" height="260" rx="24"/>
+    <rect class="icon" x="55" y="812" width="105" height="78" rx="12"/>
+    <polygon class="icon" points="160,837 198,817 198,885 160,865"/>
+    <circle class="icon" cx="107" cy="851" r="20"/>
+    <circle class="icon-thin" cx="107" cy="851" r="8"/>
+    <text class="sym" x="210" y="767">Symptom: shuffling gait</text>
+    <text class="title" x="210" y="817">Interpretable</text>
+    <text class="title" x="210" y="863">gait analysis</text>
+    <text class="sub" x="210" y="912">Video gait analysis backed</text>
+    <text class="sub" x="210" y="948">by biomechanical evidence.</text>
+  </g>
+
+  <!-- bottom-right: muscle fatigue monitoring -->
+  <g id="card-muscle">
+    <rect class="card" x="1000" y="720" width="580" height="260" rx="24"/>
+    <rect class="icon" x="1040" y="790" width="66" height="124" rx="12"/>
+    <line class="icon-thin" x1="1058" y1="805" x2="1088" y2="805"/>
+    <polyline class="icon-thin" points="1114,852 1122,852 1130,827 1140,877 1150,832 1160,872 1167,852 1174,852"/>
+    <text class="sym" x="1190" y="767">Symptom: fatigue &amp; weakness</text>
+    <text class="title" x="1190" y="817">Muscle fatigue</text>
+    <text class="title" x="1190" y="863">monitoring</text>
+    <text class="sub" x="1190" y="912">Phone sonar tracks muscle</text>
+    <text class="sub" x="1190" y="948">fatigue in daily exercise.</text>
+  </g>
+
+  <!-- ===== caption and method pills ===== -->
+  <text x="800" y="1040" text-anchor="middle" font-size="30px" fill="#34495e">Living with Parkinson's disease and other movement disorders</text>
+  <g id="pills">
+    <rect class="pill" x="230" y="1085" width="240" height="56" rx="28"/>
+    <text class="pill-text" x="350" y="1123" text-anchor="middle">Generative AI</text>
+    <rect class="pill" x="500" y="1085" width="270" height="56" rx="28"/>
+    <text class="pill-text" x="635" y="1123" text-anchor="middle">Computer vision</text>
+    <rect class="pill" x="800" y="1085" width="250" height="56" rx="28"/>
+    <text class="pill-text" x="925" y="1123" text-anchor="middle">Mobile sensing</text>
+    <rect class="pill" x="1080" y="1085" width="290" height="56" rx="28"/>
+    <text class="pill-text" x="1225" y="1123" text-anchor="middle">Assistive robotics</text>
+  </g>
+</svg>

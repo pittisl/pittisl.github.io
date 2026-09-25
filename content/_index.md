@@ -284,7 +284,7 @@ sections:
       title: AI for Parkinson's Disease
       subtitle: 'Parkinson''s disease (PD) is a progressive neurodegenerative disorder whose motor symptoms, such as shuffling gait, rigidity and loss of fine motor control, come with growing complications, including fatigue, muscle weakness and respiratory dysfunction. Our research applies AI, computer vision and mobile sensing across this spectrum, from interpretable gait analysis and gaze-guided assistive robots to smartphone-based monitoring of the airway, lung function and muscle fatigue at home.'
       text: |
-        ![Overview of our research on Parkinson's disease: interpretable gait analysis, gaze-guided assistive robots, airway and lung function exams, and muscle fatigue monitoring](parkinsons-overview.png)
+        ![A person with a cane, surrounded by the four problems our research addresses: airway and lung function exams, gaze-guided assistive robots, interpretable gait analysis, and muscle fatigue monitoring](parkinsons-overview.png)
         {{< hr >}}
         [**View more...**](/projects/parkinsons-disease/)
     design:
