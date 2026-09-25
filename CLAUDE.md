@@ -66,6 +66,9 @@ HUGO_ENV=production HUGO_ENVIRONMENT=production \
 There are no PR previews; anything merged to `main` goes live in about two minutes. Check with
 `gh run list`. The workflow downloads the Hugo `.deb` from the gohugoio release and verifies
 `HUGO_DEB_SHA256` (from the release's `hugo_<version>_checksums.txt`); update both together.
+Both jobs run on `ubuntu-26.04`, named explicitly rather than `ubuntu-latest`. To try another
+image first, run the build steps in its container (e.g. `docker run ubuntu:26.04`) and compare the
+output with a local build.
 Actions are pinned to commit SHAs with the tag in a trailing comment.
 
 ## Repository map
@@ -75,12 +78,13 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 | `config/_default/config.yaml` | Hugo config, module imports, permalinks, taxonomies |
 | `config/_default/params.yaml` | Theme params (appearance, SEO, search, map, citation style) |
 | `config/_default/menus.yaml` | Navbar, including the Projects and Publication & Dataset dropdowns |
-| `content/_index.md` | Homepage: hero text (with project list) and the hand-written **News** list |
+| `content/_index.md` | Homepage: hero text (with project list) and the **News** block (latest 7 items) |
 | `content/publication/<YYYY>-<slug>/` | One page bundle per paper: `index.md`, `cite.bib`, optional `featured.png/jpg` |
 | `content/projects/<name>.md` | Project pages; each lists papers whose `tags` match its filter |
 | `content/authors/<id>/` | People profiles: `_index.md` + `avatar.jpg/png` |
 | `content/people/index.md` | People page; lists which `user_groups` are shown and in what order |
 | `content/dataset/`, `content/video-and-demos/`, `content/contact/` | Single landing pages built from `markdown`/`contact` blocks |
+| `data/news.yaml` | All news items; rendered on the homepage, on `/news/` (`content/news/_index.md`) and in `/news/index.xml` |
 | `assets/media/` | Images used by content; per-paper figures live in `assets/media/<pub-dir>/` |
 | `static/uploads/` | PDFs (posters etc.) served at `/uploads/...` |
 | `static/vendor/` | Self-hosted front-end libraries (generated, see above) |
@@ -123,15 +127,25 @@ committed here, in `static/aihcs/`, which Hugo copies verbatim.
   exact string (e.g. `on-device-ai`, `spatial-intelligence`, `human-robot-interaction`). Adding a
   new project means adding the page, a `menus.yaml` entry under `Projects`, and a link in the hero
   text of `content/_index.md`.
-- **News:** the homepage news is a Markdown bullet list typed by hand into the `text` of the
-  `news` collection block in `content/_index.md`, newest first, format
-  `* **Mon YYYY:** ... [Title](/publication/<pub-dir>/) ...`. The link must match the bundle
-  directory name. (`content/post/` holds a few old 2022–2023 news posts; the News menu entry is
-  commented out and it is no longer updated.)
+- **News:** add an item at the top of `data/news.yaml` (`date: 'YYYY-MM-DD'`, `text:` one
+  Markdown paragraph; the comment at the top of the file has the details). The homepage shows the
+  latest 7, `/news/` shows all of them by year, and `/news/index.xml` is the RSS feed; nothing
+  else needs editing. Pages show only the month; older items without a known day use
+  `'YYYY-MM'`. Paper links must match the bundle directory name. (`content/post/` holds a few
+  old 2022–2023 news posts from before; the News menu entry is commented out and it is no longer
+  updated.)
 - **People:** `title` is the display name, `role` the position line, `order_id` the sort key
   (ascending), `user_groups` the section. Only groups listed in `content/people/index.md` are
   rendered. Graduated students are moved to `Past Students`, which is intentionally not in that
   list: they disappear from the People page but keep their profile pages (linked from papers).
+- **Posters:** the PDF goes to `static/uploads/<name>_<venue><year>_poster.pdf`, a PNG preview to
+  `assets/media/<pub-dir>/`, an entry (newest first, heading with `{id=poster-<pub-dir>}`) to the
+  Posters block of `content/video-and-demos/index.md`, and a `Poster` entry under `links` in the
+  paper's front matter with the root-relative URL `/uploads/<name>.pdf` (a
+  `https://pittisl.github.io/...` URL is a 404 in local previews and until the change is deployed).
+- **Renaming a page:** `config.yaml` sets `disableAliases: true`, so `aliases` in front matter do
+  nothing. Keep an old URL working with a redirect page at `static/<old path>/index.html` (see
+  `static/publication/2026-mosaicthinker/`).
 - Directories and files starting with `.` (e.g. `content/publication/.preprint/`) are ignored by
   Hugo and serve as templates.
 - `content/{authors,tags,categories,publication_types,projects}/_index.md` only set a title.
@@ -144,7 +158,12 @@ committed here, in `static/aihcs/`, which Hugo copies verbatim.
   500px thumbnails, CSS class `view-compact-pittisl-academy`). Every block using `view: compact`
   gets this variant.
 - `partials/views/compact-orig.html` is close to the upstream compact view and is used only by
-  the homepage news block (`view: compact-orig`).
+  the homepage news block (`view: compact-orig`). That block lists no pages (its filter
+  `exclude_featured: true` drops the old posts, which are all featured); its items come from the
+  `news` shortcode in the block's `text`.
+- News: `partials/functions/news_items.html` reads and sorts `data/news.yaml`; the `news`
+  shortcode (`limit=N`, `by_year=true`) renders it, `news/list.rss.xml` is the feed at
+  `/news/index.xml`, and `partials/hooks/head-end/news-rss.html` links the feed from the homepage.
 - `_default/baseof.html`, `partials/analytics/google_analytics.html`,
   `partials/components/feedback.html`: copies of theme templates with the minimal fixes needed
   for Hugo 0.145 (described in each file's header).
@@ -155,14 +174,14 @@ committed here, in `static/aihcs/`, which Hugo copies verbatim.
   "Intelligent Systems Lab / @ PITT" (width limit in `custom.scss`).
 - `partials/hooks/body-end/custom.html` injects the mapmyvisitors.com visitor map on every page.
 - Shortcodes: `columns` (split with `<--->`, optional `ratio="2:1"`), `hr`, `hr-pittisl`
-  (thin separator used on project pages), `rawhtml`.
+  (thin separator used on project pages), `rawhtml`, `news` (see above).
 
 ## Upstream leftovers
 
 These come from the starter template and are not part of the lab site: `README_template.md`,
-`theme.toml`, `preview.png`, `images/`, `.github/FUNDING_backup.yml`, `content/tour/`,
-`content/event/`, `content/publication/cite_example.bib`, `content/publication/hidden-with-dotfile`.
-`.hugo_build.lock` is tracked but should be ignored.
+`theme.toml`, `preview.png`, `images/`, `.github/FUNDING_backup.yml`. They are not published.
+(The published leftovers `/tour/`, `/event/`, `/author/admin/` and the example files in
+`content/post/`, `content/event/` and `content/publication/` were deleted in September 2026.)
 
 ## Style
 

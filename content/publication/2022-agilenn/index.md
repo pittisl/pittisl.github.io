@@ -16,8 +16,8 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 28th Annual International Conference on Mobile Computing And Networking (MobiCom'22)*
-publication_short: In *MobiCom'22*
+publication: In *the 28th Annual International Conference on Mobile Computing and Networking (MobiCom 2022)*
+publication_short: In *MobiCom 2022*
 
 abstract: With the wide adoption of AI applications, there is a pressing need of enabling real-time neural network (NN) inference on small embedded devices, but deploying NNs and achieving high performance of NN inference on these small devices is challenging due to their extremely weak capabilities. Although NN partitioning and offloading can contribute to such deployment, they are incapable of minimizing the local costs at embedded devices. Instead, we suggest to address this challenge via agile NN offloading, which migrates the required computations in NN offloading from online inference to offline learning. In this paper, we present AgileNN, a new NN offloading technique that achieves real-time NN inference on weak embedded devices by leveraging eXplainable AI techniques, so as to explicitly enforce feature sparsity during the training phase and minimize the online computation and communication costs. Experiment results show that AgileNN's inference latency is >6X lower than the existing schemes, ensuring that sensory data on embedded devices can be timely consumed. It also reduces the local device's resource consumption by >8X, without impairing the inference accuracy.
 

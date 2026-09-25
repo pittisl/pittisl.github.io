@@ -49,7 +49,7 @@ social:
     link: https://github.com/mmcruirong
   - icon: linkedin
     icon_pack: fab
-    link: https:/www.linkedin.com/in/chen-ruirong-35837192/
+    link: https://www.linkedin.com/in/chen-ruirong-35837192/
   - icon: earth-americas
     icon_pack: fas
     link: https://mmcruirong.github.io/RuirongChen.github.io/

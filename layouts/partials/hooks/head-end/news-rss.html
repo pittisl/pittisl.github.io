@@ -1,0 +1,6 @@
+{{- /* Let feed readers find the news feed from the homepage. */ -}}
+{{- if .IsHome }}
+  {{- with site.GetPage "/news" }}{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="News | {{ site.Title }}">
+  {{- end }}{{ end }}
+{{- end }}

@@ -35,15 +35,10 @@ sections:
     id: news
     content:
       title: Latest News
-      subtitle:
+      # The items come from data/news.yaml.
+      subtitle: '[All news](/news/) · [RSS](/news/index.xml)'
       text: |
-        * **May 2026:** Our paper, [Attribution-based Sparse Activation in Large Language Models](/publication/2026-sparse-activation-slm/), has been accepted for publication at the Ninth Conference on Machine Learning and Systems (MLSys 2026).
-        * **Mar 2026:** Our paper, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), has been accepted to **CVPR 2026** as an **oral presentation**.
-        * **Dec 2025:** Three of our recent papers, [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/), [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/), and [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/), are now available on arXiv.
-        * **Jul 2025:** Our paper, [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/), has been accepted for publication at 2025 International Conference on Computer Vision (ICCV 2025).
-        * **Jun 2025:** Our paper, [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025) with the **best paper award!**
-        * **Jun 2025:** Our paper, [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/), has been accepted for publication at the ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2025).
-        * **Apr 2025:** Our paper, [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/), has been accepted for publication at the Conference on Computer Vision and Pattern Recognition 2025 (CVPR 2025).
+        {{< news limit=7 >}}
       count: 0
       filters:
         author: ''
@@ -67,28 +62,28 @@ sections:
       title: Spatial Intelligence
       subtitle: 'Spatial Intelligence is often defined as a computational capacity that provides the ability or skill to solve spatial problems of navigation, object visualization from different angles and space, object or scene recognition, etc. Our research focuses on exploring the perception and reasoning of 3D world scenes by vision-language models (VLMs), and improving the model’s task performance under different application scenarios.'
       text: |
-        ### [MosaicThinker: On-Device Visual Spatial Reasoning for Embodied AI via Iterative Construction of Space Representation](/publication/2026-mosaicthinker/) {id=mosaicthinker}
-        ArXiv preprint  
-        ![mosaicthinker.png](2026-mosaicthinker/mosaicthinker.png)
-        MosaicThinker is an inference-time computing technique that boosts on-device small VLMs on cross-frame visual spatial reasoning for embodied AI. Instead of relying on dense 3D representations that are hard for small on-device VLMs to perceive, MosaicThinker integrates fragmented spatial information from multiple video frames into a unified global semantic map, and guides the VLM's reasoning over the map via a carefully crafted visual prompt. Experiments show that this technique greatly enhances the accuracy of cross-frame spatial reasoning on resource-constrained embodied AI devices across diverse task types and complexities.
-        {{< hr-pittisl >}}
         ### [Uncovering and Shaping the Latent Representation of 3D Scene Topology in Vision-Language Models](/publication/2026-vlm-latent-shaping/) {id=vlm-latent-shaping}
-        ArXiv preprint  
-        ![vlm-latent-shaping.png](2026-vlm-latent-shaping/vlm-latent-shaping.png)
+        NeurIPS 2026 (Spotlight)  
+        ![Probing the latent scene topology of a VLM and using it to improve spatial reasoning](2026-vlm-latent-shaping/vlm-latent-shaping.png)
         We show that current VLMs do possess a latent topological map of 3D scenes, but it is heavily overshadowed by non-geometric visual semantics such as color and shape. By isolating this spatial subspace through cross-scene linear feature extraction, we extract a clean spatial subspace that causally controls the model's spatial outputs, and prove its correspondence to the Laplacian eigenmaps of the scene's 3D Gaussian-kernel graph. Motivated by this geometric identification, we introduce a Dirichlet-energy latent regularizer; applied during a minimal 500-step LoRA fine-tuning on simple synthetic data, it yields up to 12.1% improvement on real-world spatial benchmarks such as VSI-Bench and MindCube over standard SFT and competitive baselines.
+        {{< hr-pittisl >}}
+        ### [SpatialMind: Spatially Aware On-Device Embodied AI via Viewpoint Integration](/publication/2026-spatialmind/) {id=spatialmind}
+        MobiCom 2026  
+        ![Overview of SpatialMind design](2026-spatialmind/spatialmind-overview.png)
+        SpatialMind is an on-device embodied AI technique that bridges the gap between 2D visual inputs and 3D physical reality, by injecting 3D spatial knowledge into small on-device VLMs in a sparse form of 2D allocentric spatial memory. Instead of feeding dense 3D representations that small VLMs cannot perceive well, SpatialMind selects task-relevant key frames and systematically aligns their visual features to a unified global viewpoint, while pruning the scope of on-device computation. Experiments in diverse indoor environments show that SpatialMind greatly enhances spatially aware embodied AI tasks on resource-constrained devices, with high adaptability, robustness and compute efficiency.
         {{< hr-pittisl >}}
         ### [InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity](/publication/2025-infinibench/) {id=infinibench}
         CVPR 2026 (Oral)  
-        ![infinibench.png](2025-infinibench/infinibench.png)
+        ![The InfiniBench pipeline and scenes of increasing compositional, relational and observational complexity](2025-infinibench/infinibench.png)
         We present InfiniBench, a fully automated, customizable and user-friendly benchmark generator that can synthesize a theoretically infinite variety of 3D scenes with parameterized control on scene complexity. InfiniBench uniquely translates scene descriptions in natural language into photo-realistic videos with complex and physically plausible 3D layouts. Experiments demonstrate that InfiniBench outperforms state-of-the-art procedural and LLM-based 3D generation methods in prompt fidelity and physical plausibility, especially in high-complexity scenarios. We further showcased the usefulness of InfiniBench, by generating benchmarks for representative spatial reasoning tasks including measurement, perspective-taking and spatiotemporal tracking.
         {{< hr-pittisl >}}
         ### [Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective](/publication/2025-remindview-bench/) {id=remindview-bench}
-        ArXiv preprint  
+        ECCV 2026  
         ![Benchmarking and Reasoning analysis in Multi-view spatial reasoning](2025-remindview-bench/remindview-bench-figure1.png)  
         We present ReMindView-Bench, a cognitively grounded benchmark for evaluating how VLMs construct, align and maintain spatial mental models across complementary viewpoints. ReMindView-Bench systematically varies viewpoint spatial pattern and query type to probe key factors of spatial cognition. Explicit phase-wise analysis using LLM-as-a-judge and self-consistency prompting shows that VLMs perform well on in-frame perception but degrade sharply when integrating information across views. Implicit analysis, including linear probing and entropy dynamics, further show progressive loss of task-relevant information and uncertainty separation between correct and incorrect trajectories. These results provide a cognitively grounded diagnosis of VLM spatial reasoning and reveal how multi-view spatial mental models are formed, degraded and destabilized across reasoning phases.
         {{< hr-pittisl >}}
         ### [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods](/publication/2025-spatial-reasoning-survey/) {id=spatial-reasoning-survey}
-        ArXiv preprint
+        arXiv preprint
         ![Spatial tasks for different application domains](2025-spatial-reasoning-survey/spatial-reasoning-survey-figure2.png)
         Our survey on spatial reasoning introduces a taxonomy that organizes spatial intelligence from cognitive aspect and divides tasks in terms of reasoning complexity, linking them to several cognitive functions. We map existing benchmarks across text only, vision language, and embodied settings onto this taxonomy, and review evaluation metrics and methodologies for assessing spatial reasoning ability. This cognitive perspective enables more principled cross-task comparisons and reveals critical gaps between current model capabilities and human-like reasoning. In addition, we analyze methods for improving spatial ability, spanning both training-based and reasoning-based approaches. This dual perspective analysis clarifies their respective strengths, uncovers complementary mechanisms. By surveying tasks, benchmarks, and recent advances, we aim to provide new researchers with a comprehensive understanding of the field and actionable directions for future research.
         {{< hr >}}
@@ -104,9 +99,9 @@ sections:
       title: Multimodal Generative AI
       subtitle: 'Generative AI could revolutionize many current and emerging application and industry domains. In applications under real-world scenarios, rich data modalities other than text are being integrated into generative AI research to solve emerging challenges. Our research explores multimodal generative AI computation and unleash potentials of the current models.'
       text: |
-        ### [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/) {id=xpert}
+        ### [Data Can Speak for Itself: Quality-guided Utilization of Wireless Synthetic Data](/publication/2025-syncheck/) {id=syncheck}
         MobiSys 2025
-        ![syncheck.png](2025-syncheck/syncheck-figure1.png)
+        ![Synthetic data generation, quality assessment and quality-guided utilization](2025-syncheck/syncheck-figure1.png)
         While recent studies show performance improvements in wireless sensing tasks by incorporating synthetic data from generative models into training sets, the quality of synthetic data remains unpredictable and the resulting performance gains are not guaranteed. To address this gap, we propose tractable and generalizable metrics to quantify quality attributes of synthetic data - affinity and diversity. Our assessment reveals prevalent affinity limitation in current wireless synthetic data, leading to mislabeled data and degraded task performance. We attribute the quality limitation to generative models' lack of awareness of untrained conditions and domain-specific processing. To mitigate these issues, we introduce SynCheck, a quality-guided synthetic data utilization scheme that refines synthetic data quality during task model training. Our evaluation demonstrates that SynCheck consistently outperforms quality-oblivious utilization of synthetic data.
         {{< hr-pittisl >}}
         ### [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](/publication/2024-phyt2v/) {id=phyt2v}
@@ -142,7 +137,7 @@ sections:
         ### [Never Start from Scratch: Expediting On-Device LLM Personalization via Explainable Model Selection](/publication/2025-xpert/) {id=xpert}
         MobiSys 2025
         {{< columns >}}
-        ![XPerT.png](xpert.png)
+        ![XPerT selects a personalized LLM from the cloud for fine-tuning on the user's device](xpert.png)
         <--->
         Personalization of Large Language Models (LLMs) is important in practical applications to accommodate the individual needs of different mobile users. Due to data privacy concerns, LLM personalization often needs to be locally done at the user's mobile device, but such on-device personalization is constrained by both the limitation of on-device compute power and insufficiency of user's personal data. In this paper, we address these constraints by fine-tuning an already personalized LLM with user's personal data, and present XPerT, a new technique that ensure proper selection of such already personalized LLMs based on explainability about how they were being fine-tuned. We implemented and evaluated XPerT on various smartphone models with mainstream LLMs, and experiment results show that XPerT reduces the computation costs of on-device LLM personalization by 83%, and improves its data efficiency by 51%. 
         {{< /columns >}}
@@ -168,24 +163,8 @@ sections:
         ![Intertwined Heterogeneity](2023-intertwined-heterogeneity/intertwined-fig2.png)
         Federated Learning (FL) can be affected by data and device heterogeneities. Traditional schemes consider these heterogeneities as two separate and independent aspects, but this assumption is unrealistic in practical FL scenarios where these heterogeneities are intertwined. In these cases, traditional FL schemes are ineffective. We introduce a novel FL framework with the idea of estimating the distributions of clients' local training data from their uploaded stale model updates, and use these estimations to compute unstale client model updates. Experiments on comparison with existing FL strategies on mainstream datasets and models showed that our approach can improve the trained model accuracy by up to 25% and reduce the number of required training epochs by up to 35%.
         {{< hr-pittisl >}}
-        ### [Perceptual-Centric Image Super-Resolution using Heterogeneous Processors on Mobile Devices](/publication/2024-fye-sr/) {id=fye-sr}
-        MobiCom'24
-        {{< columns >}}
-        ![Our SR method compared to Image-based Split Methods](fye-sr-vertical.jpg)
-        <--->
-        Image super-resolution (SR) is widely used on mobile devices to enhance user experience. However, neural networks used for SR are computationally expensive, posing challenges for mobile devices with limited computing power. A viable solution is to use heterogeneous processors on mobile devices, especially the specialized hardware AI accelerators, but the reduced arithmetic precision on AI accelerators can lead to degraded perceptual quality in upscaled images. To address this limitation, we present a novel image SR technique that enhances the perceptual quality of upscaled images when using heterogeneous processors for SR computations. It strategically splits the SR model and dispatches different layers to heterogeneous processors, to meet the time constraint while minimizing the impact of AI accelerators on image quality. Experiment results show that our method outperforms the best baselines, improving perceptual image quality by up to 2×, or reducing SR computing latency by up to 5.6× with on-par image quality.
-        {{< /columns >}}
-        {{< hr-pittisl >}}
-        ### [Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation](/publication/2023-greentrainer/) {id=greentrainer}
-        2024 ICLR
-        {{< columns >}}
-        ![GreenTrainer](greentrainer.png)
-        <--->
-        The growing need of fine-tuning large language models (LLMs) can lead to significant energy consumption and environmental impact. To address this issue, we introduce GreenTrainer, a novel LLM fine-tuning technique. GreenTrainer assesses the backpropagation costs and contributions of different tensors to model accuracy, allowing for the selection of the most efficient set of tensors. This selection is guided by a user-defined objective, which can adapt to energy supply considerations and Green AI goals. Experimental results demonstrate that GreenTrainer can reduce FLOPs by up to 64% without compromising model accuracy, and outperforms existing techniques like LoRA while maintaining comparable FLOPs reduction.
-        {{< /columns >}}
-        {{< hr-pittisl >}}
         ### [ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection](/publication/2023-elastictrainer/) {id=elastictrainer}
-        MobiSys'23  
+        MobiSys 2023  
         {{< columns >}}
         ![ElasticTrainer](elastictrainer.jpg)
         <--->
@@ -194,7 +173,7 @@ sections:
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
         {{< hr-pittisl >}}
         ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/) {id=agilenn}
-        MobiCom'22  
+        MobiCom 2022  
         {{< columns >}}
         ![AgileNN](agilenn.png)
         <--->
@@ -214,8 +193,16 @@ sections:
       title: Trustworthy AI
       subtitle: 'The versatility of recent emerging AI techniques also brings challenges in ensuring the AI systems to be safe, fair, explainable, and to cause no harm. Our research aims at discovering potential malicious adaptations to AI models, and propose protections and mitigations against unwanted model usages.'
       text: |
+        ### [MMBERT: Scaled Mixture-of-Experts Multimodal BERT for Robust Chinese Hate Speech Detection under Cloaking Perturbations](/publication/2025-mmbert/) {id=mmbert}
+        AAAI 2026
+        {{< columns >}}
+        ![MMBERT model structure](2025-mmbert/mmbert-structure.png)
+        <--->
+        Hate speech on Chinese social networks often evades text-based detection through cloaking techniques, such as character deformation, homophonic substitution, abbreviation and code-mixing with pinyin or emojis. MMBERT is a BERT-based multimodal framework that integrates textual, speech and visual modalities through a Mixture-of-Experts (MoE) architecture, with modality-specific experts, a shared self-attention mechanism and a router-based expert allocation strategy that enhance robustness against such adversarial perturbations. A progressive three-stage training paradigm addresses the instability of directly integrating MoE into BERT-based models. On several Chinese hate speech datasets, MMBERT significantly surpasses fine-tuned BERT-based encoder models, fine-tuned LLMs, and LLMs using in-context learning.
+        {{< /columns >}}
+        {{< hr-pittisl >}}
         ### [FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing](/publication/2024-freezeasguard/) {id=freezeasguard}
-        ArXiv preprint
+        LifeGenIP Workshop at ECCV 2026
         {{< columns >}}
         ![FreezeAsGuard](freezeasguard.png)
         <--->
@@ -234,7 +221,7 @@ sections:
   - block: markdown
     id: mobile-and-connected-health
     content:
-      title: Mobile and connected health
+      title: Mobile and Connected Health
       subtitle: 'Recent technical advances of sensing, computation and communication on mobile and embedded devices, such as smartphones and wearables, highlights the possibility of pervasive monitoring and unobtrusive diagnostics of various acute or chronic diseases, as convenient yet low-cost alternatives of medical-grade methods without any involvement of clinicians. Our research aims to fully unleash such potential of today’s mobile and embedded devices towards accurate, efficient yet cost-effective solutions to mobile and connected health, by employing modern AI tools and developing new AI algorithms to properly extract biomarkers from the mobile sensory data and provide sufficient interpretability to the extracted biomarkers. Currently, our integrated sensing and AI systems have been widely applied to various clinical applications including pulmonary telemedicine, post-discharge heart failure risk evaluation and mitigation, and orthopedic disease evaluation.'
       text: |
         ### [ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users](/publication/2025-progait/) {id=progait}
@@ -248,7 +235,7 @@ sections:
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones](/publication/2023-ptease/) {id=ptease}
-        MobiSys'23  
+        MobiSys 2023  
         {{< columns >}}
         ![PTEase](ptease.png)
         <--->
@@ -258,8 +245,8 @@ sections:
         #### [Acoustic Waveform Respiratory Evaluation (AWARE) Dataset](/dataset/#aware)  
         Our AWARE dataset consists of a group of human airway measurements, produced by our integrated AI and sensing systems for smart pulmonary telemedicine. The PTEase paper makes use of the AWARE dataset.
         {{< hr-pittisl >}}
-        ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](/publication/2020-spirosonic) {id=spirosonic}
-        MobiCom'20  
+        ### [SpiroSonic: Monitoring Human Lung Function via Acoustic Sensing on Commodity Smartphones](/publication/2020-spirosonic/) {id=spirosonic}
+        MobiCom 2020  
         {{< columns >}}
         ![SpiroSonic](spirosonic.png)
         <--->
@@ -282,10 +269,24 @@ sections:
       text: |
         ### [Low-Burden LLM-Based Preference Learning: Personalizing Assistive Robots from Natural Language Feedback for Users with Paralysis](/publication/2026-lblpl/) {id=lblpl}
         RO-MAN 2026  
-        ![lblpl.png](2026-lblpl/figure_2.png)
+        ![LLM-based preference learning: clinical reasoning, policy mapping and automated policy evaluation](2026-lblpl/figure_2.png)
         We developed an LLM-based framework that personalizes assistive robots using natural language feedback, significantly reducing the physical and cognitive fatigue associated with traditional methods. Grounded in clinical reasoning, the system translates unstructured user input into safe, deterministic control policies for individuals with profound motor impairments.
         {{< hr >}}
         [**View more...**](/projects/human-robot-interaction/)
+    design:
+      columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+
+  - block: markdown
+    id: parkinsons-disease
+    content:
+      title: AI for Parkinson's Disease
+      subtitle: 'Parkinson''s disease (PD) is a progressive neurodegenerative disorder whose motor symptoms, such as shuffling gait, rigidity and loss of fine motor control, come with growing complications, including fatigue, muscle weakness and respiratory dysfunction. Our research applies AI, computer vision and mobile sensing across this spectrum, from interpretable gait analysis and gaze-guided assistive robots to smartphone-based monitoring of the airway, lung function and muscle fatigue at home.'
+      text: |
+        ![Overview of our research on Parkinson's disease: interpretable gait analysis, gaze-guided assistive robots, airway and lung function exams, and muscle fatigue monitoring](parkinsons-overview.png)
+        {{< hr >}}
+        [**View more...**](/projects/parkinsons-disease/)
     design:
       columns: '2'
       spacing:
@@ -297,16 +298,16 @@ sections:
       title: Mobile and Edge Computing Systems
       subtitle: 'Edge computing remains a viable solution in task offloading to balance between network latency and computational power. Our research focuses on the co-design between mobile and edge systems to achieve better efficiency on mobile applications with heavy workload, such as mobile VR rendering.'
       text: |
-        ### [FaceListener: Recognizing Human Facial Expressions via Acoustic Sensing on Commodity Headphones](publication/2022-facelistener/) {id=facelistener}
-        IPSN'22
+        ### [FaceListener: Recognizing Human Facial Expressions via Acoustic Sensing on Commodity Headphones](/publication/2022-facelistener/) {id=facelistener}
+        IPSN 2022
         {{< columns >}}
         ![FaceListener](facelistener.png)
         <--->
         FaceListener transforms the commodity headphone into an acoustic sensing device, which captures the face skin deformations caused by fa-cial muscle movements with different facial expressions. To ensure the recognition accuracy, FaceListener leverages the knowledge distillation technique to learn the subtle correlation between face skin deformation and the acoustic signal changes.
         {{< /columns >}}
         {{< hr-pittisl >}}
-        ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
-        ASPLOS'22  
+        ### [Eavesdropping User Credentials via GPU Side Channels on Smartphones](/publication/2022-mobile-gpu-eavesdropping/) {id=mobile-gpu-eavesdropping}
+        ASPLOS 2022  
         {{< columns >}}
         ![MobileGPUEavesdropping](mobilegpueavesdropping_animation_comp.gif)
         <--->
@@ -314,24 +315,24 @@ sections:
         {{< /columns >}}
         This is one of the few works that demonstrate critical security vulnerabilities of mainstream GPUs (QualComm Adreno GPU on Snapdragon SoCs) on smartphones, which allow an unprivileged attacker to eavesdrop the user’s sensitive credentials such as app username and password.
         {{< hr-pittisl >}}
-        ### [MagHacker: eavesdropping on stylus pen writing via magnetic sensing from commodity mobile devices](publication/2020-maghacker/) {id=maghacker}
-        MobiSys'20
+        ### [MagHacker: eavesdropping on stylus pen writing via magnetic sensing from commodity mobile devices](/publication/2020-maghacker/) {id=maghacker}
+        MobiSys 2020
         {{< columns >}}
         ![MagHacker](maghacker.png)
         <--->
         We present MagHacker, a new sensing system that realizes such eavesdropping attack over commodity mobile devices, which monitor and analyze the magnetic field being produced by the stylus pen’s internal magnet. It divides the continuous magnetometer readings into small segments that represent individual letters, and then translates these readings into writing trajectories for letter recognition.
         {{< /columns >}}
         {{< hr-pittisl >}}
-        ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](publication/2019-deltavr/) {id=deltavr}
-        IPSN'19  
+        ### [DeltaVR: achieving high-performance mobile VR dynamics through pixel reuse](/publication/2019-deltavr/) {id=deltavr}
+        IPSN 2019  
         {{< columns >}}
         ![DeltaVR](deltavr.png)
         <--->
         This work leverages the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted.
         {{< /columns >}}
         {{< hr-pittisl >}}
-        ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](publication/2018-muvr/) {id=muvr}
-        2018 IEEE SEC  
+        ### [MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud](/publication/2018-muvr/) {id=muvr}
+        SEC 2018  
         {{< columns >}}
         ![MUVR](muvr.png)
         <--->
@@ -352,7 +353,7 @@ sections:
       subtitle: 'Wireless communications, such as Wi-Fi, Bluetooth and Zigbee, play an important role in IoT and mobile application. However, the noisy wireless channel conditions and interference makes such communication less effective. Our research focuses on physical layer designs, and apply AI-assisted techniques for interference cancellation and efficiency improvement.'
       text: |
         ### [AiFi: AI-Enabled WiFi Interference Cancellation with Commodity PHY-Layer Information](/publication/2022-aifi/) {id=aifi}
-        SenSys'22  
+        SenSys 2022  
         {{< columns >}}
         ![AiFi](aifi.jpg)
         <--->
@@ -360,7 +361,7 @@ sections:
         {{< /columns >}}
         {{< hr-pittisl >}}
         ### [TransFi: emulating custom wireless physical layer from commodity wifi](/publication/2022-transfi/) {id=transfi}
-        MobiSys'22  
+        MobiSys 2022  
         {{< columns >}}
         TransFi realizes fine-grained signal emulation and allows commodity WiFi devices to emulate custom wireless physical layer, including but not limited to, custom PHY-layer preambles and new ways of agile spectrum usage. It could also improve the performance of cross-technology communication and many other wireless applications by up to 50x, enabling high-speed data communication on par with commodity WiFi.
         <--->

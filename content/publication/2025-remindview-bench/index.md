@@ -2,12 +2,12 @@
 title: 'Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective'
 authors:
   - qiyao
+  - haoming
   - weichen
   - shiqi
-  - haoming
   - 'Yuyang Wu'
   - wei
-date: '2025-12-02T00:00:00Z'
+date: '2026-06-17T00:00:00Z'
 doi: '10.48550/arXiv.2512.02340'
 
 # Schedule page publish date (NOT publication's date).
@@ -17,11 +17,11 @@ publishDate: '2025-12-02T00:00:00Z'
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *arXiv preprint*
-publication_short: In *arXiv*
+publication: In *the 19th European Conference on Computer Vision (ECCV 2026)*
+publication_short: In *ECCV 2026*
 
 abstract: Spatial reasoning is a core aspect of human intelligence that allows perception, inference and planning in 3D environments. However, current vision-language models (VLMs) struggle to maintain geometric coherence and cross-view consistency for spatial reasoning in multi-view settings. We attribute this gap to the lack of fine-grained benchmarks that isolate multi-view reasoning from single-view perception and temporal factors. To address this, we present ReMindView-Bench, a cognitively grounded benchmark for evaluating how VLMs construct, align and maintain spatial mental models across complementary viewpoints. ReMindView-Bench systematically varies viewpoint spatial pattern and query type to probe key factors of spatial cognition. Evaluations of 15 current VLMs reveals consistent failures in cross-view alignment and perspective-taking in multi-view spatial reasoning, motivating deeper analysis on the reasoning process. Explicit phase-wise analysis using LLM-as-a-judge and self-consistency prompting shows that VLMs perform well on in-frame perception but degrade sharply when integrating information across views. Implicit analysis, including linear probing and entropy dynamics, further show progressive loss of task-relevant information and uncertainty separation between correct and incorrect trajectories. These results provide a cognitively grounded diagnosis of VLM spatial reasoning and reveal how multi-view spatial mental models are formed, degraded and destabilized across reasoning phases.
 
@@ -35,6 +35,8 @@ featured: true
 links:
   - name: Dataset
     url: https://huggingface.co/datasets/Xue0823/ReMindView-Bench
+  - name: Poster
+    url: /uploads/remindview_eccv2026_poster.pdf
 url_code: 'https://github.com/pittisl/ReMindView-Bench'
 url_pdf: 'https://arxiv.org/pdf/2512.02340'
 #url_video: ''
@@ -62,6 +64,8 @@ image:
 #   Otherwise, set `slides: ""`.
 #slides:
 ---
+
+*Qiyao Xue and Haoming Wang contributed equally to this work.*
 
 ### Benchmark
 

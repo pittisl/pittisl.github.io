@@ -19,8 +19,8 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 18th International Conference on Mobile Systems, Applications, and Services (MobiSys'20)*
-publication_short: In *MobiSys'20*
+publication: In *the 18th International Conference on Mobile Systems, Applications, and Services (MobiSys 2020)*
+publication_short: In *MobiSys 2020*
 
 abstract: Stylus pens have been widely used with today's mobile devices to provide a convenient handwriting input method, but also bring a unique security vulnerability that may unveil the user's handwriting contents to a nearby eavesdropper. In this paper, we present MagHacker, a new sensing system that realizes such eavesdropping attack over commodity mobile devices, which monitor and analyze the magnetic field being produced by the stylus pen's internal magnet. MagHacker divides the continuous magnetometer readings into small segments that represent individual letters, and then translates these readings into writing trajectories for letter recognition. Experiment results over realistic handwritings from multiple human beings demonstrate that MagHacker can accurately eavesdrop more than 80% of handwriting with stylus pens, from a distance of 10cm. Only slight degradation in such accuracy is produced when the eavesdropping distance or the handwriting speed increases. MagHacker is highly energy efficient, and can well adapt to different stylus pen models and environmental contexts.
 

@@ -1,0 +1,23 @@
+{{- /* News list from data/news.yaml (see layouts/partials/functions/news_items.html).
+       limit=N shows only the latest N items; by_year=true puts the items under
+       a heading per year. */ -}}
+{{- $items := partial "functions/news_items.html" . -}}
+{{- $limit := int (.Get "limit" | default 0) -}}
+{{- if gt $limit 0 }}{{ $items = first $limit $items }}{{ end -}}
+{{- $by_year := eq (printf "%v" (.Get "by_year")) "true" -}}
+{{- $year := "" -}}
+{{- range $i, $item := $items -}}
+  {{- $y := $item._date.Format "2006" -}}
+  {{- if and $by_year (ne $y $year) -}}
+    {{- if $year }}</ul>{{ end -}}
+    {{- $year = $y }}
+<h2 id="{{ $y }}">{{ $y }}</h2>
+<ul>
+  {{- else if eq $i 0 }}
+<ul>
+  {{- end }}
+  <li><strong>{{ $item._date.Format "Jan 2006" }}:</strong> {{ $.Page.RenderString $item.text }}</li>
+{{- end }}
+{{- if $items }}
+</ul>
+{{- end -}}

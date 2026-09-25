@@ -6,9 +6,9 @@ type: landing
 
 sections:
   - block: markdown
+    id: page-title
     content:
       title: 'Video, Demos and Posters'
-      id: videos
       text: |-
       # Automatically link email and phone or display as text?
       autolink: true
@@ -18,16 +18,31 @@ sections:
 #        padding: ['20px', '0', '20px', '0']
 
   - block: markdown
+    id: posters
     content:
       title: 'Posters'
-      id: posters
       text: |-
-        ## [GreenTrainer](/publication/2023-greentrainer/)
-        Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation
-        [![GreenTrainer poster](2023-greentrainer/greentrainer_iclr24_poster.png)](/uploads/greentrainer_iclr24_poster.pdf)
-        ## [PhyT2V](/publication/2024-phyt2v/)
-        PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation
+        ## [ReMindView-Bench](/publication/2025-remindview-bench/) {id=poster-2025-remindview-bench}
+        Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective (*ECCV 2026*)
+        [![ReMindView-Bench poster](2025-remindview-bench/remindview_eccv2026_poster.png)](/uploads/remindview_eccv2026_poster.pdf)
+        ## [FreezeAsGuard](/publication/2024-freezeasguard/) {id=poster-2024-freezeasguard}
+        FreezeAsGuard: Mitigating Illegal Adaptation of Diffusion Models via Selective Tensor Freezing (*LifeGenIP Workshop at ECCV 2026*)
+        [![FreezeAsGuard poster](2024-freezeasguard/freezeasguard_eccv2026_lifegenip_poster.png)](/uploads/freezeasguard_eccv2026_lifegenip_poster.pdf)
+        ## [InfiniBench](/publication/2025-infinibench/) {id=poster-2025-infinibench}
+        InfiniBench: Infinite Benchmarking for Visual Spatial Reasoning with Customizable Scene Complexity (*CVPR 2026*)
+        [![InfiniBench poster](2025-infinibench/infinibench_cvpr2026_poster.png)](/uploads/infinibench_cvpr2026_poster.pdf)
+        ## [Attribution-based Sparse Activation](/publication/2026-sparse-activation-slm/) {id=poster-2026-sparse-activation-slm}
+        Attribution-based Sparse Activation in Large Language Models (*MLSys 2026*)
+        [![Attribution-based Sparse Activation poster](2026-sparse-activation-slm/sparse_activation_mlsys2026_poster.png)](/uploads/sparse_activation_mlsys2026_poster.pdf)
+        ## [ProGait](/publication/2025-progait/) {id=poster-2025-progait}
+        ProGait: A Multi-Purpose Video Dataset and Benchmark for Transfemoral Prosthesis Users (*ICCV 2025*)
+        [![ProGait poster](2025-progait/progait_iccv2025_poster.png)](/uploads/progait_iccv2025_poster.pdf)
+        ## [PhyT2V](/publication/2024-phyt2v/) {id=poster-2024-phyt2v}
+        PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation (*CVPR 2025*)
         [![PhyT2V poster](2024-phyt2v/PhyT2V_cvpr2025_poster.png)](/uploads/PhyT2V_cvpr2025_poster.pdf)
+        ## [GreenTrainer](/publication/2023-greentrainer/) {id=poster-2023-greentrainer}
+        Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation (*ICLR 2024*)
+        [![GreenTrainer poster](2023-greentrainer/greentrainer_iclr24_poster.png)](/uploads/greentrainer_iclr24_poster.pdf)
       # Automatically link email and phone or display as text?
       autolink: true
     design:
@@ -35,9 +50,9 @@ sections:
 #      spacing:
 #        padding: ['20px', '0', '20px', '0']
   - block: markdown
+    id: videos
     content:
       title: 'Video & Demos'
-      id: videos
       text: |-
         # Teasers
         {{< columns >}}

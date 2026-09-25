@@ -1,0 +1,13 @@
+{{- /* Returns the items of data/news.yaml, newest first, each with an added
+       "_date" (time.Time). A date is 'YYYY-MM-DD' or 'YYYY-MM'; a month-only
+       date counts as the first of the month. Items with the same date keep
+       their order in the file (Hugo's sort is stable). */ -}}
+{{- $items := slice -}}
+{{- range site.Data.news -}}
+  {{- $d := .date -}}
+  {{- if and (eq (printf "%T" $d) "string") (findRE `^\d{4}-\d{2}$` $d) -}}
+    {{- $d = printf "%s-01" $d -}}
+  {{- end -}}
+  {{- $items = $items | append (merge . (dict "_date" (time.AsTime $d))) -}}
+{{- end -}}
+{{- return sort $items "_date" "desc" -}}

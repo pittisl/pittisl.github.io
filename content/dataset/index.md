@@ -46,7 +46,7 @@ sections:
         ```
 
         {{< hr-pittisl >}}
-        ### External Resources
+        ### External Resources {id=infinibench-external-resources}
         * Visit [InfiniBench dataset on HuggingFace](https://huggingface.co/datasets/Haoming645/infinibench) for detailed description and dataset downloading.
         * Visit [InfiniBench repository on GitHub](https://github.com/pittisl/infinibench) for related source code.
         * Check out [our paper](/publication/2025-infinibench/) about this dataset.
@@ -86,10 +86,10 @@ sections:
         * Answer: B. left
 
         {{< hr-pittisl >}}
-        ### External Resources
+        ### External Resources {id=remindview-bench-external-resources}
         * Visit [ReMindView-Bench dataset on HuggingFace](https://huggingface.co/datasets/Xue0823/ReMindView-Bench) for detailed description and dataset downloading.
         * Visit [ReMindView-Bench repository on GitHub](https://github.com/pittisl/ReMindView-Bench) for related source code.
-        * Check out [our paper](/publication/2025-remindview-bench/) about this dataset.
+        * Check out [our ECCV 2026 paper](/publication/2025-remindview-bench/) about this dataset.
       # Automatically link email and phone or display as text?
       autolink: true
     design:
@@ -216,7 +216,7 @@ sections:
         ```
 
         {{< hr-pittisl >}}
-        ## External Resources
+        ## External Resources {id=nuscenes-qa-mini-external-resources}
         * You may find more details on our [dataset homepage](https://huggingface.co/datasets/KevinNotSmile/nuscenes-qa-mini).
         * The source code of generating the dataset can be found [in our GitHub repository](https://github.com/pittisl/mPnP-LLM/tree/main/nuqamini).
         * Our [Modality Plug-and-Play](/publication/2023-mpnp-llm/) paper utilizes this dataset.
@@ -259,7 +259,7 @@ sections:
     
         For the discussion of detailed meanings of different GPU PCs, please refer to Section 4 of [our paper](https://doi.org/10.1145/3503222.3507757).
         {{< hr-pittisl >}}
-        ## External Resources
+        ## External Resources {id=android-perfcounter-to-key-press-external-resources}
         * You may find more details on our [dataset homepage](https://huggingface.co/datasets/pittisl/android-perfcounter-to-key-press).
         * Our [Mobile GPU Eavesdropping](/publication/2022-mobile-gpu-eavesdropping/) paper provides more information on the background and information leakage based on GPU PCs.
     design:

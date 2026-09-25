@@ -17,7 +17,7 @@ publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
 publication: In *Smart Health Volume 19, March 2021*
-publication_short: In *Smart Health*
+publication_short: In *Smart Health 2021*
 
 abstract: Muscle fatigue is common among humans and also a crucial indicator of many muscular diseases such as muscular dystrophy and disorders. Timely evaluation of muscle fatigue, hence, is important to track disease progress and avoid disease exacerbations. However, convenient tools for evaluating muscle fatigue out of clinic are still missing. In this paper, we present a new technique that uses commodity smartphones to evaluate muscle fatigue through simple and daily muscle exercises. The basic idea of our technique is to mimic an active sonar system with the smartphone's built-in microphone and speaker, and use this sonar system to evaluate muscle fatigue from the muscle's surface characteristics that can be measured from the transmitted acoustic signal. More specifically, our technique first measures the acoustic channel disturbances caused by fatigue-induced muscle tremor via channel estimation, and then derives quantitative fatigue levels from the variation of acoustic channel estimation. By using the arm bicep muscle as our primary target, we designed the exercise protocol and implemented a smartphone app for fatigue evaluation. Experiment results verified that our technique can precisely evaluate the speed of muscle fatigue accumulation, as well as identifying the actual fatigue occurrence. This technique, hence, could be used in practical home settings for effective fatigue evaluation on a daily basis. 
 

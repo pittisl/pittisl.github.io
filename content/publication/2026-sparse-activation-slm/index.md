@@ -20,7 +20,7 @@ publishDate: '2026-05-20T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Ninth Conference on Machine Learning and Systems*
+publication: In *the Ninth Conference on Machine Learning and Systems (MLSys 2026)*
 publication_short: In *MLSys 2026*
 
 abstract: LLM inference is computationally expensive due to the LLM’s large parameter sizes. Existing techniques reduce the computing cost via model retraining, but cannot well adapt to different downstream tasks or variant input data at runtime. To avoid such retraining efforts for runtime adaptability, a better option is sparse activation that selectively deactivates an input-dependent set of neurons in inference, but current methods of lossless sparse activation only deactivate neurons with zero output magnitudes, and are ineffective on recent LLMs with higher parameter efficiency. In this paper, we present a new technique of attribution-based sparse activation, which is a lossy sparse activation technique that deactivates neurons with low attribution scores and aims to achieve the best tradeoff between model accuracy and computing costs. To ensure optimal sparse activation, we quantified the large errors of existing attribution metrics when used for sparse activation, due to the interdependency among attribution scores of different neurons, and further proposed a new attribution metric that can provably correct such errors. Experiments show that our technique can achieve up to 70% model sparsity in difficult generative tasks such as question answering and text summarization with <5% model accuracy loss. Such high model sparsity enables us to reduce the computing latency and memory use of LLM inference by 35% and 40%, respectively.
@@ -36,6 +36,9 @@ featured: true
 #links:
 #  - name: Artifact
 #    url: https://doi.org/10.5281/zenodo.7812218
+links:
+  - name: Poster
+    url: /uploads/sparse_activation_mlsys2026_poster.pdf
 url_code: 'https://github.com/pittisl/Sparse-Activation'
 #url_pdf: 'https://arxiv.org/pdf/2406.06562'
 url_pdf: 'https://openreview.net/pdf?id=gJFigZeb5D'

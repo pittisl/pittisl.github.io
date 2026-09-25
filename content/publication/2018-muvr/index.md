@@ -16,7 +16,7 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2018 IEEE/ACM Symposium on Edge Computing (SEC)*
+publication: In *the IEEE/ACM Symposium on Edge Computing (SEC 2018)*
 publication_short: In *SEC 2018*
 
 abstract: Virtual Reality (VR) fundamentally improves the user's experience when interacting with the virtual world, and could revolutionarily transform designs of many interactive systems. To provide VR from untethered mobile devices, a viable solution is to remotely render VR frames from the edge cloud, but encounters challenges from the limited computation and communication capacities of the edge cloud when serving multiple mobile VR users at the same time. In this paper, we envision the key reason of such challenges as the ignorance of redundancy across VR frames being rendered, and aim to fundamentally remove this performance constraint on highly dynamic VR applications by adaptively reusing the redundant VR frames being rendered for different VR users. Such redundancy in each frame is decided at run-time by the edge cloud, which is then able to memoize the previous results of VR frame rendering for future reuse by other users. After a VR frame is generated, the edge cloud further reuses its redundant pixels compared with other frames, and only transmits the distinct portion of this frame to mobile devices. We have implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can efficiently reduce the computation burden at the edge cloud by more than 90%, and reduce more than 95% of the VR frame data being transmitted to mobile devices.

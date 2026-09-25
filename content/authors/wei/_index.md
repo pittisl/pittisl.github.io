@@ -11,7 +11,7 @@ order_id: 0
 superuser: false
 
 # Role/position
-role: Associate Professor
+role: Professor
 
 # Organizations/Affiliations
 organizations:
@@ -19,7 +19,7 @@ organizations:
     url: 'https://sites.pitt.edu/~weigao/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Associate Professor at University of Pittsburgh 
+bio: Professor at University of Pittsburgh
 
 interests:
   - On-device AI

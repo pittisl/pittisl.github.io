@@ -18,8 +18,8 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2019 IEEE 16th International Conference on Mobile Ad Hoc and Sensor Systems (MASS)*
-publication_short: In *2019 MASS*
+publication: In *the 16th IEEE International Conference on Mobile Ad Hoc and Sensor Systems (MASS 2019)*
+publication_short: In *MASS 2019*
 
 abstract: Device-free acoustic motion tracking allows a commodity mobile device to precisely track the human user's motion, without applying any extra hardware tracker on the human body. Most of current device-free acoustic motion tracking systems, however, are limited to tracking the motion of small parts of the human body with negligible sizes, such as human fingers. Their accuracy of motion tracking will significantly degrade when being applied to targets with large sizes, such as humans' hands, arms or body trunk. We envision the key reason to such degradation as the target size's significant impact on the pattern of the reflected acoustic signal, and develop analytical modeling of such reflected acoustic signal from large targets. Based on such modeling, we present a new system called Acoustic Tracking over targets with LArge Sizes (ATLAS), which ensures precise motion tracking over large targets by correctly interpreting the reflected acoustic signal and extracting the phase from the signal. Experiment results over commodity Android smartphones show that ATLAS can reduce the error of motion tracking by more than 75%, when being applied to targets with heterogeneous sizes in practice.
 

@@ -16,7 +16,7 @@ publishDate: '2023-07-25T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE INFOCOM 2019 - IEEE Conference on Computer Communications*
+publication: In *the IEEE Conference on Computer Communications (INFOCOM 2019)*
 publication_short: In *INFOCOM 2019*
 
 abstract: Cross-technology coexistence is crucial to avoid collisions of wireless transmissions and improve the efficiency of spectrum utilization in today's large-scale wireless network systems, especially the Internet of Things. However, existing approaches to cross-technology coexistence incur additional transmission delay and signal processing overhead, which are unaffordable by extremely weak wireless devices such as embedded sensors and computational RFIDs. These schemes hence fail when being applied to emerging application scenarios, such as smart cities and connected healthcare where weak devices play important roles. In this paper, we design and implement EmBee, a new wireless PHY technique that enables cross-technology coexistence at zero cost or performance loss to these extremely weak wireless devices. The basic idea of EmBee is to exploit the diversity of different wireless technologies' spectrum utilization, so as to adaptively reserve occupied spectrum from the strong devices for weak wireless devices' concurrent data transmissions. We have implemented EmBee over custom wireless hardware and evaluated EmBee under different wireless scenarios. Experiment results show that EmBee can effectively support ZigBee transmissions over a fully occupied WiFi channel without causing any extra delay, while only resulting in 10% WiFi throughput loss.

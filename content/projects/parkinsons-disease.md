@@ -8,7 +8,15 @@ sections:
     content:
       text: |
         # AI for Parkinson's Disease and Movement Disorders
-        Parkinson's disease (PD) is a progressive neurodegenerative disorder. Its hallmark motor symptoms, such as shuffling gait, rigidity and loss of fine motor control, are accompanied by complications that grow with disease progression and reduced mobility, including fatigue, muscle weakness and respiratory dysfunction; respiratory complications such as pneumonia are among the leading causes of death in advanced PD. Our research applies AI, computer vision and mobile sensing across this spectrum: interpretable video-based gait analysis that recognizes pathological gait patterns such as Parkinsonian gait and backs each diagnosis with measured biomechanical evidence, assistive robots that users with severe motor impairments can direct with their eye gaze and personalize through natural language feedback, and smartphone-based tools that examine the airway and monitor lung function and muscle fatigue at home.
+        {{< columns >}}
+        Parkinson's disease (PD) is a progressive neurodegenerative disorder, with hallmark motor symptoms such as shuffling gait, rigidity and loss of fine motor control.
+
+        These symptoms are accompanied by complications that grow with disease progression and reduced mobility, including fatigue, muscle weakness and respiratory dysfunction. Respiratory complications such as pneumonia are among the leading causes of death in advanced PD.
+
+        Our research applies AI, computer vision and mobile sensing across this spectrum: interpretable video-based gait analysis that recognizes pathological gait patterns such as Parkinsonian gait and backs each diagnosis with measured biomechanical evidence, assistive robots that users with severe motor impairments can direct with their eye gaze and personalize through natural language feedback, and smartphone-based tools that examine the airway and monitor lung function and muscle fatigue at home.
+        <--->
+        ![Overview of our research on Parkinson's disease: interpretable gait analysis, gaze-guided assistive robots, airway and lung function exams, and muscle fatigue monitoring](parkinsons-overview.png)
+        {{< /columns >}}
         {{< hr >}}
         ## Related Datasets
         ### [ProGait](/dataset/#progait)  

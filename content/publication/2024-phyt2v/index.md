@@ -18,7 +18,7 @@ publishDate: '2024-12-20T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Conference on Computer Vision and Pattern Recognition 2025*
+publication: In *the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)*
 publication_short: In *CVPR 2025*
 
 abstract: Text-to-video (T2V) generation has been recently enabled by transformer-based diffusion models, but current T2V models lack capabilities in adhering to the real-world common knowledge and physical rules, due to their limited understanding of physical realism and deficiency in temporal modeling. Existing solutions are either data-driven or require extra model inputs, but cannot be generalizable to out-of-distribution domains. In this paper, we present PhyT2V, a new data-independent T2V technique that expands the current T2V model's capability of video generation to out-of-distribution domains, by enabling chain-of-thought and step-back reasoning in T2V prompting. Our experiments show that PhyT2V improves existing T2V models' adherence to real-world physical rules by 2.3x, and achieves 35% improvement compared to T2V prompt enhancers.
@@ -33,7 +33,7 @@ featured: true
 
 links:
   - name: Poster
-    url: https://pittisl.github.io/uploads/PhyT2V_cvpr2025_poster.pdf
+    url: /uploads/PhyT2V_cvpr2025_poster.pdf
 url_code: 'https://github.com/pittisl/PhyT2V'
 url_pdf: 'https://openaccess.thecvf.com/content/CVPR2025/papers/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.pdf'
 #url_video: 'https://youtu.be/q86LnqEew_U'

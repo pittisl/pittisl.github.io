@@ -16,8 +16,8 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 18th International Conference on Information Processing in Sensor Networks (IPSN'18)*
-publication_short: In *IPSN'18*
+publication: In *the 18th International Conference on Information Processing in Sensor Networks (IPSN 2019)*
+publication_short: In *IPSN 2019*
 
 abstract: Virtual Reality (VR) improves the user's experience when interacting with the virtual world, and could revolutionarily transform the designs of many interactive systems. However, providing VR from untethered mobile devices is difficult due to their limited local capabilities. Existing VR solutions address this difficulty by rendering VR frames at remote computing facilities, but are limited to rendering every VR frame separately. A tremendous amount of VR frame data, hence, needs to be transmitted to mobile devices over low-bandwidth wireless links and seriously impairs VR performance. In this paper, we aim to remove this performance constraint on highly dynamic VR applications with complicated scenes and intensive user movement, by adaptively reusing the redundant VR pixels across multiple VR frames. We leverage the unique characteristics of image warping used in current VR applications, and fundamentally expand the scope of image warping to the entire VR lifespan to precisely capture the fluctuations of VR scene due to VR dynamics. We implemented our design over Android OS and Unity VR application engine, and demonstrated that our design can maximize the mobile VR performance over highly dynamic VR scenarios with 95% less amount of VR frame data being transmitted, by completely removing the pixel redundancy across VR frames.
 

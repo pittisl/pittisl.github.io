@@ -18,8 +18,8 @@ publishDate: '2023-09-26T00:30:11Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: '2024 International Conference on Learning Representations (ICLR)'
-publication_short: '2024 ICLR'
+publication: In *the 12th International Conference on Learning Representations (ICLR 2024)*
+publication_short: In *ICLR 2024*
 
 abstract: Fine-tuning is the most effective way of adapting pre-trained large language models (LLMs) to downstream applications. With the fast growth of LLM-enabled AI applications and democratization of open-souced LLMs, fine-tuning has become possible for non-expert individuals, but intensively performed LLM fine-tuning worldwide could result in significantly high energy consumption and carbon footprint, which may bring large environmental impact. Mitigating such environmental impact towards Green AI directly correlates to reducing the FLOPs of fine-tuning, but existing techniques on efficient LLM fine-tuning can only achieve limited reduction of such FLOPs, due to their ignorance of the backpropagation cost in fine-tuning. To address this limitation, in this paper we present GreenTrainer, a new LLM fine-tuning technique that adaptively evaluates different tensors' backpropagation costs and contributions to the fine-tuned model accuracy, to minimize the fine-tuning cost by selecting the most appropriate set of tensors in training. Such selection in GreenTrainer is made based on a given objective of FLOPs reduction, which can flexibly adapt to the carbon footprint in energy supply and the need in Green AI. Experiment results over multiple open-sourced LLM models and abstractive summarization datasets show that, compared to fine-tuning the whole LLM model, GreenTrainer can save up to 64% FLOPs in fine-tuning without any noticeable model accuracy loss. Compared to the existing fine-tuning techniques such as LoRa, GreenTrainer can achieve up to 4% improvement on model accuracy with on-par FLOPs reduction.
 
@@ -32,7 +32,7 @@ featured: true
 
 links:
   - name: Poster
-    url: https://pittisl.github.io/uploads/greentrainer_iclr24_poster.pdf
+    url: /uploads/greentrainer_iclr24_poster.pdf
 url_pdf: 'https://arxiv.org/pdf/2309.13192.pdf'
 url_code: 'https://github.com/pittisl/GreenTrainer'
 url_video: 'https://recorder-v3.slideslive.com/#/share?share=91206&s=8f42f7fb-f0ed-4714-b281-fa9f52f38379'

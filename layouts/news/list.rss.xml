@@ -1,0 +1,32 @@
+{{- /* RSS feed of data/news.yaml, published at /news/index.xml. Each item links
+       to the first link in its text, or to /news/ if it has none. */ -}}
+{{- $items := partial "functions/news_items.html" . -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    <description>News from the {{ site.Title }}</description>
+    {{- with site.LanguageCode }}
+    <language>{{ . }}</language>
+    {{- end }}
+    {{- with index $items 0 }}
+    <lastBuildDate>{{ ._date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    {{- range $items }}
+    {{- $html := $.RenderString .text }}
+    {{- $link := $.Permalink }}
+    {{- with findRESubmatch `href="([^"]+)"` $html 1 }}{{ $link = index (index . 0) 1 | absURL }}{{ end }}
+    <item>
+      <title>{{ $html | plainify | htmlUnescape | truncate 120 }}</title>
+      <link>{{ $link }}</link>
+      <pubDate>{{ ._date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid isPermaLink="false">{{ $.Permalink }}#{{ ._date.Format "2006-01-02" }}-{{ substr (md5 .text) 0 8 }}</guid>
+      <description>{{ $html | html }}</description>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

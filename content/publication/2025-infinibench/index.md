@@ -17,7 +17,7 @@ publishDate: '2025-12-05T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition*
+publication: In *the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)*
 publication_short: In *CVPR 2026*
 
 abstract: Modern vision-language models (VLMs) are expected to have abilities of spatial reasoning with diverse scene complexities, but evaluating such abilities is difficult due to the lack of benchmarks that are not only diverse and scalable but also fully customizable. Existing benchmarks offer limited customizability over the scene complexity and are incapable of isolating and analyzing specific VLM failure modes under distinct spatial conditions. To address this gap, instead of individually presenting benchmarks for different scene complexities, in this paper we present InfiniBench, a fully automated, customizable and user-friendly benchmark generator that can synthesize a theoretically infinite variety of 3D scenes with parameterized control on scene complexity. InfiniBench uniquely translates scene descriptions in natural language into photo-realistic videos with complex and physically plausible 3D layouts. This is achieved through three key innovations. 1) a LLM-based agentic framework that iteratively refines procedural scene constraints from scene descriptions; 2) a flexible cluster-based layout optimizer that generates dense and cluttered scenes previously intractable for procedural methods; and 3) a task-aware camera trajectory optimization method that renders scenes into videos with full object coverage as VLM input. Experiments demonstrate that InfiniBench outperforms state-of-the-art procedural and LLM-based 3D generation methods in prompt fidelity and physical plausibility, especially in high-complexity scenarios. We further showcased the usefulness of InfiniBench, by generating benchmarks for representative spatial reasoning tasks including measurement, perspective-taking and spatiotemporal tracking.
@@ -32,6 +32,8 @@ featured: true
 links:
   - name: Dataset
     url: https://huggingface.co/datasets/Haoming645/infinibench
+  - name: Poster
+    url: /uploads/infinibench_cvpr2026_poster.pdf
 url_code: 'https://github.com/pittisl/infinibench'
 url_pdf: 'https://arxiv.org/pdf/2511.18200'
 #url_video: ''

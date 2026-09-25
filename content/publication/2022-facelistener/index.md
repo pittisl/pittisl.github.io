@@ -17,8 +17,8 @@ publishDate: '2023-07-22T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *the 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN'22)'
-publication_short: In *IPSN'22*
+publication: In *the 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2022)*
+publication_short: In *IPSN 2022*
 
 abstract: Facial expressions are important indicators of user needs that can be used in many interactive computing applications to adapt the system behaviors and settings. Current computing approaches to recognizing human facial expressions, however, either rely on con-tinuous camera recordings that are energy consuming, or require custom sensing hardware that are expensive and difficult to use on commodity systems. In this paper, we present FaceListener, a new sensing system that recognizes human facial expressions by only using commodity headphones. The basic idea of FaceListener is to transform the commodity headphone into an acoustic sensing device, which captures the face skin deformations caused by fa-cial muscle movements with different facial expressions. To ensure the recognition accuracy, FaceListener leverages the knowledge distillation technique to learn the subtle correlation between face skin deformation and the acoustic signal changes. Experiment re-sults over multiple human beings demonstrate that FaceListener can accurately recognize more than 80% of different facial expressions. FaceListener is highly energy efficient, and can well adapt to different headphone models, host systems and user activities.
 
