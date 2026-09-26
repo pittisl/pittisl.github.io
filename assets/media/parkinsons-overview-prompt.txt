@@ -1,0 +1,66 @@
+# Prompt given to ChatGPT image generation (web, effort=high) on 2026-09-25, together with
+# the previous SVG-drawn draft as a reference image. The result is parkinsons-overview.png
+# (1499x1049; the black corners outside the rounded backdrop were then made transparent).
+
+Please create an overview illustration for a research project page on an academic lab website.
+
+CONTEXT
+- Website: Intelligent Systems Lab (Pitt ISL), University of Pittsburgh, https://pittisl.github.io/ . It is a clean academic site (Hugo, Bootstrap-style theme): white page background, system sans-serif fonts, primary blue #1565c0, body text #34495e, dark navy headings. The site also has a dark mode, so the illustration should sit on its own light, rounded, off-white backdrop (#fbfcfe) rather than being transparent.
+- Page: "AI for Parkinson's Disease and Movement Disorders". The figure sits next to the intro text at about 560 px wide on desktop, and full width on phones, so every element must stay legible when the whole image is 560 px wide. Bold shapes, thick uniform strokes, no fine detail.
+- Purpose: one self-contained diagram showing the person we help in the middle and the four research problems around them. It replaces (a) a busy collage of four paper figures and (b) a monochrome icon diagram whose central figure looked like a robot. The new version must be human, warm and colorful while still looking like it belongs on a scientific website.
+- A reference PNG of the current draft is attached (parkinsons-overview-current.png). Keep its overall layout (central figure, four cards in the corners, colored connectors, tag pills at the bottom) but draw everything with much better illustration quality.
+
+STYLE
+- Flat vector illustration / modern editorial infographic style. Clean outlines of uniform weight, flat fills, at most subtle flat shading. No photorealism, no 3D render, no gradients, no drop shadows, no texture, no clip-art or cartoon-for-children look, no stock-icon look.
+- Palette: four muted, harmonious hues for the four cards (teal, purple, orange, rose), a neutral dark navy (#2b3a55) for outlines and text, warm natural skin tone, grey hair. The site's primary blue (#1565c0) may appear as a small accent. Generous white space.
+- Depiction of the person must be dignified and respectful: an older adult living an active life, not frail, pitiful, comic or caricatured. Neutral-to-friendly expression.
+- Landscape, aspect ratio 10:7 (e.g. 1600 x 1120 px), as large as possible.
+- No watermark, no signature, no logos, no text other than the strings listed below, spelled exactly.
+
+COMPOSITION
+1. Center: an older adult (about 65-75 years old) seen in profile, walking toward the right with a cane, drawn large. Show the visible signs of Parkinson's disease clearly but tastefully:
+   - stooped, forward-flexed posture with the head carried forward of the shoulders;
+   - short shuffling steps with slightly bent knees;
+   - the free arm held with the elbow flexed and reduced arm swing, with small motion lines at the hand to suggest a resting tremor;
+   - a walking cane in the other hand.
+   Grey hair, a cardigan or sweater in a soft color, trousers, comfortable shoes. No glasses on this person, no wheelchair here.
+   Optionally a small neutral tag "Stooped posture" pointing at the back.
+
+2. Four rounded cards in the four corners, each with its own color, a small scene illustration on the left and text on the right. Text on each card, exactly:
+
+   Top-left card (teal):
+     small italic line: Symptom: respiratory dysfunction
+     bold title: Airway & lung function exams
+     subtitle: At-home airway and lung exams with a smartphone.
+     Scene: a smartphone with a mouthpiece sending sound waves into the mouth, with a simple side view of the airway (throat and trachea) and lungs.
+
+   Top-right card (purple):
+     small italic line: Symptom: severe motor impairment
+     bold title: Gaze-guided assistive robots
+     subtitle: Robots steered by eye gaze, tuned by natural language.
+     Scene: a person sitting in a wheelchair wearing eye-tracking glasses; a dashed gaze line from their eyes to a cup held by a tabletop robot arm; optionally a small speech bubble to suggest natural-language feedback.
+
+   Bottom-left card (orange):
+     small italic line: Symptom: shuffling gait
+     bold title: Interpretable gait analysis
+     subtitle: Video gait analysis backed by biomechanical evidence.
+     Scene: a walking person overlaid with a pose-estimation skeleton (dots at the joints connected by lines) inside a video frame, with a small annotated knee angle (theta) to suggest measured biomechanical evidence.
+
+   Bottom-right card (rose):
+     small italic line: Symptom: fatigue & weakness
+     bold title: Muscle fatigue monitoring
+     subtitle: Phone sonar tracks muscle fatigue in daily exercise.
+     Scene: a flexed arm with the biceps highlighted, a smartphone next to it emitting ultrasonic waves toward the muscle, and a small signal waveform.
+
+3. Thin connector lines in each card's color link the card to the relevant body part of the central person: teal to the chest/throat, purple as a dashed gaze ray from the eyes, orange to the knee/feet, rose to the upper arm.
+
+4. Bottom row: four outlined pill-shaped tags, exactly: Generative AI, Computer vision, Mobile sensing, Assistive robotics.
+
+TYPOGRAPHY
+- Sans-serif (Helvetica/Arial-like). Card titles bold in a dark shade of the card's hue, subtitles in grey (#34495e), symptom lines small and italic. Text must be crisp and correctly spelled; if rendering text reliably is a problem, produce a second version with no text at all (only the illustrations and empty cards), and I will add the text myself.
+
+AVOID
+- A robot-like or mannequin-like human figure; faceless or featureless figures.
+- Medical or clinical imagery that looks alarming (no hospital beds, no gore, no pills).
+- Stigmatizing depiction of disability.
+- Extra labels, invented text, logos, watermarks.

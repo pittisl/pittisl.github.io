@@ -86,7 +86,7 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 | `content/dataset/`, `content/video-and-demos/`, `content/contact/` | Single landing pages built from `markdown`/`contact` blocks |
 | `data/news.yaml` | All news items; rendered on the homepage, on `/news/` (`content/news/_index.md`) and in `/news/index.xml` |
 | `assets/media/` | Images used by content; per-paper figures live in `assets/media/<pub-dir>/` |
-| `assets/media/parkinsons-overview.svg` | Source of the Parkinson's project overview figure; export with `rsvg-convert -w 1600 assets/media/parkinsons-overview.svg -o assets/media/parkinsons-overview.png` |
+| `assets/media/parkinsons-overview-prompt.txt` | The prompt that produced `parkinsons-overview.png` (ChatGPT image generation, September 2026); the earlier hand-drawn SVG version (September 2026) is in git history. The generated image had black corners outside its rounded backdrop; they were made transparent with Pillow. |
 | `static/uploads/` | PDFs (posters etc.) served at `/uploads/...` |
 | `static/vendor/` | Self-hosted front-end libraries (generated, see above) |
 | `data/assets.toml` | URLs, versions and SRI of the theme's JS/CSS libraries |
