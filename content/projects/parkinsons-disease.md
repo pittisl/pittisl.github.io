@@ -15,7 +15,7 @@ sections:
 
         Our research applies AI, computer vision and mobile sensing across this spectrum: interpretable video-based gait analysis that recognizes pathological gait patterns such as Parkinsonian gait and backs each diagnosis with measured biomechanical evidence, assistive robots that users with severe motor impairments can direct with their eye gaze and personalize through natural language feedback, and smartphone-based tools that examine the airway and monitor lung function and muscle fatigue at home.
         <--->
-        ![A person with a cane, surrounded by the four problems our research addresses: airway and lung function exams, gaze-guided assistive robots, interpretable gait analysis, and muscle fatigue monitoring](parkinsons-overview.png)
+        ![An older adult with a stooped posture, a resting tremor and a cane, surrounded by the four problems our research addresses: airway and lung function exams, gaze-guided assistive robots, interpretable gait analysis, and muscle fatigue monitoring](parkinsons-overview.png)
         {{< /columns >}}
         {{< hr >}}
         ## Related Datasets
