@@ -94,22 +94,41 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 | `layouts/` | Local theme template overrides and extra shortcodes (see below) |
 | `_vendor/` | Vendored theme, do not edit |
 | `scripts/fetch-vendor-assets.py` | Regenerates `static/vendor/` |
-| `static/aihcs/` | Built website of the Center for AI in Healthcare Computing and Systems, served at `/aihcs/` (generated, do not edit) |
+| `static/aihcs/` | Built website of the Center for AI in Healthcare Computing and Systems (generated, do not edit); kept but not published while `/aihcs/` redirects |
+| `aihcs-redirect/` | Temporary redirect pages published at `/aihcs/`, pointing at the Center's official site |
 | `scripts/sync-aihcs.sh` | Rebuilds `static/aihcs/` from the Center site's private source repository |
 
 ## The /aihcs/ site
 
-`/aihcs/` is a separate website, for the Center for Artificial Intelligence in Healthcare
+`/aihcs/` was a separate website, for the Center for Artificial Intelligence in Healthcare
 Computing and Systems, published through this repository. Its source is the private repository
 `pittisl/pitt-ece-health-website` (a Python/Jinja generator with its own README); it stays private
 because its data files hold material that is deliberately not rendered. Only the built pages are
-committed here, in `static/aihcs/`, which Hugo copies verbatim.
+committed here, in `static/aihcs/`.
+
+**Current state: temporary redirect.** The Center's official website is
+https://www.engineering.pitt.edu/aihcs/ (its subpages live under `/subsites/centers/aihcs/`).
+SSOE rebuilt it in their CMS from our built site and published it on 2026-09-29; it is edited in
+that CMS, not by uploading files. Since then `/aihcs/` here redirects there:
+
+- `aihcs-redirect/` has one page for each page of `static/aihcs/`, pointing at the matching
+  official page. `config/_default/config.yaml` mounts it at `static/aihcs` and excludes
+  `static/aihcs/` from publishing (the explicit `static` mount must stay, because a project mount
+  replaces Hugo's default one).
+- GitHub Pages cannot send HTTP redirects, so the pages use `meta refresh` with a 1-second delay,
+  which Google treats as a temporary redirect (0 seconds counts as permanent). Keep them free of
+  `rel="canonical"`, `noindex` and JavaScript redirects, which signal a permanent move.
+- `static/aihcs/` keeps the last build of our version for comparison. It is not served by
+  `hugo server` either; view it with `python3 -m http.server -d static/aihcs`.
+- To publish our version again, delete the `mounts` in `config.yaml` and `aihcs-redirect/`.
+
+Working on the built site:
 
 - Change the Center site in its source repository, commit there, then run
   `scripts/sync-aihcs.sh <path to that checkout>` and commit `static/aihcs/` here, naming the
   source commit the script prints. Never edit files under `static/aihcs/` directly.
 - The Center site uses only relative links, so it works under any path; nothing in this Hugo
-  site should link into it or be created under `/aihcs/`.
+  site should link into it or be created under `/aihcs/` (apart from `aihcs-redirect/`).
 - A missing page under `/aihcs/` shows this site's 404 page.
 
 ## Content conventions

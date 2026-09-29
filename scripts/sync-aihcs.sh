@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Rebuild the website of the Center for Artificial Intelligence in Healthcare
 # Computing and Systems (AIHCS) from its private source repository and copy the
-# output into static/aihcs/, which Hugo publishes verbatim at /aihcs/. It builds
-# with --web, so directory links end in "/" rather than "/index.html".
+# output into static/aihcs/. It builds with --web, so directory links end in "/"
+# rather than "/index.html". While /aihcs/ temporarily redirects to the Center's
+# official site, static/aihcs/ is kept for reference but not published (see
+# "The /aihcs/ site" in CLAUDE.md).
 #
 # The source repository (pittisl/pitt-ece-health-website) stays private because
 # its data files hold material that is deliberately not rendered, such as
