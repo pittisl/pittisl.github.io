@@ -115,12 +115,20 @@ that CMS, not by uploading files. Since then `/aihcs/` here redirects there:
   official page. `config/_default/config.yaml` mounts it at `static/aihcs` and excludes
   `static/aihcs/` from publishing (the explicit `static` mount must stay, because a project mount
   replaces Hugo's default one).
+- Mapping: the home page goes to the short address above. Every other page goes to the same
+  path under `/subsites/centers/aihcs/`, because the official site serves subpages only there,
+  with two exceptions: `news/website-launched/` goes to `news/center-website-launched/`, and
+  `news/2026/` (no counterpart) goes to `news/`. If the official URLs change, update these pages.
 - GitHub Pages cannot send HTTP redirects, so the pages use `meta refresh` with a 1-second delay,
   which Google treats as a temporary redirect (0 seconds counts as permanent). Keep them free of
   `rel="canonical"`, `noindex` and JavaScript redirects, which signal a permanent move.
 - `static/aihcs/` keeps the last build of our version for comparison. It is not served by
-  `hugo server` either; view it with `python3 -m http.server -d static/aihcs`.
+  `hugo server` either; view it with `python3 -m http.server -d static/aihcs`. Don't publish it
+  under another path (such as an archive page) for online comparison: that would put a second
+  public copy of the Center site on the web (decided 2026-09-29).
 - To publish our version again, delete the `mounts` in `config.yaml` and `aihcs-redirect/`.
+- History: our version was published at `/aihcs/` from 2026-09-23 (commit `d4f5805`) until the
+  redirect replaced it on 2026-09-29 (commit `f7f9bfc`).
 
 Working on the built site:
 
