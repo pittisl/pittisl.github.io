@@ -94,17 +94,29 @@ Actions are pinned to commit SHAs with the tag in a trailing comment.
 | `layouts/` | Local theme template overrides and extra shortcodes (see below) |
 | `_vendor/` | Vendored theme, do not edit |
 | `scripts/fetch-vendor-assets.py` | Regenerates `static/vendor/` |
+| `static/aihcs/` | Redirect pages for the old Center site at `/aihcs/` (see below) |
 
-## The /aihcs/ site (retired)
+## The /aihcs/ redirect
 
-Nothing is served at `/aihcs/` any more, and nothing should be added there: it shows this site's
-404 page. The Center for Artificial Intelligence in Healthcare Computing and Systems has its
-official website at https://www.engineering.pitt.edu/aihcs/, in the SSOE CMS; the private
-repository `pittisl/pitt-ece-health-website` mirrors that CMS content.
+`/aihcs/` only redirects. The Center for Artificial Intelligence in Healthcare Computing and
+Systems has its official website at https://www.engineering.pitt.edu/aihcs/ (subpages under
+`/subsites/centers/aihcs/`), maintained in the SSOE CMS; the private repository
+`pittisl/pitt-ece-health-website` mirrors that CMS content. This repository no longer keeps a copy
+of the Center site; add nothing under `/aihcs/` except redirect pages.
 
-History: a build of the Center site was published here at `/aihcs/` from 2026-09-23 (commit
-`d4f5805`); from 2026-09-29 (commit `f7f9bfc`) `/aihcs/` redirected to the official site; on
-2026-09-30 the redirect pages, the built pages and `scripts/sync-aihcs.sh` were removed.
+- `static/aihcs/` holds one redirect page for each page the old Center site had here, pointing
+  at the matching official page. The home page goes to the short address above; every other
+  page goes to the same path under `/subsites/centers/aihcs/`, except `news/website-launched/`
+  (to `news/center-website-launched/`) and `news/2026/` (no counterpart; to `news/`). If the
+  official URLs change, update these pages.
+- GitHub Pages cannot send HTTP redirects, so the pages use `meta refresh` with a 1-second delay,
+  which Google treats as a temporary redirect (0 seconds counts as permanent). Keep them free of
+  `rel="canonical"`, `noindex` and JavaScript redirects, which signal a permanent move.
+- Any other path under `/aihcs/` shows this site's 404 page.
+- History: a build of the Center site was published here at `/aihcs/` from 2026-09-23 (commit
+  `d4f5805`); the redirect replaced it on 2026-09-29 (commit `f7f9bfc`), with the build kept
+  unpublished for comparison; on 2026-09-30 the build and `scripts/sync-aihcs.sh` were removed
+  and the redirect pages moved from `aihcs-redirect/` into `static/aihcs/`.
 
 ## Content conventions
 
