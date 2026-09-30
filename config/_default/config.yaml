@@ -22,18 +22,6 @@ removePathAccents: true
 module:
   imports:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
-  # /aihcs/ temporarily redirects to the Center's official site at
-  # engineering.pitt.edu. The built Center site stays in static/aihcs/ for
-  # reference but is not published; the pages in aihcs-redirect/ take its
-  # place. To publish static/aihcs/ again, delete these mounts and
-  # aihcs-redirect/. (A project mount for static/ replaces Hugo's default
-  # one, so the first entry must stay while the second exists.)
-  mounts:
-    - source: static
-      target: static
-      excludeFiles: aihcs/**
-    - source: aihcs-redirect
-      target: static/aihcs
 
 ############################
 ## ADVANCED
