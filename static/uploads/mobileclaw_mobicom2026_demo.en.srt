@@ -1,0 +1,232 @@
+1
+00:00:00,525 --> 00:00:05,250
+This is the demo video for MobileClaw at MobiCom 2026.
+
+2
+00:00:05,550 --> 00:00:08,200
+MobileClaw is a notification-driven Android agent
+
+3
+00:00:08,500 --> 00:00:12,075
+that uses local context to prepare actions for user review.
+
+4
+00:00:13,712 --> 00:00:17,425
+MobileClaw differs in where the agent runs and how it acts.
+
+5
+00:00:17,725 --> 00:00:20,600
+Its control logic and working state stay on the phone.
+
+6
+00:00:20,900 --> 00:00:24,412
+For supported actions, it calls structured Android interfaces
+
+7
+00:00:24,712 --> 00:00:26,962
+rather than simulating screen taps.
+
+8
+00:00:27,262 --> 00:00:29,638
+Privileged operations require user approval
+
+9
+00:00:29,938 --> 00:00:32,287
+and a separate, restricted helper.
+
+10
+00:00:33,679 --> 00:00:35,579
+When a relevant notification arrives,
+
+11
+00:00:35,879 --> 00:00:39,104
+MobileClaw can look up local files, calendar events,
+
+12
+00:00:39,404 --> 00:00:41,851
+contacts, and other local context.
+
+13
+00:00:42,151 --> 00:00:45,526
+A cloud language model reasons over the available context
+
+14
+00:00:45,826 --> 00:00:47,751
+and proposes what to do next.
+
+15
+00:00:48,056 --> 00:00:50,944
+The phone enforces permissions and user approval,
+
+16
+00:00:51,244 --> 00:00:52,719
+then carries out the approved action
+
+17
+00:00:53,019 --> 00:00:55,919
+through Android APIs or AppFunctions.
+
+18
+00:00:57,338 --> 00:01:01,513
+Here, we demonstrate how MobileClaw works in real scenarios.
+
+19
+00:01:01,813 --> 00:01:04,738
+An incoming email asks for a hotel booking code
+
+20
+00:01:05,037 --> 00:01:07,600
+and whether the traveler will arrive before check-in.
+
+21
+00:01:07,948 --> 00:01:09,135
+The answer depends on information
+
+22
+00:01:09,435 --> 00:01:12,898
+in both a local reservation PDF and the calendar.
+
+23
+00:01:13,242 --> 00:01:15,254
+MobileClaw brings these sources together
+
+24
+00:01:15,554 --> 00:01:18,817
+to prepare a reply grounded in the user’s own records.
+
+25
+00:01:20,288 --> 00:01:22,325
+A meeting request becomes actionable
+
+26
+00:01:22,625 --> 00:01:25,850
+when it is checked against the user’s existing commitments.
+
+27
+00:01:26,150 --> 00:01:27,750
+When asked to check availability,
+
+28
+00:01:28,050 --> 00:01:31,175
+MobileClaw uses the calendar to identify a conflict
+
+29
+00:01:31,475 --> 00:01:33,638
+and propose a suitable alternative.
+
+30
+00:01:33,938 --> 00:01:37,163
+The resulting draft reply reflects the user’s schedule
+
+31
+00:01:37,462 --> 00:01:39,175
+and is ready for the user to review.
+
+32
+00:01:40,521 --> 00:01:42,258
+A missed call shows how local context
+
+33
+00:01:42,558 --> 00:01:44,658
+can support an action in another app.
+
+34
+00:01:44,963 --> 00:01:46,675
+For the requested callback task,
+
+35
+00:01:46,975 --> 00:01:49,313
+contact details provide the phone number,
+
+36
+00:01:49,613 --> 00:01:52,538
+while the calendar helps select a suitable time.
+
+37
+00:01:52,884 --> 00:01:56,809
+For cross-app execution, we integrate Android AppFunctions,
+
+38
+00:01:57,109 --> 00:01:59,509
+allowing MobileClaw to invoke functions
+
+39
+00:01:59,809 --> 00:02:01,534
+exposed by cooperating apps
+
+40
+00:02:01,834 --> 00:02:04,282
+without operating their graphical interfaces.
+
+41
+00:02:04,582 --> 00:02:06,782
+After user approval, a restricted helper
+
+42
+00:02:07,082 --> 00:02:09,582
+creates the task in TaskBoard.
+
+43
+00:02:10,349 --> 00:02:12,774
+The task shown here confirms the result.
+
+44
+00:02:14,158 --> 00:02:16,346
+We also index local documents and images
+
+45
+00:02:16,646 --> 00:02:20,158
+so the agent can find resources by content and metadata.
+
+46
+00:02:20,567 --> 00:02:22,454
+A request for a dog photo from yesterday
+
+47
+00:02:22,754 --> 00:02:26,404
+becomes a query combining image content with capture time.
+
+48
+00:02:26,810 --> 00:02:29,785
+This lets a notification trigger useful retrieval
+
+49
+00:02:30,085 --> 00:02:32,035
+without requiring a filename.
+
+50
+00:02:32,443 --> 00:02:34,193
+The user still chooses the photo
+
+51
+00:02:34,493 --> 00:02:38,056
+and reviews both the image and recipient before sharing.
+
+52
+00:02:39,433 --> 00:02:41,296
+MobileClaw connects incoming requests
+
+53
+00:02:41,596 --> 00:02:44,171
+with local context and structured actions,
+
+54
+00:02:44,471 --> 00:02:46,262
+while keeping users in control.
+
+55
+00:02:46,562 --> 00:02:49,625
+Scan the QR codes to further explore our project,
+
+56
+00:02:49,925 --> 00:02:52,375
+read the paper, and learn more about our lab.
+
+57
+00:02:52,682 --> 00:02:54,995
+And join us at MobiCom 2026
+
+58
+00:02:55,295 --> 00:02:57,520
+for a live demo of MobileClaw.
+

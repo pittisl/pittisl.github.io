@@ -98,7 +98,7 @@ sections:
         {{< columns >}}
         ## [MobileClaw](/publication/2026-mobileclaw/) {id=demo-mobileclaw}
         Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM Agent
-        {{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg" title="MobileClaw demonstration" >}}
+        {{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4?v=20261023-narrated" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg?v=20261023-narrated" title="MobileClaw demonstration" >}}
         <--->
         ## [Eavesdropping User Credentials via GPU Side Channels on Smartphones](/publication/2022-mobile-gpu-eavesdropping/)
         {{< youtube id="f40TvdDaxqw" >}}

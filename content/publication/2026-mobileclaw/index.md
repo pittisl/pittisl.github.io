@@ -60,9 +60,10 @@ requests sharing, and confirms the image and recipient.
 
 ## Watch the demo {#demo-video}
 
-{{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg" title="MobileClaw demonstration: notifications, local context and user-confirmed actions" >}}
+{{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4?v=20261023-narrated" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg?v=20261023-narrated" title="MobileClaw demonstration: notifications, local context and user-confirmed actions" >}}
 
-[Download the video (MP4, 1920 × 1080)](/uploads/mobileclaw_mobicom2026_demo.mp4).
+[Download the video (MP4, 1920 × 1080, 2 min 59 sec; English narration and subtitles)](/uploads/mobileclaw_mobicom2026_demo.mp4?v=20261023-narrated).
+[Download the English subtitles (SRT)](/uploads/mobileclaw_mobicom2026_demo.en.srt).
 The [GitHub repository](https://github.com/pittisl/MobileClaw) includes source code,
 installable APKs, documentation and instructions for trying the demo.
 
