@@ -8,6 +8,11 @@
 #   text: one Markdown paragraph. Link papers as /publication/<pub-dir>/; the
 #         RSS item links to the first link in the text.
 
+- date: '2026-10-23'
+  text: >-
+    Our demo paper, [Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM
+    Agent](/publication/2026-mobileclaw/), will be demonstrated at **MobiCom 2026**.
+
 - date: '2026-09-24'
   text: >-
     Our paper, [Uncovering and Shaping the Latent Representation of 3D Scene Topology in

@@ -274,3 +274,18 @@ body {
     line-height: 1.15;
   }
 }
+
+// Keep native video controls usable and preserve the frame on narrow screens.
+.pittisl-demo-video {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 1rem auto;
+  background: #073989;
+}
+
+// Align the homepage video with its neighboring system overview.
+.mobileclaw-media .pittisl-demo-video {
+  margin-top: 0;
+}

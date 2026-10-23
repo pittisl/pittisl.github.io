@@ -126,6 +126,15 @@ sections:
       title: On-device AI
       subtitle: 'Our research aims to enable high-performance AI inference and training on resource-constrained mobile and embedded devices, to enable emerging applications such as AIoT, smart health and embodied AI. We utilize fine-grained and explainable knowledge about AI model execution to determine the most efficient part of the model for on-device training and inference, and employ modular neural networks that incorporate domain knowledge of specific system applications into the neural network module design. Our recent research focuses on enabling computational efficient inference and training of modern Large Language Models (LLMs) on weak devices, to efficiently incorporate these devices’ rich varieties of data modalities into the LLMs’ representation power and hence allow more flexible domain adaptation and model personalization.'
       text: |
+        ### [Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM Agent](/publication/2026-mobileclaw/) {id=mobileclaw}
+        MobiCom 2026 (Demo)
+        {{< columns class="mobileclaw-media" >}}
+        ![MobileClaw system overview: notification and user input, LLM reasoning, approval and execution](2026-mobileclaw/mobileclaw-system-overview.png)
+        <--->
+        {{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg" title="MobileClaw demonstration" >}}
+        {{< /columns >}}
+        Smartphone assistants built on large language models (LLMs) today either drive an application’s screen display or wait to be asked through chatting; neither is integrated into the event stream produced by the mobile OS and user-installed applications. We demonstrate MobileClaw, an Android system component that attaches an external LLM to the OS notification channel. A background service captures every posted notification and asks the model for recommended further actions; an interactive front end carries out the user’s requests through built-in skills, operated through OS API calls rather than screen automation. The model is treated as an untrusted component: nothing it decides takes effect unless the user confirms it. Notification text and everything the app reads from the device pass a sanitizer before they leave the phone, and privileged operations run in a separate process behind an allowlist it re-checks itself. Demo attendees may fire synthetic or real notifications, manipulate local resources on the device, approve or reject suggested actions, and watch the model’s reasoning trace in real time.
+        {{< hr-pittisl >}}
         ### [Attribution-based Sparse Activation in Large Language Models](/publication/2026-sparse-activation-slm/) {id=sparse-activation-slm}
         MLSys 2026
         {{< columns >}}
@@ -171,15 +180,6 @@ sections:
         {{< youtube id="q86LnqEew_U" >}}
         {{< /columns >}}
         The first on-device AI technique that achieves full elasticity of on-device training on resource-constrained mobile and embedded devices. By leveraging the principle of eXplainable AI (XAI) and evaluating the importance of different tensors in training, we allow fully flexible adaptation of the trainable neural network portion at runtime, according to the current training needs and online data patterns, to minimize the training cost without accuracy loss.
-        {{< hr-pittisl >}}
-        ### [Real-time Neural Network Inference on Extremely Weak Devices: Agile Offloading with Explainable AI](/publication/2022-agilenn/) {id=agilenn}
-        MobiCom 2022  
-        {{< columns >}}
-        ![AgileNN](agilenn.png)
-        <--->
-        {{< youtube id="OwNRcuTRgwE" >}}
-        {{< /columns >}}
-        AgileNN is the first work that achieves real-time inference (<20ms) of mainstream neural network models (e.g., ImageNet) on extremely weak MCUs (e.g., STM32 series with <1MB of memory), without impairing the inference accuracy. The usage of eXplainable AI (XAI) techniques allows >6x improvement of feature compressibility during offloading and >8x reduction of the local device's resource consumption.
         {{< hr >}}
         [**View more...**](/projects/on-device-ai/)
     design:

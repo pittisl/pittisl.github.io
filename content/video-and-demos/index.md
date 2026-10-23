@@ -22,6 +22,9 @@ sections:
     content:
       title: 'Posters'
       text: |-
+        ## [MobileClaw](/publication/2026-mobileclaw/) {id=poster-2026-mobileclaw}
+        Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM Agent (*MobiCom 2026 Demo*)
+        [![MobileClaw poster](2026-mobileclaw/mobileclaw_mobicom2026_poster.png)](/uploads/mobileclaw_mobicom2026_poster.pdf)
         ## [ReMindView-Bench](/publication/2025-remindview-bench/) {id=poster-2025-remindview-bench}
         Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective (*ECCV 2026*)
         [![ReMindView-Bench poster](2025-remindview-bench/remindview_eccv2026_poster.png)](/uploads/remindview_eccv2026_poster.pdf)
@@ -93,9 +96,12 @@ sections:
         {{< hr >}}
         # Live Demo
         {{< columns >}}
+        ## [MobileClaw](/publication/2026-mobileclaw/) {id=demo-mobileclaw}
+        Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM Agent
+        {{< local-video src="/uploads/mobileclaw_mobicom2026_demo.mp4" poster="/uploads/mobileclaw_mobicom2026_demo-preview.jpg" title="MobileClaw demonstration" >}}
+        <--->
         ## [Eavesdropping User Credentials via GPU Side Channels on Smartphones](/publication/2022-mobile-gpu-eavesdropping/)
         {{< youtube id="f40TvdDaxqw" >}}
-        <--->
         {{< /columns >}}
       # Automatically link email and phone or display as text?
       autolink: true
