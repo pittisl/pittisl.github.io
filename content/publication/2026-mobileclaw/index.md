@@ -2,7 +2,7 @@
 title: 'Demo: MobileClaw: A Notification-Driven, Human-Gated Mobile LLM Agent'
 authors:
   - boyuan
-  - 'Alexander Du'
+  - alexander
   - 'Ozzie Hassel'
   - 'Jash Uganandan'
   - wei
